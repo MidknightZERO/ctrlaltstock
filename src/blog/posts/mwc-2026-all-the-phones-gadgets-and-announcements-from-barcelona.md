@@ -53,7 +53,7 @@ title: 'MWC 2026: all the phones, gadgets, and announcements from Barcelona'
 
 MWC 2026: How UKTech Market Will Be Reshaped by New Phones, Gadgets & Connectivity Trends  
 
-You might be knee-deep in RTX 5090 rumours or waiting for [AMD's next CPU drop](https://ctrlaltstock.com/blog/were-we-wrong-about-ryzen-s-best-feature), but there's a tech show happening right now that could save you serious money and reshape your entire setup. Mobile World Congress (MWC) 2026 in Barcelona isn't just another tech show—it's a global engine for tech pricing, accessory innovation, and connectivity trends that directly impact PC enthusiasts and budget gamers in the UK. While CES gets the PC hardware spotlight, MWC dictates the mobile ecosystem your phone, tablet, and even your laptop live in. With major launches already telegraphed, the ripple effects on prices and availability will hit UK shelves within weeks. Here's exactly what's happening, what it means for your wallet, and how to play the market like a pro, straight from the insights we're sharing in our 10,000-member Discord community.  
+You might be knee-deep in RTX 5090 rumours or waiting for [AMD](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update)'s next CPU drop, but there's a tech show happening right now that could save you serious money and reshape your entire setup. Mobile World Congress (MWC) 2026 in Barcelona isn't just another tech show—it's a global engine for tech pricing, accessory innovation, and connectivity trends that directly impact PC enthusiasts and budget gamers in the UK. While CES gets the PC hardware spotlight, MWC dictates the mobile ecosystem your phone, tablet, and even your laptop live in. With major launches already telegraphed, the ripple effects on prices and availability will hit UK shelves within weeks. Here's exactly what's happening, what it means for your wallet, and how to play the market like a pro, straight from the insights we're sharing in our 10,000-member Discord community.  
 
 ## What's the story? MWC 2026's headline-grabbing launches and oddities  
 
@@ -63,9 +63,14 @@ Xiaomi has officially teased the European launch of its **Xiaomi 17 and 17 Ultra
 
 Honor is making the boldest pivot. Beyond the much-discussed **Honor Robot Phone** concept (a phone that transforms into a companion robot), the company announced a full strategic shift towards "humanoid robotics." While that sounds like sci-fi, it signals heavy R&D investment in sensors, battery tech, and AI processing that could eventually influence laptop webcams, microphone arrays, and even VR peripherals. For now, expect Honor's conventional phones like the Magic7 Pro to see sharper price cuts to clear inventory ahead of this new direction.  
 
-Samsung and Google are playing the familiar game. They'll be at MWC, but primarily to talk up the already-released **Samsung Galaxy S26** series and the **Google Pixel 10A**. Their presence is about maintaining market share in Europe, not announcing bombshells. However, their marketing push will inevitably pressure pricing on their own 2025 models—the S25 series and Pixel 9 series—creating immediate opportunities for deal hunters.  
+Samsung and Google are playing the familiar game. They'll be at MWC, but primarily to talk up the already-released **Samsung Galaxy S26** series and the **Google Pixel 10A**. Their presence is about maintaining market share in Europe, not announcing bombshells. However, their marketing push will inevitably pressure pricing on their own 2025 models—the S25 series and Pixel 9 series—creating immediate opportunities for [deal](https://ctrlaltstock.com/blog/finally-we-have-fsr4-on-vulkan-but-not-thanks-to-amd) hunters.  
 
-Last year's weirdness is a benchmark. MWC 2025 gave us a Lenovo laptop with a folding screen, an Infinix handset with a solar panel, and camera phones with detachable lenses. This year, leaks point to rollable display tablets, phones with built-in projectors, and deeper integrations with car infotainment systems. While these are novelties, they drive component demand (for flexible OLEDs, high-capacity batteries) that can affect supply chains and, indirectly, prices for mainstream devices. As [NVIDIA confirms](https://ctrlaltstock.com/blog/nvidia-confirms-rtx-gpu-shortage-2026), these supply chain disruptions can sometimes lead to GPU shortages, affecting your PC upgrade plans.  
+Last year's weirdness is a [benchmark](https://ctrlaltstock.com/blog/amd-zen-6-desktop-ryzen-olympic-ridge-reportedly-set-to-launch-in-2027). MWC 2025 gave us a Lenovo laptop with a folding screen, an Infinix handset with a solar panel, and camera phones with detachable lenses. This year, leaks point to rollable display tablets, phones with built-in projectors, and deeper integrations with car infotainment systems. While these are novelties, they drive component demand (for flexible OLEDs, high-capacity batteries) that can affect supply chains and, indirectly, prices for mainstream devices. As [NVIDIA](https://ctrlaltstock.com/blog/nvidia-confirms-rtx-gpu-shortage-2026) confirms, these supply chain disruptions can sometimes lead to GPU shortages, affecting your PC upgrade plans.  
+
+
+
+<!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## What does this mean for prices? The UK market domino effect  
 
@@ -74,9 +79,9 @@ The single biggest takeaway for UK bargain hunters is this: **MWC triggers a six
 **1. Last-generation flagships will plummet.** As the Xiaomi 17 Ultra, Nothing Phone 4A, and Honor's new lineup prepare for launch, retailers and carriers will be desperate to clear 2025 stock. We're already seeing early signals:  
 - The **Xiaomi 14 Ultra** (launched at £1,299) is frequently dipping to £999 on Amazon UK and Currys.  
 - The **Google Pixel 9 Pro** (RRP £899) is routinely found for £649 in sales.  
-- The **Samsung Galaxy S25 Ultra** (RRP £1,199) has been as low as £949 during flash sales.  
+- The **Samsung Galaxy S25 Ultra** (RRP £1,199) has been as low as £949 during [flash sales](https://ctrlaltstock.com/blog/avatar-last-airbender-game-9-99-amazon).  
 
-These are the kinds of price drops that free up £300-£500 in your budget—enough for a significant [GPU or CPU upgrade](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz). Our Discord's price-tracking bots are already alerting on these movements.  
+These are the kinds of price drops that free up £300-£500 in your budget—enough for a significant GPU or CPU upgrade. Our Discord's price-tracking bots are already alerting on these movements.  
 
 **2. The mid-range will get fiercely competitive.** Nothing's Phone 4A is expected to launch in the UK around £499-£599. This will put immense pressure on the Pixel 8A (£549) and Samsung Galaxy A56 (£499). Expect to see bundle deals (free earbuds, chargers) or instant cashback that effectively lowers the price further. For a gamer on a budget, a £400 phone that performs like a £600 one from last year is a real win.  
 
@@ -87,6 +92,11 @@ These are the kinds of price drops that free up £300-£500 in your budget—eno
 
 **4. The second-hand market will heat up.** As people upgrade to new flagships, the supply of lightly used 2024 and early 2025 models will flood platforms like eBay and Facebook Marketplace. A well-maintained iPhone 15 Pro or Samsung Galaxy S24 might sell for 50-60% of their original price, offering tremendous value.  
 
+
+
+[![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
+
+
 ## How to navigate these changes as a UK tech enthusiast  
 
 The key to capitalizing on MWC-driven changes is timing and information. Here's our strategy guide:  
@@ -94,7 +104,7 @@ The key to capitalizing on MWC-driven changes is timing and information. Here's 
 **1. Create a price-tracking routine.** Use tools like CamelCamelCamel (for Amazon) or set up alerts on Google Shopping for your desired devices. Our Discord community has bots that monitor major UK retailers and post immediate alerts when stock appears or prices drop.  
 
 **2. Prioritize your upgrades.** Ask yourself: do you really need the latest GPU, or would a significant £300-£500 phone upgrade improve your daily experience more? Sometimes the best PC upgrade is actually improving your mobile setup, especially if you do any remote work, streaming  
-[AMD's next CPU drop](https://ctrlaltstock.com/blog/were-we-wrong-about-ryzen-s-best-feature) or [AMD's Adrenalin 26.2.2 Driver](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update).  
+AMD's next CPU drop or AMD's Adrenalin 26.2.2 Driver.  
 
 **3. Leverage bundle deals.** Look for offers that include accessories like the Anker 737 Power Bank or Sony WF-1000XM5, which can save you money on both your phone and peripheral purchases.  
 

@@ -126,6 +126,11 @@ The game runs at 30fps in handheld mode and 60fps in docked mode on the Switch, 
 
 The game originally launched at £19.99 in 2014, dropped to £14.99 in 2016, and has since fluctuated between £15-£18. The current £9.99 price is the lowest since its 2014 release, according to price-tracking tools like *IsThereAnyDeal*. This makes it an exceptional opportunity for both new players and fans who've been waiting for the right time to add this title to their collection.
 
+
+
+[![PlayStation 5 Pro](https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21)
+
+
 ## Community Reception
 
 The game holds a 78/100 on Metacritic, with critics praising its faithful adaptation of the source material but noting repetitive combat mechanics. However, fans of the series often overlook these flaws, citing the emotional storytelling and nostalgic value. The strong community reception has helped maintain its popularity over the years, making this discount even more significant for those who haven't yet experienced it.
@@ -134,6 +139,11 @@ The game holds a 78/100 on Metacritic, with critics praising its faithful adapta
 
 Amazon UK currently lists the game as "In Stock" with free delivery for Prime members. Non-Prime customers can opt for next-day delivery at an additional £2.99. With these delivery options, there's no reason to delay jumping into the world of bending. The combination of a low price point and convenient shipping makes this an offer too good to resist for any Nintendo Switch owner.
 
+
+
+[![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
+
+
 ## CtrlAltStock Discord Context
 
 The deal was shared in the Discord's #game-deals channel by moderator *GamerGuru*, who noted, "This is one of the best deals we've seen for a classic title this year. Don't sleep on it!" The server's 10,000+ members include dedicated Avatar fans who've already reported the discount as "too good to be true." Join the conversation and stay updated on the latest gaming deals by becoming part of our thriving community.
@@ -141,3 +151,6 @@ The deal was shared in the Discord's #game-deals channel by moderator *GamerGuru
 ## Is This Right for You?
 
 Before making your purchase, consider your gaming preferences. If you enjoy action-adventure games with accessible combat mechanics and cooperative multiplayer, *Avatar: The Last Airbender: The Quest for Balance* is an excellent choice at this price point. The game's faithful recreation of the bending arts and its charming story make it particularly appealing to fans of the animated series. At just £9.99, there's very little downside to giving it a try, especially considering the depth of content it offers for such an affordable price.
+
+
+[![Thermal Grizzly Kryonaut](https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/s?k=Thermal+Grizzly+Kryonaut&tag=ctrlaltstock-21)
