@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { InfiniteScroll } from './components/InfiniteScroll';
 import BlogFeaturedSlideshow from './components/BlogFeaturedSlideshow';
+import CommunityTestimonialsScroller from './components/CommunityTestimonialsScroller';
 import DiscordLogo from './components/DiscordLogo';
 import TunnelAnimation from './components/TunnelAnimation';
 import HomepageBackground from './components/HomepageBackground';
@@ -13,25 +14,6 @@ import type { BlogPost } from './types';
 
 const DISCORD_INVITE = 'https://discord.gg/MqqbyJJbvC';
 const DISCORD_MEMBERS = '10,000+';
-
-const TESTIMONIALS = [
-  {
-    username: 'TechHunter',
-    message:
-      'Finally got my hands on a 4090 thanks to these alerts! You guys are lifesavers!',
-    avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=1',
-  },
-  {
-    username: 'GPUMaster',
-    message: 'Been trying for months to get a card. Got one within a week of joining!',
-    avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=2',
-  },
-  {
-    username: 'GamersUnite',
-    message: 'The alerts are lightning fast. Managed to grab both a PS5 and GPU!',
-    avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=3',
-  },
-];
 
 const App: React.FC = () => {
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
@@ -190,24 +172,7 @@ const App: React.FC = () => {
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">Community Success Stories</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {TESTIMONIALS.map((testimonial) => (
-              <div key={testimonial.username} className="bg-gray-800 rounded-lg p-6">
-                <div className="flex items-center mb-4">
-                  <img
-                    src={testimonial.avatar}
-                    alt={testimonial.username}
-                    className="w-12 h-12 rounded-full mr-4"
-                  />
-                  <div>
-                    <h4 className="font-semibold">{testimonial.username}</h4>
-                    <div className="text-[#9ed04b] text-sm">Discord Member</div>
-                  </div>
-                </div>
-                <p className="text-gray-400">{testimonial.message}</p>
-              </div>
-            ))}
-          </div>
+          <CommunityTestimonialsScroller />
         </div>
       </section>
 
