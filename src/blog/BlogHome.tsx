@@ -9,7 +9,7 @@ import { MAIN_GROUPS, isMainGroup, getMainGroupForTag } from './data/tagHierarch
 import BlogPageBackground from './components/BlogPageBackground';
 
 const FEATURED_COUNT = 8;
-const POSTS_PER_PAGE = 12;
+const POSTS_PER_PAGE = 6;
 
 const sortByDate = (a: BlogPost, b: BlogPost) => {
   const da = new Date(a.publishedDate || 0).getTime();
@@ -275,7 +275,7 @@ const BlogHome: React.FC = () => {
           {isInitialLoading ? (
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[...Array(12)].map((_, i) => (
+                {[...Array(POSTS_PER_PAGE)].map((_, i) => (
                   <div key={i} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-pulse">
                     <div className="h-48 bg-gray-700"></div>
                     <div className="p-6 space-y-4">
@@ -353,8 +353,8 @@ const BlogHome: React.FC = () => {
                 ))}
               </div>
 
-              {/* Pagination */}
-              {totalPages > 1 && (
+              {/* Pagination - always show when there are posts */}
+              {filteredPosts.length > 0 && (
                 <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <p className="text-gray-500 text-sm">
                     Showing {(page - 1) * POSTS_PER_PAGE + 1}–{Math.min(page * POSTS_PER_PAGE, filteredPosts.length)} of {filteredPosts.length} posts
