@@ -451,8 +451,10 @@ def add_links_to_post(
 
 
 def _collect_images_for_inline(post: fm.Post) -> List[Tuple[str, str, Optional[str]]]:
-    """Collect (url, alt, amazon_url?) for inline insertion. Prefer Amazon product images."""
+    """Collect (url, alt, amazon_url?) for inline insertion. Prefer Amazon product images.
+    Excludes cover image when we have alternatives, so we don't repeat the header inline."""
     result: List[Tuple[str, str, Optional[str]]] = []
+    cover_url = (post.get("coverImage") or "").strip()
     products = post.get("amazonProducts") or []
     for p in products[:5]:
         url = p.get("imageUrl") or ""
@@ -464,7 +466,22 @@ def _collect_images_for_inline(post: fm.Post) -> List[Tuple[str, str, Optional[s
     for url in images:
         if url and not any(r[0] == url for r in result):
             result.append((url, "Related", None))
+    # Prefer diverse images: put cover last so we use others first when inserting
+    if cover_url and len(result) > 1:
+        result = [r for r in result if r[0] != cover_url] + [r for r in result if r[0] == cover_url]
     return result
+
+
+def _strip_trailing_cover_image(content: str, cover_url: str) -> str:
+    """Remove trailing image block when it matches the cover (AI sometimes adds it at the end)."""
+    if not content or not cover_url:
+        return content
+    # Match [![alt](url)](affiliate) or ![alt](url) at end of content
+    pattern = re.compile(
+        r"\n*\n\[?\!\[[^\]]*\]\s*\(\s*" + re.escape(cover_url) + r"\s*\)(?:\s*\]\s*\([^)]*\))?\s*$",
+        re.IGNORECASE,
+    )
+    return pattern.sub("", content).rstrip()
 
 
 def insert_inline_images(content: str, images: List[Tuple[str, str, Optional[str]]], max_images: int = 3) -> str:
@@ -510,12 +527,19 @@ def insert_inline_images(content: str, images: List[Tuple[str, str, Optional[str
 
 def add_inline_images_to_post(post: fm.Post) -> bool:
     """Insert inline images after every 2nd H2/H3. Returns True if changed."""
+    content = post.content or ""
+    cover_url = (post.get("coverImage") or "").strip()
+    # Strip trailing duplicate cover image (AI sometimes adds it at the end)
+    content = _strip_trailing_cover_image(content, cover_url)
+
     images = _collect_images_for_inline(post)
     if not images:
+        if content != (post.content or ""):
+            post.content = content
+            return True
         return False
-    content = post.content or ""
     new_content = insert_inline_images(content, images, max_images=3)
-    if new_content != content:
+    if new_content != (post.content or ""):
         post.content = new_content
         return True
     return False

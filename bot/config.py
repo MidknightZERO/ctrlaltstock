@@ -39,6 +39,7 @@ class RedditConfig:
     client_secret: str = os.getenv("REDDIT_CLIENT_SECRET", "")
     user_agent: str = os.getenv("REDDIT_USER_AGENT", "CtrlAltStock/1.0")
     min_upvotes: int = int(os.getenv("REDDIT_MIN_UPVOTES", "20"))
+    min_upvotes_keyless: int = int(os.getenv("REDDIT_MIN_UPVOTES_KEYLESS", "0"))  # /new.json posts rarely have 20+
     # Subreddits to monitor (hardware, gaming, deals)
     subreddits: List[str] = field(default_factory=lambda: [
         "hardware",
@@ -57,17 +58,14 @@ class RedditConfig:
 
 @dataclass
 class RSSConfig:
-    lookback_hours: int = int(os.getenv("RSS_LOOKBACK_HOURS", "2"))
+    lookback_hours: int = int(os.getenv("RSS_LOOKBACK_HOURS", "6"))
     feeds: List[dict] = field(default_factory=lambda: [
         {"name": "Tom's Hardware",      "url": "https://www.tomshardware.com/feeds/all"},
-        {"name": "AnandTech",           "url": "https://www.anandtech.com/rss/"},
-        {"name": "HotHardware",         "url": "https://hothardware.com/rss/news.xml"},
-        {"name": "Guru3D",              "url": "https://www.guru3d.com/categories/tags/feed/"},
+        {"name": "HotHardware",         "url": "https://hothardware.com/rss/news.aspx"},
         {"name": "Hexus",               "url": "https://hexus.net/rss/"},
         {"name": "The Verge Tech",      "url": "https://www.theverge.com/rss/tech/index.xml"},
         {"name": "Ars Technica",        "url": "https://feeds.arstechnica.com/arstechnica/technology-lab"},
         {"name": "Eurogamer",           "url": "https://www.eurogamer.net/?format=rss"},
-        {"name": "TechPowerUp",         "url": "https://www.techpowerup.com/rss/news.xml"},
         {"name": "WCCFTech",            "url": "https://wccftech.com/feed/"},
     ])
 
@@ -107,6 +105,7 @@ class BotConfig:
     blog_json_path: str = "public/blog-posts.json"
     db_path: str = str(_BOT_DIR / "seen_posts.db")
     logs_dir: str = str(_BOT_DIR / "logs")
+    drafts_dir: str = str(_BOT_DIR / ".tmp" / "drafts")
 
     # Site info
     site_name: str = "CtrlAltStock"

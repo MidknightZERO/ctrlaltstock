@@ -22,6 +22,7 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 
 import config
 from ai_writer import call_ai
+from utils import sanitize_article_content
 
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
@@ -198,6 +199,10 @@ def run_editorial_pass(draft: Dict[str, Any]) -> Dict[str, Any]:
             MAX_EDITOR_ATTEMPTS,
         )
         improved_content = draft.get("content", "")
+
+    # Strip ```markdown wrappers and redundant leading H1 — AI sometimes returns these
+    title = draft.get("frontmatter", {}).get("title", "")
+    improved_content = sanitize_article_content(improved_content, title)
 
     edited = dict(draft)
     edited["content"] = improved_content.strip()

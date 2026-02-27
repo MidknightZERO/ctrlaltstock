@@ -381,8 +381,8 @@ def scrape_reddit_keyless(subreddit: str) -> List[Dict[str, Any]]:
                 # Filter self posts (we want news links) and NSFW
                 if p.get("is_self") or p.get("over_18"):
                     continue
-                # Min upvotes check
-                if p.get("ups", 0) < config.reddit.min_upvotes:
+                # Min upvotes check (keyless uses lower threshold — /new.json posts rarely have 20+)
+                if p.get("ups", 0) < config.reddit.min_upvotes_keyless:
                     continue
                 
                 created = datetime.fromtimestamp(p["created_utc"], tz=timezone.utc)
@@ -403,6 +403,7 @@ def scrape_reddit_keyless(subreddit: str) -> List[Dict[str, Any]]:
                     "relevance_score": score,
                     "published_at": created.isoformat(),
                 })
+        log.info("Reddit r/%s: %d candidates (after upvotes/relevance)", subreddit, len(stories))
     except Exception as e:
         log.error("Error scraping r/%s keyless: %s", subreddit, e)
     
@@ -454,6 +455,7 @@ def scrape_reddit(db: sqlite3.Connection, dry_run: bool = False) -> List[Dict[st
         log.info("Using keyless Reddit fallback...")
         for sub_name in config.reddit.subreddits:
             stories.extend(scrape_reddit_keyless(sub_name))
+        log.info("Reddit total: %d candidates", len(stories))
 
     return stories
 
@@ -462,7 +464,12 @@ def scrape_reddit(db: sqlite3.Connection, dry_run: bool = False) -> List[Dict[st
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=1, max=5))
 def fetch_feed(url: str) -> Any:
-    return feedparser.parse(url)
+    """Fetch RSS feed with timeout so we don't hang on slow/unresponsive servers."""
+    resp = httpx.get(url, timeout=15, follow_redirects=True, headers={
+        "User-Agent": "Mozilla/5.0 (compatible; CtrlAltStockBot/1.0)",
+    })
+    resp.raise_for_status()
+    return feedparser.parse(resp.content)
 
 
 def scrape_rss(db: sqlite3.Connection, dry_run: bool = False) -> List[Dict[str, Any]]:
@@ -471,6 +478,7 @@ def scrape_rss(db: sqlite3.Connection, dry_run: bool = False) -> List[Dict[str, 
 
     for feed_cfg in config.rss.feeds:
         try:
+            before = len(stories)
             feed = fetch_feed(feed_cfg["url"])
             for entry in feed.entries:
                 # Parse publish date
@@ -509,7 +517,8 @@ def scrape_rss(db: sqlite3.Connection, dry_run: bool = False) -> List[Dict[str, 
                     "relevance_score": score,
                     "published_at": published.isoformat() if published else datetime.now(timezone.utc).isoformat(),
                 })
-            log.info("RSS %s: added %d candidates", feed_cfg["name"], len(stories))
+            added = len(stories) - before
+            log.info("RSS %s: added %d candidates", feed_cfg["name"], added)
         except Exception as e:
             log.error("RSS feed %s error: %s", feed_cfg["name"], e)
 

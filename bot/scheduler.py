@@ -55,16 +55,29 @@ log = logging.getLogger(__name__)
 
 # ── Import pipeline modules ───────────────────────────────────────────────────
 
+def _save_partial_draft(draft: dict, story: dict, run_id: str, last_step: str, error: str) -> Path | None:
+    """Save partial draft to .tmp/drafts so it can be resumed."""
+    from utils import save_partial_draft
+    fp = save_partial_draft(draft, story, run_id, last_step, error, config.bot.drafts_dir)
+    if fp:
+        log.info("Saved partial draft to %s (resume with: python bot/resume_draft.py %s)", fp.name, fp.name)
+    return fp
+
+
 def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
     """
     Execute the full blog generation pipeline for a single story.
     Returns True on success, False on failure.
+    On crash, saves partial draft to .tmp/drafts for later resume.
     """
     run_id = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     log.info("=" * 60)
     log.info("Pipeline run started: %s (dry_run=%s)", run_id, dry_run)
     log.info("Story: %s", story.get("title", "")[:60])
     log.info("=" * 60)
+
+    draft = None
+    last_step = "start"
 
     try:
 
@@ -76,10 +89,11 @@ def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
         except ValueError as e:
             log.error("Writer aborted: %s — not publishing empty or short content", e)
             return False
+        last_step = "writer"
         word_count = len(draft["content"].split())
         log.info("Article drafted: %d words", word_count)
 
-        # ── Step 3: Refiner ───────────────────────────────────────────────
+        # ── Step 2: Refiner ───────────────────────────────────────────────
         log.info("[2/6] Refining article with relevant info...")
         from ai_refiner import refine_article
         try:
@@ -87,17 +101,20 @@ def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
         except ValueError as e:
             log.error("Refiner aborted: %s — not padding short draft", e)
             return False
+        last_step = "refiner"
         log.info("Article refined: %d words", len(draft["content"].split()))
 
         # ── Step 3: Editorial pass (incl. internal linking) ─────────────────
         log.info("[3/6] Running editorial pass...")
         from ai_editor import run_editorial_pass
         draft = run_editorial_pass(draft)
+        last_step = "editor"
 
         # ── Step 4: Amazon links (before images so we can use product images) ─
         log.info("[4/6] Finding Amazon affiliate products...")
         from amazon_linker import find_products_for_article
         draft = find_products_for_article(draft)
+        last_step = "amazon"
         n_products = len(draft["frontmatter"].get("amazonProducts", []))
         log.info("Amazon products found: %d", n_products)
 
@@ -105,6 +122,7 @@ def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
         log.info("[5/6] Fetching images...")
         from image_fetcher import fetch_images
         draft = fetch_images(draft)
+        last_step = "images"
         cover = draft["frontmatter"].get("coverImage", "none")
         log.info("Cover image: %s", cover[:60] if cover else "none")
 
@@ -118,7 +136,7 @@ def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
             )
             return False
 
-        # ── Step 7: Publish ───────────────────────────────────────────────
+        # ── Step 6: Publish ───────────────────────────────────────────────
         log.info("[6/6] Publishing article...")
         from publisher import publish
         success = publish(draft, dry_run=dry_run)
@@ -136,7 +154,8 @@ def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
 
     except Exception as e:
         log.error("[ERROR] Pipeline crashed: %s", e, exc_info=True)
-        # Try to send Discord alert
+        if draft is not None:
+            _save_partial_draft(draft, story, run_id, last_step, str(e))
         try:
             from publisher import notify_discord
             notify_discord("Pipeline Run", "unknown", success=False, error=str(e))
@@ -172,10 +191,10 @@ def run_pipeline(dry_run: bool = False) -> bool:
             success_count += 1
 
     if success_count > 0 and not dry_run:
-        log.info("Running backfill (inline images, featured product)...")
+        log.info("Running backfill (internal links, inline images, featured product)...")
         try:
             from backfill_content import run_backfill
-            run_backfill(tags=False, links=False, amazon_links=False, inline_images=True)
+            run_backfill(tags=False, links=True, amazon_links=False, inline_images=True)
         except Exception as e:
             log.warning("Backfill failed (non-fatal): %s", e)
 

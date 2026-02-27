@@ -70,3 +70,15 @@ python bot/scheduler.py --once
 # Dry run (no writes, no git push)
 python bot/scheduler.py --once --dry-run
 ```
+
+## Partial Drafts (Crash Recovery)
+
+When the pipeline crashes (e.g. import error, API failure), the current draft is saved to `bot/.tmp/drafts/` so it isn't lost.
+
+- **Automatic resume**: The next cron run resumes any partial drafts first, then processes new stories.
+- **Manual resume**:
+  ```bash
+  python bot/resume_draft.py              # Resume oldest
+  python bot/resume_draft.py --list      # List saved drafts
+  python bot/resume_draft.py 20260227_075325_slug.json
+  ```

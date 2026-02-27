@@ -28,6 +28,7 @@ dist-ssr
 bot/.env
 bot/__pycache__
 bot/logs
+bot/.tmp
 bot/seen_posts.db
 bot/used_images.json
 .bolt

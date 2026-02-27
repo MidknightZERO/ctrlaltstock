@@ -26,6 +26,7 @@ import yaml  # PyYAML — part of python-frontmatter deps
 import frontmatter as fm
 
 import config
+from utils import strip_markdown_from_title
 
 import sys
 if hasattr(sys.stdout, 'reconfigure'):
@@ -59,6 +60,11 @@ def assemble_markdown(draft: Dict[str, Any]) -> str:
 
 def write_post_file(draft: Dict[str, Any], repo_path: str) -> Path:
     """Write the assembled markdown to the posts directory."""
+    # Safety net: strip markdown from title (AI sometimes returns "# Title")
+    fm_dict = draft.get("frontmatter", {})
+    if "title" in fm_dict:
+        fm_dict["title"] = strip_markdown_from_title(fm_dict["title"])
+
     posts_dir = Path(repo_path) / config.bot.posts_dir
     posts_dir.mkdir(parents=True, exist_ok=True)
 

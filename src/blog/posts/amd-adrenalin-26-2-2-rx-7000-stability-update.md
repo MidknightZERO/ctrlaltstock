@@ -95,7 +95,7 @@ For gamers tackling titles such as Cyberpunk 2077, the improvements are equally 
 
 ### Expanding Compatibility and Performance
 
-Adrenalin 26.2.2 also broadens the driver’s compatibility with popular titles, reinforcing [AMD](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz)’s commitment to supporting the community. Two major additions are the inclusion of **Resident Evil Requiem** and **Marathon** in the supported list. These titles, now officially recognized by the driver, unlock advanced features like ray tracing and high-resolution textures. This is a significant win for fans who prioritize performance and content quality, as it ensures optimal performance across a wider range of applications.
+Adrenalin 26.2.2 also broadens the driver’s compatibility with popular titles, reinforcing AMD’s commitment to supporting the community. Two major additions are the inclusion of **Resident Evil Requiem** and **Marathon** in the supported list. These titles, now officially recognized by the driver, unlock advanced features like ray tracing and high-resolution textures. This is a significant win for fans who prioritize performance and content quality, as it ensures optimal performance across a wider range of applications.
 
 Moreover, the update addresses long-standing issues with **Battlefield™ 6**, even though the driver does not explicitly support all FSR versions. The absence of reported inactive features on RX 9000 series cards gives confidence to developers and users alike. For players on the RX 7000 lineup, this means fewer disruptions when navigating complex environments or high-action sequences, enhancing the overall gaming experience.
 

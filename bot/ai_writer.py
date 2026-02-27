@@ -25,6 +25,7 @@ from slugify import slugify
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 import config
+from utils import strip_markdown_from_title, sanitize_article_content
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [ai_writer] %(levelname)s %(message)s")
@@ -39,7 +40,7 @@ Your brand voice:
 - Practical and actionable — always give readers something useful to do (watch a product, set a price alert, join a Discord discussion)
 - Enthusiastic about hardware without being a fanboy — cover NVIDIA, AMD, Intel, AMD CPUs, consoles equally
 - Use UK English spelling (colour, favourite, analyse, etc.)
-- When the story is clearly a personal or community experience (e.g. first build, upgrade journey), emphasise the human angle and emotional connection; when it's straight product/news, keep the factual structure.
+- When the story is a personal or community experience from Reddit (e.g. first build, upgrade journey), report it as news: use third person, quote the user ("A Reddit user said..."), never use first person. Frame it as "A user on r/buildapc shared..." or "One community member is quoted as saying...". When it's straight product/news, keep the factual structure.
 - When referring to the present or "this year", use the actual current year (the publication date will be set to today).
 
 Article structure (always follow this):
@@ -251,7 +252,7 @@ ORIGINAL URL: {story.get('source_url', '')}
 """
     if story.get("story_angle") == "personal":
         base += """
-This is a personal or community story. Lead with the human angle and the emotional payoff (e.g. completing a first build, pride, community support). Help the reader see themselves in the story and feel the same satisfaction. Tie product recommendations and Amazon links to that emotional payoff — what would help them get the same feeling or outcome. Keep the article structure but emphasise the personal journey and emotional connection.
+This is a personal or community story from Reddit. Frame it as NEWS: report on the user's experience in third person. NEVER use first person (I, we, my, our). Write as: "A user on Reddit is quoted as saying 'This is the best' while describing their setup" or "One community member shared that they finally completed their first build." Lead with the human angle and emotional payoff, but always as a reporter quoting or describing someone else. Tie product recommendations to what would help readers achieve a similar outcome. Keep the article structure but emphasise the personal journey as reported news.
 """
     base += """
 Follow the article structure and brand voice guidelines exactly. Use GBP (£) for all prices — UK audience only.
@@ -305,11 +306,18 @@ def write_article(story: Dict[str, Any]) -> Dict[str, Any]:
     # Tags: use AI-provided tags, or infer from title/content when empty (no extra AI call)
     tags = meta.get("tags") or []
     if not tags:
-        draft_title = (meta.get("suggested_title") or "").strip() or story["title"]
+        draft_title = strip_markdown_from_title(
+            (meta.get("suggested_title") or "").strip() or story["title"]
+        )
         tags = _infer_tags_from_content(title=draft_title, content=content)
 
     # Build frontmatter (use AI-suggested title when present for better SEO)
-    title = (meta.get("suggested_title") or "").strip() or story["title"]
+    # Strip any leading markdown (#, ##, etc.) — AI sometimes returns "# Title"
+    title = strip_markdown_from_title(
+        (meta.get("suggested_title") or "").strip() or story["title"]
+    )
+    # Strip ```markdown wrappers and redundant leading H1 — AI sometimes wraps content in code blocks
+    content = sanitize_article_content(content, title)
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     frontmatter = {
         "title": title,
