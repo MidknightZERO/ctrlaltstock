@@ -69,7 +69,7 @@ tags:
 title: Resident Evil Requiem Breaks Steam Player Concurrency Records
 ---
 
-**H1: Resident Evil Requiem Shatters Steam Concurrency Records, Setting New Franchise [Benchmark](https://ctrlaltstock.com/blog/amd-zen-6-desktop-ryzen-olympic-ridge-reportedly-set-to-launch-in-2027)**
+**H1: [Resident Evil](https://ctrlaltstock.com/blog/resident-evil-requiem-df-analysis-ps5-pro-performance) Requiem Shatters Steam Concurrency Records, Setting New Franchise Benchmark**
 
 
 <!-- featured-product: Steam Deck | From £349 | https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=Steam+Deck&tag=ctrlaltstock-21 -->
