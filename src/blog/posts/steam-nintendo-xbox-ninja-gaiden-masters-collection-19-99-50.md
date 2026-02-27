@@ -124,3 +124,6 @@ The combination of strong performance, competitive pricing, and continuous drive
 For those considering an upgrade, the current state of the market presents an opportune moment to evaluate AMD's offerings, as the combination of mature technology and competitive pricing makes their GPUs excellent choices for various use cases.
 
 If you liked this, check out our article on AMD Zen 6 desktop Ryzen "Olympic Ridge" reportedly set to launch in 2027.
+
+
+[![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
