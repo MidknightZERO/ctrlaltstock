@@ -154,15 +154,15 @@ const App: React.FC = () => {
                 <h3 className="text-2xl md:text-3xl font-semibold mb-4">{blogPosts[0].title}</h3>
                 <p className="text-gray-300 mb-6">
                   {blogPosts[0].excerpt ||
-                    `${blogPosts[0].content.slice(0, 180)}${
-                      blogPosts[0].content.length > 180 ? '…' : ''
+                    `${blogPosts[0].content.slice(0, 150)}${
+                      blogPosts[0].content.length > 150 ? '…' : ''
                     }`}
                 </p>
                 <Link
                   to={`/blog/${blogPosts[0].slug}`}
                   className="inline-flex items-center px-5 py-3 bg-[#9ed04b] text-gray-900 rounded-lg font-semibold hover:bg-[#9ed04b]/90 transition-colors"
                 >
-                  Read the latest story
+                  Read more
                   <span className="ml-2">→</span>
                 </Link>
               </div>
