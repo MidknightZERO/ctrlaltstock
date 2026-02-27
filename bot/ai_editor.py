@@ -108,8 +108,13 @@ def load_existing_posts() -> List[Dict[str, Any]]:
         return []
 
 
-def build_editor_prompt(draft: Dict[str, Any], existing_posts: List[Dict]) -> str:
-    # Full context: category path helps editor match related articles for linking
+def build_editor_prompt(
+    draft: Dict[str, Any],
+    existing_posts: List[Dict],
+    content: str,
+    is_retry: bool = False,
+) -> str:
+    """Build editor prompt. content is the article text to edit (may be previous attempt on retry)."""
     posts_list = "\n".join(
         "slug: {} | title: {} | category: {} | tags: {}".format(
             p.get("slug", ""),
@@ -120,10 +125,12 @@ def build_editor_prompt(draft: Dict[str, Any], existing_posts: List[Dict]) -> st
         for p in existing_posts[:40]
     )
     pub_date = draft.get("frontmatter", {}).get("date") or datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    word_count = len((draft.get("content") or "").split())
+    word_count = len((content or "").split())
+    retry_note = ""
+    if is_retry:
+        retry_note = "\nIMPORTANT: Your previous attempt was too short. Expand the article below to at least 900 words while preserving all content, internal links, and edits. Do not remove or condense anything.\n\n"
     return f"""Please review and improve this draft article.
-
-PUBLICATION DATE: {pub_date} (treat this as "today" for any year/date references in the article).
+{retry_note}PUBLICATION DATE: {pub_date} (treat this as "today" for any year/date references in the article).
 DRAFT LENGTH: {word_count} words. Return the FULL article with your edits—do not shorten. Keep at least 900 words.
 
 EXISTING BLOG POSTS (use for internal links; match by category and topic; link URL = {SITE_BASE_URL}/blog/ slug):
@@ -131,7 +138,7 @@ EXISTING BLOG POSTS (use for internal links; match by category and topic; link U
 
 DRAFT ARTICLE:
 ---
-{draft['content']}
+{content}
 ---
 
 Remember: return ONLY the complete improved article markdown (full length). Use full URLs {SITE_BASE_URL}/blog/SLUG for every internal link. Nothing else.
@@ -171,17 +178,18 @@ MAX_EDITOR_ATTEMPTS = 3
 def run_editorial_pass(draft: Dict[str, Any]) -> Dict[str, Any]:
     """
     Run the editorial AI pass on a draft article dict.
-    Retries up to MAX_EDITOR_ATTEMPTS; if all return too-short content, keeps pre-editor content (no internal links).
-    Returns the draft with an improved 'content' field when possible.
+    Retries up to MAX_EDITOR_ATTEMPTS; on retry feeds previous output back and asks to expand.
+    If all return too-short content, keeps pre-editor content (no internal links).
     """
     existing_posts = load_existing_posts()
-    prompt = build_editor_prompt(draft, existing_posts)
-    input_word_count = len((draft.get("content") or "").split())
+    content_to_edit = draft.get("content") or ""
+    input_word_count = len(content_to_edit.split())
     title = draft["frontmatter"].get("title", "Unknown")
 
     improved_content = None
     for attempt in range(1, MAX_EDITOR_ATTEMPTS + 1):
         log.info("Running editorial pass on: %s (attempt %d/%d)", title, attempt, MAX_EDITOR_ATTEMPTS)
+        prompt = build_editor_prompt(draft, existing_posts, content_to_edit, is_retry=(attempt > 1))
         raw = call_ai(prompt, system=EDITOR_SYSTEM_PROMPT)
         candidate = strip_prompt_leakage(raw)
         output_word_count = len(candidate.split())
@@ -189,9 +197,10 @@ def run_editorial_pass(draft: Dict[str, Any]) -> Dict[str, Any]:
             improved_content = candidate
             break
         log.warning(
-            "Editor attempt %d/%d returned too-short content (%d words, input %d). Retrying.",
+            "Editor attempt %d/%d returned too-short content (%d words, input %d). Retrying with expand instruction.",
             attempt, MAX_EDITOR_ATTEMPTS, output_word_count, input_word_count,
         )
+        content_to_edit = candidate  # Feed previous output back for next attempt
 
     if improved_content is None:
         log.warning(

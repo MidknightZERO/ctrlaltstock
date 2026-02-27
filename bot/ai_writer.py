@@ -72,6 +72,8 @@ Requirements (non-negotiable):
 
 # ── AI call helpers ───────────────────────────────────────────────────────────
 
+AI_REQUEST_TIMEOUT = 90  # seconds — prevent indefinite hangs on slow/rate-limited APIs
+
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=2, max=10))
 def call_openrouter(prompt: str, system: str) -> str:
     """Call OpenRouter API (OpenAI-compatible, access to many models)."""
@@ -82,6 +84,7 @@ def call_openrouter(prompt: str, system: str) -> str:
             "HTTP-Referer": config.bot.site_url,
             "X-Title": config.bot.site_name,
         },
+        timeout=AI_REQUEST_TIMEOUT,
     )
     response = client.chat.completions.create(
         model=config.ai.openrouter_model,
@@ -97,7 +100,7 @@ def call_openrouter(prompt: str, system: str) -> str:
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=2, max=10))
 def call_openai(prompt: str, system: str) -> str:
-    client = OpenAI(api_key=config.ai.openai_api_key)
+    client = OpenAI(api_key=config.ai.openai_api_key, timeout=AI_REQUEST_TIMEOUT)
     response = client.chat.completions.create(
         model=config.ai.openai_model,
         messages=[

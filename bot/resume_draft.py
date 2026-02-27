@@ -72,7 +72,10 @@ def resume_from_step(draft: dict, story: dict, from_step: str, dry_run: bool = F
         log.info("[Resume] Running step: %s", step)
 
         try:
-            if step == "editor":
+            if step == "refiner":
+                from ai_refiner import refine_article
+                draft = refine_article(draft)
+            elif step == "editor":
                 from ai_editor import run_editorial_pass
                 draft = run_editorial_pass(draft)
             elif step == "amazon":

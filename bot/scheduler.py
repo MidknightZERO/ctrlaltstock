@@ -171,24 +171,67 @@ def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
 ARTICLES_PER_RUN = int(getattr(config.bot, "articles_per_run", 3))
 
 
+def _try_resume_partial_draft(dry_run: bool) -> tuple[bool, int]:
+    """
+    Resume oldest partial draft if any exist. Returns (success, count).
+    count is 1 if we attempted a resume (whether success or not), else 0.
+    """
+    from resume_draft import list_drafts, load_draft, resume_from_step
+
+    drafts = list_drafts()
+    if not drafts:
+        return False, 0
+
+    filepath = drafts[0]
+    log.info("Resuming partial draft: %s", filepath.name)
+    payload = load_draft(filepath)
+    if not payload:
+        return False, 1  # Attempted but invalid
+
+    draft = payload["draft"]
+    story = payload["story"]
+    last_step = payload.get("last_completed_step", "writer")
+    success = resume_from_step(draft, story, last_step, dry_run=dry_run)
+    if success and not dry_run:
+        try:
+            filepath.unlink()
+            log.info("Removed completed draft file: %s", filepath.name)
+        except Exception as e:
+            log.warning("Could not remove draft file: %s", e)
+    return success, 1
+
+
 def run_pipeline(dry_run: bool = False) -> bool:
     """
     Get top N stories from pulled data, run full pipeline for each.
+    Resumes oldest partial draft first (if any), then processes new stories.
     Returns True if at least one article was published successfully.
     """
     from scraper import get_top_stories
 
+    success_count = 0
+    total_attempted = 0
+
+    # Resume partial draft first (one per run)
+    resumed_ok, resumed_count = _try_resume_partial_draft(dry_run)
+    if resumed_count > 0:
+        total_attempted += 1
+        if resumed_ok:
+            success_count += 1
+
+    # Fetch and process new stories
     log.info("Fetching top %d stories from pulled data...", ARTICLES_PER_RUN)
     stories = get_top_stories(n=ARTICLES_PER_RUN, dry_run=dry_run)
-    if not stories:
-        log.warning("No stories found — skipping this run")
-        return False
+    total_attempted += len(stories)
 
-    success_count = 0
     for i, story in enumerate(stories):
         log.info("[%d/%d] Processing: %s", i + 1, len(stories), story.get("title", "")[:60])
         if run_pipeline_for_story(story, dry_run=dry_run):
             success_count += 1
+
+    if total_attempted == 0 and resumed_count == 0:
+        log.warning("No stories found and no partial drafts — skipping this run")
+        return False
 
     if success_count > 0 and not dry_run:
         log.info("Running backfill (internal links, inline images, featured product)...")
@@ -205,7 +248,7 @@ def run_pipeline(dry_run: bool = False) -> bool:
         except Exception as e:
             log.warning("Git push failed (non-fatal): %s", e)
 
-    log.info("Run complete: %d/%d articles published", success_count, len(stories))
+    log.info("Run complete: %d/%d articles published", success_count, total_attempted)
     return success_count > 0
 
 

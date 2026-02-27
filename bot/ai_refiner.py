@@ -57,12 +57,12 @@ MAX_REFINER_ATTEMPTS = 3
 def refine_article(draft: Dict[str, Any]) -> Dict[str, Any]:
     """
     Refine the draft's content with more relevant information.
-    Retries up to MAX_REFINER_ATTEMPTS on too-short or shortened output.
+    Retries up to MAX_REFINER_ATTEMPTS; on retry feeds previous output back and asks to expand.
     Returns the draft with an updated 'content' field.
     Raises ValueError if input is too short or all attempts fail.
     """
-    content = draft.get("content", "")
-    input_word_count = len((content or "").split())
+    content_to_refine = draft.get("content", "") or ""
+    input_word_count = len(content_to_refine.split())
     if input_word_count < MIN_CONTENT_WORDS:
         raise ValueError(
             "Refiner cannot run on insufficient content (%d words). Minimum %d. Aborting to avoid padding."
@@ -70,23 +70,26 @@ def refine_article(draft: Dict[str, Any]) -> Dict[str, Any]:
         )
     title = draft.get("frontmatter", {}).get("title", "this article")
 
-    prompt = f"""Refine this draft so it includes as much relevant, accurate information about the topic as possible. Keep the same structure and voice.
-
-ARTICLE TITLE: {title}
-CURRENT LENGTH: {input_word_count} words. TARGET: at least {TARGET_WORDS} words.
+    last_error = None
+    for attempt in range(1, MAX_REFINER_ATTEMPTS + 1):
+        log.info("Refining article: %s (attempt %d/%d)", title, attempt, MAX_REFINER_ATTEMPTS)
+        current_word_count = len(content_to_refine.split())
+        retry_note = ""
+        if attempt > 1:
+            retry_note = "IMPORTANT: Your previous attempt was too short. Expand the article below to at least 900 words while preserving structure and voice. Do not remove or condense anything.\n\n"
+        prompt = f"""Refine this draft so it includes as much relevant, accurate information about the topic as possible. Keep the same structure and voice.
+{retry_note}ARTICLE TITLE: {title}
+CURRENT LENGTH: {current_word_count} words. TARGET: at least {TARGET_WORDS} words.
 
 If the draft is below {TARGET_WORDS} words, expand it to at least {TARGET_WORDS} words by adding relevant detail (examples, product names, £ prices, technical points). No fluff or repetition.
 
 DRAFT:
 ---
-{content}
+{content_to_refine}
 ---
 
 Return ONLY the refined article markdown. Nothing else."""
 
-    last_error = None
-    for attempt in range(1, MAX_REFINER_ATTEMPTS + 1):
-        log.info("Refining article: %s (attempt %d/%d)", title, attempt, MAX_REFINER_ATTEMPTS)
         refined = call_ai(prompt, system=REFINER_SYSTEM_PROMPT)
         refined = refined.strip()
         refined_words = len(refined.split())
@@ -98,7 +101,8 @@ Return ONLY the refined article markdown. Nothing else."""
             "Refiner returned too-short content (%d words, input was %d). Need >=%d words and >=%.0f%% of input."
             % (refined_words, input_word_count, MIN_REFINED_WORDS, MIN_REFINED_RATIO * 100)
         )
-        log.warning("Refiner attempt %d/%d failed: %s", attempt, MAX_REFINER_ATTEMPTS, last_error)
+        log.warning("Refiner attempt %d/%d failed: %s. Retrying with expand instruction.", attempt, MAX_REFINER_ATTEMPTS, last_error)
+        content_to_refine = refined  # Feed previous output back for next attempt
         if attempt == MAX_REFINER_ATTEMPTS:
             raise last_error
 
