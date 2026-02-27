@@ -71,7 +71,13 @@ Plans:
 
 ## Phase 04: Bot Reliability & Data Integrity
 
-**Goal:** Fix reliability risks in the Python bot pipeline.
+**Goal:** Fix reliability risks in the Python bot pipeline — prevent data corruption, improve performance, add safety guards.
+**Plans:** 3 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — Process safety: PID lockfile + scoped git staging
+- [ ] 04-02-PLAN.md — Data integrity: SQLite WAL/indexing + atomic JSON writes
+- [ ] 04-03-PLAN.md — Log rotation: RotatingFileHandler across all bot modules
 
 **Scope:**
 - Add PID lockfile to prevent concurrent scheduler runs
@@ -81,7 +87,6 @@ Plans:
 - Fix `is_seen()` to use indexed SQL query instead of full table scan
 - Add `norm_title` column to seen_posts database
 - Use RotatingFileHandler for bot log files
-- Remove hardcoded fallback posts from server.js
 
 **Success criteria:** No data corruption risk from concurrent runs, atomic writes, indexed dedup queries.
 
@@ -89,7 +94,8 @@ Plans:
 
 ## Phase 05: Frontend Resilience
 
-**Goal:** Add error boundaries, fix data fetching issues, prepare for scale.
+**Goal:** Add error boundaries, improve UX, prepare for scale with code splitting and clean dependency management.
+**Plans:** 1 plan
 
 **Scope:**
 - Add React Error Boundary component
@@ -97,6 +103,9 @@ Plans:
 - Make API_URL configurable via environment variable
 - Lazy-load editor components (code splitting)
 - Move @types packages to devDependencies in package.json
+
+Plans:
+- [ ] 05-PLAN.md — ErrorBoundary + Toast components, lazy-load editors, configurable API_URL, devDeps cleanup
 
 **Success criteria:** No white-screen crashes, editor components code-split, clean dependency categorization.
 
