@@ -70,7 +70,6 @@ const BlogHome: React.FC = () => {
         // Then fetch the latest data and sort by date (newest first)
         const rawPosts = await getAllPosts();
         const allPosts = [...rawPosts].sort(sortByDate);
-        console.log("Total posts loaded:", allPosts.length);
         setPosts(allPosts);
 
         const allTags = await getAllTags();
@@ -117,7 +116,6 @@ const BlogHome: React.FC = () => {
 
     setFilteredPosts(result);
     setPage(1);
-    console.log("After filtering - Posts to display:", result.length);
   };
 
   const goToPage = (p: number) => {

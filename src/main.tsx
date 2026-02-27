@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
@@ -8,8 +8,17 @@ import TermsOfService from './components/TermsOfService.tsx'
 import PrivacyPolicy from './Privacy.tsx'
 import BlogHome from './blog/BlogHome.tsx'
 import BlogPost from './blog/BlogPost.tsx'
-import LocalEditor from './blog/LocalEditor.tsx'
-import AdvancedBlogEditor from './blog/AdvancedBlogEditor.tsx'
+import ErrorBoundary from './components/ErrorBoundary.tsx'
+import { ToastProvider } from './components/Toast.tsx'
+
+const LocalEditor = React.lazy(() => import('./blog/LocalEditor.tsx'))
+const AdvancedBlogEditor = React.lazy(() => import('./blog/AdvancedBlogEditor.tsx'))
+
+const LazyFallback = (
+  <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+    <div className="text-gray-400">Loading editor...</div>
+  </div>
+)
 
 const router = createBrowserRouter([
   {
@@ -30,28 +39,30 @@ const router = createBrowserRouter([
   },
   {
     path: "/blog",
-    element: <BlogHome />,
+    element: <ErrorBoundary><BlogHome /></ErrorBoundary>,
   },
   {
     path: "/blog/editor",
-    element: <LocalEditor />,
+    element: <ErrorBoundary><Suspense fallback={LazyFallback}><LocalEditor /></Suspense></ErrorBoundary>,
   },
   {
     path: "/blog-editor",
-    element: <AdvancedBlogEditor />,
+    element: <ErrorBoundary><Suspense fallback={LazyFallback}><AdvancedBlogEditor /></Suspense></ErrorBoundary>,
   },
   {
     path: "/blog-editor/:slug",
-    element: <AdvancedBlogEditor />,
+    element: <ErrorBoundary><Suspense fallback={LazyFallback}><AdvancedBlogEditor /></Suspense></ErrorBoundary>,
   },
   {
     path: "/blog/:slug",
-    element: <BlogPost />,
+    element: <ErrorBoundary><BlogPost /></ErrorBoundary>,
   }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ToastProvider>
+      <RouterProvider router={router} />
+    </ToastProvider>
   </React.StrictMode>,
 )

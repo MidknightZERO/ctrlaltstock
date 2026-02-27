@@ -11,6 +11,7 @@ import { ShoppingCart, ExternalLink } from 'react-feather';
 import { AmazonProductGrid } from './components/AmazonProductCard';
 import ArticleDiscordCTA from './components/ArticleDiscordCTA';
 import BlogPageBackground from './components/BlogPageBackground';
+import { useToast } from '../components/Toast';
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -20,6 +21,7 @@ const BlogPost: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
+  const { showToast } = useToast();
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -52,7 +54,7 @@ const BlogPost: React.FC = () => {
         try {
           const allPosts = await getAllPosts();
           let related = getRelatedPostsByTopic(fetchedPost, allPosts, 4);
-          const relatedSlugs: string[] = (fetchedPost as any).relatedPostSlugs || [];
+          const relatedSlugs: string[] = fetchedPost.relatedPostSlugs || [];
           if (relatedSlugs.length > 0) {
             const boostPosts = allPosts.filter(
               (p) => relatedSlugs.includes(p.slug) && p.slug !== fetchedPost.slug
@@ -284,7 +286,7 @@ const BlogPost: React.FC = () => {
                 <button
                   onClick={() => {
                     navigator.clipboard.writeText(window.location.href);
-                    alert('Link copied to clipboard!');
+                    showToast('Link copied to clipboard!');
                   }}
                   className="bg-gray-800 hover:bg-gray-700 text-white w-12 h-12 rounded-full flex items-center justify-center"
                   aria-label="Copy link"
@@ -297,9 +299,9 @@ const BlogPost: React.FC = () => {
             </div>
 
             {/* Amazon Affiliate Products */}
-            {((post as any).amazonProducts?.length > 0) && (
+            {(post.amazonProducts && post.amazonProducts.length > 0) && (
               <AmazonProductGrid
-                products={(post as any).amazonProducts?.slice(0, 3)}
+                products={post.amazonProducts.slice(0, 3)}
                 title="Buy the Best Deals on Amazon"
               />
             )}

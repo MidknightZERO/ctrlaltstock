@@ -94,12 +94,15 @@ def _load_used_images() -> List[str]:
 
 
 def _save_used_images(urls: List[str]) -> None:
-    """Persist recently used image URLs."""
+    """Persist recently used image URLs (atomic write)."""
     try:
-        USED_IMAGES_PATH.write_text(
+        tmp = USED_IMAGES_PATH.with_suffix('.json.tmp')
+        tmp.write_text(
             json.dumps({"urls": urls[:USED_IMAGES_MAX]}, indent=2),
             encoding="utf-8",
         )
+        import os
+        os.replace(str(tmp), str(USED_IMAGES_PATH))
     except Exception as e:
         log.warning("Could not save used_images.json: %s", e)
 

@@ -25,6 +25,7 @@ import httpx
 from bs4 import BeautifulSoup
 from tenacity import retry, stop_after_attempt, wait_exponential
 
+import logging.handlers
 import config
 
 # ── Logging ──────────────────────────────────────────────────────────────────
@@ -37,7 +38,10 @@ logging.basicConfig(
     format="%(asctime)s [%(name)s] %(levelname)s %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler(Path(config.bot.logs_dir) / "scraper.log", encoding="utf-8"),
+        logging.handlers.RotatingFileHandler(
+            Path(config.bot.logs_dir) / "scraper.log",
+            encoding="utf-8", maxBytes=10_000_000, backupCount=3
+        ),
     ],
 )
 log = logging.getLogger(__name__)
@@ -47,14 +51,29 @@ log = logging.getLogger(__name__)
 
 def get_db() -> sqlite3.Connection:
     db = sqlite3.connect(config.bot.db_path)
+    db.execute("PRAGMA journal_mode=WAL")
+    db.execute("PRAGMA busy_timeout=5000")
     db.execute("""
         CREATE TABLE IF NOT EXISTS seen_posts (
             id TEXT PRIMARY KEY,
             source TEXT,
             title TEXT,
+            norm_title TEXT,
             seen_at TEXT
         )
     """)
+    # Migrate: add norm_title column if missing (existing DBs)
+    try:
+        db.execute("ALTER TABLE seen_posts ADD COLUMN norm_title TEXT")
+    except sqlite3.OperationalError:
+        pass
+    # Backfill norm_title for rows that don't have it
+    rows = db.execute("SELECT id, title FROM seen_posts WHERE norm_title IS NULL").fetchall()
+    if rows:
+        for row_id, title in rows:
+            db.execute("UPDATE seen_posts SET norm_title = ? WHERE id = ?",
+                       (normalize_string(title or ""), row_id))
+    db.execute("CREATE INDEX IF NOT EXISTS idx_norm_title ON seen_posts(norm_title)")
     db.commit()
     return db
 
@@ -69,28 +88,21 @@ def normalize_string(s: str) -> str:
 
 
 def is_seen(db: sqlite3.Connection, post_id: str, title: str = "") -> bool:
-    # Check by ID
     row = db.execute("SELECT 1 FROM seen_posts WHERE id = ?", (post_id,)).fetchone()
     if row:
         return True
-    
-    # Check by normalized title
     if title:
-        norm_title = normalize_string(title)
-        # Fetch all titles from DB and compare normalized (for small DB)
-        # In a real app we'd store norm_title in DB.
-        rows = db.execute("SELECT title FROM seen_posts").fetchall()
-        for (old_title,) in rows:
-            if normalize_string(old_title) == norm_title:
-                return True
-            
+        norm = normalize_string(title)
+        row = db.execute("SELECT 1 FROM seen_posts WHERE norm_title = ?", (norm,)).fetchone()
+        if row:
+            return True
     return False
 
 
 def mark_seen(db: sqlite3.Connection, post_id: str, source: str, title: str):
     db.execute(
-        "INSERT OR IGNORE INTO seen_posts (id, source, title, seen_at) VALUES (?, ?, ?, ?)",
-        (post_id, source, title, datetime.now(timezone.utc).isoformat()),
+        "INSERT OR IGNORE INTO seen_posts (id, source, title, norm_title, seen_at) VALUES (?, ?, ?, ?, ?)",
+        (post_id, source, title, normalize_string(title), datetime.now(timezone.utc).isoformat()),
     )
     db.commit()
 

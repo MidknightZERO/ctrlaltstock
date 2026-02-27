@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Bell, Zap, Twitter } from 'lucide-react';
 import { InfiniteScroll } from './InfiniteScroll';
-import { fetchRecentBlogPosts } from '../blog/blogData'; 
+import { getAllPosts } from '../blog/utils/blogUtils';
 import { BlogPost } from '../types';
 import DiscordLogo from './DiscordLogo';
 
@@ -22,8 +22,11 @@ const Home: React.FC = () => {
     }
     
     // Fetch recent blog posts
-    fetchRecentBlogPosts().then(posts => {
-      setRecentPosts(posts.slice(0, 3));
+    getAllPosts().then(posts => {
+      const sorted = [...posts].sort(
+        (a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
+      );
+      setRecentPosts(sorted.slice(0, 3));
     });
   }, []);
   

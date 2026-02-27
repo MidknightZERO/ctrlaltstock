@@ -1,6 +1,6 @@
 import { BlogPost } from '../../types';
 
-const API_URL = 'http://localhost:3001/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
 // Synchronous functions for cached data
 let cachedPosts: BlogPost[] = [];
@@ -181,7 +181,7 @@ export function getRelatedPostsByTopic(
   limit: number = 4
 ): BlogPost[] {
   const currentTags = new Set((currentPost.tags || []).map((t) => t.toLowerCase()));
-  const primaryTag = (currentPost as any).primaryTag as string | undefined;
+  const primaryTag = currentPost.primaryTag;
   const scored = allPosts
     .filter((p) => p.slug !== currentPost.slug)
     .map((post) => {

@@ -27,7 +27,7 @@ Plans:
 
 ## Phase 02: Dead Code & Duplication Removal
 
-**Goal:** Remove all confirmed dead/unused files and consolidate duplicated code.
+**Goal:** Remove all confirmed dead/unused files and consolidate duplicated code to a single source of truth.
 **Plans:** 1 plan
 
 **Scope:**
@@ -36,13 +36,14 @@ Plans:
 - Delete `src/blog/productData.ts` (legacy incompatible schema)
 - Delete `fix-markdown.js` at root (duplicate of `src/fix-markdown.js`)
 - Consolidate product data: make `public/affiliate-products.json` the single source, delete `src/blog/data/products.ts` and `src/blog/data/products.json`
+- Redirect imports in Home.tsx, BlockEditor.tsx, api.ts before deletions
 - Remove duplicate `sys` import in `bot/publisher.py`
 - Remove unused dependencies from `bot/requirements.txt` (requests, Jinja2)
 
 Plans:
-- [ ] 02-01-PLAN.md — Delete 6 dead/duplicate files, redirect imports, clean bot deps
+- [ ] 02-01-PLAN.md — Redirect imports, delete 6 dead/duplicate files, consolidate product data, clean bot deps
 
-**Success criteria:** Zero duplicate files, single source of truth for product data, no dead imports.
+**Success criteria:** Zero duplicate files, single source of truth for product data, no dead imports, build succeeds.
 
 ---
 

@@ -23,6 +23,7 @@ import re
 import sys
 import time
 import logging
+import logging.handlers
 import argparse
 from pathlib import Path
 from typing import Dict, Any, List, Tuple, Optional, Set
@@ -40,7 +41,10 @@ logging.basicConfig(
     format="%(asctime)s [%(name)s] %(levelname)s %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler(Path(config.bot.logs_dir) / "backfill.log", encoding="utf-8"),
+        logging.handlers.RotatingFileHandler(
+            Path(config.bot.logs_dir) / "backfill.log",
+            encoding="utf-8", maxBytes=10_000_000, backupCount=3
+        ),
     ],
 )
 log = logging.getLogger(__name__)

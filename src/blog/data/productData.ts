@@ -1,7 +1,6 @@
 import { Product } from '../../types';
-import productsData from './products.json';
 
-export const products: Product[] = productsData.products;
+export const products: Product[] = [];
 
 let affiliateProductsCache: Product[] | null = null;
 
@@ -87,4 +86,8 @@ export const getRelatedProducts = (tags: string[], excludeId?: string, limit: nu
 
 export const getAllCategories = (): string[] => {
   return Array.from(new Set(products.map(product => product.category)));
+};
+
+export const getProductsByTag = (tag: string): Product[] => {
+  return products.filter(product => product.tags.includes(tag));
 }; 

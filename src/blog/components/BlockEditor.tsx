@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { v4 as uuid } from 'uuid';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { ContentBlock, BlockType, Product } from '../../types';
-import { getProductById, products } from '../productData';
+import { getProductById, products } from '../data/productData';
 import ProductCard from './ProductCard';
 import ProductSelector from './ProductSelector';
 import { X, ArrowUp, ArrowDown, Trash, Plus, Image, AlignLeft, ShoppingBag, Minus, Code, Type, Heading, Quote, Scissors, FileText } from 'lucide-react';
@@ -245,12 +245,11 @@ const BlockEditor: React.FC<BlockEditorProps> = ({ blocks, onChange }) => {
         );
 
       case 'headline':
-        const headlineBlock = block as any;
         return (
           <div className="flex-1 space-y-2">
             <div className="flex gap-2">
               <select
-                value={headlineBlock.level || 2}
+                value={block.level || 2}
                 onChange={(e) => handleUpdateBlock(block.id, block.content, { level: parseInt(e.target.value) })}
                 className="bg-gray-700 text-white rounded p-2 focus:outline-none focus:ring-1 focus:ring-[#9ed04b]"
               >
@@ -266,7 +265,7 @@ const BlockEditor: React.FC<BlockEditorProps> = ({ blocks, onChange }) => {
               type="text"
               value={block.content}
               onChange={(e) => handleUpdateBlock(block.id, e.target.value)}
-              placeholder={`Heading Level ${headlineBlock.level || 2}`}
+              placeholder={`Heading Level ${block.level || 2}`}
               className="w-full bg-gray-700 text-white rounded p-2 focus:outline-none focus:ring-1 focus:ring-[#9ed04b]"
             />
           </div>
@@ -285,42 +284,41 @@ const BlockEditor: React.FC<BlockEditorProps> = ({ blocks, onChange }) => {
         );
 
       case 'image':
-        const imageBlock = block as any;
         return (
           <div className="flex-1 space-y-2">
             <input
               type="text"
-              value={imageBlock.url || ''}
+              value={block.url || ''}
               onChange={(e) => handleUpdateBlock(block.id, block.content, { url: e.target.value })}
               placeholder="Image URL"
               className="w-full bg-gray-700 text-white rounded p-2 focus:outline-none focus:ring-1 focus:ring-[#9ed04b]"
             />
             <input
               type="text"
-              value={imageBlock.alt || ''}
+              value={block.alt || ''}
               onChange={(e) => handleUpdateBlock(block.id, block.content, { alt: e.target.value })}
               placeholder="Image alt text"
               className="w-full bg-gray-700 text-white rounded p-2 focus:outline-none focus:ring-1 focus:ring-[#9ed04b]"
             />
             <input
               type="text"
-              value={imageBlock.caption || ''}
+              value={block.caption || ''}
               onChange={(e) => handleUpdateBlock(block.id, block.content, { caption: e.target.value })}
               placeholder="Image caption"
               className="w-full bg-gray-700 text-white rounded p-2 focus:outline-none focus:ring-1 focus:ring-[#9ed04b]"
             />
-            {imageBlock.url && (
+            {block.url && (
               <div className="mt-2 bg-gray-800 p-2 rounded">
                 <img
-                  src={imageBlock.url}
-                  alt={imageBlock.alt || ''}
+                  src={block.url}
+                  alt={block.alt || ''}
                   className="max-h-64 object-contain mx-auto"
                   onError={(e) => {
                     e.currentTarget.src = logoImage;
                   }}
                 />
-                {imageBlock.caption && (
-                  <p className="text-sm text-gray-400 mt-2 text-center">{imageBlock.caption}</p>
+                {block.caption && (
+                  <p className="text-sm text-gray-400 mt-2 text-center">{block.caption}</p>
                 )}
               </div>
             )}
@@ -328,11 +326,10 @@ const BlockEditor: React.FC<BlockEditorProps> = ({ blocks, onChange }) => {
         );
 
       case 'product':
-        const productBlock = block as any;
         return (
           <div className="flex-1 space-y-3">
             <ProductSelector
-              selectedProductId={productBlock.productId || ''}
+              selectedProductId={block.productId || ''}
               onProductSelect={(product) => {
                 handleUpdateBlock(block.id, '', {
                   productId: product.id,
@@ -342,21 +339,20 @@ const BlockEditor: React.FC<BlockEditorProps> = ({ blocks, onChange }) => {
                 });
               }}
             />
-            {productBlock.productId && (
+            {block.productId && (
               <div className="mt-2 bg-gray-800 p-2 rounded">
-                <ProductCard product={getProductById(productBlock.productId)!} />
+                <ProductCard product={getProductById(block.productId)!} />
               </div>
             )}
           </div>
         );
 
       case 'divider':
-        const dividerBlock = block as any;
         return (
           <div className="flex-1">
             <div className="flex gap-2 mb-2">
               <select
-                value={dividerBlock.style || 'solid'}
+                value={block.style || 'solid'}
                 onChange={(e) => handleUpdateBlock(block.id, '', { style: e.target.value })}
                 className="bg-gray-700 text-white rounded p-2 focus:outline-none focus:ring-1 focus:ring-[#9ed04b]"
               >
@@ -365,7 +361,7 @@ const BlockEditor: React.FC<BlockEditorProps> = ({ blocks, onChange }) => {
                 <option value="dotted">Dotted</option>
               </select>
             </div>
-            <div className={`border-t-2 border-${dividerBlock.style || 'solid'} border-gray-700 my-4`}></div>
+            <div className={`border-t-2 border-${block.style || 'solid'} border-gray-700 my-4`}></div>
           </div>
         );
 
@@ -382,12 +378,11 @@ const BlockEditor: React.FC<BlockEditorProps> = ({ blocks, onChange }) => {
         );
 
       case 'snippet':
-        const snippetBlock = block as any;
         return (
           <div className="flex-1 space-y-2">
             <div className="flex gap-2">
               <select
-                value={snippetBlock.language || 'javascript'}
+                value={block.language || 'javascript'}
                 onChange={(e) => handleUpdateBlock(block.id, block.content, { language: e.target.value })}
                 className="bg-gray-700 text-white rounded p-2 focus:outline-none focus:ring-1 focus:ring-[#9ed04b]"
               >
@@ -416,13 +411,13 @@ const BlockEditor: React.FC<BlockEditorProps> = ({ blocks, onChange }) => {
             <textarea
               value={block.content}
               onChange={(e) => handleUpdateBlock(block.id, e.target.value)}
-              placeholder={`Enter your ${snippetBlock.language || 'code'} snippet here...`}
+              placeholder={`Enter your ${block.language || 'code'} snippet here...`}
               className="w-full bg-gray-700 text-white rounded p-2 min-h-[150px] font-mono text-sm focus:outline-none focus:ring-1 focus:ring-[#9ed04b]"
             />
             {block.content && (
               <div className="mt-2 bg-gray-800 p-2 rounded overflow-x-auto">
                 <pre className="text-sm">
-                  <code className={`language-${snippetBlock.language || 'javascript'}`}>
+                  <code className={`language-${block.language || 'javascript'}`}>
                     {block.content}
                   </code>
                 </pre>
@@ -622,21 +617,18 @@ export const blocksToHtml = (blocks: ContentBlock[]): string => {
       case 'title':
         return `<h1>${block.content}</h1>`;
       case 'headline':
-        const headlineBlock = block as any;
-        return `<h${headlineBlock.level || 2}>${block.content}</h${headlineBlock.level || 2}>`;
+        return `<h${block.level || 2}>${block.content}</h${block.level || 2}>`;
       case 'text':
         return `<p>${block.content.replace(/\n/g, '<br/>')}</p>`;
       case 'image':
-        const imageBlock = block as any;
         return `
           <figure>
-            <img src="${imageBlock.url}" alt="${imageBlock.alt || ''}" />
-            ${imageBlock.caption ? `<figcaption>${imageBlock.caption}</figcaption>` : ''}
+            <img src="${block.url}" alt="${block.alt || ''}" />
+            ${block.caption ? `<figcaption>${block.caption}</figcaption>` : ''}
           </figure>
         `;
-      case 'product':
-        const productBlock = block as any;
-        const product = getProductById(productBlock.productId || '');
+      case 'product': {
+        const product = getProductById(block.productId || '');
         if (!product) return '';
         return `
           <div class="product-embed">
@@ -651,16 +643,15 @@ export const blocksToHtml = (blocks: ContentBlock[]): string => {
             </div>
           </div>
         `;
+      }
       case 'divider':
-        const dividerBlock = block as any;
-        return `<hr class="divider-${dividerBlock.style || 'solid'}">`;
+        return `<hr class="divider-${block.style || 'solid'}">`;
       case 'excerpt':
         return `<p class="excerpt">${block.content.replace(/\n/g, '<br/>')}</p>`;
       case 'snippet':
-        const snippetBlock = block as any;
         return `
           <pre>
-            <code class="language-${snippetBlock.language || 'javascript'}">${block.content}</code>
+            <code class="language-${block.language || 'javascript'}">${block.content}</code>
           </pre>
         `;
       default:

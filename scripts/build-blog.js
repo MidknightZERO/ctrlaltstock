@@ -207,8 +207,10 @@ const buildBlog = () => {
 
   console.log(`Successfully parsed ${posts.length} blog posts`);
 
-  // Write the JSON file
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(posts, null, 2));
+  // Write the JSON file (atomic: write to temp, then rename)
+  const tmpFile = OUTPUT_FILE + '.tmp';
+  fs.writeFileSync(tmpFile, JSON.stringify(posts, null, 2));
+  fs.renameSync(tmpFile, OUTPUT_FILE);
   console.log(`Blog posts written to: ${OUTPUT_FILE}`);
 };
 

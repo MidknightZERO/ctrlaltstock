@@ -11,6 +11,7 @@ Usage:
 import json
 import sys
 import logging
+import logging.handlers
 from typing import Dict, Any
 from pathlib import Path
 
@@ -25,7 +26,10 @@ logging.basicConfig(
     format="%(asctime)s [%(name)s] %(levelname)s %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler(Path(config.bot.logs_dir) / "ai_refiner.log", encoding="utf-8"),
+        logging.handlers.RotatingFileHandler(
+            Path(config.bot.logs_dir) / "ai_refiner.log",
+            encoding="utf-8", maxBytes=10_000_000, backupCount=3
+        ),
     ],
 )
 log = logging.getLogger(__name__)

@@ -1,4 +1,4 @@
-import { BlogPost } from '../../types';
+import { BlogPost, ContentBlock } from '../../types';
 import matter from 'gray-matter';
 
 /**
@@ -39,7 +39,6 @@ export function parseMarkdownToBlogPost(markdownContent: string, slug: string): 
     const { data: frontMatter, content } = matter(markdownContent);
 
     // Log the parsed frontmatter for debugging
-    console.log(`Parsing post: ${slug}`);
 
     // Process author information
     const author = {
@@ -139,7 +138,7 @@ export function parseMarkdownToBlogPost(markdownContent: string, slug: string): 
 export function parseContentToBlocks(content: string, slug: string): ContentBlock[] {
   const blocks: ContentBlock[] = [];
   const lines = content.split('\n');
-  let currentBlock: any = null;
+  let currentBlock: ContentBlock | null = null;
   let blockOrder = 0;
 
   // Helper to add the current block to the blocks array
@@ -387,26 +386,24 @@ export function generateMarkdownFromBlocks(blocks: ContentBlock[]): string {
       case 'title':
         return `# ${block.content}\n\n`;
 
-      case 'headline':
-        const headlineBlock = block as any;
-        const level = headlineBlock.level || 2;
-        const hashes = '#'.repeat(level);
+      case 'headline': {
+        const hashes = '#'.repeat(block.level || 2);
         return `${hashes} ${block.content}\n\n`;
+      }
 
       case 'text':
         return `${block.content}\n\n`;
 
-      case 'image':
-        const imageBlock = block as any;
-        let imageMarkdown = `![${imageBlock.alt || ''}](${imageBlock.url})\n\n`;
-        if (imageBlock.caption) {
-          imageMarkdown += `*${imageBlock.caption}*\n\n`;
+      case 'image': {
+        let imageMarkdown = `![${block.alt || ''}](${block.url})\n\n`;
+        if (block.caption) {
+          imageMarkdown += `*${block.caption}*\n\n`;
         }
         return imageMarkdown;
+      }
 
       case 'product':
-        const productBlock = block as any;
-        return `:::product\n${productBlock.productId}\n:::\n\n`;
+        return `:::product\n${block.productId}\n:::\n\n`;
 
       case 'divider':
         return `---\n\n`;
@@ -415,8 +412,7 @@ export function generateMarkdownFromBlocks(blocks: ContentBlock[]): string {
         return `> ${block.content}\n\n`;
 
       case 'snippet':
-        const snippetBlock = block as any;
-        return `\`\`\`${snippetBlock.language || 'javascript'}\n${block.content}\n\`\`\`\n\n`;
+        return `\`\`\`${block.language || 'javascript'}\n${block.content}\n\`\`\`\n\n`;
 
       default:
         return '';

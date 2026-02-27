@@ -16,6 +16,7 @@ import json
 import sys
 import os
 import logging
+import logging.handlers
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
@@ -28,7 +29,6 @@ import frontmatter as fm
 import config
 from utils import strip_markdown_from_title
 
-import sys
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
 
@@ -38,7 +38,10 @@ logging.basicConfig(
     format="%(asctime)s [%(name)s] %(levelname)s %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler(Path(config.bot.logs_dir) / "publish.log", encoding="utf-8"),
+        logging.handlers.RotatingFileHandler(
+            Path(config.bot.logs_dir) / "publish.log",
+            encoding="utf-8", maxBytes=10_000_000, backupCount=3
+        ),
     ],
 )
 
@@ -102,7 +105,9 @@ def git_commit_and_push(repo_path: str, title: str):
     from git import Repo, GitCommandError
 
     repo = Repo(repo_path)
-    repo.git.add(A=True)
+    repo.git.add('src/blog/posts/')
+    repo.git.add('public/blog-posts.json')
+    repo.git.add('public/blog-categories.json')
 
     # Check if there's anything to commit
     if not repo.is_dirty(untracked_files=True):

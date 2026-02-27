@@ -26,7 +26,9 @@ See bot/CRON-SETUP.md for full setup instructions.
 
 import json
 import sys
+import os
 import logging
+import logging.handlers
 import argparse
 import time
 from datetime import datetime, timezone
@@ -47,10 +49,40 @@ logging.basicConfig(
     format="%(asctime)s [%(name)s] %(levelname)s %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler(Path(config.bot.logs_dir) / "scheduler.log", encoding="utf-8"),
+        logging.handlers.RotatingFileHandler(
+            Path(config.bot.logs_dir) / "scheduler.log",
+            encoding="utf-8", maxBytes=10_000_000, backupCount=3
+        ),
     ],
 )
 log = logging.getLogger(__name__)
+
+LOCK_FILE = Path(config.bot.logs_dir) / "scheduler.lock"
+
+
+def _acquire_lock() -> bool:
+    """Acquire a PID lockfile. Returns True if lock acquired, False if another instance is running."""
+    if LOCK_FILE.exists():
+        try:
+            old_pid = int(LOCK_FILE.read_text().strip())
+            try:
+                os.kill(old_pid, 0)
+                return False
+            except OSError:
+                log.warning("Stale lock file (PID %d not running) — removing", old_pid)
+                LOCK_FILE.unlink()
+        except (ValueError, OSError):
+            LOCK_FILE.unlink()
+    LOCK_FILE.write_text(str(os.getpid()))
+    return True
+
+
+def _release_lock():
+    """Release the PID lockfile."""
+    try:
+        LOCK_FILE.unlink(missing_ok=True)
+    except OSError:
+        pass
 
 
 # ── Import pipeline modules ───────────────────────────────────────────────────
@@ -207,6 +239,17 @@ def run_pipeline(dry_run: bool = False) -> bool:
     Resumes oldest partial draft first (if any), then processes new stories.
     Returns True if at least one article was published successfully.
     """
+    if not _acquire_lock():
+        log.warning("Another scheduler instance is running — skipping this run")
+        return False
+
+    try:
+        return _run_pipeline_inner(dry_run)
+    finally:
+        _release_lock()
+
+
+def _run_pipeline_inner(dry_run: bool = False) -> bool:
     from scraper import get_top_stories
 
     success_count = 0
