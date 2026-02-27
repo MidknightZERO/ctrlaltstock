@@ -1,0 +1,221 @@
+// This is a build script that processes all markdown files in the src/blog/posts directory
+// and generates a static JSON file that can be used by the blog components
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import matter from 'gray-matter';
+
+// Get the current directory
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Path constants
+const POSTS_DIR = path.join(path.resolve(__dirname, '..'), 'src', 'blog', 'posts');
+const OUTPUT_DIR = path.join(path.resolve(__dirname, '..'), 'public');
+const OUTPUT_FILE = path.join(OUTPUT_DIR, 'blog-posts.json');
+
+// Ensure output directory exists
+if (!fs.existsSync(OUTPUT_DIR)) {
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+}
+
+console.log('Starting blog build process...');
+console.log(`Reading posts from: ${POSTS_DIR}`);
+
+// Get all markdown files
+const getMarkdownFiles = () => {
+  if (!fs.existsSync(POSTS_DIR)) {
+    console.error(`Posts directory does not exist: ${POSTS_DIR}`);
+    return [];
+  }
+
+  return fs.readdirSync(POSTS_DIR)
+    .filter(filename => filename.endsWith('.md'))
+    .map(filename => ({
+      filename,
+      filepath: path.join(POSTS_DIR, filename)
+    }));
+};
+
+// Process content blocks from the markdown content
+const processContentBlocks = (markdownContent) => {
+  // Initialize content blocks array
+  const contentBlocks = [];
+
+  // Split the content by headings to create section blocks
+  const sections = markdownContent.split(/^#+\s+.+$/m);
+  const headings = markdownContent.match(/^#+\s+.+$/gm) || [];
+
+  // First section might be empty if the content starts with a heading
+  if (sections[0].trim() === '') {
+    sections.shift();
+  }
+
+  // Process each section
+  for (let i = 0; i < headings.length; i++) {
+    const heading = headings[i];
+    const content = sections[i] ? sections[i].trim() : '';
+
+    // Create a content block for each section
+    contentBlocks.push({
+      type: 'text',
+      id: `block-${i}`,
+      content: `${heading}\n\n${content}`
+    });
+  }
+
+  // If there are leftover content sections without headings, add those too
+  if (sections.length > headings.length) {
+    for (let i = headings.length; i < sections.length; i++) {
+      const content = sections[i].trim();
+      if (content) {
+        contentBlocks.push({
+          type: 'text',
+          id: `block-${i}`,
+          content
+        });
+      }
+    }
+  }
+
+  return contentBlocks;
+};
+
+// Parse markdown file to blog post object
+const parseMarkdownFile = (filepath, filename) => {
+  try {
+    const content = fs.readFileSync(filepath, 'utf-8');
+    const { data: frontMatter, content: markdownContent } = matter(content);
+    const slug = filename.replace(/\.md$/, '');
+
+    // Process author information
+    const author = {
+      name: '',
+      avatar: '',
+      bio: ''
+    };
+
+    if (frontMatter.author) {
+      if (typeof frontMatter.author === 'object') {
+        author.name = frontMatter.author.name || '';
+        author.avatar = frontMatter.author.avatar || '';
+        author.bio = frontMatter.author.bio || '';
+      } else {
+        author.name = String(frontMatter.author);
+      }
+    }
+
+    // Process tags (ensure it's an array)
+    let tags = [];
+    if (frontMatter.tags) {
+      if (Array.isArray(frontMatter.tags)) {
+        tags = frontMatter.tags;
+      } else if (typeof frontMatter.tags === 'string') {
+        // Handle string format like "[tag1, tag2]" or "tag1, tag2"
+        const tagsStr = frontMatter.tags.replace(/^\[|\]$/g, '');
+        tags = tagsStr.split(',').map(tag => tag.trim());
+      }
+    }
+
+    // Process images (ensure it's an array)
+    let images = [];
+    if (frontMatter.images) {
+      if (Array.isArray(frontMatter.images)) {
+        images = frontMatter.images;
+      } else if (typeof frontMatter.images === 'string') {
+        const imagesStr = frontMatter.images.replace(/^\[|\]$/g, '');
+        images = imagesStr.split(',').map(img => img.trim());
+      }
+    }
+
+    // Process recommended product IDs (ensure it's an array)
+    let recommendedProductIds = [];
+    if (frontMatter.recommendedProductIds) {
+      if (Array.isArray(frontMatter.recommendedProductIds)) {
+        recommendedProductIds = frontMatter.recommendedProductIds;
+      } else if (typeof frontMatter.recommendedProductIds === 'string') {
+        const idsStr = frontMatter.recommendedProductIds.replace(/^\[|\]$/g, '');
+        recommendedProductIds = idsStr.split(',').map(id => id.trim());
+      }
+    }
+
+    // Process content blocks if provided, or generate from content
+    let contentBlocks = frontMatter.contentBlocks || [];
+
+    // If no content blocks are defined in frontmatter, generate them from the markdown content
+    if (!contentBlocks.length) {
+      contentBlocks = processContentBlocks(markdownContent);
+    }
+
+    // Process amazonProducts (auto-generated by bot/amazon_linker.py)
+    let amazonProducts = [];
+    if (Array.isArray(frontMatter.amazonProducts)) {
+      amazonProducts = frontMatter.amazonProducts;
+    }
+
+    // Process relatedPostSlugs (auto-generated by bot/ai_editor.py)
+    let relatedPostSlugs = [];
+    if (Array.isArray(frontMatter.relatedPostSlugs)) {
+      relatedPostSlugs = frontMatter.relatedPostSlugs;
+    } else if (typeof frontMatter.relatedPostSlugs === 'string') {
+      relatedPostSlugs = frontMatter.relatedPostSlugs
+        .replace(/^\[|\]$/g, '')
+        .split(',')
+        .map(s => s.trim())
+        .filter(Boolean);
+    }
+
+    return {
+      id: slug,
+      slug,
+      title: String(frontMatter.title || ''),
+      publishedDate: String(frontMatter.date || ''),
+      content: markdownContent.trim(),
+      excerpt: String(frontMatter.excerpt || ''),
+      readingTime: String(frontMatter.readingTime || ''),
+      coverImage: String(frontMatter.coverImage || ''),
+      tags,
+      images,
+      featuredProductId: frontMatter.featuredProductId ? String(frontMatter.featuredProductId) : '',
+      recommendedProductIds,
+      contentBlocks,
+      author,
+      amazonProducts,
+      relatedPostSlugs,
+      autoGenerated: frontMatter.autoGenerated === true,
+      sourceUrl: String(frontMatter.sourceUrl || ''),
+    };
+  } catch (error) {
+    console.error(`Error parsing markdown file: ${filepath}`, error);
+    return null;
+  }
+};
+
+// Process all markdown files
+const buildBlog = () => {
+  const files = getMarkdownFiles();
+  console.log(`Found ${files.length} markdown files`);
+
+  const posts = files
+    .map(({ filepath, filename }) => parseMarkdownFile(filepath, filename))
+    .filter(Boolean) // Remove null entries
+    .sort((a, b) => {
+      // Sort by date (newest first)
+      return new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime();
+    });
+
+  console.log(`Successfully parsed ${posts.length} blog posts`);
+
+  // Write the JSON file
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(posts, null, 2));
+  console.log(`Blog posts written to: ${OUTPUT_FILE}`);
+};
+
+try {
+  buildBlog();
+  console.log('Blog build completed successfully!');
+} catch (error) {
+  console.error('Blog build failed:', error);
+  process.exit(1);
+} 

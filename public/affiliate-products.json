@@ -1,0 +1,353 @@
+{
+  "products": [
+    {
+      "id": "rtx-5090",
+      "name": "NVIDIA GeForce RTX 5090",
+      "description": "Flagship graphics card for 4K and ray tracing",
+      "price": "From \u00a31,999",
+      "url": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg",
+      "category": "GPU",
+      "tags": [
+        "NVIDIA",
+        "RTX 5090",
+        "4K Gaming",
+        "Ray Tracing",
+        "High-End GPU"
+      ]
+    },
+    {
+      "id": "rtx-5080",
+      "name": "NVIDIA GeForce RTX 5080",
+      "description": "High-end GPU for 4K gaming and content creation",
+      "price": "From \u00a31,199",
+      "url": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg",
+      "category": "GPU",
+      "tags": [
+        "NVIDIA",
+        "RTX 5080",
+        "4K Gaming",
+        "Ray Tracing"
+      ]
+    },
+    {
+      "id": "rtx-5070-ti",
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "description": "Strong 1440p and 4K performance with DLSS",
+      "price": "From \u00a3699",
+      "url": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg",
+      "category": "GPU",
+      "tags": [
+        "NVIDIA",
+        "RTX 5070",
+        "1440p",
+        "4K Gaming",
+        "DLSS"
+      ]
+    },
+    {
+      "id": "rtx-4070-super",
+      "name": "NVIDIA GeForce RTX 4070 Super",
+      "description": "Excellent 1440p value with DLSS 3",
+      "price": "From \u00a3579",
+      "url": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg",
+      "category": "GPU",
+      "tags": [
+        "NVIDIA",
+        "RTX 4070 Super",
+        "1440p",
+        "DLSS",
+        "Mid-Range GPU"
+      ]
+    },
+    {
+      "id": "rtx-4080-super",
+      "name": "NVIDIA GeForce RTX 4080 Super",
+      "description": "4K gaming and content creation without flagship price",
+      "price": "From \u00a3959",
+      "url": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg",
+      "category": "GPU",
+      "tags": [
+        "NVIDIA",
+        "RTX 4080 Super",
+        "4K Gaming",
+        "High-End GPU"
+      ]
+    },
+    {
+      "id": "rtx-4060",
+      "name": "NVIDIA GeForce RTX 4060",
+      "description": "Solid 1080p gaming with DLSS 3",
+      "price": "From \u00a3289",
+      "url": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+4060+graphics+card&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/81i5KcFKysL._AC_UY218_.jpg",
+      "category": "GPU",
+      "tags": [
+        "NVIDIA",
+        "RTX 4060",
+        "1080p",
+        "Budget GPU"
+      ]
+    },
+    {
+      "id": "rx-7900-xtx",
+      "name": "AMD Radeon RX 7900 XTX",
+      "description": "High-performance AMD flagship for 4K",
+      "price": "From \u00a3899",
+      "url": "https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg",
+      "category": "GPU",
+      "tags": [
+        "AMD",
+        "RX 7900 XTX",
+        "4K Gaming",
+        "High-End GPU"
+      ]
+    },
+    {
+      "id": "rx-7800-xt",
+      "name": "AMD Radeon RX 7800 XT",
+      "description": "Great 1440p value and raster performance",
+      "price": "From \u00a3479",
+      "url": "https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg",
+      "category": "GPU",
+      "tags": [
+        "AMD",
+        "RX 7800 XT",
+        "1440p",
+        "Mid-Range GPU"
+      ]
+    },
+    {
+      "id": "rx-7600",
+      "name": "AMD Radeon RX 7600",
+      "description": "Budget 1080p gaming",
+      "price": "From \u00a3249",
+      "url": "https://www.amazon.co.uk/s?k=AMD+RX+7600+graphics+card&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/714nXgTiuAL._AC_UY218_.jpg",
+      "category": "GPU",
+      "tags": [
+        "AMD",
+        "RX 7600",
+        "1080p",
+        "Budget GPU"
+      ]
+    },
+    {
+      "id": "rtx-3080-ti",
+      "name": "NVIDIA GeForce RTX 3080 Ti",
+      "description": "Previous-gen high-end; good for used or thermal mods",
+      "price": "Check used / refurb",
+      "url": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg",
+      "category": "GPU",
+      "tags": [
+        "NVIDIA",
+        "RTX 3080 Ti",
+        "Used Market",
+        "Thermal Performance",
+        "Modding"
+      ]
+    },
+    {
+      "id": "thermal-paste-kryonaut",
+      "name": "Thermal Grizzly Kryonaut",
+      "description": "Premium thermal paste for CPUs and GPUs",
+      "price": "From \u00a38",
+      "url": "https://www.amazon.co.uk/s?k=Thermal+Grizzly+Kryonaut&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg",
+      "category": "Cooling",
+      "tags": [
+        "Thermal Paste",
+        "Cooling",
+        "GPU",
+        "Repaste",
+        "Modding"
+      ]
+    },
+    {
+      "id": "thermal-paste-k5",
+      "name": "Thermal Grizzly K5 PRO",
+      "description": "Viscous paste for VRAM and VRM",
+      "price": "From \u00a312",
+      "url": "https://www.amazon.co.uk/s?k=Thermal+Grizzly+K5+PRO&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/61FLvXos-iL._AC_UY218_.jpg",
+      "category": "Cooling",
+      "tags": [
+        "Thermal Paste",
+        "VRAM",
+        "GPU",
+        "Repaste",
+        "Modding"
+      ]
+    },
+    {
+      "id": "ryzen-7-7800x3d",
+      "name": "AMD Ryzen 7 7800X3D",
+      "description": "Best gaming CPU with 3D V-Cache",
+      "price": "From \u00a3349",
+      "url": "https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg",
+      "category": "CPU",
+      "tags": [
+        "AMD",
+        "Ryzen",
+        "Gaming CPU",
+        "3D V-Cache"
+      ]
+    },
+    {
+      "id": "ryzen-5-7600",
+      "name": "AMD Ryzen 5 7600",
+      "description": "Great value gaming and productivity CPU",
+      "price": "From \u00a3199",
+      "url": "https://www.amazon.co.uk/s?k=AMD+Ryzen+5+7600&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_UY218_.jpg",
+      "category": "CPU",
+      "tags": [
+        "AMD",
+        "Ryzen",
+        "Budget",
+        "Gaming CPU"
+      ]
+    },
+    {
+      "id": "intel-i7-14700k",
+      "name": "Intel Core i7-14700K",
+      "description": "High performance for gaming and productivity",
+      "price": "From \u00a3379",
+      "url": "https://www.amazon.co.uk/s?k=Intel+Core+i7-14700K&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/61aAAg73uLL._AC_UY218_.jpg",
+      "category": "CPU",
+      "tags": [
+        "Intel",
+        "Core i7",
+        "Gaming CPU",
+        "High-End"
+      ]
+    },
+    {
+      "id": "monitor-1440p-165",
+      "name": "1440p 165Hz Gaming Monitor",
+      "description": "Sweet spot for 1440p gaming",
+      "price": "From \u00a3249",
+      "url": "https://www.amazon.co.uk/s?k=1440p+165Hz+gaming+monitor&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX416_CB1169409_QL70_.jpg",
+      "category": "Monitor",
+      "tags": [
+        "Monitor",
+        "1440p",
+        "Gaming",
+        "GPU"
+      ]
+    },
+    {
+      "id": "monitor-4k-144",
+      "name": "4K 144Hz Gaming Monitor",
+      "description": "For high-end GPU 4K gaming",
+      "price": "From \u00a3499",
+      "url": "https://www.amazon.co.uk/s?k=4K+144Hz+gaming+monitor&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71s1NomfKWL._AC_SX416_CB1169409_QL70_.jpg",
+      "category": "Monitor",
+      "tags": [
+        "Monitor",
+        "4K",
+        "Gaming",
+        "High-End GPU"
+      ]
+    },
+    {
+      "id": "ssd-nvme-2tb",
+      "name": "NVMe SSD 2TB Gen4",
+      "description": "Fast storage for games and OS",
+      "price": "From \u00a389",
+      "url": "https://www.amazon.co.uk/s?k=NVMe+SSD+2TB+Gen4&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/61OQ6pbX5NL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/61OQ6pbX5NL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/61OQ6pbX5NL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/61OQ6pbX5NL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/61OQ6pbX5NL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/61OQ6pbX5NL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/61OQ6pbX5NL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/61OQ6pbX5NL._AC_SX416_CB1169409_QL70_.jpg",
+      "category": "Storage",
+      "tags": [
+        "SSD",
+        "NVMe",
+        "Storage",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "ddr5-32gb",
+      "name": "DDR5 RAM 32GB Kit 6000MT/s",
+      "description": "Sweet spot for AMD and Intel builds",
+      "price": "From \u00a395",
+      "url": "https://www.amazon.co.uk/s?k=DDR5+32GB+6000+RAM&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/71yiC8EpVCL._AC_UY218_.jpg",
+      "category": "RAM",
+      "tags": [
+        "DDR5",
+        "RAM",
+        "Gaming",
+        "PC Building"
+      ]
+    },
+    {
+      "id": "psu-850w",
+      "name": "850W 80+ Gold PSU",
+      "description": "Reliable power for high-end GPUs",
+      "price": "From \u00a399",
+      "url": "https://www.amazon.co.uk/s?k=850W+80+Gold+PSU&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/719XmV0gF9L._AC_UY218_.jpg",
+      "category": "PSU",
+      "tags": [
+        "PSU",
+        "Power Supply",
+        "PC Building",
+        "GPU"
+      ]
+    },
+    {
+      "id": "steam-deck",
+      "name": "Steam Deck",
+      "description": "Portable PC gaming handheld",
+      "price": "From \u00a3349",
+      "url": "https://www.amazon.co.uk/s?k=Steam+Deck&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg",
+      "category": "Handheld",
+      "tags": [
+        "Steam Deck",
+        "Handheld",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "rog-ally",
+      "name": "ASUS ROG Ally",
+      "description": "Windows handheld gaming PC",
+      "price": "From \u00a3599",
+      "url": "https://www.amazon.co.uk/s?k=ASUS+ROG+Ally&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX416_CB1169409_QL70_.jpg",
+      "category": "Handheld",
+      "tags": [
+        "ROG Ally",
+        "Handheld",
+        "Gaming",
+        "Windows"
+      ]
+    },
+    {
+      "id": "ps5-pro",
+      "name": "PlayStation 5 Pro",
+      "description": "Enhanced PS5 with better ray tracing",
+      "price": "From \u00a3699",
+      "url": "https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg",
+      "category": "Console",
+      "tags": [
+        "PS5",
+        "PlayStation",
+        "Console"
+      ]
+    }
+  ]
+}

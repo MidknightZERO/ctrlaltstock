@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+/* Ensure smooth animation */
+.animate-scroll:hover {
+  animation-play-state: paused;
+
+  .hover\\:shadow-glow-circle:hover {
+  box-shadow: 0 0 15px 5px rgba(158, 208, 75, 0.6), 0 0 30px 10px rgba(158, 208, 75, 0.3);
+}
+
+}
