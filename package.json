@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build:blog": "node scripts/build-blog.js",
-    "build": "npm run build:blog && vite build",
+    "build": "npm run build:blog && vite build && node scripts/debug-netlify-404.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "node server.js",
