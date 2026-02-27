@@ -37,7 +37,6 @@ excerpt: The AMD Radeon software ecosystem just got a significant update with th
   crucial stability improvements and expands sup
 featuredProductId: ''
 images:
-- https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg
 - https://m.media-amazon.com/images/I/714nXgTiuAL._AC_UY218_.jpg
 readingTime: 4 min read
 recommendedProductIds: []

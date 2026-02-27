@@ -148,6 +148,13 @@ def _get_pool_for_primary_topic(primary: str, stock: Dict[str, Any]) -> List[str
             return subs["Storage"]
         if "default" in subs and isinstance(subs["default"], list):
             return subs["default"]
+    if primary == "streaming":
+        if "Display" in stock and isinstance(stock["Display"], dict) and "default" in stock["Display"]:
+            d = stock["Display"]["default"]
+            if isinstance(d, list) and d:
+                return d
+        if "default" in stock and isinstance(stock["default"], list):
+            return stock["default"]
     return []
 
 
@@ -248,6 +255,8 @@ def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
 
     # 1. Prefer Amazon product images — sort by topic match, skip recently used
     products = draft["frontmatter"].get("amazonProducts") or []
+    if primary_topic == "streaming":
+        products = [p for p in products if (p.get("category") or "").lower() != "gpu"]
     # Put topic-matched products first
     def topic_sort_key(p: Dict[str, Any]) -> int:
         cat = (p.get("category") or "").lower()
@@ -348,6 +357,7 @@ def _clean_query_for_images(query: str, primary_topic: str = "general") -> str:
     """Clean a product query for better Unsplash results. Use primary_topic to bias when query is ambiguous."""
     clean = re.sub(r"\b(RTX|RX|GTX|AMD|Intel|DDR\d|NVMe)\s*\d[\w-]*", "", query, flags=re.IGNORECASE)
     mappings = {
+        "shield": "streaming stick smart tv",
         "nvidia": "graphics card computer",
         "gpu": "graphics card gaming",
         "cpu": "processor chip technology",
@@ -375,6 +385,8 @@ def _clean_query_for_images(query: str, primary_topic: str = "general") -> str:
         return "gaming console controller"
     if primary_topic == "storage":
         return "solid state drive storage"
+    if primary_topic == "streaming":
+        return "streaming stick smart tv"
     return (clean.strip() or "technology computer gaming")[:80]
 
 

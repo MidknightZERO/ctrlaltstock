@@ -15,6 +15,7 @@ Usage:
     python bot/backfill_content.py --amazon-links-only
     python bot/backfill_content.py --no-amazon-links # internal only
     python bot/backfill_content.py --fix-amazon-images  # Populate product images
+    python bot/backfill_content.py --images-only       # Re-fetch cover images (topic-aware, 7-day exclusion)
 """
 
 import json
@@ -636,12 +637,30 @@ def fix_amazon_images(post: fm.Post) -> bool:
     return changed
 
 
+def backfill_cover_images(post: fm.Post, path: Path, dry_run: bool) -> bool:
+    """Re-fetch cover images for a post using topic-aware image_fetcher. Returns True if changed."""
+    draft = {"frontmatter": dict(post.metadata), "content": post.content or ""}
+    from image_fetcher import fetch_images
+    result = fetch_images(draft)
+    new_cover = result.get("frontmatter", {}).get("coverImage", "")
+    new_images = result.get("frontmatter", {}).get("images", [])
+    old_cover = post.get("coverImage", "")
+    old_images = post.get("images", [])
+    if new_cover != old_cover or new_images != old_images:
+        if not dry_run:
+            post["coverImage"] = new_cover
+            post["images"] = new_images
+        return True
+    return False
+
+
 def run_backfill(
     tags: bool = True,
     links: bool = True,
     amazon_links: bool = True,
     fix_amazon_images_flag: bool = False,
     inline_images: bool = True,
+    images_only: bool = False,
     max_links: int = 5,
     max_amazon_links: int = 5,
     dry_run: bool = False,
@@ -656,6 +675,19 @@ def run_backfill(
     links_added = 0
     amazon_links_added = 0
     images_fixed = 0
+    cover_images_updated = 0
+
+    if images_only:
+        for path, post in posts:
+            if backfill_cover_images(post, path, dry_run):
+                cover_images_updated += 1
+                if not dry_run:
+                    fm.dump(post, path)
+                log.info("Updated cover images: %s", path.name)
+        if cover_images_updated and not dry_run:
+            from publisher import rebuild_blog_json
+            rebuild_blog_json(config.git.repo_path)
+        return 0, 0, 0, 0, cover_images_updated
 
     if fix_amazon_images_flag:
         for path, post in posts:
@@ -723,17 +755,23 @@ def main():
     parser.add_argument("--inline-images", action="store_true", help="Insert inline images after every 2nd H2")
     parser.add_argument("--no-inline-images", action="store_true", help="Skip inline images during backfill")
     parser.add_argument("--inline-images-only", action="store_true", help="Only add inline images")
+    parser.add_argument("--images-only", action="store_true", help="Re-fetch cover images (topic-aware, 7-day exclusion)")
     parser.add_argument("--max-links", type=int, default=5, help="Max internal links per post (default: 5)")
     parser.add_argument("--max-amazon-links", type=int, default=5, help="Max Amazon links per post (default: 5)")
     parser.add_argument("--dry-run", action="store_true", help="Log changes, don't write files")
     args = parser.parse_args()
 
-    do_tags = args.tags_only or (not args.links_only and not args.amazon_links_only and not args.fix_amazon_images and not args.inline_images_only)
-    do_links = (args.links_only or (not args.tags_only and not args.amazon_links_only and not args.fix_amazon_images and not args.inline_images_only)) and not args.amazon_links_only
-    do_amazon = (args.links_only or args.amazon_links_only or (not args.tags_only and not args.no_amazon_links and not args.fix_amazon_images and not args.inline_images_only)) and not args.no_amazon_links
+    do_tags = args.tags_only or (not args.links_only and not args.amazon_links_only and not args.fix_amazon_images and not args.inline_images_only and not args.images_only)
+    do_links = (args.links_only or (not args.tags_only and not args.amazon_links_only and not args.fix_amazon_images and not args.inline_images_only and not args.images_only)) and not args.amazon_links_only
+    do_amazon = (args.links_only or args.amazon_links_only or (not args.tags_only and not args.no_amazon_links and not args.fix_amazon_images and not args.inline_images_only and not args.images_only)) and not args.no_amazon_links
     do_inline_images = (args.inline_images or args.inline_images_only or (do_tags or do_links or do_amazon)) and not args.no_inline_images
 
-    if args.amazon_links_only:
+    if args.images_only:
+        do_tags = False
+        do_links = False
+        do_amazon = False
+        do_inline_images = False
+    elif args.amazon_links_only:
         do_tags = False
         do_links = False
         do_amazon = True
@@ -757,11 +795,15 @@ def main():
         amazon_links=do_amazon,
         fix_amazon_images_flag=args.fix_amazon_images,
         inline_images=do_inline_images,
+        images_only=args.images_only,
         max_links=args.max_links,
         max_amazon_links=args.max_amazon_links,
         dry_run=args.dry_run,
     )
-    log.info("Done. Tags fixed: %d, links added: %d, Amazon links added: %d, images fixed: %d, inline images added: %d", tags_fixed, links_added, amazon_added, images_fixed, inline_added)
+    if args.images_only:
+        log.info("Done. Cover images updated: %d", inline_added)
+    else:
+        log.info("Done. Tags fixed: %d, links added: %d, Amazon links added: %d, images fixed: %d, inline images added: %d", tags_fixed, links_added, amazon_added, images_fixed, inline_added)
     sys.exit(0)
 
 

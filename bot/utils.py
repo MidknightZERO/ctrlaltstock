@@ -12,15 +12,24 @@ from typing import Dict, Any
 def infer_primary_topic(draft: Dict[str, Any]) -> str:
     """
     Infer the article's primary topic from title, content, and tags.
-    Returns "gpu" | "cpu" | "console" | "storage" | "general".
+    Returns "gpu" | "cpu" | "console" | "storage" | "streaming" | "general".
     Prefers content/title signals over tags (e.g. FSR4/Vulkan = GPU even if CPU in tags).
+    NVIDIA+Shield: "NVIDIA Shield TV" -> streaming, not gpu.
     """
     title = (draft.get("frontmatter", {}).get("title") or draft.get("title") or "")
     content = draft.get("content", "") or ""
     tags = [str(t).lower() for t in (draft.get("frontmatter", {}).get("tags") or draft.get("tags") or [])]
     combined = f"{title} {content}".lower()
+    title_lower = title.lower()
 
-    # Strong GPU signals (title/content first)
+    # Title-first: streaming (NVIDIA Shield, etc.) — title overrides content
+    if "shield" in title_lower or "shield tv" in title_lower or "shield pro" in title_lower:
+        return "streaming"
+    streaming_in_title = any(sig in title_lower for sig in ["fire tv", "roku", "chromecast", "streaming stick", "android tv"])
+    if streaming_in_title:
+        return "streaming"
+
+    # Strong GPU signals (title/content)
     gpu_signals = [
         "fsr", "fsr2", "fsr3", "fsr4", "vulkan", "directx", "radeon",
         "rx 7", "rx 9", "rx 7900", "rx 7800", "rx 7600",
@@ -49,8 +58,22 @@ def infer_primary_topic(draft: Dict[str, Any]) -> str:
         if sig in combined:
             return "storage"
 
-    # Fall back to tags (order matters: gpu before cpu)
-    if "gpu" in tags or "graphics" in tags or "radeon" in tags or "nvidia" in tags:
+    # Streaming signals (NVIDIA Shield, Fire TV, Roku, Chromecast, etc.)
+    streaming_signals = [
+        "shield tv", "shield pro", "fire tv", "roku", "chromecast",
+        "streaming stick", "android tv",
+    ]
+    for sig in streaming_signals:
+        if sig in combined:
+            return "streaming"
+    # NVIDIA + next word: "nvidia shield" -> streaming
+    if "nvidia" in combined and "shield" in combined:
+        return "streaming"
+
+    # Fall back to tags (order matters: gpu before cpu; exclude nvidia->gpu when shield in title)
+    if "gpu" in tags or "graphics" in tags or "radeon" in tags:
+        return "gpu"
+    if "nvidia" in tags and "shield" not in combined:
         return "gpu"
     if "cpu" in tags or "ryzen" in tags or "intel" in tags:
         return "cpu"
@@ -58,6 +81,8 @@ def infer_primary_topic(draft: Dict[str, Any]) -> str:
         return "console"
     if "ssd" in tags or "storage" in tags:
         return "storage"
+    if "shield" in tags or "streaming" in tags:
+        return "streaming"
 
     return "general"
 
