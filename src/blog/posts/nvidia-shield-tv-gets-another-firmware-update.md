@@ -126,3 +126,6 @@ AMD's achievement of a 4.769 GHz GPU frequency world record with the Radeon RX 9
 For gamers, enthusiasts, and industry observers, this record serves as an exciting preview of what's to come in the world of high-performance graphics. As we look forward to the official launch of the Radeon RX 9060 XT and other RDNA 4 products, AMD's world record achievement sets a high bar for performance and innovation in the graphics card market.
 
 If you liked this, check out our article on AMD Adrenalin 26.2.2 Driver: Stability Fixes for RX 7000 Gamers for more information about AMD's latest driver updates and performance optimizations.
+
+
+[![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
