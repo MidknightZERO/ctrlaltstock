@@ -53,6 +53,7 @@ title: TIE Fighter Total Conversion v1.4 Released
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 
+
 **CURRENT LENGTH: 815 words. TARGET: at least 900 words.**  
 
 ---
@@ -80,7 +81,7 @@ Community members on the CtrlAltStock Discord have praised the edition’s balan
 **Performance [Benchmark](https://ctrlaltstock.com/blog/amd-zen-6-desktop-ryzen-olympic-ridge-reportedly-set-to-launch-in-2027)s and User Experiences**  
 Early benchmarks and user reports highlight TFTC 1.4’s performance across different hardware setups. On an RTX 4090, the mod achieves stable 100+ FPS at 4K resolution with ultra settings, thanks to the engine’s optimizations for modern GPUs. For example, a user on the CtrlAltStock forums reported achieving 120 FPS at 1440p with all settings maxed, attributing the smoothness to both the mod and their GPU’s capabilities.  
 
-Conversely, the RTX 4080 Super handles TFTC 1.4 admirably at 1080p and 1440p. A mid-tier build featuring an RTX 4080 Super, [AMD](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) Ryzen 7 7700X, and 32GB RAM consistently hits 90 FPS on high settings, making it an excellent choice for gamers prioritizing value. Retailers like PC Specialist and Overclockers UK often bundle the RTX 4080 Super with accessories, potentially reducing the total cost.  
+Conversely, the RTX 4080 Super handles TFTC 1.4 admirably at 1080p and 1440p. A mid-tier build featuring an RTX 4080 Super, AMD Ryzen 7 7700X, and 32GB RAM consistently hits 90 FPS on high settings, making it an excellent choice for gamers prioritizing value. Retailers like PC Specialist and Overclockers UK often bundle the RTX 4080 Super with accessories, potentially reducing the total cost.  
 
 **Future Updates and Community Engagement**  
 The developers of TFTC 1.4 have emphasized that this is just the beginning, with plans for further expansions and optimizations. They’ve hinted at upcoming content, including new ship models and multiplayer modes, which could further enhance the mod’s longevity. Community engagement remains high, with frequent updates and feedback loops on platforms like GitHub and Discord. For instance, the CtrlAltStock Discord server regularly hosts Q&A sessions with the mod team, allowing users to discuss performance tweaks and share custom content.  

@@ -83,7 +83,7 @@ title: 'Virtual Boy Review: Nintendo''s Oddest Switch Accessory Yet Is an Immers
 
 # Virtual Boy Review:Nintendo's Oddest Switch Accessory Yet Is an Immersive ’90s Museum  
 
-**Hook** – The [Nintendo](https://ctrlaltstock.com/blog/steam-nintendo-xbox-ninja-gaiden-masters-collection-19-99-50) Virtual Boy Adapter (model **VB‑01**) landed on UK shelves today, and it’s already turning heads. For bargain hunters who love a good nostalgia-driven novelty, this quirky piece of kit promises a trip back to the red-monochrome world of the mid-’90s – all while slotting neatly into a modern Switch dock. If you’ve ever wondered what it feels like to stare through a pair of retro VR goggles without breaking the bank, now’s the time to find out.  
+**Hook** – The [Nintendo](https://ctrlaltstock.com/blog/steam-nintendo-xbox-ninja-gaiden-masters-collection-19-99-50) Virtual Boy Adapter (model **VB‑01**) landed on UK shelves today, and it’s already turning heads. For [bargain](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-gpu-deals) hunters who love a good nostalgia-driven novelty, this quirky piece of kit promises a trip back to the red-monochrome world of the mid-’90s – all while slotting neatly into a modern Switch dock. If you’ve ever wondered what it feels like to stare through a pair of retro VR goggles without breaking the bank, now’s the time to find out.  
 
 ---
 
