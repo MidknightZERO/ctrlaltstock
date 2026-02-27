@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { getAllPosts, getAllTags, formatPublishDate, getAllTagsSync, getAllPostsSync } from './utils/blogUtils';
 import { BlogPost } from '../types';
@@ -9,22 +9,24 @@ import { MAIN_GROUPS, isMainGroup, getMainGroupForTag } from './data/tagHierarch
 import BlogPageBackground from './components/BlogPageBackground';
 
 const FEATURED_COUNT = 8;
-const POSTS_PER_PAGE = 6;
+const POSTS_PER_PAGE = 12;
+
+const sortByDate = (a: BlogPost, b: BlogPost) => {
+  const da = new Date(a.publishedDate || 0).getTime();
+  const db = new Date(b.publishedDate || 0).getTime();
+  return db - da; // newest first
+};
 
 const BlogHome: React.FC = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>([]);
-  const [displayedPosts, setDisplayedPosts] = useState<BlogPost[]>([]);
   const [tags, setTags] = useState<string[]>([]);
+  const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>([]);
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [page, setPage] = useState(1);
-  const [loading, setLoading] = useState(false);
-  const [hasMore, setHasMore] = useState(true);
   const [isInitialLoading, setIsInitialLoading] = useState(true);
 
   const location = useLocation();
-  const observer = useRef<IntersectionObserver | null>(null);
 
   // Scroll to top when blog page loads (prevents browser restoring scroll to bottom)
   useEffect(() => {
@@ -35,19 +37,19 @@ const BlogHome: React.FC = () => {
       history.scrollRestoration = prev;
     };
   }, []);
-  const lastPostElementRef = useCallback(
-    (node: HTMLDivElement | null) => {
-      if (loading) return;
-      if (observer.current) observer.current.disconnect();
-      observer.current = new IntersectionObserver(entries => {
-        if (entries[0].isIntersecting && hasMore) {
-          loadMorePosts();
-        }
-      });
-      if (node) observer.current.observe(node);
-    },
-    [loading, hasMore]
-  );
+
+  const totalPages = Math.max(1, Math.ceil(filteredPosts.length / POSTS_PER_PAGE));
+  const displayedPosts = useMemo(() => {
+    const start = (page - 1) * POSTS_PER_PAGE;
+    return filteredPosts.slice(start, start + POSTS_PER_PAGE);
+  }, [filteredPosts, page]);
+
+  // Clamp page when filter reduces total pages
+  useEffect(() => {
+    if (page > totalPages && totalPages > 0) {
+      setPage(totalPages);
+    }
+  }, [page, totalPages]);
 
   useEffect(() => {
     const loadBlogData = async () => {
@@ -59,21 +61,15 @@ const BlogHome: React.FC = () => {
         const cachedTags = getAllTagsSync();
 
         if (cachedPosts.length > 0) {
-          const sortedCache = [...cachedPosts].sort(
-            (a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
-          );
+          const sortedCache = [...cachedPosts].sort(sortByDate);
           setPosts(sortedCache);
           setFilteredPosts(sortedCache);
           setTags(cachedTags);
-          setDisplayedPosts(sortedCache.slice(0, POSTS_PER_PAGE));
-          setHasMore(sortedCache.length > POSTS_PER_PAGE);
         }
 
         // Then fetch the latest data and sort by date (newest first)
         const rawPosts = await getAllPosts();
-        const allPosts = [...rawPosts].sort(
-          (a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
-        );
+        const allPosts = [...rawPosts].sort(sortByDate);
         console.log("Total posts loaded:", allPosts.length);
         setPosts(allPosts);
 
@@ -86,14 +82,9 @@ const BlogHome: React.FC = () => {
 
         if (tagParam) {
           setSelectedTag(tagParam);
-          const filtered = allPosts.filter(post => post.tags.includes(tagParam));
-          setFilteredPosts(filtered);
-          setDisplayedPosts(filtered.slice(0, POSTS_PER_PAGE));
-          setHasMore(filtered.length > POSTS_PER_PAGE);
+          setFilteredPosts(allPosts.filter(post => post.tags.includes(tagParam)));
         } else {
           setFilteredPosts(allPosts);
-          setDisplayedPosts(allPosts.slice(0, POSTS_PER_PAGE));
-          setHasMore(allPosts.length > POSTS_PER_PAGE);
         }
       } catch (error) {
         console.error("Error loading blog data:", error);
@@ -126,30 +117,13 @@ const BlogHome: React.FC = () => {
 
     setFilteredPosts(result);
     setPage(1);
-    setDisplayedPosts(result.slice(0, POSTS_PER_PAGE));
-    setHasMore(result.length > POSTS_PER_PAGE);
-    console.log("After filtering - Posts to display:", result.length, "hasMore:", result.length > POSTS_PER_PAGE);
+    console.log("After filtering - Posts to display:", result.length);
   };
 
-  const loadMorePosts = () => {
-    if (loading || !hasMore) return;
-
-    setLoading(true);
-    console.log("Loading more posts...");
-
-    // Simulate loading delay for better UX
-    setTimeout(() => {
-      const nextPage = page + 1;
-      const startIndex = (nextPage - 1) * POSTS_PER_PAGE;
-      const endIndex = nextPage * POSTS_PER_PAGE;
-      const newPosts = filteredPosts.slice(startIndex, endIndex);
-
-      setDisplayedPosts(prevPosts => [...prevPosts, ...newPosts]);
-      setPage(nextPage);
-      setHasMore(endIndex < filteredPosts.length);
-      setLoading(false);
-      console.log(`Loaded page ${nextPage}, posts ${startIndex}-${endIndex} of ${filteredPosts.length}`);
-    }, 500);
+  const goToPage = (p: number) => {
+    const newPage = Math.max(1, Math.min(p, totalPages));
+    setPage(newPage);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleTagClick = (tag: string) => {
@@ -180,17 +154,8 @@ const BlogHome: React.FC = () => {
     setSearchTerm('');
     setFilteredPosts(posts);
     setPage(1);
-    setDisplayedPosts(posts.slice(0, POSTS_PER_PAGE));
-    setHasMore(posts.length > POSTS_PER_PAGE);
     window.history.pushState({}, '', location.pathname);
   };
-
-  // Force showing Load More when we have 6 posts displayed but more available
-  useEffect(() => {
-    if (filteredPosts.length > displayedPosts.length) {
-      setHasMore(true);
-    }
-  }, [filteredPosts.length, displayedPosts.length]);
 
   const featuredPosts = posts.slice(0, FEATURED_COUNT);
 
@@ -310,7 +275,7 @@ const BlogHome: React.FC = () => {
           {isInitialLoading ? (
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[...Array(6)].map((_, i) => (
+                {[...Array(12)].map((_, i) => (
                   <div key={i} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden animate-pulse">
                     <div className="h-48 bg-gray-700"></div>
                     <div className="p-6 space-y-4">
@@ -326,10 +291,9 @@ const BlogHome: React.FC = () => {
           ) : displayedPosts.length > 0 ? (
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {displayedPosts.map((post, index) => (
+                {displayedPosts.map((post) => (
                   <div
                     key={post.id}
-                    ref={index === displayedPosts.length - 1 ? lastPostElementRef : null}
                     className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-[0_0_24px_rgba(158,208,75,0.15)] hover:-translate-y-1"
                     style={{ background: 'linear-gradient(135deg, rgba(158,208,75,0.04) 0%, rgba(30,41,59,0.95) 100%)' }}
                   >
@@ -389,22 +353,55 @@ const BlogHome: React.FC = () => {
                 ))}
               </div>
 
-              {/* Loading indicator */}
-              {loading && (
-                <div className="flex justify-center mt-10">
-                  <div className="w-10 h-10 border-4 border-gray-300 border-t-[#9ed04b] rounded-full animate-spin"></div>
-                </div>
-              )}
-
-              {/* Load more button (all screens) */}
-              {hasMore && !loading && (
-                <div className="flex justify-center mt-10">
-                  <button
-                    onClick={loadMorePosts}
-                    className="bg-[#9ed04b] hover:bg-[#9ed04b]/90 text-gray-900 font-semibold px-8 py-3 rounded-lg shadow transition-colors"
-                  >
-                    Load More
-                  </button>
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <p className="text-gray-500 text-sm">
+                    Showing {(page - 1) * POSTS_PER_PAGE + 1}–{Math.min(page * POSTS_PER_PAGE, filteredPosts.length)} of {filteredPosts.length} posts
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => goToPage(page - 1)}
+                      disabled={page <= 1}
+                      className="px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-700 transition-colors"
+                    >
+                      Previous
+                    </button>
+                    <div className="flex items-center gap-1">
+                      {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
+                        let pageNum: number;
+                        if (totalPages <= 5) {
+                          pageNum = i + 1;
+                        } else if (page <= 3) {
+                          pageNum = i + 1;
+                        } else if (page >= totalPages - 2) {
+                          pageNum = totalPages - 4 + i;
+                        } else {
+                          pageNum = page - 2 + i;
+                        }
+                        return (
+                          <button
+                            key={pageNum}
+                            onClick={() => goToPage(pageNum)}
+                            className={`w-10 h-10 rounded-lg font-medium transition-colors ${
+                              page === pageNum
+                                ? 'bg-[#9ed04b] text-gray-900'
+                                : 'bg-gray-800 border border-gray-700 text-white hover:bg-gray-700'
+                            }`}
+                          >
+                            {pageNum}
+                          </button>
+                        );
+                      })}
+                    </div>
+                    <button
+                      onClick={() => goToPage(page + 1)}
+                      disabled={page >= totalPages}
+                      className="px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-700 transition-colors"
+                    >
+                      Next
+                    </button>
+                  </div>
                 </div>
               )}
             </div>

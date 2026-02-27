@@ -99,6 +99,7 @@ class BotConfig:
     article_max_words: int = int(os.getenv("ARTICLE_MAX_WORDS", "1200"))
     discord_webhook_url: str = os.getenv("DISCORD_WEBHOOK_URL", "")
     build_hook_url: str = os.getenv("BUILD_HOOK_URL", "")
+    image_reuse_lookback_days: int = int(os.getenv("IMAGE_REUSE_LOOKBACK_DAYS", "7"))
 
     # Paths (relative to repo root)
     posts_dir: str = "src/blog/posts"

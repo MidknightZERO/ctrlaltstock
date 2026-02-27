@@ -6,6 +6,60 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Dict, Any
+
+
+def infer_primary_topic(draft: Dict[str, Any]) -> str:
+    """
+    Infer the article's primary topic from title, content, and tags.
+    Returns "gpu" | "cpu" | "console" | "storage" | "general".
+    Prefers content/title signals over tags (e.g. FSR4/Vulkan = GPU even if CPU in tags).
+    """
+    title = (draft.get("frontmatter", {}).get("title") or draft.get("title") or "")
+    content = draft.get("content", "") or ""
+    tags = [str(t).lower() for t in (draft.get("frontmatter", {}).get("tags") or draft.get("tags") or [])]
+    combined = f"{title} {content}".lower()
+
+    # Strong GPU signals (title/content first)
+    gpu_signals = [
+        "fsr", "fsr2", "fsr3", "fsr4", "vulkan", "directx", "radeon",
+        "rx 7", "rx 9", "rx 7900", "rx 7800", "rx 7600",
+        "rtx 50", "rtx 40", "rtx 30", "gtx ", "graphics card", " gpu ",
+        "dlss", "ray tracing", "adrenalin", "geforce",
+    ]
+    for sig in gpu_signals:
+        if sig in combined:
+            return "gpu"
+
+    # Strong CPU signals (only if no GPU signal)
+    cpu_signals = ["ryzen", "zen 5", "zen 6", "core i", "processor", "olympic ridge", "granite ridge"]
+    for sig in cpu_signals:
+        if sig in combined:
+            return "cpu"
+
+    # Console signals
+    console_signals = ["playstation", "ps5", "ps4", "xbox", "nintendo", "switch", "steam deck", "rog ally"]
+    for sig in console_signals:
+        if sig in combined:
+            return "console"
+
+    # Storage signals
+    storage_signals = ["ssd", "nvme", "storage drive"]
+    for sig in storage_signals:
+        if sig in combined:
+            return "storage"
+
+    # Fall back to tags (order matters: gpu before cpu)
+    if "gpu" in tags or "graphics" in tags or "radeon" in tags or "nvidia" in tags:
+        return "gpu"
+    if "cpu" in tags or "ryzen" in tags or "intel" in tags:
+        return "cpu"
+    if any(c in tags for c in ["playstation", "ps5", "xbox", "nintendo", "switch", "steam deck"]):
+        return "console"
+    if "ssd" in tags or "storage" in tags:
+        return "storage"
+
+    return "general"
 
 
 def strip_markdown_from_title(title: str) -> str:

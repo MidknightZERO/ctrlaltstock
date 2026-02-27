@@ -27,6 +27,7 @@ import httpx
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 import config
+from utils import infer_primary_topic
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [amazon_linker] %(levelname)s %(message)s")
@@ -210,8 +211,11 @@ def _keywords_from_draft(draft: Dict[str, Any]) -> List[str]:
     return [k for k in keywords if len(k) > 1]
 
 
-def _score_product(product: Dict[str, Any], keywords: List[str]) -> int:
-    """Score how well a curated product matches the draft keywords."""
+TOPIC_BONUS = 5  # Bonus when product category matches article primary topic
+
+
+def _score_product(product: Dict[str, Any], keywords: List[str], primary_topic: str = "general") -> int:
+    """Score how well a curated product matches the draft keywords. Adds topic bonus when category matches primary topic."""
     score = 0
     product_tags = [str(t).lower() for t in product.get("tags", [])]
     name_parts = re.split(r"[\s\-/]+", (product.get("name") or "").lower())
@@ -222,6 +226,16 @@ def _score_product(product: Dict[str, Any], keywords: List[str]) -> int:
             score += 2
         elif any(kw in s for s in searchable):
             score += 1
+    # Topic bonus: prefer products matching article's primary topic
+    if primary_topic != "general":
+        cat_match = (
+            (primary_topic == "gpu" and category == "gpu") or
+            (primary_topic == "cpu" and category == "cpu") or
+            (primary_topic == "console" and "console" in category) or
+            (primary_topic == "storage" and ("storage" in category or "ssd" in category))
+        )
+        if cat_match:
+            score += TOPIC_BONUS
     return score
 
 
@@ -243,16 +257,17 @@ def curated_product_to_amazon(product: Dict[str, Any]) -> Dict[str, Any]:
 def select_curated_for_draft(draft: Dict[str, Any]) -> List[Dict[str, Any]]:
     """
     Select up to MAX_CURATED_PRODUCTS from the curated list that best match the draft.
-    Returns list in AmazonProduct shape.
+    Returns list in AmazonProduct shape. Prefers products matching primary topic (GPU/CPU/etc).
     """
     products = load_curated_products()
     if not products:
         return []
+    primary_topic = infer_primary_topic(draft)
     keywords = _keywords_from_draft(draft)
     if not keywords:
         # Still return a few general picks (e.g. first 3) so we show something
         return [curated_product_to_amazon(p) for p in products[:MAX_CURATED_PRODUCTS]]
-    scored = [(p, _score_product(p, keywords)) for p in products]
+    scored = [(p, _score_product(p, keywords, primary_topic)) for p in products]
     scored.sort(key=lambda x: x[1], reverse=True)
     # Take products with score > 0, up to MAX_CURATED_PRODUCTS
     selected = [p for p, s in scored if s > 0][:MAX_CURATED_PRODUCTS]
@@ -298,7 +313,8 @@ def find_products_for_article(draft: Dict[str, Any]) -> Dict[str, Any]:
         unique_products = curated[:MAX_CURATED_PRODUCTS]
 
     # 2. If we have fewer than MIN_CURATED_PRODUCTS, add fallback from queries
-    queries = draft.get("amazon_search_queries", [])
+    primary_topic = infer_primary_topic(draft)
+    queries = list(draft.get("amazon_search_queries", []) or [])
     tags = draft["frontmatter"].get("tags", [])
     if not queries:
         hardware_tags = [t for t in tags if any(kw in t.lower() for kw in [
@@ -306,6 +322,15 @@ def find_products_for_article(draft: Dict[str, Any]) -> Dict[str, Any]:
             "steam deck", "cpu", "ryzen", "core i", "ssd", "ram"
         ])]
         queries = hardware_tags[:3] or [draft["frontmatter"].get("title", "tech hardware")]
+    # Order queries by primary topic: GPU-first for GPU articles, etc.
+    if primary_topic == "gpu":
+        gpu_first = [q for q in queries if any(kw in str(q).lower() for kw in ["gpu", "rtx", "rx", "radeon", "geforce", "graphics"])]
+        other = [q for q in queries if q not in gpu_first]
+        queries = gpu_first + other
+    elif primary_topic == "cpu":
+        cpu_first = [q for q in queries if any(kw in str(q).lower() for kw in ["cpu", "ryzen", "zen", "core i", "processor"])]
+        other = [q for q in queries if q not in cpu_first]
+        queries = cpu_first + other
 
     seen_titles = {p.get("title", p.get("query", "")) for p in unique_products}
     while len(unique_products) < MIN_CURATED_PRODUCTS and queries:

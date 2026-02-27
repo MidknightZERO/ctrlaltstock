@@ -16,13 +16,16 @@ import sys
 import json
 import logging
 import argparse
+import re
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Set
 
 import httpx
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 import config
+from utils import infer_primary_topic
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [image_fetcher] %(levelname)s %(message)s")
@@ -101,6 +104,53 @@ def _save_used_images(urls: List[str]) -> None:
         log.warning("Could not save used_images.json: %s", e)
 
 
+def _load_recent_cover_images(days: int) -> Set[str]:
+    """Load cover image base URLs from posts published in the last N days. Exclude these when picking new images."""
+    json_path = Path(config.git.repo_path) / config.bot.blog_json_path
+    if not json_path.exists():
+        return set()
+    try:
+        data = json.loads(json_path.read_text(encoding="utf-8"))
+        cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d")
+        bases = set()
+        for post in data if isinstance(data, list) else []:
+            pub = post.get("publishedDate", "")
+            if pub and pub >= cutoff:
+                url = post.get("coverImage", "")
+                if url:
+                    bases.add(url.split("?")[0])
+        return bases
+    except Exception as e:
+        log.warning("Could not load recent cover images from blog-posts.json: %s", e)
+        return set()
+
+
+def _get_pool_for_primary_topic(primary: str, stock: Dict[str, Any]) -> List[str]:
+    """Get image pool by primary topic. Prefer topic-specific pool over generic."""
+    if primary == "gpu" and "Hardware" in stock and isinstance(stock["Hardware"], dict):
+        subs = stock["Hardware"]
+        if "Graphics Cards" in subs and isinstance(subs["Graphics Cards"], list) and subs["Graphics Cards"]:
+            return subs["Graphics Cards"]
+        if "default" in subs and isinstance(subs["default"], list):
+            return subs["default"]
+    if primary == "cpu" and "Hardware" in stock and isinstance(stock["Hardware"], dict):
+        subs = stock["Hardware"]
+        if "CPU" in subs and isinstance(subs["CPU"], list) and subs["CPU"]:
+            return subs["CPU"]
+        if "default" in subs and isinstance(subs["default"], list):
+            return subs["default"]
+    if primary == "console" and "Console" in stock and isinstance(stock["Console"], dict):
+        if "default" in stock["Console"] and isinstance(stock["Console"]["default"], list):
+            return stock["Console"]["default"]
+    if primary == "storage" and "Hardware" in stock and isinstance(stock["Hardware"], dict):
+        subs = stock["Hardware"]
+        if "Storage" in subs and isinstance(subs["Storage"], list) and subs["Storage"]:
+            return subs["Storage"]
+        if "default" in subs and isinstance(subs["default"], list):
+            return subs["default"]
+    return []
+
+
 def _get_pool_for_tags(tags: List[str], stock: Dict[str, Any]) -> List[str]:
     """Get image pool from stock_images.json based on article tags."""
     tags_lower = [t.lower() for t in tags]
@@ -122,17 +172,23 @@ def _get_pool_for_tags(tags: List[str], stock: Dict[str, Any]) -> List[str]:
     return []
 
 
-def _pick_least_recently_used(pool: List[str], used: List[str], count: int) -> List[str]:
-    """Pick images from pool, preferring those not in used. Exclude used; if exhausted, use least-recent."""
-    # Normalize URLs: ensure ?w=1200 for consistency
+def _pick_least_recently_used(
+    pool: List[str],
+    used: List[str],
+    count: int,
+    exclude_bases: Optional[Set[str]] = None,
+) -> List[str]:
+    """Pick images from pool, preferring those not in used. Exclude used and exclude_bases; if exhausted, use least-recent."""
+    exclude_bases = exclude_bases or set()
+
     def norm(u: str) -> str:
         base = u.split("?")[0]
         return base + "?w=1200" if "?" not in u else u
 
     pool_full = [norm(p) for p in pool if p]
-    used_bases = {u.split("?")[0] for u in used}
+    used_bases = {u.split("?")[0] for u in used} | exclude_bases
     unused = [p for p in pool_full if p.split("?")[0] not in used_bases]
-    used_ordered = [u.split("?")[0] for u in used]
+    used_ordered = [b for b in (u.split("?")[0] for u in used) if b not in exclude_bases]
 
     result: List[str] = []
     for _ in range(count):
@@ -180,19 +236,40 @@ def search_unsplash(query: str, count: int = 3) -> List[str]:
 def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
     """
     Fetch images for an article draft.
-    Prefers Amazon product images (relevant, unique). Falls back to Unsplash or stock.
-    Updates frontmatter with coverImage and images array.
-    Returns the updated draft.
+    Prefers Amazon product images (topic-matched, not recently used). Falls back to Unsplash or stock.
+    Excludes cover images used in the past 7 days. Uses primary topic for pool/query selection.
     """
     title = draft["frontmatter"].get("title", "")
     tags = draft["frontmatter"].get("tags", [])
+    primary_topic = infer_primary_topic(draft)
+    lookback_days = getattr(config.bot, "image_reuse_lookback_days", 7)
+    recent_cover_bases = _load_recent_cover_images(lookback_days)
     all_images: List[str] = []
 
-    # 1. Prefer Amazon product images (run after amazon_linker in pipeline)
+    # 1. Prefer Amazon product images — sort by topic match, skip recently used
     products = draft["frontmatter"].get("amazonProducts") or []
-    for p in products:
+    # Put topic-matched products first
+    def topic_sort_key(p: Dict[str, Any]) -> int:
+        cat = (p.get("category") or "").lower()
+        if primary_topic == "gpu" and cat == "gpu":
+            return 0
+        if primary_topic == "cpu" and cat == "cpu":
+            return 0
+        if primary_topic == "console" and "console" in cat:
+            return 0
+        if primary_topic == "storage" and ("storage" in cat or "ssd" in cat):
+            return 0
+        return 1
+
+    sorted_products = sorted(products, key=topic_sort_key)
+    for p in sorted_products:
         img = p.get("imageUrl") or ""
-        if img and img not in all_images:
+        if not img:
+            continue
+        base = img.split("?")[0]
+        if base in recent_cover_bases:
+            continue
+        if img not in all_images:
             all_images.append(img)
         if len(all_images) >= 4:
             break
@@ -201,44 +278,55 @@ def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
     stock = _load_stock_images()
     used = _load_used_images()
     if len(all_images) < 2 and config.unsplash.access_key:
-        queries = [title] + draft.get("amazon_search_queries", [])[:2]
+        queries = [title] + (draft.get("amazon_search_queries") or [])[:2]
         for query in queries:
-            clean_query = _clean_query_for_images(query)
-            images = search_unsplash(clean_query, count=2)
-            all_images.extend(images)
+            clean_query = _clean_query_for_images(query, primary_topic)
+            images = search_unsplash(clean_query, count=3)
+            for img in images:
+                base = img.split("?")[0]
+                if base not in recent_cover_bases and img not in all_images:
+                    all_images.append(img)
+                if len(all_images) >= 4:
+                    break
             if len(all_images) >= 4:
                 break
 
-    # 3. Fall back to tag-hierarchy stock images (no API key or not enough from API)
+    # 3. Fall back to topic-aligned stock images (primary topic first, then tags)
     if len(all_images) < 2:
-        pool = _get_pool_for_tags(tags, stock)
+        pool = _get_pool_for_primary_topic(primary_topic, stock)
+        if not pool:
+            pool = _get_pool_for_tags(tags, stock)
         if not pool:
             pool = stock.get("default", [])
         if isinstance(pool, list):
             pool = [p for p in pool if p]
         else:
             pool = []
-        all_images = _pick_least_recently_used(pool, used, count=4)
+        all_images = _pick_least_recently_used(pool, used, count=4, exclude_bases=recent_cover_bases)
 
     # Deduplicate
     seen = set()
     unique_images = []
     for img in all_images:
         base = img.split("?")[0]
-        if base not in seen:
+        if base not in seen and base not in recent_cover_bases:
             seen.add(base)
             unique_images.append(img)
 
-    # Ensure we have enough
+    # Ensure we have enough (exclude recent covers)
     if len(unique_images) < 2:
         default_pool = stock.get("default", [])
         if isinstance(default_pool, list):
             for url in default_pool:
-                if url and url.split("?")[0] not in seen:
-                    unique_images.append(url)
-                    seen.add(url.split("?")[0])
-                    if len(unique_images) >= 4:
-                        break
+                if not url:
+                    continue
+                base = url.split("?")[0]
+                if base in recent_cover_bases or base in seen:
+                    continue
+                unique_images.append(url)
+                seen.add(base)
+                if len(unique_images) >= 4:
+                    break
 
     # Update used_images
     if unique_images:
@@ -256,9 +344,8 @@ def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
     return updated
 
 
-def _clean_query_for_images(query: str) -> str:
-    """Clean a product query for better Unsplash results (remove model numbers)."""
-    import re
+def _clean_query_for_images(query: str, primary_topic: str = "general") -> str:
+    """Clean a product query for better Unsplash results. Use primary_topic to bias when query is ambiguous."""
     clean = re.sub(r"\b(RTX|RX|GTX|AMD|Intel|DDR\d|NVMe)\s*\d[\w-]*", "", query, flags=re.IGNORECASE)
     mappings = {
         "nvidia": "graphics card computer",
@@ -271,10 +358,23 @@ def _clean_query_for_images(query: str) -> str:
         "motherboard": "computer motherboard circuit",
         "ram": "computer memory technology",
         "ssd": "solid state drive storage",
+        "fsr": "graphics card gaming",
+        "vulkan": "graphics card gaming",
+        "radeon": "graphics card gaming",
+        "driver": "graphics card computer",
     }
     for kw, replacement in mappings.items():
         if kw in clean.lower():
             return replacement
+    # Bias by primary topic when query is generic
+    if primary_topic == "gpu":
+        return "graphics card gaming"
+    if primary_topic == "cpu":
+        return "processor chip technology"
+    if primary_topic == "console":
+        return "gaming console controller"
+    if primary_topic == "storage":
+        return "solid state drive storage"
     return (clean.strip() or "technology computer gaming")[:80]
 
 
