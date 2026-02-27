@@ -62,6 +62,9 @@ TAG_TO_MAIN: Dict[str, str] = {
     "gaming": "Software",
     "software": "Software",
     "drivers": "Software",
+    "deals": "Deals",
+    "game": "Deals",
+    "game deals": "Deals",
 }
 
 
@@ -158,6 +161,9 @@ def _get_pool_for_primary_topic(primary: str, stock: Dict[str, Any]) -> List[str
                 return d
         if "default" in stock and isinstance(stock["default"], list):
             return stock["default"]
+    if primary in ("game", "deals") and "Deals" in stock and isinstance(stock["Deals"], dict):
+        if "default" in stock["Deals"] and isinstance(stock["Deals"]["default"], list):
+            return stock["Deals"]["default"]
     return []
 
 
