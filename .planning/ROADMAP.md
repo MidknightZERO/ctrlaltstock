@@ -28,6 +28,7 @@ Plans:
 ## Phase 02: Dead Code & Duplication Removal
 
 **Goal:** Remove all confirmed dead/unused files and consolidate duplicated code.
+**Plans:** 1 plan
 
 **Scope:**
 - Delete `src/About.tsx` (unused — `src/components/About.tsx` is active)
@@ -38,24 +39,33 @@ Plans:
 - Remove duplicate `sys` import in `bot/publisher.py`
 - Remove unused dependencies from `bot/requirements.txt` (requests, Jinja2)
 
+Plans:
+- [ ] 02-01-PLAN.md — Delete 6 dead/duplicate files, redirect imports, clean bot deps
+
 **Success criteria:** Zero duplicate files, single source of truth for product data, no dead imports.
 
 ---
 
 ## Phase 03: Type Safety & Code Quality
 
-**Goal:** Fix TypeScript type safety issues, remove @ts-nocheck, eliminate as-any casts.
+**Goal:** Fix TypeScript type safety issues, remove @ts-nocheck, eliminate as-any casts, remove debug logging, delete dead code.
+
+**Plans:** 2 plans in 1 wave (parallel)
+
+Plans:
+- [ ] 03-01-PLAN.md — Extend BlogPost type, fix as-any in consumers, remove debug logging, delete dead api.ts
+- [ ] 03-02-PLAN.md — Fix discriminated union narrowing in markdownUtils.ts and BlockEditor.tsx
 
 **Scope:**
-- Extend BlogPost type with `amazonProducts`, `relatedPostSlugs`, `primaryTag` fields
+- Extend BlogPost type with `primaryTag`, `relatedPostSlugs` fields
 - Remove all `as any` casts in `markdownUtils.ts` (use proper discriminated union narrowing)
-- Remove `as any` casts in `BlogPost.tsx`
-- Fix `src/server/api.ts`: remove @ts-nocheck, replace 3x copy-pasted frontmatter parsers with single gray-matter call
+- Remove `as any` casts in `BlogPost.tsx` and `blogUtils.ts`
+- Remove 10 `as any` casts in `BlockEditor.tsx`
+- Delete dead `src/server/api.ts` (nothing imports it)
 - Add missing ContentBlock import in `markdownUtils.ts`
-- Fix Product interface divergence
 - Remove debug console.log statements from production code
 
-**Success criteria:** Zero @ts-nocheck, zero unnecessary as-any casts, consistent type interfaces.
+**Success criteria:** Zero @ts-nocheck, zero unnecessary as-any casts, zero debug console.log in frontend.
 
 ---
 
