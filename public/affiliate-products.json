@@ -336,6 +336,22 @@
       ]
     },
     {
+      "id": "avatar-last-airbender-game",
+      "name": "Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)",
+      "description": "Action-adventure game based on the Nickelodeon series",
+      "price": "From £9.99",
+      "url": "https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21",
+      "imageUrl": "https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg",
+      "category": "game",
+      "tags": [
+        "Avatar",
+        "Nintendo Switch",
+        "Game",
+        "Deals",
+        "Gaming"
+      ]
+    },
+    {
       "id": "ps5-pro",
       "name": "PlayStation 5 Pro",
       "description": "Enhanced PS5 with better ray tracing",

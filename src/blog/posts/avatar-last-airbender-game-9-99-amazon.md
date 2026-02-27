@@ -1,43 +1,14 @@
 ---
 amazonProducts:
-- affiliateUrl: https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21
-  asin: ''
-  category: Console
-  imageUrl: https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg
-    208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg
-    416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg
-    208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg
-    416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg
-    208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg
-    416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg
-    208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg
-  price: From £699
-  query: PlayStation 5 Pro
-  searchUrl: https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21
-  title: PlayStation 5 Pro
-- affiliateUrl: https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21
-  asin: ''
-  category: GPU
-  imageUrl: https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg
-  price: Check used / refurb
-  query: NVIDIA GeForce RTX 3080 Ti
-  searchUrl: https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21
-  title: NVIDIA GeForce RTX 3080 Ti
-- affiliateUrl: https://www.amazon.co.uk/s?k=Thermal+Grizzly+Kryonaut&tag=ctrlaltstock-21
-  asin: ''
-  category: Cooling
-  imageUrl: https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg
-    208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg
-    416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg
-    208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg
-    416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg
-    208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg
-    416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg
-    208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg
-  price: From £8
-  query: Thermal Grizzly Kryonaut
-  searchUrl: https://www.amazon.co.uk/s?k=Thermal+Grizzly+Kryonaut&tag=ctrlaltstock-21
-  title: Thermal Grizzly Kryonaut
+- affiliateUrl: https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21
+  asin: B0B9H3B5KN
+  category: game
+  imageUrl: https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg
+  price: From £9.99
+  query: Avatar The Last Airbender The Quest for Balance Nintendo Switch
+  searchUrl: https://www.amazon.co.uk/s?k=Avatar+Last+Airbender+Quest+Balance+Nintendo+Switch&tag=ctrlaltstock-21
+  title: Avatar The Last Airbender The Quest for Balance Nintendo Switch
+
 author:
   avatar: https://ctrlaltstock.com/logo.png
   bio: The CtrlAltStock team monitors tech hardware prices and stock levels 24/7 so
@@ -78,7 +49,7 @@ The scoop comes straight from the r/GameDeals subreddit, where user *BendingEnth
 
 
 
-<!-- featured-product: PlayStation 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
+<!-- featured-product: Avatar The Last Airbender The Quest for Balance | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
 
 
 ## What Does This Mean for Prices? A Bargain Hunter's Analysis
@@ -87,7 +58,7 @@ This £9.99 price tag is a game-changer for the game's value proposition. Previo
 
 
 
-[![PlayStation 5 Pro](https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21)
+[![Avatar: The Last Airbender - The Quest for Balance](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
 
 
 ## Our Recommendation: Grab It Before It Bends Away!
@@ -102,7 +73,6 @@ Join our 10,000-member CtrlAltStock Discord for live stock alerts and the latest
 
 
 
-[![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
 
 
 ## Why This Matters for Gamers
@@ -115,7 +85,6 @@ The £9.99 price point isn't just a discount—it's a gateway to experiencing a 
 
 
 
-[![Thermal Grizzly Kryonaut](https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/s?k=Thermal+Grizzly+Kryonaut&tag=ctrlaltstock-21)
 
 
 ## Technical Performance
@@ -128,7 +97,7 @@ The game originally launched at £19.99 in 2014, dropped to £14.99 in 2016, and
 
 
 
-[![PlayStation 5 Pro](https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21)
+[![Avatar: The Last Airbender - The Quest for Balance](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
 
 
 ## Community Reception
@@ -141,7 +110,6 @@ Amazon UK currently lists the game as "In Stock" with free delivery for Prime me
 
 
 
-[![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
 
 
 ## CtrlAltStock Discord Context
@@ -152,5 +120,3 @@ The deal was shared in the Discord's #game-deals channel by moderator *GamerGuru
 
 Before making your purchase, consider your gaming preferences. If you enjoy action-adventure games with accessible combat mechanics and cooperative multiplayer, *Avatar: The Last Airbender: The Quest for Balance* is an excellent choice at this price point. The game's faithful recreation of the bending arts and its charming story make it particularly appealing to fans of the animated series. At just £9.99, there's very little downside to giving it a try, especially considering the depth of content it offers for such an affordable price.
 
-
-[![Thermal Grizzly Kryonaut](https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/s?k=Thermal+Grizzly+Kryonaut&tag=ctrlaltstock-21)

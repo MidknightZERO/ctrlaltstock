@@ -229,6 +229,10 @@ def _score_product(product: Dict[str, Any], keywords: List[str], primary_topic: 
     # Topic bonus: prefer products matching article's primary topic
     if primary_topic == "streaming" and category == "gpu":
         score -= TOPIC_BONUS  # Deprioritize GPU products for streaming articles
+    elif primary_topic in ("game", "deals") and category in ("gpu", "cooling", "psu"):
+        score -= TOPIC_BONUS  # Exclude GPU/hardware for game-deal articles
+    elif primary_topic in ("game", "deals") and category in ("game", "gaming"):
+        score += TOPIC_BONUS  # Prefer game products for game-deal articles
     elif primary_topic != "general":
         cat_match = (
             (primary_topic == "gpu" and category == "gpu") or
@@ -269,6 +273,12 @@ def select_curated_for_draft(draft: Dict[str, Any]) -> List[Dict[str, Any]]:
     primary_topic = infer_primary_topic(draft)
     if primary_topic == "streaming":
         products = [p for p in products if (p.get("category") or "").lower() != "gpu"]
+    elif primary_topic in ("game", "deals"):
+        # Game-deal articles: exclude GPU/hardware; prefer game/gaming products
+        products = [p for p in products if (p.get("category") or "").lower() not in ("gpu", "cooling", "psu", "monitor")]
+        game_products = [p for p in products if (p.get("category") or "").lower() in ("game", "gaming")]
+        if game_products:
+            products = game_products + [p for p in products if p not in game_products]
     keywords = _keywords_from_draft(draft)
     if not keywords:
         # Still return a few general picks (e.g. first 3) so we show something
@@ -324,11 +334,16 @@ def find_products_for_article(draft: Dict[str, Any]) -> Dict[str, Any]:
     tags = draft["frontmatter"].get("tags", [])
     title = (draft.get("frontmatter", {}).get("title") or "").lower()
     if not queries:
-        hardware_tags = [t for t in tags if any(kw in t.lower() for kw in [
-            "rtx", "rx", "gtx", "gpu", "nvidia", "amd", "intel", "ps5", "xbox",
-            "steam deck", "cpu", "ryzen", "core i", "ssd", "ram", "shield"
-        ])]
-        queries = hardware_tags[:3] or [draft["frontmatter"].get("title", "tech hardware")]
+        if primary_topic in ("game", "deals"):
+            # Game-deal: use game title + "game Amazon" for search
+            raw_title = draft["frontmatter"].get("title", "")
+            queries = [f"{raw_title} game Amazon", raw_title, "Nintendo Switch game"]
+        else:
+            hardware_tags = [t for t in tags if any(kw in t.lower() for kw in [
+                "rtx", "rx", "gtx", "gpu", "nvidia", "amd", "intel", "ps5", "xbox",
+                "steam deck", "cpu", "ryzen", "core i", "ssd", "ram", "shield"
+            ])]
+            queries = hardware_tags[:3] or [draft["frontmatter"].get("title", "tech hardware")]
     # Streaming: prepend NVIDIA Shield query when title mentions Shield
     if primary_topic == "streaming" and "shield" in title:
         queries = ["NVIDIA Shield TV"] + [q for q in queries if "shield" not in str(q).lower()]

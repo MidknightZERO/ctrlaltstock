@@ -46,6 +46,15 @@ def infer_primary_topic(draft: Dict[str, Any]) -> str:
         if sig in combined:
             return "cpu"
 
+    # Game/deal signals (before console — game deal articles get game products, not GPUs)
+    game_deal_signals = ["avatar", "game deal", "amazon deal", "£9.99", "flash sale", "price drop"]
+    if any(sig in combined for sig in game_deal_signals):
+        if "gpu" not in combined and "graphics" not in combined and "rtx" not in combined:
+            return "game"
+    if "deals" in tags or "gaming" in tags:
+        if any(kw in combined for kw in ["game", "avatar", "nintendo", "switch game"]):
+            return "game"
+
     # Console signals
     console_signals = ["playstation", "ps5", "ps4", "xbox", "nintendo", "switch", "steam deck", "rog ally"]
     for sig in console_signals:
@@ -70,7 +79,9 @@ def infer_primary_topic(draft: Dict[str, Any]) -> str:
     if "nvidia" in combined and "shield" in combined:
         return "streaming"
 
-    # Fall back to tags (order matters: gpu before cpu; exclude nvidia->gpu when shield in title)
+    # Fall back to tags (order matters: game before gpu; exclude nvidia->gpu when shield in title)
+    if "deals" in tags and any(k in tags for k in ["gaming", "game", "nintendo", "switch"]):
+        return "game"
     if "gpu" in tags or "graphics" in tags or "radeon" in tags:
         return "gpu"
     if "nvidia" in tags and "shield" not in combined:
