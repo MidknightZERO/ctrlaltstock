@@ -5,11 +5,12 @@ import { BlogPost } from '../types';
 import Layout from '../components/Layout';
 import MarkdownRenderer from './components/MarkdownRenderer';
 import BlogFeaturedSlideshow from '../components/BlogFeaturedSlideshow';
-import { MAIN_GROUPS, isMainGroup, getMainGroupForTag } from './data/tagHierarchy';
+import { MAIN_GROUPS, isMainGroup, getMainGroupForTag, isDisplayableTag } from './data/tagHierarchy';
+import { getPillarPosts } from './data/pillarPosts';
 import BlogPageBackground from './components/BlogPageBackground';
 
 const FEATURED_COUNT = 8;
-const POSTS_PER_PAGE = 6;
+const POSTS_PER_PAGE = 9;
 
 const sortByDate = (a: BlogPost, b: BlogPost) => {
   const da = new Date(a.publishedDate || 0).getTime();
@@ -155,13 +156,15 @@ const BlogHome: React.FC = () => {
     window.history.pushState({}, '', location.pathname);
   };
 
-  const featuredPosts = posts.slice(0, FEATURED_COUNT);
+  const featuredPosts = getPillarPosts(posts, FEATURED_COUNT);
 
+  // Filter to allowlist/hierarchy to avoid word-salad in Topics (06-07)
   const displayTags = useMemo(() => {
+    const filteredTags = tags.filter(isDisplayableTag);
     const mainGroupTags: string[] = [];
     const subByMain: Record<string, string[]> = {};
     const other: string[] = [];
-    for (const tag of tags) {
+    for (const tag of filteredTags) {
       if (isMainGroup(tag)) {
         mainGroupTags.push(tag);
       } else {
@@ -202,7 +205,7 @@ const BlogHome: React.FC = () => {
           {/* Featured: automatic slideshow with infinite loop */}
           {!isInitialLoading && posts.length > 0 && (
             <div className="w-full mb-12">
-              <BlogFeaturedSlideshow posts={featuredPosts} title="Featured" />
+              <BlogFeaturedSlideshow posts={featuredPosts} title="Featured guides" />
             </div>
           )}
 
@@ -336,12 +339,15 @@ const BlogHome: React.FC = () => {
                           <div className="flex items-center mr-4">
                             <div className="w-6 h-6 rounded-full overflow-hidden mr-2">
                               <img
-                                src={post.author.avatar}
-                                alt={post.author.name}
+                                src={post.author?.avatar || '/Logo.png'}
+                                alt={post.author?.name || 'CtrlAltStock'}
                                 className="w-full h-full object-cover"
+                                onError={(e) => {
+                                  (e.target as HTMLImageElement).src = '/Logo.png';
+                                }}
                               />
                             </div>
-                            <span>{post.author.name}</span>
+                            <span>{post.author?.name || 'CtrlAltStock'}</span>
                           </div>
                           <div>{formatPublishDate(post.publishedDate)} · {post.readingTime}</div>
                         </div>

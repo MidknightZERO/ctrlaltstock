@@ -105,6 +105,12 @@ const parseMarkdownFile = (filepath, filename) => {
         author.name = String(frontMatter.author);
       }
     }
+    // Default team author when name/avatar missing (06-06)
+    if (!author.name || !author.avatar) {
+      author.name = author.name || 'CtrlAltStock';
+      author.avatar = author.avatar || '/Logo.png';
+      author.bio = author.bio || 'Community-run stock alerts and hardware news';
+    }
 
     // Process tags (ensure it's an array)
     let tags = [];

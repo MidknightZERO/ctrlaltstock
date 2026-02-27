@@ -205,14 +205,17 @@ const BlogPost: React.FC = () => {
               <div className="flex items-center mr-6">
                 <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
                   <img
-                    src={post.author.avatar}
-                    alt={post.author.name}
+                    src={post.author?.avatar || '/Logo.png'}
+                    alt={post.author?.name || 'CtrlAltStock team'}
                     className="w-full h-full object-cover"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = '/Logo.png';
+                    }}
                   />
                 </div>
                 <div>
-                  <div className="font-medium text-white">{post.author.name}</div>
-                  {post.author.bio && <div className="text-sm">{post.author.bio}</div>}
+                  <div className="font-medium text-white">{post.author?.name || 'CtrlAltStock'}</div>
+                  {post.author?.bio && <div className="text-sm">{post.author.bio}</div>}
                 </div>
               </div>
 

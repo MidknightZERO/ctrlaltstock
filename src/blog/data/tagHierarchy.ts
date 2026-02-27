@@ -53,6 +53,39 @@ export const SUBCATEGORY_MAP: Record<MainGroup, string[]> = {
 /** All subcategories flattened */
 export const ALL_SUBCATEGORIES = MAIN_GROUPS.flatMap((g) => SUBCATEGORY_MAP[g]);
 
+/**
+ * Allowlist of displayable tags for Topics filter.
+ * Filters out word-salad and irrelevant tags; posts still filter by ?tag= for any tag.
+ */
+export const DISPLAY_TAGS = new Set([
+  ...MAIN_GROUPS,
+  ...ALL_SUBCATEGORIES,
+  'GPU',
+  'CPU',
+  'PlayStation',
+  'Xbox',
+  'Deals',
+  'Guides',
+  'NVIDIA',
+  'AMD',
+  'Gaming',
+  'Hardware',
+  'Console',
+  'Graphics Cards',
+  'SSD',
+  'RAM',
+  'AMD Radeon',
+  'AMD Adrenalin',
+  'Driver Update',
+  'Stability Fix',
+]);
+
+/** Check if a tag should be shown in Topics UI (avoids word-salad) */
+export function isDisplayableTag(tag: string): boolean {
+  if (!tag || tag.length > 30) return false;
+  return DISPLAY_TAGS.has(tag) || isMainGroup(tag) || getMainGroupForTag(tag) !== null;
+}
+
 /** Check if a string is a main group */
 export function isMainGroup(tag: string): boolean {
   return MAIN_GROUPS.includes(tag as MainGroup);
