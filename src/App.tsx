@@ -126,6 +126,10 @@ const App: React.FC = () => {
                     src={blogPosts[0].coverImage}
                     alt={blogPosts[0].title}
                     className="w-full h-56 md:h-full object-cover"
+                    onError={(e) => {
+                      const el = e.currentTarget;
+                      if (el && el.src !== '/Logo.png') el.src = '/Logo.png';
+                    }}
                   />
                 </div>
               )}

@@ -163,3 +163,25 @@ Plans:
 - Phase 04 is independent (bot-only changes)
 - Phase 05 depends on Phase 03 (type fixes landed first)
 - Phase 06 depends on Phases 02–05 (cleanup, type safety, and reliability already in place)
+
+---
+
+## Phase 07: Image Handling & Blog Order
+
+**Goal:** Reliably handle main (cover) and inline images across the site and bot pipeline so published posts show images correctly; ensure blog order is newest-first everywhere and clearly documented.
+
+**Plans:** 2 plans
+
+**Scope:**
+- Audit and fix cover image flow: frontmatter → build → JSON → BlogPost/BlogHome/App (and bot-set coverImage)
+- Audit and fix inline images: markdown in content vs frontmatter `images` array; ensure BlockRenderer/MarkdownRenderer show them on published posts
+- Fix or document any place where blog order appears backwards; enforce newest-first in build and frontend
+- Ensure published blogs (including bot-published) have working main and inline images
+
+Plans:
+- [ ] 07-01-PLAN.md — Cover image normalize in build + fallbacks in all views; render post.images on post page
+- [ ] 07-02-PLAN.md — Sort GET /api/posts newest-first; document blog order in BLOG-README.md
+
+**Success criteria:** Cover images display on all relevant views; inline images in post body render correctly; blog list and feeds show newest first; no broken or missing image behavior on published posts.
+
+---

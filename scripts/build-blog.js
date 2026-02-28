@@ -38,34 +38,38 @@ const getMarkdownFiles = () => {
     }));
 };
 
+// Normalize coverImage: if it looks like a srcset (e.g. "url1 208w, url2 416w"), use first URL only
+const normalizeCoverImage = (raw) => {
+  const s = String(raw || '').trim();
+  if (!s) return '';
+  if (s.includes(',') && (/\s+\d+w\s*$/m.test(s) || s.includes(' '))) {
+    const first = s.split(',')[0].trim().replace(/\s+\d+w\s*$/, '').trim();
+    return first || s;
+  }
+  return s;
+};
+
 // Process content blocks from the markdown content
 const processContentBlocks = (markdownContent) => {
-  // Initialize content blocks array
   const contentBlocks = [];
-
-  // Split the content by headings to create section blocks
   const sections = markdownContent.split(/^#+\s+.+$/m);
   const headings = markdownContent.match(/^#+\s+.+$/gm) || [];
 
-  // First section might be empty if the content starts with a heading
   if (sections[0].trim() === '') {
     sections.shift();
   }
 
-  // Process each section
   for (let i = 0; i < headings.length; i++) {
     const heading = headings[i];
     const content = sections[i] ? sections[i].trim() : '';
-
-    // Create a content block for each section
     contentBlocks.push({
       type: 'text',
       id: `block-${i}`,
+      order: i,
       content: `${heading}\n\n${content}`
     });
   }
 
-  // If there are leftover content sections without headings, add those too
   if (sections.length > headings.length) {
     for (let i = headings.length; i < sections.length; i++) {
       const content = sections[i].trim();
@@ -73,6 +77,7 @@ const processContentBlocks = (markdownContent) => {
         contentBlocks.push({
           type: 'text',
           id: `block-${i}`,
+          order: i,
           content
         });
       }
@@ -180,7 +185,7 @@ const parseMarkdownFile = (filepath, filename) => {
       content: markdownContent.trim(),
       excerpt: String(frontMatter.excerpt || ''),
       readingTime: String(frontMatter.readingTime || ''),
-      coverImage: String(frontMatter.coverImage || ''),
+      coverImage: normalizeCoverImage(frontMatter.coverImage),
       tags,
       images,
       featuredProductId: frontMatter.featuredProductId ? String(frontMatter.featuredProductId) : '',

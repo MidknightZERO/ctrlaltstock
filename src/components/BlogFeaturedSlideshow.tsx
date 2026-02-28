@@ -172,6 +172,10 @@ const BlogFeaturedSlideshow: React.FC<BlogFeaturedSlideshowProps> = ({
                       src={post.coverImage}
                       alt=""
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const el = e.currentTarget;
+                        if (el && el.src !== '/Logo.png') el.src = '/Logo.png';
+                      }}
                     />
                   </div>
                 )}

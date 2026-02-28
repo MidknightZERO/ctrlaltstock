@@ -231,6 +231,10 @@ const Home: React.FC = () => {
                     src={post.coverImage || 'https://via.placeholder.com/400x200?text=Ctrl+Alt+Stock'}
                     alt={post.title}
                     className="w-full h-48 object-cover"
+                    onError={(e) => {
+                      const el = e.currentTarget;
+                      if (el && el.src !== '/Logo.png') el.src = '/Logo.png';
+                    }}
                   />
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-white mb-2">

@@ -148,8 +148,12 @@ const BlockRenderer: React.FC<BlockRendererProps> = ({ blocks }) => {
     }
   };
 
-  // Sort blocks by order property
-  const sortedBlocks = [...blocks].sort((a, b) => a.order - b.order);
+  // Sort blocks by order property (defensive: use index when order missing)
+  const sortedBlocks = [...blocks].sort((a, b) => {
+    const orderA = a.order ?? blocks.indexOf(a);
+    const orderB = b.order ?? blocks.indexOf(b);
+    return orderA - orderB;
+  });
 
   return (
     <article className="prose prose-invert prose-lg max-w-none">

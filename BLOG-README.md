@@ -77,6 +77,10 @@ This is the body of your blog post. You can use all standard Markdown syntax.
    - This approach works perfectly with static site hosting like Netlify
    - No server-side processing is needed
 
+### Blog order
+
+Blog order is **newest-first everywhere**. The build script (`scripts/build-blog.js`) writes `blog-posts.json` with posts sorted by `publishedDate` descending. The dev API (`GET /api/posts`) returns posts in the same order. All frontend list views (BlogHome, homepage, preview) sort by date newest-first. So the most recent post always appears at the top of lists and feeds.
+
 ## File Structure
 
 - `src/blog/posts/*.md` - Your blog content files

@@ -305,6 +305,10 @@ const BlogHome: React.FC = () => {
                             src={post.coverImage}
                             alt={post.title}
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              const el = e.currentTarget;
+                              if (el && el.src !== '/Logo.png') el.src = '/Logo.png';
+                            }}
                           />
                         ) : (
                           <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-800"></div>

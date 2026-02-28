@@ -232,6 +232,10 @@ const BlogPost: React.FC = () => {
                   src={post.coverImage}
                   alt={post.title}
                   className="w-full object-cover h-[300px] md:h-[400px] lg:h-[500px]"
+                  onError={(e) => {
+                    const el = e.currentTarget;
+                    if (el && el.src !== '/Logo.png') el.src = '/Logo.png';
+                  }}
                 />
               </div>
             )}
@@ -251,6 +255,30 @@ const BlogPost: React.FC = () => {
               <div className="text-center py-8 text-gray-400">
                 <p>This post has no content yet.</p>
               </div>
+            )}
+
+            {/* Frontmatter images (e.g. from bot) when present */}
+            {post.images && post.images.length > 0 && (
+              <section className="mt-10 mb-10" aria-label="Images">
+                <h2 className="text-xl font-semibold mb-6 text-[#9ed04b]">Images</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  {post.images.filter((url): url is string => typeof url === 'string' && url.trim() !== '').map((url, idx) => (
+                    <figure key={idx} className="flex justify-center">
+                      <div className="inline-block p-4 md:p-6 bg-white rounded-xl shadow-lg border border-gray-200/80 max-w-full">
+                        <img
+                          src={url}
+                          alt=""
+                          className="rounded-lg max-h-80 md:max-h-96 object-contain mx-auto block"
+                          onError={(e) => {
+                            const el = e.currentTarget;
+                            if (el && el.src !== '/Logo.png') el.src = '/Logo.png';
+                          }}
+                        />
+                      </div>
+                    </figure>
+                  ))}
+                </div>
+              </section>
             )}
 
             {/* Discord CTA */}
@@ -334,6 +362,10 @@ const BlogPost: React.FC = () => {
                             src={rp.coverImage}
                             alt={rp.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              const el = e.currentTarget;
+                              if (el && el.src !== '/Logo.png') el.src = '/Logo.png';
+                            }}
                           />
                         </div>
                       )}

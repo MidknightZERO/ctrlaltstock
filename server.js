@@ -157,6 +157,13 @@ app.get('/api/posts', async (req, res) => {
       posts.push(post);
     }
 
+    // Newest first (same as build script and frontend)
+    posts.sort((a, b) => {
+      const ta = new Date(a.publishedDate || 0).getTime();
+      const tb = new Date(b.publishedDate || 0).getTime();
+      return (Number.isNaN(tb) ? 0 : tb) - (Number.isNaN(ta) ? 0 : ta);
+    });
+
     res.json(posts);
   } catch (error) {
     console.error('Error getting posts:', error);

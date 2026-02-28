@@ -27,6 +27,8 @@ function parseFeaturedProductComment(match: string): { title: string; price?: st
   return null;
 }
 
+const COVER_IMAGE_FALLBACK = '/Logo.png';
+
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
   const parts: Array<{ type: 'markdown' | 'featured'; value: string }> = [];
   let lastIndex = 0;
@@ -96,13 +98,17 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
           <td className="px-4 py-2 border-t border-gray-700" {...props} />
         ),
 
-        // Inline images: padded white container to match product image backgrounds
+        // Inline images: padded white container; onError fallback to avoid broken icon
         img: ({ node, ...props }) => (
           <figure className="my-8 flex justify-center">
             <div className="inline-block p-4 md:p-6 bg-white rounded-xl shadow-lg border border-gray-200/80 max-w-full">
               <img
                 {...props}
                 className="rounded-lg max-h-80 md:max-h-96 object-contain mx-auto block"
+                onError={(e) => {
+                  const el = e.currentTarget;
+                  if (el && el.src !== COVER_IMAGE_FALLBACK) el.src = COVER_IMAGE_FALLBACK;
+                }}
               />
             </div>
           </figure>
