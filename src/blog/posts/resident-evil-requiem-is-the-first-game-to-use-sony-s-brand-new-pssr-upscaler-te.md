@@ -67,13 +67,18 @@ title: Resident Evil Requiem is the first game to use Sony's brand new PSSR upsc
   will be released globally in the coming weeks
 ---
 
-The upcoming release of *Resident Evil Requiem* on the PlayStation 5 Pro has ignited fresh excitement among UK gamers, particularly budget-conscious players eager to see how Sony's new PSSR (PlayStation Super-Resolution) upscaler tech performs in real-world scenarios. As the first game to fully utilize this hardware-accelerated upscaling solution, *Resident Evil Requiem* is poised to redefine visual fidelity standards. Sony's PSSR promises sharper textures, smoother frame rates, and enhanced atmospheric effects—all critical for a survival horror game where every shadow and blood splatter amplifies tension. Early benchmarks suggest the tech reduces GPU load by 20% compared to traditional upscaling methods, allowing the PS5 Pro to maintain 4K resolution at 60fps in demanding scenes without overheating.
+The upcoming release of *[Resident Evil Requiem](https://ctrlaltstock.com/blog/resident-evil-requiem-steam-concurrency-record)* on the PlayStation 5 Pro has ignited fresh excitement among UK gamers, particularly budget-conscious players eager to see how Sony's new PSSR (PlayStation Super-Resolution) upscaler tech performs in real-world scenarios. As the first game to fully utilize this hardware-accelerated upscaling solution, *Resident Evil Requiem* is poised to redefine visual fidelity standards. Sony's PSSR promises sharper textures, smoother frame rates, and enhanced atmospheric effects—all critical for a [survival horror](https://ctrlaltstock.com/blog/resident-evil-requiem-steam-concurrency-record) game where every shadow and blood splatter amplifies tension. Early benchmarks suggest the tech reduces GPU load by 20% compared to traditional upscaling methods, allowing the PS5 Pro to maintain 4K resolution at 60fps in demanding scenes without overheating.
 
 ## What's the story?
 
-Sony has confirmed that *Resident Evil Requiem* will be the inaugural title to leverage the PS5 Pro's upgraded PSSR upscaler, a dedicated hardware block designed to handle texture-heavy scenes with greater efficiency. This innovation builds on the original PS5's AI-driven upscaling but shifts processing to the console's custom SoC, reducing latency and improving consistency across games. Capcom's development team emphasized that PSSR enables "successful processing of these details and textual particularities," which translates to smoother transitions between cut-scenes and gameplay. For a series known for its intricate environments—think the labyrinthine Raccoon City streets or the grotesque anatomy of mutated creatures—this means players will experience sharper textures, more detailed character models, and dynamically shifting lighting without compromising performance.
+Sony has confirmed that *[Resident Evil](https://ctrlaltstock.com/blog/resident-evil-requiem-df-analysis-ps5-pro-performance) Requiem* will be the inaugural title to leverage the PS5 Pro's upgraded PSSR upscaler, a dedicated hardware block designed to handle texture-heavy scenes with greater efficiency. This innovation builds on the original PS5's AI-driven upscaling but shifts processing to the console's custom SoC, reducing latency and improving consistency across games. Capcom's development team emphasized that PSSR enables "successful processing of these details and textual particularities," which translates to smoother transitions between cut-scenes and gameplay. For a series known for its intricate environments—think the labyrinthine Raccoon City streets or the grotesque anatomy of mutated creatures—this means players will experience sharper textures, more detailed character models, and dynamically shifting lighting without compromising performance.
 
-The update will be released globally in the coming weeks, with Sony stating it will be optional for standard PS5 owners. However, the PS5 Pro's hardware-level PSSR engine will unlock the full potential of the technology, setting a new benchmark for future titles. Industry analysts at *UKGamerTech* predict this could accelerate PS5 Pro adoption, particularly among UK players who've hesitated due to its £749.99 price tag. By bundling a marquee exclusive like *Resident Evil Requiem* with the new upscaler, Sony not only showcases the console's capabilities but also creates a compelling value proposition for price-sensitive buyers.
+The update will be released globally in the coming weeks, with Sony stating it will be optional for standard [PS5](https://ctrlaltstock.com/blog/kingdom-come-deliverance-royal-edition-physical-release-is-up-for-pre-order-rest) owners. However, the PS5 Pro's hardware-level PSSR engine will unlock the full potential of the technology, setting a new [benchmark](https://ctrlaltstock.com/blog/amd-zen-6-desktop-ryzen-olympic-ridge-reportedly-set-to-launch-in-2027) for future titles. Industry analysts at *UKGamerTech* predict this could accelerate PS5 Pro adoption, particularly among UK players who've hesitated due to its £749.99 price tag. By bundling a marquee exclusive like *Resident Evil Requiem* with the new upscaler, Sony not only showcases the console's capabilities but also creates a compelling value proposition for price-sensitive buyers.
+
+
+
+<!-- featured-product: Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
+
 
 ## What does this mean for prices?
 
@@ -93,6 +98,11 @@ The update will be released globally in the coming weeks, with Sony stating it w
 
 - **Competitor response**: Microsoft's Xbox Series X (model 2020) and the upcoming Xbox Series Z may adjust pricing to stay competitive. Rumors suggest Microsoft could reduce the Series X's price to **£549** if Sony's PSSR tech gains traction, though no official details have been confirmed.
 - **Used-market dynamics**: As PS5 Pro units enter circulation, the resale value of the original PS5 (CFI-1015) is expected to dip by **£30-£50** within six months. For example, a standard PS5 currently resells for **£420-£450** on eBay UK; this could fall to **£370-£400** by early 2024.
+
+
+
+[![Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
+
 
 ## Our recommendation / What to buy right now
 
@@ -115,4 +125,7 @@ The update will be released globally in the coming weeks, with Sony stating it w
 
 *Resident Evil Requiem*'s adoption of Sony's PSSR tech marks a pivotal moment for next-gen gaming on the PS5 Pro. While the console's premium price remains a hurdle, its hardware-level upscaling solution and exclusive title bundling create a strong case for early adopters. UK gamers should weigh the long-term value of the PS5 Pro against their budget, particularly if they prioritize cutting-edge visuals and performance. For now, the standard PS5 paired with strategic discounts remains a viable alternative, but the PS5 Pro's leap in capability—especially for horror games reliant on atmospheric detail—makes it a compelling upgrade path.
 
-If you liked this, check out our article on [AMD Halts Driver Updates for Ryzen Z1 Extreme: Impact on UK Gaming Handheld Market](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market) for more insights on gaming hardware developments.
+If you liked this, check out our article on AMD Halts Driver Updates for Ryzen Z1 Extreme: Impact on UK Gaming Handheld Market for more insights on gaming hardware developments.
+
+
+[![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
