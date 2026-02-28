@@ -80,4 +80,6 @@ The upgrade also brings **improved anti-aliasing**. Where PSSR 1.0 sometimes lef
 Crucially, PSSR 2.0 is **fully compatible with existing PS5 Pro hardware**. No new cables, no new displays — it works on any HDMI 2.0 TV (up to 60Hz), HDMI 2.1 monitors (up to 120Hz), and even 8K displays (though it’ll still output 4K). This is a key differentiator from PC upscaling, where DLSS requires an RTX 40-series card (starting at £850 for an RTX 4060) and FSR performance varies wildly across GPUs. With PSSR 2.0, a £649 PS5 Pro can now deliver visuals that
 
 
+
+
 <!-- featured-product: PlayStation 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
