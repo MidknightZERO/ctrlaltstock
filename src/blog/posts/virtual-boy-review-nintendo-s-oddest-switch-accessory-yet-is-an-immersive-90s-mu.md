@@ -102,7 +102,7 @@ Nintendo surprised the gaming community on 20 February 2026 with the **Virtual B
 
 
 
-[![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
+[![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlalt[stock](https://ctrlaltstock.com/blog/nvidia-confirms-geforce-rtx-50-shortages-due-to-the-global-memory-crisis-impacti)-21)
 
 
 ## How does it work?  
