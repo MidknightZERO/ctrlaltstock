@@ -79,7 +79,7 @@ While the GeForce 3’s initial specifications might seem modest by today’s st
 
 Further, the transition period between the GeForce 3 and subsequent generations revealed a nuanced balance between cost-effectiveness and performance. While the 2001 price point of around £400 positioned the GeForce 3 as a premium yet accessible entry point for hobbyists and small-scale professionals, its value proposition became less clear-cut as newer systems offered comparable capabilities at lower price points. This economic factor also influenced its adoption patterns, with many users opting for second-hand or refurbished units to maintain affordability without sacrificing quality. Such economic dynamics mirror broader industry trends, where obsolete technologies often struggle to find lasting market appeal unless their core strengths are irreplaceable. The GeForce 3’s role as a stepping stone toward the more powerful RTX series highlights how product iteration is often driven by both technological necessity and market strategy.  
 
-For those comparing modern GPU memory solutions, the [Micron GDDR7 on RTX 50](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-gpu-deals) cards post offers a fascinating contrast to the GeForce 3’s memory architecture.  
+For those comparing modern GPU memory solutions, the Micron GDDR7 on RTX 50 cards post offers a fascinating contrast to the GeForce 3’s memory architecture.  
 
 
 
