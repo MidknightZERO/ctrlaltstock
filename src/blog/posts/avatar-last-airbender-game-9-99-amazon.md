@@ -44,7 +44,7 @@ If you've been waiting for a budget-friendly way to revisit the world of bending
 
 ## What's the Story? The Reddit Revelation
 
-The scoop comes straight from the r/Game[Deal](https://ctrlaltstock.com/blog/finally-we-have-fsr4-on-vulkan-but-not-thanks-to-amd)s subreddit, where user *BendingEnthusiast42* posted a screenshot of the Amazon UK listing confirming the dramatic price cut. The game, a faithful adaptation of the beloved Nickelodeon animated series, has been a perennial favourite for [Nintendo](https://ctrlaltstock.com/blog/steam-nintendo-xbox-ninja-gaiden-masters-collection-19-99-50) Switch owners seeking nostalgic, action-packed adventures. Originally released in 2014, *The Quest for Balance* was developed by (now defunct) studio *Piranha Bytes* and published by *Ubisoft* under the *Avatar: The Last Airbender* IP. The discount, verified on Amazon's official product page (B0B9H3B5KN), represents one of the deepest price cuts seen for this title in recent memory. While flash sales on classic games happen, a 50% markdown is exceptionally generous, making it an absolute steal for anyone who missed it the first time around or is new to the series.
+The scoop comes straight from the r/GameDeals subreddit, where user *BendingEnthusiast42* posted a screenshot of the Amazon UK listing confirming the dramatic price cut. The game, a faithful adaptation of the beloved Nickelodeon animated series, has been a perennial favourite for [Nintendo](https://ctrlaltstock.com/blog/steam-nintendo-xbox-ninja-gaiden-masters-collection-19-99-50) Switch owners seeking nostalgic, action-packed adventures. Originally released in 2014, *The Quest for Balance* was developed by (now defunct) studio *Piranha Bytes* and published by *Ubisoft* under the *Avatar: The Last Airbender* IP. The discount, verified on Amazon's official product page (B0B9H3B5KN), represents one of the deepest price cuts seen for this title in recent [memory](https://ctrlaltstock.com/blog/rtx-50-micron-gddr7-memory-supplier-diversification). While flash sales on classic games happen, a 50% markdown is exceptionally generous, making it an absolute steal for anyone who missed it the first time around or is new to the series.
 
 
 
@@ -150,6 +150,11 @@ The deal was shared in the Discord's #game-deals channel by moderator *GamerGuru
 Before making your purchase, consider your gaming preferences. If you enjoy action-adventure games with accessible combat mechanics and cooperative multiplayer, *Avatar: The Last Airbender: The Quest for Balance* is an excellent choice at this price point. The game's faithful recreation of the bending arts and its charming story make it particularly appealing to fans of the animated series. At just £9.99, there's very little downside to giving it a try, especially considering the depth of content it offers for such an affordable price.
 
 
+
+
+
+
+[![Avatar The Last Airbender The Quest for Balance Nintendo Switch](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
 
 
 ![Related](https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?w=1200)
