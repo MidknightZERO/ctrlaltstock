@@ -65,7 +65,7 @@ title: 'Kingdom Come: Deliverance Royal Edition Physical Release Is Up for Pre-O
   | Restart'
 ---
 
-**Upcoming [PS5](https://ctrlaltstock.com/blog/ps5-pro-owners-will-soon-get-an-improved-pssr-ai-upscaler-while-pc-gamers-with-r) Upgrade Alert: The Royal Edition Pre-Order Surge Captures Hearts**  
+**Upcoming [PS5](https://ctrlaltstock.com/blog/industry-murmurs-suggest-sony-will-no-longer-release-ps5-exclusives-on-pc-new-le) Upgrade Alert: The Royal Edition Pre-Order Surge Captures Hearts**  
 
 
 <!-- featured-product: NVIDIA GeForce RTX 4070 Super | From £579 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21 -->

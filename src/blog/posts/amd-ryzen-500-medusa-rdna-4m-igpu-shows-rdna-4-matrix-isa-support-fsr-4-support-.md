@@ -85,4 +85,6 @@ A user in the r/Amd thread noted, *“If FSR 4 is real, I’m ditching my RX 660
 FSR 4 is expected to build on FSR 3’s machine learning algorithms, potentially offering better texture quality and reduced latency. While NVIDIA’s DLSS 3 has dominated AI upscaling, AMD’s FSR 4 could offer similar or better results with less reliance on proprietary hardware. This would be a significant advantage for gamers who prefer AMD’s ecosystem. However, it’s worth noting that FSR 4’s effectiveness will depend on game developer support. Titles like *Elder Scrolls VI* or *Starfield* might need to
 
 
+
+
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
