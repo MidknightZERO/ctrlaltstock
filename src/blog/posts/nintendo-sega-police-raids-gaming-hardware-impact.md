@@ -81,7 +81,7 @@ tags:
 title: 'Nintendo and Sega Police Raids: Impact on Gaming Hardware Prices in the UK'
 ---
 
-Major gaming companies [Nintendo](https://ctrlaltstock.com/blog/steam-nintendo-xbox-ninja-gaiden-masters-collection-19-99-50) and Sega have been at the centre of police raids in a sweeping investigation that could impact console availability and pricing across the UK. As [gaming hardware](https://ctrlaltstock.com/blog/article-rtx4090-amd-discussion) enthusiasts, these developments could significantly affect the market dynamics for both current and retro gaming equipment, potentially creating opportunities for savvy buyers while disrupting established supply chains and collector markets.
+Major gaming companies [Nintendo](https://ctrlaltstock.com/blog/raided-by-the-police-investigating-nintendo-sega-devkit-arrests) and Sega have been at the centre of police raids in a sweeping investigation that could impact console availability and pricing across the UK. As [gaming hardware](https://ctrlaltstock.com/blog/article-rtx4090-amd-discussion) enthusiasts, these developments could significantly affect the market dynamics for both current and retro gaming equipment, potentially creating opportunities for savvy buyers while disrupting established supply chains and collector markets.
 
 ## What's the story?
 
