@@ -56,7 +56,7 @@ tags:
 title: 'RTX 50 Memory Revolution: Micron Joins Samsung and SK Hynix as Third Supplier'
 ---
 
-[NVIDIA](https://ctrlaltstock.com/blog/ctrlaltstock-guide-2026)'s next-generation GPU architecture is taking shape with an unexpected twist that could benefit UK gamers and PC builders alike. The recent discovery of Micron GDDR7 memory on a [GeForce RTX 50](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-cards) card signals a significant shift in NVIDIA's supply strategy, potentially leading to better availability and more competitive pricing when these cards finally hit the shelves.
+[NVIDIA](https://ctrlaltstock.com/blog/celebrating-the-geforce-3-its-revolutionary-programmable-shaders-25-years-later)'s next-generation GPU architecture is taking shape with an unexpected twist that could benefit UK gamers and PC builders alike. The recent discovery of Micron GDDR7 memory on a [GeForce RTX 50](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-cards) card signals a significant shift in NVIDIA's supply strategy, potentially leading to better availability and more competitive pricing when these cards finally hit the shelves.
 
 ## What's the story?
 
