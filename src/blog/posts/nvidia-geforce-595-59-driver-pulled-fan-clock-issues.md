@@ -69,7 +69,7 @@ As we move through 2026, the battle between Microsoft's [Xbox Series X](https://
 
 The Xbox Series X and PS5 Pro both represent the pinnacle of current-gen [gaming hardware](https://ctrlaltstock.com/blog/article-rtx4090-amd-discussion), but they take different approaches to achieving peak performance.
 
-**[Xbox](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is) Series X** features a custom AMD Zen 2 CPU with 8 cores at 3.8GHz (3.6GHz with SMT), paired with a powerful RDNA 2 GPU capable of 12 teraflops of graphical processing power. It comes with 16GB of GDDR6 [RAM](https://ctrlaltstock.com/blog/nvidia-rolls-back-its-latest-driver-update-game-ready-driver-595-59-reportedly-c) and a 1TB custom NVMe SSD that offers lightning-fast load times.
+**[Xbox](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is) Series X** features a custom AMD Zen 2 CPU with 8 cores at 3.8GHz (3.6GHz with SMT), paired with a powerful RDNA 2 GPU capable of 12 teraflops of graphical processing power. It comes with 16GB of GDDR6 [RAM](https://ctrlaltstock.com/blog/amd-strix-halo-128-gb-ram-in-a-13-inch-convertible-asus-proart-px13-gopro-editio) and a 1TB custom NVMe SSD that offers lightning-fast load times.
 
 **[PS5 Pro](https://ctrlaltstock.com/blog/resident-evil-requiem-df-analysis-ps5-pro-performance)**, on the other hand, boasts a more advanced AMD Zen 2 CPU clocked at 3.85GHz with variable frequency, alongside a significantly more powerful GPU that delivers approximately 10.28 teraflops. However, the PS5 Pro's secret weapon is its enhanced ray tracing capabilities and the innovative PSSR AI upscaler, which will soon receive an upgraded version for even better performance.
 
