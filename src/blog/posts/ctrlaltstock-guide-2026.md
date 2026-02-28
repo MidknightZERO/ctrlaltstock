@@ -74,7 +74,7 @@ AMD's rapid product cadence means that new CPUs, GPUs and chipsets hit the marke
 
 ### BIOS and Firmware  
 
-Many of AMD's recent platforms, especially the X670, B650 and TRX50 chipsets, rely on BIOS updates to unlock full [memory](https://ctrlaltstock.com/blog/rtx-50-micron-gddr7-memory-supplier-diversification) compatibility and to support newer Ryzen generations. For example, the **ASUS ROG Strix X670E‑Gaming WiFi** motherboard received a BIOS revision 2205 in early 2024 that added support for the Ryzen 9 7950X3D and improved memory timings for DDR5‑6000 kits. Installing that BIOS version can shave a few nanoseconds off latency, but it also introduces a new driver version that must be coordinated with the AMD Chipset Driver package. 
+Many of AMD's recent platforms, especially the X670, B650 and TRX50 chipsets, rely on BIOS updates to unlock full memory compatibility and to support newer Ryzen generations. For example, the **ASUS ROG Strix X670E‑Gaming WiFi** [motherboard](https://ctrlaltstock.com/blog/radeon-rx-9070-xt-taichi-white-review-details-asrock-s-first-card-with-built-in-) received a BIOS revision 2205 in early 2024 that added support for the Ryzen 9 7950X3D and improved memory timings for DDR5‑6000 kits. Installing that BIOS version can shave a few nanoseconds off latency, but it also introduces a new driver version that must be coordinated with the AMD Chipset Driver package. 
 
 ### Graphics Driver Releases  
 
