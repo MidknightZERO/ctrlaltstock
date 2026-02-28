@@ -60,13 +60,13 @@ tags:
 title: 'China-Only AMD RX 9070 GRE Yeston Waifu: Thermals, Gaming, Noise, &amp; Benchmarks'
 ---
 
-If you've been waiting for a budget-friendly AMD GPU that doesn't sacrifice performance, the freshly-released China-only RX 9070 GRE "Yeston Waifu" might just be the answer. With fresh benchmarks, thermal data and noise levels finally out in the open, this card could reshape the value equation for UK gamers looking to stretch their pound further. The Yeston Waifu packs a 12 GB GDDR6 memory subsystem, a 256-bit bus and a locked 1400 MHz boost clock, delivering a TDP of 225 W and a dual-fan cooler that stays under 70 °C in typical 1080p loads.
+If you've been waiting for a budget-friendly AMD GPU that doesn't sacrifice performance, the freshly-released China-only [RX 9070 GRE](https://ctrlaltstock.com/blog/amd-rx-9070-gre-waifu-edition-china-benchmarks) "Yeston Waifu" might just be the answer. With fresh benchmarks, thermal data and noise levels finally out in the open, this card could reshape the value equation for UK gamers looking to stretch their pound further. The Yeston Waifu packs a 12 GB GDDR6 [memory](https://ctrlaltstock.com/blog/rtx-50-micron-gddr7-memory-supplier-diversification) subsystem, a 256-bit bus and a locked 1400 MHz boost clock, delivering a TDP of 225 W and a dual-fan cooler that stays under 70 °C in typical 1080p loads.
 
 ---
 
 ## What's the story?
 
-A community member on r/Amd shared a detailed YouTube walkthrough that dives into the **AMD Radeon RX 9070 GRE "Yeston Waifu"** – a graphics card that has been exclusive to the Chinese market until now. The video, posted on 28 February 2026, provides the first public look at thermals, gaming performance, acoustic output and benchmark numbers for the Yeston-branded variant.
+A community member on r/Amd shared a detailed YouTube walkthrough that dives into the **[AMD Radeon](https://ctrlaltstock.com/blog/amd-software-adrenalin-edition-26-2-2-release-notes) RX 9070 GRE "Yeston Waifu"** – a graphics card that has been exclusive to the Chinese market until now. The video, posted on 28 February 2026, provides the first public look at thermals, gaming performance, acoustic output and [benchmark](https://ctrlaltstock.com/blog/amd-zen-6-desktop-ryzen-olympic-ridge-reportedly-set-to-launch-in-2027) numbers for the Yeston-branded variant.
 
 Key takeaways from the coverage:
 
@@ -75,11 +75,16 @@ Key takeaways from the coverage:
 - **Gaming benchmarks** – In 1080p titles such as *Cyberpunk 2077* (DLSS 3), *Elden Ring* and *Assassin's Creed Valhalla*, the Yeston Waifu posts **average frame rates of 92 fps**, **84 fps** and **108 fps** respectively, comfortably out-pacing the older RX 580 while staying within 10% of the more expensive RX 7900 XTX in most scenarios. At 1440p medium settings the card averages **71 fps** in *Red Dead Redemption 2* and **68 fps** in *Horizon Zero Dawn*.
 - **Power draw** – The card draws a peak of **225 W** from the PCIe slot, meaning a modest 550 W PSU is sufficient for most builds. AMD's official TDP rating is 225 W, but the card can sustain short bursts up to 240 W when the boost clock is briefly pushed.
 - **Memory & interface** – 12 GB of GDDR6 at 14 Gbps, delivering a bandwidth of **384 GB/s**. The GPU features a 256-bit memory bus, 64 Compute Units, and supports HDMI 2.1 (up to 8K) plus three DisplayPort 1.4a outputs.
-- **BIOS & overclocking** – The BIOS is locked to a **1400 MHz boost clock**, limiting manual overclock headroom. However, users have reported modest gains of up to **+70 MHz** via MSI Afterburner when adjusting power limits, though stability can vary.
+- **BIOS & [overclocking](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz)** – The BIOS is locked to a **1400 MHz boost clock**, limiting manual overclock headroom. However, users have reported modest gains of up to **+70 MHz** via MSI Afterburner when adjusting power limits, though stability can vary.
 
 The video also highlights a few quirks: the "Waifu" branding is a marketing nod to the card's Chinese origins, and the reference driver version is **Radeon Software Adrenalin 23.12.1**, which includes specific power-limit profiles for the Yeston SKU. Overall, the story positions the RX 9070 GRE Yeston Waifu as a **budget-oriented, China-only GPU that finally makes its way to global attention**, offering a compelling mix of thermal efficiency, low noise and respectable frame rates at a price point that could undercut many mainstream options.
 
 ---
+
+
+
+<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## What does this mean for prices?
 
@@ -94,6 +99,11 @@ To put that in perspective:
 In short, the Yeston Waifu's benchmark data hints that **pricing pressure could increase** for mid-range GPUs, especially as more manufacturers explore region-specific releases to capture emerging markets.
 
 ---
+
+
+
+[![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
+
 
 ## Our recommendation / What to buy right now
 
@@ -121,4 +131,4 @@ If you're willing to navigate the import process, the Yeston Waifu offers except
 
 ---
 
-If you liked this, check out our article on [AMD Halts Driver Updates for Ryzen Z1 Extreme: Impact on UK Gaming Handheld Market](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market) to see how AMD's decisions affect other gaming hardware categories.
+If you liked this, check out our article on AMD Halts Driver Updates for Ryzen Z1 Extreme: Impact on UK Gaming Handheld Market to see how AMD's decisions affect other gaming hardware categories.
