@@ -81,7 +81,7 @@ This 100% price drop is significant news for budget-conscious gamers and strateg
 
 **Grab Prime Backgammon NOW!** Here's why:
 
-1.  **Zero Risk, Maximum Reward:** It's free. You can't lose. Even if you never play it, you've saved £9.99. If you enjoy it (and the [review](https://ctrlaltstock.com/blog/virtual-boy-review-nintendo-s-oddest-switch-accessory-yet-is-an-immersive-90s-mu)s are strong), you've got a fantastic strategy game for life.
+1.  **Zero Risk, Maximum Reward:** It's free. You can't lose. Even if you never play it, you've saved £9.99. If you enjoy it (and the [review](https://ctrlaltstock.com/blog/this-affordable-laptop-has-32-gb-ram-for-cheap-lenovo-thinkpad-l16-gen-2-amd-rev)s are strong), you've got a fantastic strategy game for life.
 2.  **Instant Gratification:** Download it immediately via the Xbox Store link provided. No waiting for shipping, no dealing with third-party sellers. It's yours instantly.
 3.  **Enhance Your Library:** Add this well-reviewed backgammon title to your Xbox collection. It's a great way to diversify your gaming beyond shooters and action titles.
 4.  **Discord Alert:** If you're a CtrlAltStock community member, set a price alert for "Prime Backgammon" in our Discord server. While it's currently free, it's always wise to monitor for any future changes or similar promotions. Join the conversation in our dedicated gaming deals channel!
