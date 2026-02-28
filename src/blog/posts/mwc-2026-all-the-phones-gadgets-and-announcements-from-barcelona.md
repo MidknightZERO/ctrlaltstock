@@ -74,7 +74,7 @@ Last year's weirdness is a [benchmark](https://ctrlaltstock.com/blog/amd-zen-6-d
 
 ## What does this mean for prices? The UK market domino effect  
 
-The single biggest takeaway for UK [bargain](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-gpu-deals) hunters is this: **MWC triggers a six-month price correction cycle across the entire mobile sector, which directly impacts the accessories and budget you have for PC components.** Here's how it breaks down.  
+The single biggest takeaway for UK bargain hunters is this: **MWC triggers a six-month price correction cycle across the entire mobile sector, which directly impacts the accessories and budget you have for PC components.** Here's how it breaks down.  
 
 **1. Last-generation flagships will plummet.** As the Xiaomi 17 Ultra, Nothing Phone 4A, and Honor's new lineup prepare for launch, retailers and carriers will be desperate to clear 2025 stock. We're already seeing early signals:  
 - The **Xiaomi 14 Ultra** (launched at £1,299) is frequently dipping to £999 on Amazon UK and Currys.  
