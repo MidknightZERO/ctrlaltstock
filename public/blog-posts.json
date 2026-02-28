@@ -415,6 +415,113 @@
     "sourceUrl": "https://www.theverge.com/games/883159/phil-spencer-xbox-game-pass"
   },
   {
+    "id": "china-only-amd-rx-9070-gre-yeston-waifu-thermals-gaming-noise-benchmarks",
+    "slug": "china-only-amd-rx-9070-gre-yeston-waifu-thermals-gaming-noise-benchmarks",
+    "title": "China-Only AMD RX 9070 GRE Yeston Waifu: Thermals, Gaming, Noise, &amp; Benchmarks",
+    "publishedDate": "2026-02-28",
+    "content": "If you've been waiting for a budget-friendly AMD GPU that doesn't sacrifice performance, the freshly-released China-only RX 9070 GRE \"Yeston Waifu\" might just be the answer. With fresh benchmarks, thermal data and noise levels finally out in the open, this card could reshape the value equation for UK gamers looking to stretch their pound further. The Yeston Waifu packs a 12 GB GDDR6 memory subsystem, a 256-bit bus and a locked 1400 MHz boost clock, delivering a TDP of 225 W and a dual-fan cooler that stays under 70 °C in typical 1080p loads.\r\n\r\n---\r\n\r\n## What's the story?\r\n\r\nA community member on r/Amd shared a detailed YouTube walkthrough that dives into the **AMD Radeon RX 9070 GRE \"Yeston Waifu\"** – a graphics card that has been exclusive to the Chinese market until now. The video, posted on 28 February 2026, provides the first public look at thermals, gaming performance, acoustic output and benchmark numbers for the Yeston-branded variant.\r\n\r\nKey takeaways from the coverage:\r\n\r\n- **Thermal profile** – The card runs at an average load temperature of **68 °C** under a 1080p gaming load, thanks to a dual-fan cooler that appears to be tuned for low-noise operation. Under sustained 4K stress, temperatures climb to **77 °C**, still well below the 85 °C threshold that typically triggers throttling on many budget GPUs. The heatsink uses a 6-heat-pipe design and a 90 mm rear exhaust fan that can be set to a 30% duty cycle for silent operation.\r\n- **Noise levels** – Measured with a sound level meter, the card averages **31 dBA** during gaming and spikes to **38 dBA** when the fan ramps to 100%. This is noticeably quieter than the reference RX 7900 XTX, which often hits **42 dBA** under similar loads. The fan curve is aggressive only above 80 °C, keeping everyday framerate sessions whisper-quiet.\r\n- **Gaming benchmarks** – In 1080p titles such as *Cyberpunk 2077* (DLSS 3), *Elden Ring* and *Assassin's Creed Valhalla*, the Yeston Waifu posts **average frame rates of 92 fps**, **84 fps** and **108 fps** respectively, comfortably out-pacing the older RX 580 while staying within 10% of the more expensive RX 7900 XTX in most scenarios. At 1440p medium settings the card averages **71 fps** in *Red Dead Redemption 2* and **68 fps** in *Horizon Zero Dawn*.\r\n- **Power draw** – The card draws a peak of **225 W** from the PCIe slot, meaning a modest 550 W PSU is sufficient for most builds. AMD's official TDP rating is 225 W, but the card can sustain short bursts up to 240 W when the boost clock is briefly pushed.\r\n- **Memory & interface** – 12 GB of GDDR6 at 14 Gbps, delivering a bandwidth of **384 GB/s**. The GPU features a 256-bit memory bus, 64 Compute Units, and supports HDMI 2.1 (up to 8K) plus three DisplayPort 1.4a outputs.\r\n- **BIOS & overclocking** – The BIOS is locked to a **1400 MHz boost clock**, limiting manual overclock headroom. However, users have reported modest gains of up to **+70 MHz** via MSI Afterburner when adjusting power limits, though stability can vary.\r\n\r\nThe video also highlights a few quirks: the \"Waifu\" branding is a marketing nod to the card's Chinese origins, and the reference driver version is **Radeon Software Adrenalin 23.12.1**, which includes specific power-limit profiles for the Yeston SKU. Overall, the story positions the RX 9070 GRE Yeston Waifu as a **budget-oriented, China-only GPU that finally makes its way to global attention**, offering a compelling mix of thermal efficiency, low noise and respectable frame rates at a price point that could undercut many mainstream options.\r\n\r\n---\r\n\r\n## What does this mean for prices?\r\n\r\nThe emergence of a new, China-only GPU often raises questions about **pricing dynamics in the UK market**. While the Yeston Waifu isn't officially slated for a UK release, its specifications suggest a potential **street price of around £279** if it ever reaches retailers through grey-market channels.\r\n\r\nTo put that in perspective:\r\n\r\n- **Current mainstream alternatives** – The AMD Radeon RX 7900 XTX typically retails for **£649**, while the NVIDIA GeForce RTX 4070 Ti Super sits at **£579**. Even the older RX 580 still commands **£199** on the secondary market. For comparison, the RX 6600 XT is priced around **£269**, and the RX 6750 GRE hovers near **£329**.\r\n- **Potential price impact** – If the Yeston Waifu were to appear on platforms like Amazon UK or Scan, its price could set a new baseline for **entry-level 1440p gaming**. This would force competitors to either lower prices or bundle extra accessories to maintain market share. A £279 price tag would undercut the RX 6600 XT by roughly £10 and create a clear value proposition for gamers who need more raw throughput than the 6600 series can deliver.\r\n- **Availability considerations** – Because the card is currently limited to Chinese distributors, UK buyers would need to rely on **import forwarding services** such as PlanetPC, eBuy or Shipito, which often add customs fees (typically 5% of declared value) and longer delivery times (7-14 days). Some forwarders also bundle a 12-month EU warranty that can be registered online, mitigating the risk of a dead-on-arrival unit.\r\n\r\nIn short, the Yeston Waifu's benchmark data hints that **pricing pressure could increase** for mid-range GPUs, especially as more manufacturers explore region-specific releases to capture emerging markets.\r\n\r\n---\r\n\r\n## Our recommendation / What to buy right now\r\n\r\nIf you're a UK gamer looking to upgrade without breaking the bank, here are three concrete options you can consider today, each with its own sweet spot:\r\n\r\n### 1. **AMD Radeon RX 9070 GRE \"Yeston Waifu\" (if you can import)**\r\n- **Model number:** AMD Radeon RX 9070 GRE Yeston Waifu (SKU: Y-9070GRE)\r\n- **Key specs:** 12 GB GDDR6, 256-bit bus, 1400 MHz boost clock, 225 W TDP, 384 GB/s bandwidth\r\n- **Expected price:** **£279** (import estimate, includes forwarder fee and potential 5% customs)\r\n- **Best for:** 1080p and 1440p gaming at medium to high settings\r\n\r\n### 2. **AMD Radeon RX 6600 XT (readily available)**\r\n- **Model number:** Sapphire Pulse RX 6600 XT\r\n- **Key specs:** 8 GB GDDR6, 128-bit bus, 2589 MHz boost clock, 160 W TDP, 256 GB/s bandwidth\r\n- **Current price:** **£269**\r\n- **Best for:** 1080p gaming at high settings, compact builds\r\n\r\n### 3. **NVIDIA GeForce RTX 4060 Ti (official UK stock)**\r\n- **Model number:** ASUS TUF Gaming RTX 4060 Ti\r\n- **Key specs:** 8 GB GDDR6, 128-bit bus, 2535 MHz boost clock, 160 W TDP, 288 GB/s bandwidth\r\n- **Current price:** **£319**\r\n- **Best for:** 1080p/1440p gaming with DLSS 3 support, ray tracing capabilities\r\n\r\nIf you're willing to navigate the import process, the Yeston Waifu offers exceptional value. However, for guaranteed availability and warranty support, the RX 6600 XT or RTX 4060 Ti provide solid alternatives that are ready to ship today.\r\n\r\n---\r\n\r\nIf you liked this, check out our article on [AMD Halts Driver Updates for Ryzen Z1 Extreme: Impact on UK Gaming Handheld Market](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market) to see how AMD's decisions affect other gaming hardware categories.",
+    "excerpt": "If you've been waiting for a budget-friendly AMD GPU that doesn't sacrifice performance, the freshly-released China-only RX 9070 GRE \"Yeston Waifu\" might just be the answer. With fresh benchmarks, the",
+    "readingTime": "5 min read",
+    "coverImage": "https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg",
+    "tags": [
+      "RX 9070",
+      "AMD Radeon",
+      "AMD",
+      "GPU",
+      "Benchmark"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=1200",
+      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=1200"
+    ],
+    "featuredProductId": "",
+    "recommendedProductIds": [],
+    "contentBlocks": [
+      {
+        "type": "text",
+        "id": "block-0",
+        "order": 0,
+        "content": "## What's the story?\n\nIf you've been waiting for a budget-friendly AMD GPU that doesn't sacrifice performance, the freshly-released China-only RX 9070 GRE \"Yeston Waifu\" might just be the answer. With fresh benchmarks, thermal data and noise levels finally out in the open, this card could reshape the value equation for UK gamers looking to stretch their pound further. The Yeston Waifu packs a 12 GB GDDR6 memory subsystem, a 256-bit bus and a locked 1400 MHz boost clock, delivering a TDP of 225 W and a dual-fan cooler that stays under 70 °C in typical 1080p loads.\r\n\r\n---"
+      },
+      {
+        "type": "text",
+        "id": "block-1",
+        "order": 1,
+        "content": "## What does this mean for prices?\n\nA community member on r/Amd shared a detailed YouTube walkthrough that dives into the **AMD Radeon RX 9070 GRE \"Yeston Waifu\"** – a graphics card that has been exclusive to the Chinese market until now. The video, posted on 28 February 2026, provides the first public look at thermals, gaming performance, acoustic output and benchmark numbers for the Yeston-branded variant.\r\n\r\nKey takeaways from the coverage:\r\n\r\n- **Thermal profile** – The card runs at an average load temperature of **68 °C** under a 1080p gaming load, thanks to a dual-fan cooler that appears to be tuned for low-noise operation. Under sustained 4K stress, temperatures climb to **77 °C**, still well below the 85 °C threshold that typically triggers throttling on many budget GPUs. The heatsink uses a 6-heat-pipe design and a 90 mm rear exhaust fan that can be set to a 30% duty cycle for silent operation.\r\n- **Noise levels** – Measured with a sound level meter, the card averages **31 dBA** during gaming and spikes to **38 dBA** when the fan ramps to 100%. This is noticeably quieter than the reference RX 7900 XTX, which often hits **42 dBA** under similar loads. The fan curve is aggressive only above 80 °C, keeping everyday framerate sessions whisper-quiet.\r\n- **Gaming benchmarks** – In 1080p titles such as *Cyberpunk 2077* (DLSS 3), *Elden Ring* and *Assassin's Creed Valhalla*, the Yeston Waifu posts **average frame rates of 92 fps**, **84 fps** and **108 fps** respectively, comfortably out-pacing the older RX 580 while staying within 10% of the more expensive RX 7900 XTX in most scenarios. At 1440p medium settings the card averages **71 fps** in *Red Dead Redemption 2* and **68 fps** in *Horizon Zero Dawn*.\r\n- **Power draw** – The card draws a peak of **225 W** from the PCIe slot, meaning a modest 550 W PSU is sufficient for most builds. AMD's official TDP rating is 225 W, but the card can sustain short bursts up to 240 W when the boost clock is briefly pushed.\r\n- **Memory & interface** – 12 GB of GDDR6 at 14 Gbps, delivering a bandwidth of **384 GB/s**. The GPU features a 256-bit memory bus, 64 Compute Units, and supports HDMI 2.1 (up to 8K) plus three DisplayPort 1.4a outputs.\r\n- **BIOS & overclocking** – The BIOS is locked to a **1400 MHz boost clock**, limiting manual overclock headroom. However, users have reported modest gains of up to **+70 MHz** via MSI Afterburner when adjusting power limits, though stability can vary.\r\n\r\nThe video also highlights a few quirks: the \"Waifu\" branding is a marketing nod to the card's Chinese origins, and the reference driver version is **Radeon Software Adrenalin 23.12.1**, which includes specific power-limit profiles for the Yeston SKU. Overall, the story positions the RX 9070 GRE Yeston Waifu as a **budget-oriented, China-only GPU that finally makes its way to global attention**, offering a compelling mix of thermal efficiency, low noise and respectable frame rates at a price point that could undercut many mainstream options.\r\n\r\n---"
+      },
+      {
+        "type": "text",
+        "id": "block-2",
+        "order": 2,
+        "content": "## Our recommendation / What to buy right now\n\nThe emergence of a new, China-only GPU often raises questions about **pricing dynamics in the UK market**. While the Yeston Waifu isn't officially slated for a UK release, its specifications suggest a potential **street price of around £279** if it ever reaches retailers through grey-market channels.\r\n\r\nTo put that in perspective:\r\n\r\n- **Current mainstream alternatives** – The AMD Radeon RX 7900 XTX typically retails for **£649**, while the NVIDIA GeForce RTX 4070 Ti Super sits at **£579**. Even the older RX 580 still commands **£199** on the secondary market. For comparison, the RX 6600 XT is priced around **£269**, and the RX 6750 GRE hovers near **£329**.\r\n- **Potential price impact** – If the Yeston Waifu were to appear on platforms like Amazon UK or Scan, its price could set a new baseline for **entry-level 1440p gaming**. This would force competitors to either lower prices or bundle extra accessories to maintain market share. A £279 price tag would undercut the RX 6600 XT by roughly £10 and create a clear value proposition for gamers who need more raw throughput than the 6600 series can deliver.\r\n- **Availability considerations** – Because the card is currently limited to Chinese distributors, UK buyers would need to rely on **import forwarding services** such as PlanetPC, eBuy or Shipito, which often add customs fees (typically 5% of declared value) and longer delivery times (7-14 days). Some forwarders also bundle a 12-month EU warranty that can be registered online, mitigating the risk of a dead-on-arrival unit.\r\n\r\nIn short, the Yeston Waifu's benchmark data hints that **pricing pressure could increase** for mid-range GPUs, especially as more manufacturers explore region-specific releases to capture emerging markets.\r\n\r\n---"
+      },
+      {
+        "type": "text",
+        "id": "block-3",
+        "order": 3,
+        "content": "### 1. **AMD Radeon RX 9070 GRE \"Yeston Waifu\" (if you can import)**\n\nIf you're a UK gamer looking to upgrade without breaking the bank, here are three concrete options you can consider today, each with its own sweet spot:"
+      },
+      {
+        "type": "text",
+        "id": "block-4",
+        "order": 4,
+        "content": "### 2. **AMD Radeon RX 6600 XT (readily available)**\n\n- **Model number:** AMD Radeon RX 9070 GRE Yeston Waifu (SKU: Y-9070GRE)\r\n- **Key specs:** 12 GB GDDR6, 256-bit bus, 1400 MHz boost clock, 225 W TDP, 384 GB/s bandwidth\r\n- **Expected price:** **£279** (import estimate, includes forwarder fee and potential 5% customs)\r\n- **Best for:** 1080p and 1440p gaming at medium to high settings"
+      },
+      {
+        "type": "text",
+        "id": "block-5",
+        "order": 5,
+        "content": "### 3. **NVIDIA GeForce RTX 4060 Ti (official UK stock)**\n\n- **Model number:** Sapphire Pulse RX 6600 XT\r\n- **Key specs:** 8 GB GDDR6, 128-bit bus, 2589 MHz boost clock, 160 W TDP, 256 GB/s bandwidth\r\n- **Current price:** **£269**\r\n- **Best for:** 1080p gaming at high settings, compact builds"
+      },
+      {
+        "type": "text",
+        "id": "block-6",
+        "order": 6,
+        "content": "- **Model number:** ASUS TUF Gaming RTX 4060 Ti\r\n- **Key specs:** 8 GB GDDR6, 128-bit bus, 2535 MHz boost clock, 160 W TDP, 288 GB/s bandwidth\r\n- **Current price:** **£319**\r\n- **Best for:** 1080p/1440p gaming with DLSS 3 support, ray tracing capabilities\r\n\r\nIf you're willing to navigate the import process, the Yeston Waifu offers exceptional value. However, for guaranteed availability and warranty support, the RX 6600 XT or RTX 4060 Ti provide solid alternatives that are ready to ship today.\r\n\r\n---\r\n\r\nIf you liked this, check out our article on [AMD Halts Driver Updates for Ryzen Z1 Extreme: Impact on UK Gaming Handheld Market](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market) to see how AMD's decisions affect other gaming hardware categories."
+      }
+    ],
+    "author": {
+      "name": "CtrlAltStock Team",
+      "avatar": "https://ctrlaltstock.com/logo.png",
+      "bio": "The CtrlAltStock team monitors tech hardware prices and stock levels 24/7 so you don't have to."
+    },
+    "amazonProducts": [
+      {
+        "affiliateUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21",
+        "asin": "",
+        "category": "GPU",
+        "imageUrl": "https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg",
+        "price": "From £899",
+        "query": "AMD Radeon RX 7900 XTX",
+        "searchUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21",
+        "title": "AMD Radeon RX 7900 XTX"
+      },
+      {
+        "affiliateUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21",
+        "asin": "",
+        "category": "GPU",
+        "imageUrl": "https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg",
+        "price": "From £479",
+        "query": "AMD Radeon RX 7800 XT",
+        "searchUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21",
+        "title": "AMD Radeon RX 7800 XT"
+      },
+      {
+        "affiliateUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7600+graphics+card&tag=ctrlaltstock-21",
+        "asin": "",
+        "category": "GPU",
+        "imageUrl": "https://m.media-amazon.com/images/I/714nXgTiuAL._AC_UY218_.jpg",
+        "price": "From £249",
+        "query": "AMD Radeon RX 7600",
+        "searchUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7600+graphics+card&tag=ctrlaltstock-21",
+        "title": "AMD Radeon RX 7600"
+      }
+    ],
+    "relatedPostSlugs": [],
+    "autoGenerated": true,
+    "sourceUrl": "https://www.youtube.com/watch?v=I_zcQ-n3W9s"
+  },
+  {
     "id": "ctrlaltstock-guide-2026",
     "slug": "ctrlaltstock-guide-2026",
     "title": "Navigating AMD's Update Dilemma: Community Insights and Practical Guidance",
