@@ -153,6 +153,11 @@ Choose the **PS5 Pro** if you:
 - Value the upcoming enhanced PSSR AI upscaler
 - Don't mind paying a premium for Sony's first-party experiences
 
+
+
+[![NVIDIA GeForce RTX 5070 Ti](https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21)
+
+
 ## The Verdict
 
 Both the Xbox Series X and PS5 Pro are exceptional consoles that offer outstanding gaming experiences. The Xbox Series X edges ahead slightly in terms of overall value thanks to Game Pass and its superior backward compatibility, while the PS5 Pro offers unique features and exclusive titles that make it equally compelling.
