@@ -81,7 +81,7 @@ title: 'Avatar: The Last Airbender Nintendo Switch Game Drops to £9.99 on Amazo
   50% Off'
 ---
 
-The UK gaming community is buzzing as the highly anticipated *Avatar: The Last Airbender – The Quest for Balance* has landed on [Amazon UK](https://ctrlaltstock.com/blog/avatar-last-airbender-game-9-99-amazon) for just £9.99—a staggering 50% reduction from its original retail price. This [deal](https://ctrlaltstock.com/blog/finally-we-have-fsr4-on-vulkan-but-not-thanks-to-amd) isn’t just a temporary flash sale; it’s a compelling opportunity for fans and casual gamers alike to dive into the world of Aang, Katara, and the Four Nations with a price tag that’s both competitive and affordable.  
+The UK gaming community is buzzing as the highly anticipated *Avatar: The Last Airbender – The Quest for Balance* has landed on [Amazon UK](https://ctrlaltstock.com/blog/avatar-last-airbender-game-9-99-amazon) for just £9.99—a staggering 50% reduction from its original retail price. This [deal](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is) isn’t just a temporary flash sale; it’s a compelling opportunity for fans and casual gamers alike to dive into the world of Aang, Katara, and the Four Nations with a price tag that’s both competitive and affordable.  
 
 
 <!-- featured-product: Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->

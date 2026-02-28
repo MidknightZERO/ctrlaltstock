@@ -69,7 +69,7 @@ As we move through 2026, the battle between Microsoft's [Xbox Series X](https://
 
 The Xbox Series X and [PS5 Pro](https://ctrlaltstock.com/blog/resident-evil-requiem-df-analysis-ps5-pro-performance) both represent the pinnacle of current-gen gaming hardware, but they take different approaches to achieving peak performance.
 
-**[Xbox](https://ctrlaltstock.com/blog/dreamgame-resident-evil-requiem-xbox-series-x-s-75-99eur-5) Series X** features a custom AMD Zen 2 CPU with 8 cores at 3.8GHz (3.6GHz with SMT), paired with a powerful RDNA 2 GPU capable of 12 teraflops of graphical processing power. It comes with 16GB of GDDR6 [RAM](https://ctrlaltstock.com/blog/ps5-pro-owners-will-soon-get-an-improved-pssr-ai-upscaler-while-pc-gamers-with-r) and a 1TB custom NVMe SSD that offers lightning-fast load times.
+**[Xbox](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is) Series X** features a custom AMD Zen 2 CPU with 8 cores at 3.8GHz (3.6GHz with SMT), paired with a powerful RDNA 2 GPU capable of 12 teraflops of graphical processing power. It comes with 16GB of GDDR6 [RAM](https://ctrlaltstock.com/blog/ps5-pro-owners-will-soon-get-an-improved-pssr-ai-upscaler-while-pc-gamers-with-r) and a 1TB custom NVMe SSD that offers lightning-fast load times.
 
 **PS5 Pro**, on the other hand, boasts a more advanced AMD Zen 2 CPU clocked at 3.85GHz with variable frequency, alongside a significantly more powerful [GPU](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) that delivers approximately 10.28 teraflops. However, the PS5 Pro's secret weapon is its enhanced ray tracing capabilities and the innovative PSSR AI upscaler, which will soon receive an upgraded version for even better performance.
 
