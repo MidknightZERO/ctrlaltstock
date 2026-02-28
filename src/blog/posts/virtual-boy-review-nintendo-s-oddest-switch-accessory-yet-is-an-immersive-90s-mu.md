@@ -83,7 +83,7 @@ title: 'Virtual Boy Review: Nintendo''s Oddest Switch Accessory Yet Is an Immers
 
 # Virtual Boy Review:Nintendo's Oddest Switch Accessory Yet Is an Immersive ’90s Museum  
 
-**Hook** – The [Nintendo](https://ctrlaltstock.com/blog/steam-nintendo-xbox-ninja-gaiden-masters-collection-19-99-50) Virtual Boy Adapter (model **VB‑01**) landed on UK shelves today, and it’s already turning heads. For [bargain](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-gpu-deals) hunters who love a good nostalgia-driven novelty, this quirky piece of kit promises a trip back to the red-monochrome world of the mid-’90s – all while slotting neatly into a modern Switch dock. If you’ve ever wondered what it feels like to stare through a pair of retro VR goggles without breaking the bank, now’s the time to find out.  
+**Hook** – The [Nintendo](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) Virtual Boy Adapter (model **VB‑01**) landed on UK shelves today, and it’s already turning heads. For [bargain](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-gpu-deals) hunters who love a good nostalgia-driven novelty, this quirky piece of kit promises a trip back to the red-monochrome world of the mid-’90s – all while slotting neatly into a modern Switch dock. If you’ve ever wondered what it feels like to stare through a pair of retro VR goggles without breaking the bank, now’s the time to find out.  
 
 ---
 
@@ -96,13 +96,13 @@ title: 'Virtual Boy Review: Nintendo''s Oddest Switch Accessory Yet Is an Immers
 
 ### A fresh museum piece for a modern console  
 
-Nintendo surprised the gaming community on 20 February 2026 with the **Virtual Boy Adapter (VB‑01)**, billed as a way to experience a slice of gaming history. This small, plastic accessory plugs into a Switch dock, connecting via USB-C and providing a 3.5mm audio jack for headphones. Its core function is to transform the Switch into a modern, albeit limited, replica of the original Virtual Boy console. The VB‑01 isn’t a full Virtual Boy revival but a bridge, allowing Switch owners to play a curated selection of Virtual Boy games using the original hardware’s distinctive, head-mounted display (HMD) design.  
+Nintendo surprised the [gaming](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) community on 20 February 2026 with the **Virtual Boy Adapter (VB‑01)**, billed as a way to experience a slice of gaming history. This small, plastic accessory plugs into a Switch dock, connecting via USB-C and providing a 3.5mm audio jack for headphones. Its core function is to transform the Switch into a modern, albeit limited, replica of the original Virtual Boy console. The VB‑01 isn’t a full Virtual Boy revival but a bridge, allowing Switch owners to play a curated selection of Virtual Boy games using the original [hardware](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact)’s distinctive, head-mounted display (HMD) design.  
 
 ---
 
 
 
-[![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlalt[stock](https://ctrlaltstock.com/blog/nvidia-confirms-geforce-rtx-50-shortages-due-to-the-global-memory-crisis-impacti)-21)
+[![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
 
 
 ## How does it work?  

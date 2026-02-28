@@ -63,15 +63,15 @@ title: NVIDIA GeForce 595.59 Driver Pulled After Fan and Clock Issues — What I
   for UK Gamers
 ---
 
-As we move through 2026, the battle between Microsoft's [Xbox Series X](https://ctrlaltstock.com/blog/dreamgame-resident-evil-requiem-xbox-series-x-s-75-99eur-5) and Sony's PlayStation 5 Pro continues to heat up. Both consoles offer incredible gaming experiences, but they cater to slightly different audiences and priorities. Whether you're a hardcore gamer, a casual player, or somewhere in between, choosing the right console can make all the difference in your gaming journey.
+As we move through 2026, the battle between Microsoft's [Xbox Series X](https://ctrlaltstock.com/blog/dreamgame-resident-evil-requiem-xbox-series-x-s-75-99eur-5) and Sony's PlayStation 5 Pro continues to heat up. Both consoles offer incredible [gaming](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) experiences, but they cater to slightly different audiences and priorities. Whether you're a hardcore gamer, a casual player, or somewhere in between, choosing the right console can make all the difference in your gaming journey.
 
-## Hardware Specifications: The Core Differences
+## [Hardware](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) Specifications: The Core Differences
 
 The Xbox Series X and PS5 Pro both represent the pinnacle of current-gen [gaming hardware](https://ctrlaltstock.com/blog/article-rtx4090-amd-discussion), but they take different approaches to achieving peak performance.
 
-**[Xbox](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is) Series X** features a custom AMD Zen 2 CPU with 8 cores at 3.8GHz (3.6GHz with SMT), paired with a powerful RDNA 2 GPU capable of 12 teraflops of graphical processing power. It comes with 16GB of GDDR6 [RAM](https://ctrlaltstock.com/blog/amd-strix-halo-128-gb-ram-in-a-13-inch-convertible-asus-proart-px13-gopro-editio) and a 1TB custom NVMe SSD that offers lightning-fast load times.
+**[Xbox](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is) Series X** features a custom AMD Zen 2 CPU with 8 cores at 3.8GHz (3.6GHz with SMT), paired with a powerful RDNA 2 GPU capable of 12 teraflops of graphical processing power. It comes with 16GB of GDDR6 RAM and a 1TB custom NVMe SSD that offers lightning-fast load times.
 
-**[PS5 Pro](https://ctrlaltstock.com/blog/resident-evil-requiem-df-analysis-ps5-pro-performance)**, on the other hand, boasts a more advanced AMD Zen 2 CPU clocked at 3.85GHz with variable frequency, alongside a significantly more powerful GPU that delivers approximately 10.28 teraflops. However, the PS5 Pro's secret weapon is its enhanced ray tracing capabilities and the innovative PSSR AI upscaler, which will soon receive an upgraded version for even better performance.
+**PS5 Pro**, on the other hand, boasts a more advanced AMD Zen 2 CPU clocked at 3.85GHz with variable frequency, alongside a significantly more powerful GPU that delivers approximately 10.28 teraflops. However, the PS5 Pro's secret weapon is its enhanced ray tracing capabilities and the innovative PSSR AI upscaler, which will soon receive an upgraded version for even better performance.
 
 The PS5 Pro also includes 16GB of GDDR6 RAM but with a higher bandwidth configuration, and features a 1TB SSD with even faster read speeds than the Xbox Series X.
 
