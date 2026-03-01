@@ -91,7 +91,7 @@ This 100% price drop is significant news for budget-conscious gamers and strateg
 
 Microsoft's decision to offer Prime Backgammon for free this month is a brilliant move that delivers genuine value to Xbox subscribers. It's a clear win-win: gamers get a high-quality game for nothing, and Microsoft strengthens the appeal of its subscription services. For anyone with a Game Pass Ultimate or Prime subscription, downloading Prime Backgammon is a no-brainer. It's free, it's fun, and it's a fantastic addition to your digital library. Don't miss out on this 100% discount – grab it while it's free!
 
-**Join our 10,000-member CtrlAltStock Discord for live [stock](https://ctrlaltstock.com/blog/nvidia-confirms-geforce-rtx-50-shortages-due-to-the-global-memory-crisis-impacti) alerts and the latest gaming deals!**
+**Join our 10,000-member CtrlAltStock Discord for live [stock](https://ctrlaltstock.com/blog/global-memory-chip-shortage-impacting-consumer-electronics-production) alerts and the latest gaming deals!**
 ---
 
 **Additional Technical Details About Prime Backgammon:**
