@@ -83,7 +83,7 @@ The update will be released globally in the coming weeks, with Sony stating it w
 
 ### Price impact on the [PS5 Pro](https://ctrlaltstock.com/blog/ps5-pro-enhanced-games-pssr-2-0)
 
-- **Current retail**: The [PlayStation](https://ctrlaltstock.com/blog/industry-murmurs-suggest-sony-will-no-longer-release-ps5-exclusives-on-pc-new-le) 5 Pro (model CFI-1015) is listed at **£749.99** on major UK retailers like Amazon UK, Currys PC World, and John Lewis. This marks a £100 premium over the original PS5's 2020 launch price of **£449.99**.
+- **Current retail**: The [PlayStation](https://ctrlaltstock.com/blog/grand-theft-auto-vi-title-ids-have-been-added-to-the-playstation-database) 5 Pro (model CFI-1015) is listed at **£749.99** on major UK retailers like Amazon UK, Currys PC World, and John Lewis. This marks a £100 premium over the original PS5's 2020 launch price of **£449.99**.
 - **Historical trend**: The original PS5 saw modest price reductions, typically dropping to **£400-£450** during Black Friday sales. However, the PS5 Pro's higher cost reflects its upgraded specs, including a 2TB ultra-fast SSD, 12 TFLOPs GPU, and support for ray tracing and variable refresh rate (VRR).
 - **Future projection**: If demand surges after *[Resident Evil Requiem](https://ctrlaltstock.com/blog/resident-evil-requiem-steam-concurrency-record)*'s launch, retailers may introduce limited-time bundles. For example, GAME UK has teased a pre-order offer combining the PS5 Pro with a **DualSense Edge Wireless Controller (CUH-ZDD1X)** for **£849**, saving £50 compared to buying separately.
 
