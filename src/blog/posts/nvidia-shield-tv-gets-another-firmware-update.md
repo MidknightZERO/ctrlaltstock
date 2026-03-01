@@ -55,13 +55,13 @@ tags:
 title: NVIDIA SHIELD TV gets another firmware update
 ---
 
-In a stunning display of engineering prowess, AMD has shattered the GPU frequency world record with its upcoming [Radeon RX 9060 XT](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz) graphics card, achieving an unprecedented clock speed of 4.769 GHz. This milestone represents a significant leap forward in graphics processing technology and showcases AMD's commitment to pushing the boundaries of what's possible in [gaming hardware](https://ctrlaltstock.com/blog/article-rtx4090-amd-discussion).
+In a stunning display of engineering prowess, AMD has shattered the GPU frequency world record with its upcoming Radeon RX 9060 XT graphics card, achieving an unprecedented clock speed of 4.769 GHz. This milestone represents a significant leap forward in graphics processing technology and showcases AMD's commitment to pushing the boundaries of what's possible in gaming hardware.
 
-The record-breaking achievement was accomplished by AMD's elite [overclocking](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz) team, who pushed the Radeon RX 9060 XT well beyond its factory specifications. This impressive feat demonstrates the potential headroom built into AMD's next-generation RDNA 4 architecture and hints at the performance capabilities we can expect from this highly anticipated [graphics card](https://ctrlaltstock.com/blog/graphics-card-review-2026).
+The record-breaking achievement was accomplished by AMD's elite overclocking team, who pushed the Radeon RX 9060 XT well beyond its factory specifications. This impressive feat demonstrates the potential headroom built into AMD's next-generation RDNA 4 architecture and hints at the performance capabilities we can expect from this highly anticipated graphics card.
 
 ## Breaking Down the Record-Breaking Achievement
 
-The 4.769 GHz clock speed achieved by the Radeon RX 9060 XT is particularly noteworthy because it represents a substantial improvement over previous [GPU](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) frequency records. To put this into perspective, many high-end graphics cards typically operate at base clock speeds between 2.5 GHz and 3.0 GHz, with boost clocks occasionally reaching 2.8 GHz to 3.2 GHz under optimal conditions.
+The 4.769 GHz clock speed achieved by the Radeon RX 9060 XT is particularly noteworthy because it represents a substantial improvement over previous GPU frequency records. To put this into perspective, many high-end graphics cards typically operate at base clock speeds between 2.5 GHz and 3.0 GHz, with boost clocks occasionally reaching 2.8 GHz to 3.2 GHz under optimal conditions.
 
 This new record demonstrates AMD's advancements in semiconductor technology, cooling solutions, and power delivery systems. The ability to sustain such high frequencies requires not only cutting-edge chip design but also sophisticated thermal management and electrical engineering.
 
@@ -81,19 +81,19 @@ The record also suggests that AMD's RDNA 4 architecture may offer significant pe
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
 
 
-## Technical Implications of Extreme Overclocking
+## Technical Implications of Extreme [Overclocking](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz)
 
-Achieving and sustaining a 4.769 GHz clock speed requires overcoming substantial technical challenges. At these frequencies, issues such as signal integrity, power delivery, and thermal management become increasingly critical. AMD's success in this area indicates significant advancements in several key areas:
+Achieving and sustaining a 4.769 GHz clock speed requires overcoming substantial technical challenges. At these frequencies, issues such as signal integrity, power delivery, and thermal management become increasingly critical. [AMD](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update)'s success in this area indicates significant advancements in several key areas:
 
 - **Advanced Manufacturing Process**: The ability to operate reliably at such high frequencies suggests improvements in AMD's manufacturing process, potentially allowing for better transistor performance and lower power leakage.
 
-- **Enhanced Power Delivery**: Sustaining extreme clock speeds requires robust power delivery systems capable of providing clean, stable power to the GPU cores without introducing noise or instability.
+- **Enhanced Power Delivery**: Sustaining extreme clock speeds requires robust power delivery systems capable of providing clean, stable power to the [GPU](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) cores without introducing noise or instability.
 
 - **Sophisticated Cooling Solutions**: The thermal challenges of operating at 4.769 GHz cannot be overstated. AMD's achievement likely involved advanced cooling technologies, possibly including liquid cooling or innovative heat dissipation methods.
 
 ## Context Within AMD's Product Strategy
 
-This world record achievement comes at an interesting time for AMD, as the company continues to build momentum in the graphics card market. The Radeon RX 9060 XT represents AMD's answer to competitive pressures and demonstrates the company's commitment to performance leadership.
+This world record achievement comes at an interesting time for AMD, as the company continues to build momentum in the [graphics card](https://ctrlaltstock.com/blog/graphics-card-review-2026) market. The [Radeon RX 9060 XT](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz) represents AMD's answer to competitive pressures and demonstrates the company's commitment to performance leadership.
 
 The timing of this announcement also coincides with growing anticipation for AMD's next-generation products across both CPU and GPU segments. With Zen 6 desktop Ryzen processors reportedly set to launch in 2027, AMD appears to be executing a comprehensive strategy to maintain its competitive position across all high-performance computing segments.
 
