@@ -77,7 +77,7 @@ Players are eager to see if these cards can handle demanding titles like *[GTA V
 
 ### Technical Breakdown: What Makes These Cards Stand Out?  
 
-The *RTX 4090* and *RTX 4080 Super* both leverage NVIDIA’s Ada Lovelace architecture, which brings significant improvements in AI-driven rendering and energy efficiency. The *RTX 4090*, for instance, boasts 16,384 CUDA cores, 16GB of GDDR6X VRAM, and support for PCIe 5.0, making it ideal for 8K gaming and AI workloads. Its DLSS 3 technology, which uses frame generation to boost performance, is a game-changer for titles like *GTA VI*, which are expected to be optimized for high-resolution textures and dynamic lighting.  
+The *RTX 4090* and *[RTX 4080 Super](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)* both leverage NVIDIA’s Ada Lovelace architecture, which brings significant improvements in AI-driven rendering and energy efficiency. The *RTX 4090*, for instance, boasts 16,384 CUDA cores, 16GB of GDDR6X VRAM, and support for PCIe 5.0, making it ideal for 8K gaming and AI workloads. Its DLSS 3 technology, which uses frame generation to boost performance, is a game-changer for titles like *GTA VI*, which are expected to be optimized for high-resolution textures and dynamic lighting.  
 
 The *RTX 4080 Super* is slightly more compact, with 9,728 CUDA cores and 16GB of GDDR6X VRAM. While it lacks the sheer power of the *RTX 4090*, it still delivers 4K gaming at high frame rates, especially when paired with DLSS 3. This card is particularly popular among UK gamers due to its balance of performance and price. Both cards support ray tracing, a feature that’s becoming standard in modern AAA titles, allowing for realistic lighting and shadows.  
 
