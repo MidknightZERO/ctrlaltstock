@@ -78,7 +78,7 @@ For those who have been following the CtrlAltStock Discord, the conversation has
 
 The **£1,199** price tag places the ThinkPad L16 Gen 2 [AMD](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) in a sweet spot between entry-level and high-end workstations. Here’s a quick breakdown of how this price compares with similar devices currently on the UK market:  
 
-- **Dell XPS 16 (i7-13620H, 16 GB [RAM](https://ctrlaltstock.com/blog/amd-strix-halo-128-gb-ram-in-a-13-inch-convertible-asus-proart-px13-gopro-editio))** – starts at **£1,399**  
+- **Dell XPS 16 (i7-13620H, 16 GB [RAM](https://ctrlaltstock.com/blog/390tb-video-game-archive-being-taken-offline-due-to-skyrocketing-ram-ssd-and-har))** – starts at **£1,399**  
 - **HP ZBook Firefly 16 G9 (Ryzen 7 7840HS, 16 GB RAM)** – starts at **£1,299**  
 - **ASUS ROG Zephyrus G14 (Ryzen 9 7950HS, 16 GB RAM)** – starts at **£1,449**  
 

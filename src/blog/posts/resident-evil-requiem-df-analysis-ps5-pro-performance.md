@@ -83,8 +83,8 @@ What particularly stands out is the attention to detail in [Resident Evil Requie
 
 The comparison between platforms reveals interesting insights:
 
-- **[PS5](https://ctrlaltstock.com/blog/gatax6-updates-playstation-harmony) Pro:** 60 fps with full ray tracing, enhanced shadows, improved texture resolution (up to 4K 60 Hz), and variable‑rate shading.
-- **Standard PS5:** 30 fps with ray tracing support, maintaining visual fidelity and benefiting from the console's 825 GB/s SSD for faster asset streaming.
+- **PS5 Pro:** 60 fps with full ray tracing, enhanced shadows, improved texture resolution (up to 4K 60 Hz), and variable‑rate shading.
+- **Standard PS5:** 30 fps with ray tracing support, maintaining visual fidelity and benefiting from the console's 825 GB/s [SSD](https://ctrlaltstock.com/blog/390tb-video-game-archive-being-taken-offline-due-to-skyrocketing-ram-ssd-and-har) for faster asset streaming.
 - **[Xbox](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is) Series X:** 60 fps with reduced ray‑tracing effects but solid overall performance, leveraging its 12 TFLOP GPU and 1 TB NVMe SSD.
 - **Xbox Series S:** 60 fps at 1440p, upscaled to 4K via FSR 2.2, with modest ray‑tracing overhead.
 
