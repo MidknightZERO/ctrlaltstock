@@ -105,4 +105,4 @@ For those already using Ryzen AI processors, we recommend updating to the latest
 In addition to the processors, we recommend selecting a GPU that complements the Ryzen AI's integrated graphics. While the 780M and 680M offer decent performance, adding a discrete GPU like the NVIDIA RTX 4060 (around £350) or AMD RX 7600 (around £300) can significantly boost gaming capabilities. However, for budget builds, sticking with the integrated graphics is a cost-effective solution, especially with
 
 
-[![AMD Ryzen 5 7600](https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+5+7600&tag=ctrlaltstock-21)
+[![AMD Ryzen 7 7800X3D](https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21)

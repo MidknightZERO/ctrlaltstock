@@ -124,4 +124,4 @@ For those considering an upgrade, the current state of the market presents an op
 If you liked this, check out our article on AMD Zen 6 desktop Ryzen "Olympic Ridge" reportedly set to launch in 2027.
 
 
-[![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
+[![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
