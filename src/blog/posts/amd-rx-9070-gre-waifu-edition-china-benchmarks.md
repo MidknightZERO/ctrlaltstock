@@ -87,4 +87,4 @@ The China-only AMD RX 9070 GRE "Waifu" edition is a reminder of how quickly the 
 - Yeston's custom firmware includes **dynamic fan curve adjustments** that ramp up cooling during intense workloads but maintain near-silent operation during idle or light gaming.
 
 
-[![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
+[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
