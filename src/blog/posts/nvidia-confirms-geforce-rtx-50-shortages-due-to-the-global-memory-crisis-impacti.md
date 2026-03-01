@@ -60,7 +60,7 @@ title: NVIDIA confirms GeForce RTX 50 shortages due to the global memory crisis,
   supply through fiscal 2027
 ---
 
-If you're deeply invested in staying ahead with the latest graphics technology, the recent confirmation from NVIDIA about persistent shortages of the upcoming [GeForce RTX 50](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-cards) series is a crucial update. This isn't just a headline—it's a warning that could influence your purchasing decisions, pricing expectations, and overall strategy for the next phase of [gaming](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) and creative work. For UK shoppers actively following the scene, understanding the nuances of these shortages is essential to avoid missed opportunities and unnecessary costs.
+If you're deeply invested in staying ahead with the latest graphics technology, the recent confirmation from NVIDIA about persistent shortages of the upcoming [GeForce RTX 50](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-cards) series is a crucial update. This isn't just a headline—it's a warning that could influence your purchasing decisions, pricing expectations, and overall strategy for the next phase of [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) and creative work. For UK shoppers actively following the scene, understanding the nuances of these shortages is essential to avoid missed opportunities and unnecessary costs.
 
 
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->

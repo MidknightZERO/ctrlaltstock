@@ -62,7 +62,7 @@ title: PS5 Pro owners will soon get an improved PSSR AI upscaler, while PC gamer
   4
 ---
 
-[PS5 Pro](https://ctrlaltstock.com/blog/ps5-pro-enhanced-games-pssr-2-0) users are set to experience a significant upgrade in image quality thanks to the upcoming release of an improved PSSR AI upscaler. This innovation is expected to enhance the performance of high-end [gaming](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) setups, offering sharper visuals and better detail retention across various game genres. Meanwhile, PC enthusiasts who are leveraging RDNA 2 and RDNA 3 GPUs are under the spotlight as they continue to wait for AMD to officially support FSR 4, a technology that promises to deliver even greater performance and visual fidelity.
+[PS5 Pro](https://ctrlaltstock.com/blog/ps5-pro-enhanced-games-pssr-2-0) users are set to experience a significant upgrade in image quality thanks to the upcoming release of an improved PSSR AI upscaler. This innovation is expected to enhance the performance of high-end [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) setups, offering sharper visuals and better detail retention across various game genres. Meanwhile, PC enthusiasts who are leveraging RDNA 2 and RDNA 3 GPUs are under the spotlight as they continue to wait for AMD to officially support FSR 4, a technology that promises to deliver even greater performance and visual fidelity.
 
 
 <!-- featured-product: NVIDIA GeForce RTX 4070 Super | From £579 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21 -->
