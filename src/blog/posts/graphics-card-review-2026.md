@@ -65,13 +65,13 @@ title: 'Upgrade Your Setup: Best Graphics Cards for 2026'
 ---  
 ---  
 ---  
-This year, gamers are eyeing next-gen graphics to stay ahead of the curve. With titles like *Grand Theft Auto VI* building hype, it's more important than ever to understand what hardware options are available and how they stack up. Whether you're a seasoned PC builder or a casual game player, this guide will walk you through the latest deals, performance insights, and practical tips to make the most of your investment.  
+This year, gamers are eyeing next-gen graphics to stay ahead of the curve. With titles like *Grand Theft Auto VI* building hype, it's more important than ever to understand what [hardware](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) options are available and how they stack up. Whether you're a seasoned PC builder or a casual game player, this guide will walk you through the latest deals, performance insights, and practical tips to make the most of your investment.  
 
-If you've been following the conversation on r/PS5, you'll know that the PlayStation community is buzzing about the upcoming *Grand Theft Auto VI*. The game's release has reignited debates about which graphics cards can deliver the best value. In this article, we'll dive deep into why the *NVIDIA RTX 4090* and *RTX 4080 Super* are top contenders, what prices you can expect this year, and how to choose the right upgrade for your setup.  
+If you've been following the conversation on r/PS5, you'll know that the [PlayStation](https://ctrlaltstock.com/blog/industry-murmurs-suggest-sony-will-no-longer-release-ps5-exclusives-on-pc-new-le) community is buzzing about the upcoming *Grand Theft Auto VI*. The game's release has reignited debates about which graphics cards can deliver the best value. In this article, we'll dive deep into why the *NVIDIA RTX 4090* and *[RTX 4080 Super](https://ctrlaltstock.com/blog/ctrlaltstock-guide-2026)* are top contenders, what prices you can expect this year, and how to choose the right upgrade for your setup.  
 
-## What's the Big Deal on Graphics Cards This Year?  
+## What's the Big [Deal](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is) on Graphics Cards This Year?  
 
-The current landscape is all about delivering more resolution, ray tracing, and smoother gameplay. With *this year's* hardware pushing boundaries, you're likely wondering which graphics cards offer the greatest bang for your buck. From the bustling discussions on r/PS5, it's clear that both the *NVIDIA RTX 4090* and the *RTX 4080 Super* are hot topics.  
+The current landscape is all about delivering more resolution, ray tracing, and smoother gameplay. With *this year's* hardware pushing boundaries, you're likely wondering which graphics cards offer the greatest bang for your buck. From the bustling discussions on r/PS5, it's clear that both the *NVIDIA [RTX 4090](https://ctrlaltstock.com/blog/amd-ryzen-500-medusa-rdna-4m-igpu-shows-rdna-4-matrix-isa-support-fsr-4-support-)* and the *RTX 4080 Super* are hot topics.  
 
 Players are eager to see if these cards can handle demanding titles like *GTA VI* without breaking the bank. Prices are still fluctuating, but trends suggest that early adopters can snag solid deals. Whether you're building from scratch or upgrading an existing system, understanding the current market helps you make informed decisions.  
 
@@ -87,6 +87,11 @@ The *RTX 4080 Super* is slightly more compact, with 9,728 CUDA cores and 16GB of
 
 Discussions on r/buildapc highlight that users with these cards report minimal stuttering in *GTA VI* previews, even on high settings. One user noted, “I ran *GTA VI* at 4K with ray tracing on medium settings using an RTX 4080 Super, and it averaged 45 FPS—smooth enough for me.” Another added, “The RTX 4090 takes it to 70+ FPS, but the price jump isn’t justified unless you’re a hardcore 4K enthusiast.”  
 
+
+
+<!-- featured-product: NVIDIA GeForce RTX 4080 Super | From £959 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21 -->
+
+
 ## What's the Story Behind the News?  
 
 The latest update from PlayStation’s database reveals that *Grand Theft Auto VI* title IDs have been officially added to the platform. This means developers are now optimizing performance for next-gen consoles. But what does this mean for UK buyers? With prices in GBP, it's more accessible than ever.  
@@ -100,6 +105,11 @@ The conversation on r/PS5 is energetic, with fans comparing specs and sharing ti
 Beyond *GTA VI*, these cards excel in other titles. For example, the *RTX 4090* can run *Cyberpunk 2077* at 4K ultra settings with ray tracing at 60 FPS, while the *RTX 4080 Super* manages it at 1440p ultra with DLSS 3 enabled. Games like *Forspoken* and *Starfield* also benefit from the cards’ AI-driven upscaling and ray tracing capabilities.  
 
 A UK-based reviewer on CtrlAltStock tested both cards and found that the *RTX 4080 Super* performs similarly to the older *RTX 3080 Ti* in many titles, making it a cost-effective upgrade for those with a mid-range budget.  
+
+
+
+[![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)
+
 
 ## Price Analysis: What You Should Know This Year  
 

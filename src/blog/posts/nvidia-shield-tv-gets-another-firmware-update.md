@@ -51,7 +51,7 @@ title: NVIDIA SHIELD TV gets another firmware update
 
 In a stunning display of engineering prowess, AMD has shattered the GPU frequency world record with its upcoming [Radeon RX 9060 XT](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz) graphics card, achieving an unprecedented clock speed of 4.769 GHz. This milestone represents a significant leap forward in graphics processing technology and showcases AMD's commitment to pushing the boundaries of what's possible in [gaming hardware](https://ctrlaltstock.com/blog/article-rtx4090-amd-discussion).
 
-The record-breaking achievement was accomplished by AMD's elite [overclocking](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz) team, who pushed the Radeon RX 9060 XT well beyond its factory specifications. This impressive feat demonstrates the potential headroom built into AMD's next-generation [RDNA 4](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz) architecture and hints at the performance capabilities we can expect from this highly anticipated graphics card.
+The record-breaking achievement was accomplished by AMD's elite [overclocking](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz) team, who pushed the Radeon RX 9060 XT well beyond its factory specifications. This impressive feat demonstrates the potential headroom built into AMD's next-generation RDNA 4 architecture and hints at the performance capabilities we can expect from this highly anticipated [graphics card](https://ctrlaltstock.com/blog/graphics-card-review-2026).
 
 ## Breaking Down the Record-Breaking Achievement
 

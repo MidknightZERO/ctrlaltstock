@@ -63,7 +63,7 @@ title: 'This affordable laptop has 32 GB RAM for cheap: Lenovo ThinkPad L16 Gen 
 **Thisaffordable laptop has 32 GB RAM for cheap: Lenovo ThinkPad L16 Gen 2 AMD [review](https://ctrlaltstock.com/blog/amd-strix-halo-128-gb-ram-in-a-13-inch-convertible-asus-proart-px13-gopro-editio)**
 
 **Hook:**  
-If you’ve been hunting for a powerful laptop that won’t break the bank, the latest Lenovo ThinkPad L16 Gen 2 AMD model is turning heads in the CtrlAlt Discord. With a hefty 32 GB of [RAM](https://ctrlaltstock.com/blog/amd-strix-halo-128-gb-ram-in-a-13-inch-convertible-asus-proart-px13-gopro-editio) priced surprisingly low, this machine could be the sweet spot for students, indie developers, and anyone who needs serious multitasking power without paying premium fees.  
+If you’ve been hunting for a powerful laptop that won’t break the bank, the latest Lenovo ThinkPad L16 Gen 2 [AMD](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) model is turning heads in the CtrlAlt Discord. With a hefty 32 GB of [RAM](https://ctrlaltstock.com/blog/amd-strix-halo-128-gb-ram-in-a-13-inch-convertible-asus-proart-px13-gopro-editio) priced surprisingly low, this machine could be the sweet spot for students, indie developers, and anyone who needs serious multitasking power without paying premium fees.  
 
 ## What’s the story?  
 

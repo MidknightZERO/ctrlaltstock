@@ -66,7 +66,7 @@ If you've been waiting for a budget-friendly AMD GPU that doesn't sacrifice perf
 
 ## What's the story?
 
-A community member on r/Amd shared a detailed YouTube walkthrough that dives into the **[AMD Radeon](https://ctrlaltstock.com/blog/amd-software-adrenalin-edition-26-2-2-release-notes) RX 9070 GRE "Yeston Waifu"** – a graphics card that has been exclusive to the Chinese market until now. The video, posted on 28 February 2026, provides the first public look at thermals, gaming performance, acoustic output and [benchmark](https://ctrlaltstock.com/blog/amd-zen-6-desktop-ryzen-olympic-ridge-reportedly-set-to-launch-in-2027) numbers for the Yeston-branded variant.
+A community member on r/Amd shared a detailed YouTube walkthrough that dives into the **AMD Radeon RX 9070 GRE "Yeston Waifu"** – a [graphics card](https://ctrlaltstock.com/blog/graphics-card-review-2026) that has been exclusive to the Chinese market until now. The video, posted on 28 February 2026, provides the first public look at thermals, gaming performance, acoustic output and [benchmark](https://ctrlaltstock.com/blog/amd-zen-6-desktop-ryzen-olympic-ridge-reportedly-set-to-launch-in-2027) numbers for the Yeston-branded variant.
 
 Key takeaways from the coverage:
 
