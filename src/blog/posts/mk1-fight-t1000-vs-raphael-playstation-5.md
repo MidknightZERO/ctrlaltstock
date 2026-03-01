@@ -57,7 +57,7 @@ tags:
 title: 'MK1 fight: t1000 vs raphael  (PlayStation 5)'
 ---
 
-**Why this matters right now:** A short clip posted on the PlayStation 5 subreddit has gone viral, reigniting demand for the console just as UK shoppers hunt for post-holiday bargains. Gamers who missed out on early-year deals are now facing tighter stock and higher prices across major retailers. The UK gaming market has seen a 7% overall increase in PS5-related searches on Google Trends since December 2025, with terms like "Mortal Kombat 1 PS5 bundle" spiking by 200% in the past week. This surge mirrors last year's *God of War: Ragnarök* launch, where themed bundles drove a £25 average price hike for standard PS5 units. UK retailers like John Lewis and Currys have reported sold-out status for the PS5 Slim (CFI-1000) in brick-and-mortar stores, while online platforms like Amazon UK show a 12% surge in pre-order inquiries for MK1-themed accessories.
+**Why this matters right now:** A short clip posted on the [PlayStation](https://ctrlaltstock.com/blog/grand-theft-auto-vi-title-ids-have-been-added-to-the-playstation-database) 5 subreddit has gone viral, reigniting demand for the console just as UK shoppers hunt for post-holiday bargains. Gamers who missed out on early-year deals are now facing tighter stock and higher prices across major retailers. The UK gaming market has seen a 7% overall increase in PS5-related searches on Google Trends since December 2025, with terms like "Mortal Kombat 1 PS5 bundle" spiking by 200% in the past week. This surge mirrors last year's *God of War: Ragnarök* launch, where themed bundles drove a £25 average price hike for standard PS5 units. UK retailers like John Lewis and Currys have reported sold-out status for the PS5 Slim (CFI-1000) in brick-and-mortar stores, while online platforms like Amazon UK show a 12% surge in pre-order inquiries for MK1-themed accessories.
 ## What's the story?
 A user on r/PS5 shared a 15-second YouTube Shorts clip titled "MK1 fight: t1000 vs raphael" that showcases a *Mortal Kombat 1* matchup rendered on a PlayStation 5. The footage, captured in crisp 4K with ray tracing effects visible in the background, quickly amassed 50,000 up-votes and sparked a flurry of comments speculating that Sony might be preparing a limited-edition PS5 bundle tied to the game's launch. The clip features a high-octane battle between the T1000 (a character from *Mortal Kombat: Annihilation*) and Raphael (from *Teenage Mutant Ninja Turtles*), both reimagined with hyper-detailed character models and dynamic lighting. Viewers noted the PS5's SSD performance in loading the fight scene almost instantly, with some comparing it to next-gen console benchmarks.
 The post prompted several community members to theorise that the upcoming *Mortal Kombat 1* release could drive a surge in console purchases, especially among collectors eager to own a themed hardware package. One Reddit participant, identified only as "u/TechSavvyGamer," remarked:
@@ -67,6 +67,7 @@ Industry analysts have noted that the hype is not limited to the console itself.
 The conversation has also spilled over onto Discord, where the CtrlAltStock community has been monitoring real-time stock changes. Members are sharing live alerts on price drops, limited-time bundle offers, and restocks of the PS5 Slim (model CFI-1000) that often appear in the early morning hours. For instance, one CtrlAltStock moderator noted that the PS5 Slim restocked at 2:17 AM GMT on March 1, 2026, selling out within 90 minutes.
 
 
+
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -74,7 +75,7 @@ The conversation has also spilled over onto Discord, where the CtrlAltStock comm
 The viral MK1 clip has set off a chain reaction that is subtly reshaping the UK market for PlayStation hardware. Below is a snapshot of the most relevant price movements as of today (2026-03-01), including comparisons to previous console launches and accessory trends:
 ### PlayStation 5 (CFI-1015) – Standard Edition
 - **Current average price**: £479 (up from £465 a month ago)
-- **Notable retailers**: Amazon UK (now charging £479 for the standard bundle), Very.co.uk (£475), and Argos (£480)
+- **Notable retailers**: [Amazon UK](https://ctrlaltstock.com/blog/avatar-last-airbender-game-9-99-amazon) (now charging £479 for the standard bundle), Very.co.uk (£475), and Argos (£480)
 - **Price drivers**: The £14 increase aligns with last year's *Spider-Man 2* launch, where themed bundles caused a £15 average hike. However, this rise is tempered by the PS5 Pro's rumoured release, which may dilute demand for the standard model.
 - **Key detail**: The standard PS5 now includes a free copy of *Mortal Kombat 1* in most UK bundles, which retailers are using to justify the price bump.
 ### PlayStation 5 Slim (CFI-1000) – Lightweight Version
