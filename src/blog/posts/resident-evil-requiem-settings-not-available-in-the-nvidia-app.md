@@ -35,6 +35,7 @@ date: '2026-03-01'
 excerpt: '---'
 featuredProductId: ''
 images:
+- https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg
 - https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg
 readingTime: 6 min read
 recommendedProductIds: []
