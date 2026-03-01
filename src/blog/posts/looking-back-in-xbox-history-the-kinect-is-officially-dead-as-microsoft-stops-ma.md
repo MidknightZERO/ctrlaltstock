@@ -58,6 +58,7 @@ excerpt: 'For a generation of gamers, the word "Kinect" is synonymous with a spe
   over. As reported by a user on the '
 featuredProductId: ''
 images:
+- https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg
 - https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg
   416w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX208_CB1169409_QL70_.jpg
   208w,https://m.media-amazon.com/images/I/51qwGipQ7mS._AC_SX416_CB1169409_QL70_.jpg
