@@ -10,6 +10,8 @@ import { getPostBySlug, getAllPosts, formatPublishDate, savePost, getRelatedPost
 import { ShoppingCart, ExternalLink } from 'react-feather';
 import { AmazonProductGrid } from './components/AmazonProductCard';
 import ArticleDiscordCTA from './components/ArticleDiscordCTA';
+import ArticleQuiz from './components/ArticleQuiz';
+import BlogHero from './components/BlogHero';
 import BlogPageBackground from './components/BlogPageBackground';
 import { useToast } from '../components/Toast';
 
@@ -199,7 +201,16 @@ const BlogPost: React.FC = () => {
               ))}
             </div>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">{post.title}</h1>
+            {post.coverImage ? (
+              <BlogHero
+                coverImage={post.coverImage}
+                title={post.title}
+                titlePosition="top-left"
+                className="mb-8 h-[300px] md:h-[400px] lg:h-[500px] min-h-0"
+              />
+            ) : (
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">{post.title}</h1>
+            )}
 
             <div className="flex items-center text-gray-400 mb-8">
               <div className="flex items-center mr-6">
@@ -224,21 +235,6 @@ const BlogPost: React.FC = () => {
                 <span>{formatPublishDate(post.publishedDate)} · {post.readingTime}</span>
               </div>
             </div>
-
-            {/* Cover Image */}
-            {post.coverImage && (
-              <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src={post.coverImage}
-                  alt={post.title}
-                  className="w-full object-cover h-[300px] md:h-[400px] lg:h-[500px]"
-                  onError={(e) => {
-                    const el = e.currentTarget;
-                    if (el && el.src !== '/Logo.png') el.src = '/Logo.png';
-                  }}
-                />
-              </div>
-            )}
           </div>
 
           {/* Post Content */}
@@ -283,6 +279,9 @@ const BlogPost: React.FC = () => {
 
             {/* Discord CTA */}
             <ArticleDiscordCTA />
+
+            {/* Quiz */}
+            <ArticleQuiz tags={post.tags || []} />
 
             {/* Share buttons */}
             <div className="mt-12 flex justify-center">

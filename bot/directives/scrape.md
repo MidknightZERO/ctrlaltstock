@@ -15,15 +15,19 @@ Find 1 high-quality, relevant tech hardware story per hour that hasn't been cove
 ## Inputs
 - Reddit credentials (PRAW OAuth)
 - List of subreddits and RSS feeds (in `config.py`)
+- NewsAPI key (`NEWSAPI_KEY`) — optional; adds tech headlines
+- Giant Bomb API key (`GIANTBOMB_API_KEY`) — optional; adds gaming news
 
 ## Process
 1. Poll Reddit `/new` for each configured subreddit, past 2 hours, >20 upvotes
 2. Poll all RSS feeds for entries in the past 2 hours
-3. Filter by relevance score (keyword match against hardware keyword list)
-4. Filter out already-seen post IDs from SQLite
-5. Sort by relevance score descending
-6. For the top story, attempt to fetch the full article text from its source URL
-7. Mark story as seen, return StoryBrief
+3. Poll NewsAPI top-headlines (category=technology, country=gb) — requires `NEWSAPI_KEY`. Free tier: 100 req/day.
+4. Poll Giant Bomb API `/news/` for video game news — requires `GIANTBOMB_API_KEY`. 200 req/resource/hour.
+5. Filter by relevance score (keyword match against hardware keyword list)
+6. Filter out already-seen post IDs from SQLite
+7. Sort by relevance score descending
+8. For the top story, attempt to fetch the full article text from its source URL (RSS, NewsAPI, GiantBomb)
+9. Mark story as seen, return StoryBrief
 
 ## Edge Cases
 - **Reddit API auth failure**: PRAW will throw `prawcore.exceptions.OAuthException`. Check credentials in `.env`.

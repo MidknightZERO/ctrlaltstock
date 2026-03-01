@@ -150,6 +150,18 @@ def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
         draft = run_editorial_pass(draft)
         last_step = "editor"
 
+        # ── Step 3.5: Fact-check (DuckDuckGo) ───────────────────────────────
+        try:
+            from fact_check import fact_check_draft
+            fc_results = fact_check_draft(draft, max_claims=5)
+            contradicted = [r for r in fc_results if r.get("verdict") == "contradicted"]
+            if contradicted:
+                log.warning("Fact-check: %d claim(s) may need review: %s", len(contradicted), [r["claim"][:50] for r in contradicted])
+            elif fc_results:
+                log.info("Fact-check: %d claims checked, none contradicted", len(fc_results))
+        except Exception as e:
+            log.warning("Fact-check skipped: %s", e)
+
         # ── Step 4: Amazon links (before images so we can use product images) ─
         log.info("[4/6] Finding Amazon affiliate products...")
         from amazon_linker import find_products_for_article
@@ -165,6 +177,30 @@ def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
         last_step = "images"
         cover = draft["frontmatter"].get("coverImage", "none")
         log.info("Cover image: %s", cover[:60] if cover else "none")
+
+        # ── Step 5.5: Hero validation (Groq Vision) ───────────────────────────
+        if cover and config.groq.api_key:
+            try:
+                from hero_validate import validate_hero
+                title = draft["frontmatter"].get("title", "")
+                result = validate_hero(image_url=cover, title=title)
+                if not result.get("suitable"):
+                    alternatives = draft["frontmatter"].get("images", [])
+                    if alternatives:
+                        log.warning("Hero validation: cover not suitable for text overlay; trying next candidate")
+                        draft["frontmatter"]["coverImage"] = alternatives[0]
+                        draft["frontmatter"]["images"] = [cover] + [a for a in alternatives[1:] if a != cover]
+                        result2 = validate_hero(image_url=alternatives[0], title=title)
+                        if result2.get("suitable"):
+                            log.info("Switched to alternative cover; validation passed")
+                        else:
+                            log.warning("Alternative also not suitable; keeping first. Region: %s", result2.get("suggested_region", "top-left"))
+                    else:
+                        log.warning("Hero validation: cover not ideal for overlay. Region: %s", result.get("suggested_region", "top-left"))
+                else:
+                    log.info("Hero validation passed. Suggested region: %s", result.get("suggested_region", "top-left"))
+            except Exception as e:
+                log.warning("Hero validation skipped: %s", e)
 
         # ── Pre-publish: refuse to publish thin content ───────────────────
         final_word_count = len(draft["content"].split())

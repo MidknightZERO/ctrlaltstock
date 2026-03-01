@@ -212,6 +212,42 @@ app.get('/api/posts/:slug', async (req, res) => {
   }
 });
 
+app.get('/api/trivia', async (req, res) => {
+  try {
+    const { category, amount = '10', token, difficulty, type = 'multiple' } = req.query;
+    const params = new URLSearchParams({
+      amount: String(amount),
+      category: String(category || '9'),
+      type: String(type),
+    });
+    if (difficulty) params.set('difficulty', String(difficulty));
+    if (token) params.set('token', String(token));
+
+    const opentdbUrl = `https://opentdb.com/api.php?${params}`;
+    const fetchRes = await fetch(opentdbUrl);
+    const data = await fetchRes.json();
+    res.json(data);
+  } catch (error) {
+    console.error('Error proxying trivia:', error);
+    res.status(500).json({ response_code: -1, results: [] });
+  }
+});
+
+app.get('/api/trivia-token', async (req, res) => {
+  try {
+    const { command = 'request', token } = req.query;
+    const url = command === 'reset' && token
+      ? `https://opentdb.com/api_token.php?command=reset&token=${token}`
+      : 'https://opentdb.com/api_token.php?command=request';
+    const fetchRes = await fetch(url);
+    const data = await fetchRes.json();
+    res.json(data);
+  } catch (error) {
+    console.error('Error proxying trivia token:', error);
+    res.status(500).json({});
+  }
+});
+
 app.delete('/api/posts/:slug', requireAuth, async (req, res) => {
   try {
     const { slug } = req.params;

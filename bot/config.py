@@ -57,6 +57,19 @@ class RedditConfig:
 
 
 @dataclass
+class NewsAPIConfig:
+    api_key: str = os.getenv("NEWSAPI_KEY", "")
+    base_url: str = "https://newsapi.org/v2"
+    country: str = os.getenv("NEWSAPI_COUNTRY", "gb")
+
+
+@dataclass
+class GiantBombConfig:
+    api_key: str = os.getenv("GIANTBOMB_API_KEY", "")
+    base_url: str = "https://www.giantbomb.com/api"
+
+
+@dataclass
 class RSSConfig:
     lookback_hours: int = int(os.getenv("RSS_LOOKBACK_HOURS", "6"))
     feeds: List[dict] = field(default_factory=lambda: [
@@ -67,6 +80,9 @@ class RSSConfig:
         {"name": "Ars Technica",        "url": "https://feeds.arstechnica.com/arstechnica/technology-lab"},
         {"name": "Eurogamer",           "url": "https://www.eurogamer.net/?format=rss"},
         {"name": "WCCFTech",            "url": "https://wccftech.com/feed/"},
+        {"name": "PC Gamer",            "url": "https://www.pcgamer.com/rss/"},
+        {"name": "IGN",                 "url": "https://feeds.feedburner.com/ign/all"},
+        {"name": "Polygon",             "url": "https://www.polygon.com/rss/index.xml"},
     ])
 
 
@@ -83,6 +99,20 @@ class AmazonConfig:
 class UnsplashConfig:
     access_key: str = os.getenv("UNSPLASH_ACCESS_KEY", "")
     base_url: str = "https://api.unsplash.com"
+
+
+@dataclass
+class PexelsConfig:
+    """Used for backfill (200 req/h). New posts use Unsplash (50 req/h)."""
+    api_key: str = os.getenv("PEXELS_API_KEY", "")
+    base_url: str = "https://api.pexels.com/v1"
+
+
+@dataclass
+class GroqConfig:
+    """Groq API for vision (hero image validation)."""
+    api_key: str = os.getenv("GROQ_API_KEY", "")
+    vision_model: str = "meta-llama/llama-4-scout-17b-16e-instruct"
 
 
 @dataclass
@@ -163,9 +193,13 @@ class BotConfig:
 
 # Global config instances
 ai = AIConfig()
+groq = GroqConfig()
+newsapi = NewsAPIConfig()
+giantbomb = GiantBombConfig()
 reddit = RedditConfig()
 rss = RSSConfig()
 amazon = AmazonConfig()
 unsplash = UnsplashConfig()
+pexels = PexelsConfig()
 git = GitConfig()
 bot = BotConfig()

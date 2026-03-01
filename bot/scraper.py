@@ -551,6 +551,145 @@ def scrape_rss(db: sqlite3.Connection, dry_run: bool = False) -> List[Dict[str, 
     return stories
 
 
+# ── NewsAPI scraper ────────────────────────────────────────────────────────────
+
+def scrape_newsapi(db: sqlite3.Connection, dry_run: bool = False) -> List[Dict[str, Any]]:
+    """Fetch tech headlines from NewsAPI. Requires NEWSAPI_KEY. Free tier: 100 req/day."""
+    stories = []
+    if not config.newsapi.api_key:
+        return stories
+
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=config.rss.lookback_hours)
+    try:
+        url = (
+            f"{config.newsapi.base_url}/top-headlines"
+            f"?country={config.newsapi.country}"
+            f"&category=technology"
+            f"&pageSize=20"
+            f"&apiKey={config.newsapi.api_key}"
+        )
+        resp = httpx.get(url, timeout=15)
+        resp.raise_for_status()
+        data = resp.json()
+        if data.get("status") != "ok":
+            log.warning("NewsAPI returned status: %s", data.get("status"))
+            return stories
+
+        for art in data.get("articles", []):
+            title = (art.get("title") or "").strip()
+            if not title or title.lower() == "[removed]":
+                continue
+            link = art.get("url", "")
+            if not link:
+                continue
+            post_id = f"newsapi:{hash(link) % (10 ** 12)}"
+            if is_seen(db, post_id, title):
+                continue
+
+            published = None
+            if art.get("publishedAt"):
+                try:
+                    published = datetime.fromisoformat(
+                        art["publishedAt"].replace("Z", "+00:00")
+                    )
+                except (ValueError, TypeError):
+                    pass
+            if published and published < cutoff:
+                continue
+
+            desc = (art.get("description") or "")[:500]
+            combined = f"{title} {desc}"
+            score = relevance_score(combined)
+            if score == 0:
+                continue
+
+            stories.append({
+                "id": post_id,
+                "title": title,
+                "summary": desc,
+                "source_url": link,
+                "source_type": "newsapi",
+                "source_name": art.get("source", {}).get("name", "NewsAPI"),
+                "raw_content": desc,
+                "relevance_score": score,
+                "published_at": published.isoformat() if published else datetime.now(timezone.utc).isoformat(),
+            })
+        log.info("NewsAPI: added %d candidates", len(stories))
+    except Exception as e:
+        log.error("NewsAPI scrape failed: %s", e)
+    return stories
+
+
+# ── GiantBomb scraper ──────────────────────────────────────────────────────────
+
+def scrape_giantbomb(db: sqlite3.Connection, dry_run: bool = False) -> List[Dict[str, Any]]:
+    """Fetch video game news from Giant Bomb API. Requires GIANTBOMB_API_KEY. 200 req/resource/hour."""
+    stories = []
+    if not config.giantbomb.api_key:
+        return stories
+
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=config.rss.lookback_hours)
+    try:
+        url = (
+            f"{config.giantbomb.base_url}/news/"
+            f"?api_key={config.giantbomb.api_key}"
+            f"&format=json"
+            f"&limit=20"
+            f"&sort=publish_date:desc"
+            f"&field_list=title,deck,site_detail_url,publish_date"
+        )
+        resp = httpx.get(url, timeout=15, headers={"User-Agent": "CtrlAltStockBot/1.0"})
+        resp.raise_for_status()
+        data = resp.json()
+        if data.get("status_code") != 1:
+            log.warning("GiantBomb API returned status_code: %s", data.get("status_code"))
+            return stories
+
+        for item in data.get("results", []):
+            title = (item.get("title") or "").strip()
+            if not title:
+                continue
+            link = item.get("site_detail_url", "")
+            if not link:
+                continue
+            post_id = f"giantbomb:{item.get('id', hash(link) % (10 ** 12))}"
+            if is_seen(db, post_id, title):
+                continue
+
+            published = None
+            if item.get("publish_date"):
+                try:
+                    published = datetime.fromisoformat(
+                        item["publish_date"].replace("Z", "+00:00")
+                    )
+                except (ValueError, TypeError):
+                    pass
+            if published and published < cutoff:
+                continue
+
+            deck = (item.get("deck") or "")[:500]
+            combined = f"{title} {deck}"
+            score = relevance_score(combined)
+            if score == 0:
+                continue
+
+            stories.append({
+                "id": post_id,
+                "title": title,
+                "summary": deck,
+                "source_url": link,
+                "source_type": "giantbomb",
+                "source_name": "Giant Bomb",
+                "raw_content": deck,
+                "relevance_score": score,
+                "published_at": published.isoformat() if published else datetime.now(timezone.utc).isoformat(),
+            })
+        log.info("GiantBomb: added %d candidates", len(stories))
+    except Exception as e:
+        log.error("GiantBomb scrape failed: %s", e)
+    return stories
+
+
 # ── Full article fetch ────────────────────────────────────────────────────────
 
 def fetch_article_text(url: str) -> str:
@@ -586,6 +725,8 @@ def get_best_story(dry_run: bool = False) -> Optional[Dict[str, Any]]:
     all_stories: List[Dict[str, Any]] = []
     all_stories.extend(scrape_reddit(db, dry_run))
     all_stories.extend(scrape_rss(db, dry_run))
+    all_stories.extend(scrape_newsapi(db, dry_run))
+    all_stories.extend(scrape_giantbomb(db, dry_run))
 
     if not all_stories:
         log.warning("No relevant stories found in this run")
@@ -654,8 +795,8 @@ def get_best_story(dry_run: bool = False) -> Optional[Dict[str, Any]]:
     # Set story_angle for dynamic writer (personal vs news)
     best["story_angle"] = "personal" if best["personal_score"] >= 0.5 else "news"
 
-    # Try to fetch full article text if it's from RSS
-    if best["source_type"] == "rss" and best.get("source_url"):
+    # Try to fetch full article text if it's from RSS, NewsAPI, or GiantBomb
+    if best["source_type"] in ("rss", "newsapi", "giantbomb") and best.get("source_url"):
         full_text = fetch_article_text(best["source_url"])
         if full_text:
             best["raw_content"] = full_text
@@ -686,6 +827,8 @@ def get_top_stories(n: int = 3, dry_run: bool = False) -> List[Dict[str, Any]]:
     all_stories: List[Dict[str, Any]] = []
     all_stories.extend(scrape_reddit(db, dry_run))
     all_stories.extend(scrape_rss(db, dry_run))
+    all_stories.extend(scrape_newsapi(db, dry_run))
+    all_stories.extend(scrape_giantbomb(db, dry_run))
 
     if not all_stories:
         log.warning("No relevant stories found in this run")

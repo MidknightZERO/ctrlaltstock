@@ -13,6 +13,7 @@ beautifulsoup4==4.12.3
 
 # AI providers
 openai>=1.35.0
+groq>=0.4.0
 # ollama is accessed via httpx (REST) - no package needed
 
 # Amazon PA-API SDK — NOT on PyPI, install manually if needed:
