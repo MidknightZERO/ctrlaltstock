@@ -76,7 +76,7 @@ tags:
 title: 'PS5 Games 2026: Wolverine, 1348 Ex Voto and More Confirmed Titles Revealed'
 ---
 
-[PS5](https://ctrlaltstock.com/blog/eternal-threads-for-ps5-xbox-series-ps4-xbox-one-and-switch-launches-may-23-stor) Games 2026: Wolverine, 1348 Ex Voto and More Confirmed Titles Revealed — Do not change the subject; keep the article about this topic.
+[PS5](https://ctrlaltstock.com/blog/crimson-desert-rendimiento-grafico-en-ps5-pro-y-base-slim-o-fat) Games 2026: Wolverine, 1348 Ex Voto and More Confirmed Titles Revealed — Do not change the subject; keep the article about this topic.
 
 
 <!-- featured-product: PlayStation 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
