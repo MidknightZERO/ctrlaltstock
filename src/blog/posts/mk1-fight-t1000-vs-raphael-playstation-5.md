@@ -44,7 +44,14 @@ excerpt: '**Why this matters right now:** A short clip posted on the PlayStation
   hunt for post-holiday bargains. Gamers who'
 featuredProductId: ''
 images:
-- https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=1200
+- https://m.media-amazon.com/images/I/714nXgTiuAL._AC_UY218_.jpg?w=1200
+- https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX416_CB1169409_QL70_.jpg
+  416w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX208_CB1169409_QL70_.jpg
+  208w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX416_CB1169409_QL70_.jpg
+  416w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX208_CB1169409_QL70_.jpg
+  208w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX416_CB1169409_QL70_.jpg
+  416w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX208_CB1169409_QL70_.jpg
+  208w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX416_CB1169409_QL70_.jpg?w=1200
 readingTime: 3 min read
 recommendedProductIds: []
 relatedPostSlugs: []

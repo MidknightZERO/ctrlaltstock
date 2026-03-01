@@ -44,7 +44,7 @@ excerpt: NVIDIA's RTX 5090 connector melting issues continue to plague UK gamers
   about flagship GPU reliability.
 featuredProductId: ''
 images:
-- https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=1200
+- https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?w=1200
 readingTime: 4 min read
 recommendedProductIds: []
 relatedPostSlugs:
