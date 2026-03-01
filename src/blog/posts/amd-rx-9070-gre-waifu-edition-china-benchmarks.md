@@ -57,36 +57,10 @@ title: 'AMD''s China-Only RX 9070 GRE ''Waifu'' Edition: Exotic Cooling and Benc
   Leaks'
 ---
 
-AMD's RX 9070 GRE graphics card has just taken an unexpected turn into niche territory with a China-only "Waifu" edition from Yeston, complete with custom cooling, aggressive thermals, and gaming performance that's already making waves among enthusiasts. For UK bargain hunters, this unusual release could signal interesting pricing shifts for the GRE lineup — and our community is already buzzing about what it means for availability here.  
-
-## What's the story?  
-A new custom RX 9070 GRE model from Yeston — dubbed the "Waifu" edition — has surfaced exclusively in China, featuring a bold anime-themed design and a triple-fan cooling solution. Early leaked s and thermal tests from a recent YouTube review show the card running cooler and quieter than the reference model, thanks to its oversized heatsink and optimised fan curve. In synthetic tests, the Waifu GRE hit boost clocks of up to **2,700 MHz under load**, with gaming frame rates in 1440p matching or slightly exceeding the standard GRE's performance. The GRE (Golden Rabbit Edition) itself sits between the RX 9070 and 9070 XT in AMD's stack, offering a sweet spot for 1440p gaming without the premium of the XT variant. This China-only custom model, however, is more about aesthetics and cooling prowess than raw performance gains. Yeston's design includes RGB accents (available in red, blue, and white gradients) and a **distinctive 15mm-thick shroud** with a dragon motif, clearly aimed at the collector and enthusiast market in Asia. While the Waifu GRE isn't coming to UK shelves, its release is noteworthy for several reasons. First, it shows AMD's willingness to experiment with custom designs in key markets, which could eventually influence global product strategies. Second, the improved thermals and acoustics hint at what's possible with third-party cooling solutions — something UK gamers often seek when buying custom cards. Finally, the buzz around this card could drive interest (and potentially stock fluctuations) in the broader RX 9070 GRE range.  
-
-
-
-<!-- featured-product: AMD Radeon RX 7800 XT | From £479 | https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21 -->
-
-
-## What does this mean for prices?  
-The [RX 9070](https://ctrlaltstock.com/blog/china-only-amd-rx-9070-gre-yeston-waifu-thermals-gaming-noise-benchmarks) GRE launched in the UK at around **£550–£580 for reference models**, with custom versions from ASRock, Gigabyte, and others nudging closer to **£590–£620**. The appearance of a high-profile custom model — even if China-only — often triggers increased demand for the standard GRE, as enthusiasts hope for similar cooling and design cues in global releases. At present, UK stock is stable but not abundant; most retailers have moved to selling at or just above MSRP. The Waifu edition's leaks may spark renewed interest, potentially tightening supply and nudging prices upward in the short term. However, if AMD decides to bring a similar design to Western markets, we could see a wave of new custom GRE cards, increasing competition and driving prices back down. For [bargain](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-gpu-deals) hunters, the key is timing: if you're after a GRE now, watch for any price dips or restocks — our Discord community regularly shares live alerts when stock appears below **£550**. If you can wait, the next few months may bring more custom options and better deals, especially if AMD uses the Waifu's reception to inform global launches.  
-
-
-
-[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
-
-
-## What to buy right now  
-If you're in the market for a high-performance GPU at 1440p, the RX 9070 GRE remains a strong contender — especially if you can find it around **£550**. For those wanting even more performance, the **[RX 9070 XT](https://ctrlaltstock.com/blog/asrock-powercolor-rx-9070-xt-service-rates)** is available from about **£650**, though stock can be patchy. [NVIDIA](https://ctrlaltstock.com/blog/celebrating-the-geforce-3-its-revolutionary-programmable-shaders-25-years-later)'s **RTX 4070 Ti** is another option in this bracket, typically priced around **£600–£620**, with superior ray tracing but higher power draw. For budget-conscious gamers, don't overlook last-gen options: the **RX 7800 XT** can now be found for under **£450**, offering excellent 1440p performance and often better value. If you're set on a custom-cooled card with quiet operation, keep an eye out for new GRE models from ASRock or Gigabyte — they may borrow design cues from the Waifu edition. Our top tip: set price alerts on CtrlAltStock for your preferred model, and join our 10,000-member Discord for instant stock notifications and community advice. With new custom cards potentially on the horizon, patience could pay off with a better deal.  
-
-## Final thoughts  
-The China-only AMD RX 9070 GRE "Waifu" edition is a reminder of how quickly the GPU market can shift — sometimes in unexpected directions. While most UK gamers won't get their hands on this particular card, its release is a sign that AMD is pushing boundaries with custom designs, which could soon benefit us all with more choices and better cooling solutions. Stay tuned to CtrlAltStock and our Discord for the latest stock alerts and expert advice, and you might just snag your next upgrade at the perfect price.  
-
----  
-**Additional technical specifics**:  
-- The Waifu GRE uses a **16GB GDDR6 memory configuration** (256-bit bus), matching the standard GRE's capacity but with a **10% higher memory bandwidth** (320 GB/s vs. 296 GB/s) due to optimized clock speeds.  
-- Thermal performance under full load: **70°C vs. 80°C** for the reference model, with fan noise reduced by **20%** at 2,700 MHz.  
-- Benchmarks: In *Cyberpunk 2077* at 1440p ultra settings, the Waifu GRE achieved **120 FPS** vs. the reference's **112 FPS**, while *Elden Ring* saw **95 FPS** vs. **90 FPS**.  
-- Yeston's custom firmware includes **dynamic fan curve adjustments** that ramp up cooling during intense workloads but maintain near-silent operation during idle or light gaming.
-
-
-[![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
+AMD's RX 9070 GRE graphics card has entered a niche China-only release with a Waifu edition. This custom model features unique design elements like RGB accents and a dragon-themed shroud. UK enthusiasts are discussing its impact on pricing and availability.
+What's the story behind this release? A China-exclusive version from Yeston includes aggressive cooling and updated fan curves. Early tests show cooler operation and slightly better gaming performance at 2,700 MHz. The GRE sits between the RX 9070 and XT models, offering a balanced option for 1440p gaming.
+The article mentions performance benchmarks: up to 2,700 MHz under load and solid frame rates in 1440p. Yeston's design focuses on aesthetics and cooling, appealing to the Asian market. Though not available in the UK, its launch signals AMD's experimentation with custom designs.
+This release could influence future pricing and stock availability. For UK buyers, monitoring stock is key, especially with demand rising from the Waifu edition's leaks.
+[Link to AMD RX 9070 GRE](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg) remains active for reference.
+For more details, check [NVIDIA's RTX 4070 Ti pricing](https://ctrlaltstock.com/blog/amd-sdx6-premiere).
+Final thoughts highlight how custom models drive innovation, even if availability is limited. Stay updated with CtrlAltStock for alerts.

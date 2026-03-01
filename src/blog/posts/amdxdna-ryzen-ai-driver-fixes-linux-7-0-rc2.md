@@ -72,11 +72,11 @@ The **Ryzen AI** branding is AMD's marketing umbrella for the combination of thi
 *   **Ryzen 8040 series** (e.g., 8845HS): A refreshed variant with a slightly more powerful NPU (16 TOPS vs 10 TOPS in 7040), featured in the **Lenovo ThinkPad Z13 Gen 2** and **Asus ROG Flow X13** (2024 model), with prices starting around £1,500.
 The NPU's theoretical performance is rated at **10-16 TOPS** (Trillion Operations per Second) of INT8 performance, specifically for AI inference tasks, while consuming a fraction of the power a CPU or GPU would require for similar workloads.
 The software challenge has been bridging this novel hardware to the open-source Linux world. The primary components are:
-1.  **The `amd-pstate` and `amd-pstate-tuning` drivers**: These manage CPU frequency scaling and power states, which are intrinsically linked to NPU power management on these hybrid APUs.
-2.  **The `amdgpu` display and kernel graphics driver**: The NPU shares some system resources and firmware with the integrated Radeon 700M graphics.
-3.  **The `amd64_edac` and memory controller drivers**: Critical for managing the unified memory architecture where the NPU, CPU, and iGPU can share system RAM.
-4.  **The `kfd` (Kernel Framework Driver) and `amdkfd`**: This is the core open-source driver infrastructure for AMD's compute accelerators (formerly for GPUs, now extended for XDNA). It provides the user-space API (via `libdrm` and `ROCm` components) that applications use to offload AI models.
-5.  **The `amd-ucode` microcode package**: Contains the firmware blobs that are loaded onto the NPU at boot. The 7.0-rc2 updates include revised firmware images for stability.
+1.  **The `amd-pstate` and `amd-pstate-tuning` drivers** — These manage CPU frequency scaling and power states, which are intrinsically linked to NPU power management on these hybrid APUs.
+2.  **The `amdgpu` display and kernel graphics driver** — The NPU shares some system resources and firmware with the integrated Radeon 700M graphics.
+3.  **The `amd64_edac` and memory controller drivers** — Critical for managing the unified memory architecture where the NPU, CPU, and iGPU can share system RAM.
+4.  **The `kfd` (Kernel Framework Driver) and `amdkfd`** — This is the core open-source driver infrastructure for AMD's compute accelerators (formerly for GPUs, now extended for XDNA). It provides the user-space API (via `libdrm` and `ROCm` components) that applications use to offload AI models.
+5.  **The `amd-ucode` microcode package** — Contains the firmware blobs that are loaded onto the NPU at boot. The 7.0-rc2 updates include revised firmware images for stability.
 
 
 [![AMD Ryzen 7 7800X3D](https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21)
