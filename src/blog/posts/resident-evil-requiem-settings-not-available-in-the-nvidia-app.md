@@ -49,7 +49,7 @@ title: Resident evil requiem Settings not available in the Nvidia app
 
 ---
 ---
-**[Resident Evil Requiem](https://ctrlaltstock.com/blog/resident-evil-requiem-steam-concurrency-record) Settings Not Available in the Nvidia App**
+**[Resident Evil Requiem](https://ctrlaltstock.com/blog/resident-evil-requiem-hdr-review-best-hdr-settings-hdr-is-broken-great-game-on-p) Settings Not Available in the Nvidia App**
 
 
 <!-- featured-product: NVIDIA GeForce RTX 3080 Ti | Check used / refurb | https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21 -->

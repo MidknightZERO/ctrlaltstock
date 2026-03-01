@@ -68,10 +68,11 @@ tags:
 title: 'PS5 Games 2026: Wolverine, 1348 Ex Voto and More Confirmed Titles Revealed'
 ---
 
-PS5 Games 2026: Wolverine, 1348 Ex Voto and More Confirmed Titles Revealed — Do not change the subject; keep the article about this topic.
+[PS5](https://ctrlaltstock.com/blog/gatax6-updates-playstation-harmony) Games 2026: Wolverine, 1348 Ex Voto and More Confirmed Titles Revealed — Do not change the subject; keep the article about this topic.
 
 
 <!-- featured-product: PlayStation 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
+
 
 
 The PlayStation 5 continues to solidify its position as the premier platform for exclusive gaming experiences, and 2026 promises an exceptionally rich lineup of titles designed to showcase the console's capabilities. Building on the success of groundbreaking releases like *GTA VI* and *Resident Evil 4 Remake*, Sony Interactive Entertainment has been quietly assembling a roster of highly anticipated PS5 exclusives set to launch throughout the coming year. This article delves into the confirmed and rumored PS5 exclusives for 2026, exploring the diverse genres and innovative gameplay experiences that will keep PlayStation fans engaged long into the future.
