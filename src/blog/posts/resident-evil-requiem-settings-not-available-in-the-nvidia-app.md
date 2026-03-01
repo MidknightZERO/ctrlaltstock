@@ -56,7 +56,12 @@ title: Resident evil requiem Settings not available in the Nvidia app
 
 ---
 ---
-**Resident Evil Requiem Settings Not Available in the Nvidia App**
+**[Resident Evil Requiem](https://ctrlaltstock.com/blog/resident-evil-requiem-steam-concurrency-record) Settings Not Available in the Nvidia App**
+
+
+<!-- featured-product: NVIDIA GeForce RTX 3080 Ti | Check used / refurb | https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21 -->
+
+
 Are you struggling to find the settings menu for Resident Evil Requiem within your Nvidia GeForce Experience app? You're not alone. Many players encounter this frustrating issue where the game's configuration options seem mysteriously absent from the Nvidia control panel. This guide will help you diagnose why the settings aren't showing up and provide actionable steps to get them back.
 **Why Are the Settings Missing?**
 The absence of Resident Evil Requiem settings in the Nvidia app typically stems from one of a few common technical hurdles:
