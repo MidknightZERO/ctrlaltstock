@@ -68,7 +68,7 @@ The current landscape for integrated graphics in the UK is still dominated by In
 
 ---
 
-## What’s the Story? The RDNA 4 i[GPU](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) Breakdown  
+## What’s the Story? The RDNA 4 i Breakdown  
 
 ### The Reddit Leak: A Community-Driven Discovery  
 The news stems from a post on r/Amd by a user going by “RDNA_Watcher2026,” who claims to have reverse-engineered details about AMD’s Ryzen 5000 series APUs. According to the post, the "Medusa" variant of the Ryzen 5000 series includes an RDNA 4-based integrated GPU (iGPU) with matrix ISA support—a technical term indicating improved performance for compute-intensive tasks. This could mean better ray tracing, higher frame rates in modern games, and smoother scaling for demanding workloads. While AMD hasn’t officially confirmed this, the technical specifics align with roadmaps hinted at during their recent developer conferences in March 2024.  

@@ -53,7 +53,7 @@ title: '[Steam, Nintendo, Xbox] Ninja Gaiden Masters Collection ($19.99 50%)'
 
 In the rapidly evolving landscape of graphics cards, AMD continues to make significant strides in the [GPU](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) market as we move through 2026. With technological advancements and competitive pricing strategies, [AMD Radeon](https://ctrlaltstock.com/blog/amd-software-adrenalin-edition-26-2-2-release-notes) GPUs have positioned themselves as formidable alternatives to NVIDIA's offerings, providing UK gamers and professionals with excellent value for their investment. The current AMD GPU lineup showcases remarkable performance improvements, power efficiency gains, and innovative features that cater to diverse user needs from budget-conscious consumers to high-end enthusiasts.
 
-## Current AMD GPU Offerings and Performance [Benchmark](https://ctrlaltstock.com/blog/amd-zen-6-desktop-ryzen-olympic-ridge-reportedly-set-to-launch-in-2027)s
+## Current AMD GPU Offerings and Performance s
 
 [AMD](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update)'s current generation of Radeon GPUs has impressed critics and consumers alike with their exceptional price-to-performance ratios. The [Radeon RX 7000](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) series continues to dominate mid-range and high-end segments, offering competitive performance against NVIDIA's RTX 4000 series. Recent benchmarks indicate that AMD's latest drivers have significantly improved performance in many popular titles, making them even more attractive options for UK gamers.
 
