@@ -800,7 +800,12 @@ def run_backfill(
 
     if images_only:
         fix_list = load_fix_list()
-        if fix_list.get("posts"):
+        if not fix_list or not fix_list.get("posts"):
+            log.warning(
+                "fix-list.json missing or empty. Run generate_fix_list.py first for topic-relevant images. "
+                "Proceeding with title-based search only — images may be generic or repeated."
+            )
+        elif fix_list.get("posts"):
             log.info("Using fix list for image search terms (%d posts)", len(fix_list["posts"]))
         for path, post in posts:
             if backfill_cover_images(post, path, dry_run, fix_list):
@@ -897,6 +902,7 @@ def main():
     parser.add_argument("--no-inline-images", action="store_true", help="Skip inline images during backfill")
     parser.add_argument("--inline-images-only", action="store_true", help="Only add inline images")
     parser.add_argument("--images-only", action="store_true", help="Re-fetch cover images (topic-aware, 7-day exclusion)")
+    parser.add_argument("--require-fix-list", action="store_true", help="With --images-only: exit with error if fix-list.json missing (run generate_fix_list.py first)")
     parser.add_argument("--max-links", type=int, default=5, help="Max internal links per post (default: 5)")
     parser.add_argument("--max-amazon-links", type=int, default=5, help="Max Amazon links per post (default: 5)")
     parser.add_argument("--dry-run", action="store_true", help="Log changes, don't write files")
@@ -912,6 +918,14 @@ def main():
         do_links = False
         do_amazon = False
         do_inline_images = False
+        if args.require_fix_list:
+            fl = load_fix_list()
+            if not fl or not fl.get("posts"):
+                log.error(
+                    "fix-list.json missing or empty and --require-fix-list set. "
+                    "Run: python bot/generate_fix_list.py  then  python bot/backfill_content.py --images-only"
+                )
+                sys.exit(1)
     elif args.amazon_links_only:
         do_tags = False
         do_links = False

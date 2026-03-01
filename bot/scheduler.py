@@ -328,6 +328,17 @@ def _run_pipeline_inner(dry_run: bool = False) -> bool:
         except Exception as e:
             log.warning("Backfill failed (non-fatal): %s", e)
 
+        if getattr(config.bot, "run_image_refresh_after_cron", False):
+            log.info("Running image refresh (fix list + cover images for existing posts)...")
+            try:
+                from generate_fix_list import run as generate_fix_list_run
+                generate_fix_list_run(dry_run=False)
+                from backfill_content import run_backfill
+                run_backfill(tags=False, links=False, amazon_links=False, inline_images=False, images_only=True)
+                log.info("Image refresh (fix list + covers) completed.")
+            except Exception as e:
+                log.warning("Image refresh failed (non-fatal): %s", e)
+
         log.info("Pushing commits to remote...")
         try:
             from publisher import git_commit_and_push

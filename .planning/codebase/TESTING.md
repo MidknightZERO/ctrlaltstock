@@ -1,105 +1,94 @@
 # Testing Patterns
 
-**Analysis Date:** 2025-02-28
+**Analysis Date:** 2025-03-01
 
 ## Test Framework
 
-**Runner:** Not configured
+**Frontend:**
+- **Runner:** Not configured. No Vitest, Jest, or Playwright in `package.json`. Vite is used for build (`vite.config.ts`); no test runner in Vite config.
+- **Config:** No `vitest.config.*`, `jest.config.*`, or `playwright.config.*` in the repo.
+- **Run commands:** No `test` or `test:watch` scripts in `package.json`. Only `lint` (eslint) and build/preview scripts.
 
-**Assertion Library:** Not present
-
-**Run Commands:**
-```bash
-# No test script in package.json
-npm run lint    # ESLint only
-```
-
-**Current state:** No Jest, Vitest, React Testing Library, or other test runner is installed. The project has no automated tests.
+**Bot (Python):**
+- **Runner:** Not configured. No pytest, unittest, or tox. No `tests/` directory, no `pytest.ini`, no `conftest.py`.
+- **Run commands:** No test script in `bot/requirements.txt` or repo root; bot is run via `python bot/<script>.py` for production/cron.
 
 ## Test File Organization
 
-**Location:** Not applicable (no test files)
+**Location:** Not applicable — no test files found.
 
-**Naming:** Not applicable
+**Naming:** No `*.test.*`, `*.spec.*`, or `test_*.py` files in the codebase.
 
-**Structure:** No `*.test.ts`, `*.test.tsx`, `*.spec.ts`, or `*.spec.tsx` files found in the codebase.
+**Structure:** N/A.
 
-## Manual Verification
+## Test Structure
 
-**Smoke test script:** `scripts/test-changes.js`
+No test suites present. The only validation script is a build/smoke script:
 
-- Purpose: Quick smoke test for Images & Amazon Product Overhaul changes
-- Run: `node scripts/test-changes.js`
-- Not wired into `package.json` scripts
-- Checks:
-  1. `blog-posts.json` exists (requires `npm run build:blog` first)
-  2. Posts with inline images
-  3. Posts with featured-product comments
-  4. Amazon products limited to 3 per post
-  5. Featured-product comment parsing (mirrors `MarkdownRenderer` logic)
+- **`scripts/test-changes.js`** — Manual smoke test for "Images & Amazon Product Overhaul". Run: `node scripts/test-changes.js`. It:
+  1. Loads `public/blog-posts.json` (fails if missing).
+  2. Counts posts with inline markdown images and featured-product comments.
+  3. Checks `amazonProducts` length ≤ 3 per post.
+  4. Asserts parsing of a sample `<!-- featured-product: ... -->` comment (mirrors `MarkdownRenderer`).
+  5. Exits with `process.exit(1)` on failure; no test framework.
 
-**Example from `scripts/test-changes.js`:**
-```javascript
-const sampleComment = '<!-- featured-product: AMD Radeon RX 7800 XT | From £479 | ... -->';
-const inner = sampleComment.replace(/^<!--\s*featured-product:\s*/, '').replace(/\s*-->$/, '').trim();
-const parts = inner.split(/\s*\|\s*/).map((p) => p?.trim() || '');
-// Assert parsed structure matches expected
-```
+This is **build/output validation**, not a unit or integration test suite.
 
-## Recommended Test Setup
+## Mocking
 
-To add testing, use one of these approaches:
+**Framework:** None in use; no tests to mock from.
 
-**Option A: Vitest (Vite-native)**
-```bash
-npm install -D vitest @testing-library/react @testing-library/jest-dom jsdom
-```
+**Recommendation (from existing codebase map):** When tests are added, mock external services in bot (OpenRouter, Unsplash, Pexels, Reddit, RSS, NewsAPI, Groq) and in frontend (API/data fetchers) so tests don't hit real APIs.
 
-- Config in `vite.config.ts` or `vitest.config.ts`
-- Co-locate tests: `Component.tsx` + `Component.test.tsx`, or use `__tests__/` directory
+## Fixtures and Factories
 
-**Option B: Jest**
-```bash
-npm install -D jest @types/jest ts-jest @testing-library/react @testing-library/jest-dom
-```
-
-- Add `jest.config.js` with `transform` for TypeScript
-- Add `"test": "jest"` to `package.json` scripts
-
-## What to Test (When Tests Are Added)
-
-**High-value units:**
-- `src/blog/utils/markdownUtils.ts`: `parseMarkdownToBlogPost`, `parseContentToBlocks`, `formatBlogPostToMarkdown`, `generateMarkdownFromBlocks`
-- `src/blog/utils/blogUtils.ts`: `getRelatedPostsByTopic`, `formatPublishDate`, `calculateReadingTime`
-- `src/blog/data/tagHierarchy.ts`: `isDisplayableTag`, `isMainGroup`, `getMainGroupForTag`
-
-**Component candidates:**
-- `MarkdownRenderer`: featured-product parsing, markdown rendering
-- `BlockRenderer`: block type switching
-- `ErrorBoundary`: error state and reset
-- `Toast` / `useToast`: show/hide behavior
-
-**Integration:**
-- Blog post fetch + render flow
-- Editor save/load with `blogUtils` and `markdownUtils`
-
-## Mocking (When Tests Are Added)
-
-**What to mock:**
-- `fetch` for API calls (`blogUtils`, `getPostBySlug`, etc.)
-- `react-router-dom` (`useParams`, `useNavigate`, `Link`) in component tests
-- `useToast` when testing components that show toasts
-
-**What NOT to mock:**
-- Pure utils (`formatPublishDate`, `calculateReadingTime`, `parseContentToBlocks`)
-- Type definitions and data structures
+No test fixtures or factories. Bot uses real paths and config (`config.git.repo_path`, `config.bot.posts_dir`, `bot/.tmp/`, `bot/used_images.json`). Frontend uses real `public/blog-posts.json` in the smoke script.
 
 ## Coverage
 
-**Requirements:** None enforced
+**Requirements:** None enforced. No coverage tool (c8, nyc, pytest-cov) configured.
 
-**View coverage:** N/A until a test runner is configured
+**View coverage:** N/A.
+
+## Test Types
+
+**Unit tests:** None.
+
+**Integration tests:** None.
+
+**E2E tests:** None. No Playwright, Cypress, or similar.
+
+**Smoke / build validation:** `scripts/test-changes.js` only; not wired into `npm test`.
+
+## Common Patterns (When Adding Tests)
+
+**Bot (Python) — suggested:**
+- Use **pytest** for bot. Place tests in `bot/tests/` or repo-root `tests/` with modules mirroring `bot/` (e.g. `test_backfill_content.py`, `test_scraper.py`, `test_image_fetcher.py`).
+- Critical paths to cover first (per CONCERNS.md): `scraper.py` dedup (`is_seen`, `normalize_string`, `similarity_to_existing`), `backfill_content.py` link/phrase logic, `image_fetcher.py` pool selection and anti-reuse.
+- Use fixtures for: minimal `config` overrides, temp dir for posts and `used_images.json`, in-memory SQLite for `seen_posts`. Mock `httpx`, `praw`, and AI/vision APIs.
+- Run from repo root: `pytest bot/tests -v` (or `tests/` if structured that way).
+
+**Frontend (TypeScript/React) — suggested:**
+- Use **Vitest** (Vite-native). Add `vitest` and `@testing-library/react` (and optionally `jsdom`). Config in `vite.config.ts` or `vitest.config.ts`.
+- Co-locate tests: `ComponentName.test.tsx` next to `ComponentName.tsx`, or use a `__tests__` folder under `src/`.
+- Test: `blogUtils` (getPostBySlug, getAllPosts, parsing), slug/validation in `server.js`, and any shared markdown/featured-product parsing used by `MarkdownRenderer` and `scripts/test-changes.js`.
+- Mock: `blogUtils` / API in component tests; use Vitest's `vi.mock()` for modules.
+
+**Shared:**
+- Reuse the same featured-product parsing expectations as `scripts/test-changes.js` in a unit test so the contract is in one place.
+
+## Gaps and Priority
+
+| Area | What's not tested | Risk | Priority |
+|------|-------------------|------|----------|
+| Scraper dedup | `is_seen`, `normalize_string`, similarity vs existing posts | Duplicate or missed stories | High |
+| Backfill links | Phrase matching, max links, distribution-aware logic | Wrong/missing links, skew | High |
+| Image fetcher | Pool selection, anti-reuse, used_images update | Reused or wrong images | High |
+| build-blog.js | Markdown/frontmatter parsing, blog-posts.json shape | Broken build or wrong UI data | High |
+| server.js | Slug validation, routes | 404 or wrong post | Medium |
+| blogUtils | getPostBySlug, getAllPosts, related posts | Wrong data on blog pages | Medium |
+| React components | BlogPost, BlogHome, MarkdownRenderer | Regressions in UI | Lower until critical paths covered |
 
 ---
 
-*Testing analysis: 2025-02-28*
+*Testing analysis: 2025-03-01*

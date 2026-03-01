@@ -294,6 +294,10 @@ def fetch_images(draft: Dict[str, Any], use_pexels: bool = False) -> Dict[str, A
 
     # 1. Query-based search: Pexels for backfill, Unsplash for new posts
     queries = draft.get("image_search_queries") or [title] + (draft.get("amazon_search_queries") or [])[:2]
+    if draft.get("image_search_queries"):
+        log.info("Using AI image search terms: %s", draft.get("image_search_queries")[:4])
+    else:
+        log.info("No image_search_queries in draft; using title + amazon fallback: %s", queries[:3])
     if use_pexels and config.pexels.api_key and queries:
         for query in queries:
             clean_query = _clean_query_for_images(query, primary_topic)

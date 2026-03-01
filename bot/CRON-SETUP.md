@@ -60,6 +60,25 @@ git remote -v
 
 - **Articles per run**: Set `ARTICLES_PER_RUN=3` in `bot/.env` (default: 3)
 - **Logs**: `bot/logs/cron.log` and `bot/logs/scheduler.log`
+- **Image refresh for existing posts**: To refresh cover images (with topic-relevant Pexels search) after each cron run, set `BOT_RUN_IMAGE_REFRESH_AFTER_CRON=1` in `bot/.env`. This runs AI fix-list generation then backfill --images-only — more API calls and time per run.
+
+## Fix existing posts (manual, correct order)
+
+For topic-relevant images and distribution-aware linking on **existing** posts, run the fix-existing pipeline in order:
+
+1. **Validate** → `bot/.tmp/validation-report.json` (used for distribution-aware linking)
+2. **Generate fix list** → `bot/.tmp/fix-list.json` (AI image search terms per post; **required** for step 4)
+3. **Backfill** → tags, links, excerpts, inline images (uses validation report)
+4. **Backfill images only** → refresh covers using fix list (Pexels); **aborts if fix list missing**
+5. **Build** → `npm run build:blog`
+
+From repo root:
+
+```powershell
+.\bot\run-fix-existing.ps1
+```
+
+Do not skip steps 1 or 2 if you want topic-relevant images; step 4 will abort if the fix list was not created.
 
 ## Manual Run
 

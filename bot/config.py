@@ -131,6 +131,9 @@ class BotConfig:
     build_hook_url: str = os.getenv("BUILD_HOOK_URL", "")
     image_reuse_lookback_days: int = int(os.getenv("IMAGE_REUSE_LOOKBACK_DAYS", "7"))
 
+    # Optional: after each cron backfill, run generate_fix_list + backfill --images-only (more API calls)
+    run_image_refresh_after_cron: bool = os.getenv("BOT_RUN_IMAGE_REFRESH_AFTER_CRON", "").lower() in ("1", "true", "yes")
+
     # Paths (relative to repo root)
     posts_dir: str = "src/blog/posts"
     blog_json_path: str = "public/blog-posts.json"
