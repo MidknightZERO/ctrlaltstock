@@ -53,6 +53,8 @@ SITE_BASE_URL = getattr(config.bot, "site_url", "https://ctrlaltstock.com").rstr
 
 # Validation report written by validate_existing_content.py; backfill uses it for distribution-aware linking
 VALIDATION_REPORT_PATH = _BOT_DIR / ".tmp" / "validation-report.json"
+# Fix list written by generate_fix_list.py; backfill --images-only uses it for AI-generated image search terms
+FIX_LIST_PATH = _BOT_DIR / ".tmp" / "fix-list.json"
 
 
 def load_validation_report() -> Dict[str, Any]:
@@ -64,6 +66,18 @@ def load_validation_report() -> Dict[str, Any]:
         return data if isinstance(data, dict) else {}
     except Exception as e:
         log.warning("Could not load validation report %s: %s", VALIDATION_REPORT_PATH, e)
+        return {}
+
+
+def load_fix_list() -> Dict[str, Any]:
+    """Load fix list if present (from generate_fix_list.py). Returns {"posts": {slug: {"image_search_queries": [...]}}} or empty."""
+    if not FIX_LIST_PATH.exists():
+        return {}
+    try:
+        data = json.loads(FIX_LIST_PATH.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except Exception as e:
+        log.warning("Could not load fix list %s: %s", FIX_LIST_PATH, e)
         return {}
 
 
@@ -100,6 +114,7 @@ def fix_tags(post: fm.Post) -> bool:
 
 def fix_placeholder_excerpt(post: fm.Post) -> bool:
     """If excerpt is missing or placeholder '---', set from first line of body (word-boundary). Returns True if changed."""
+    from utils import strip_excerpt_prompt_artifacts
     existing = (post.get("excerpt") or "").strip()
     if existing and existing != "---":
         return False
@@ -107,7 +122,9 @@ def fix_placeholder_excerpt(post: fm.Post) -> bool:
     lines = [l.strip() for l in content.split("\n") if l.strip() and not l.startswith("#")]
     if not lines:
         return False
-    first_line = lines[0]
+    first_line = strip_excerpt_prompt_artifacts(lines[0])
+    if not first_line:
+        return False
     max_len = 200
     if len(first_line) > max_len:
         truncated = first_line[: max_len + 1].rsplit(" ", 1)[0]
@@ -116,6 +133,27 @@ def fix_placeholder_excerpt(post: fm.Post) -> bool:
         new_excerpt = first_line
     post["excerpt"] = new_excerpt
     return True
+
+
+def fix_mismatched_excerpt(post: fm.Post) -> bool:
+    """If excerpt clearly describes a different topic than the title (e.g. Avatar text on Xbox title), set excerpt to title-based fallback. Returns True if changed."""
+    title = (post.get("title") or "").strip()
+    excerpt = (post.get("excerpt") or "").strip()
+    if not title or not excerpt or excerpt == "---":
+        return False
+    title_lower = title.lower()
+    excerpt_lower = excerpt.lower()
+    # Mismatch: title about X but excerpt about Y (e.g. Xbox vs Avatar/Nintendo deal)
+    mismatch = False
+    if "xbox" in title_lower and ("avatar" in excerpt_lower or "nintendo switch" in excerpt_lower or "£9.99" in excerpt_lower or "9.99" in excerpt_lower):
+        mismatch = True
+    if "geforce" in title_lower or "radeon" in title_lower or "ryzen" in title_lower or "amd " in title_lower:
+        if "avatar" in excerpt_lower or ("nintendo" in excerpt_lower and "switch" in excerpt_lower):
+            mismatch = True
+    if mismatch:
+        post["excerpt"] = title + "." if not title.endswith(".") else title
+        return True
+    return False
 
 
 def extract_phrases(slug: str, title: str, tags: List[str]) -> List[str]:
@@ -712,11 +750,17 @@ def fix_amazon_images(post: fm.Post) -> bool:
     return changed
 
 
-def backfill_cover_images(post: fm.Post, path: Path, dry_run: bool) -> bool:
-    """Re-fetch cover images for a post using topic-aware image_fetcher. Returns True if changed."""
+def backfill_cover_images(post: fm.Post, path: Path, dry_run: bool, fix_list: Optional[Dict[str, Any]] = None) -> bool:
+    """Re-fetch cover images for a post using topic-aware image_fetcher. If fix_list has image_search_queries for this slug, use them so we search for topic-relevant images instead of fallbacks."""
+    slug = post.get("slug") or path.stem
     draft = {"frontmatter": dict(post.metadata), "content": post.content or ""}
+    if fix_list and fix_list.get("posts") and slug in fix_list["posts"]:
+        queries = (fix_list["posts"][slug] or {}).get("image_search_queries")
+        if queries:
+            draft["image_search_queries"] = queries
+            log.debug("Using fix-list image_search_queries for %s: %s", slug, queries[:2])
     from image_fetcher import fetch_images
-    result = fetch_images(draft)
+    result = fetch_images(draft, use_pexels=True)
     new_cover = result.get("frontmatter", {}).get("coverImage", "")
     new_images = result.get("frontmatter", {}).get("images", [])
     old_cover = post.get("coverImage", "")
@@ -752,10 +796,14 @@ def run_backfill(
     images_fixed = 0
     cover_images_updated = 0
     excerpts_fixed = 0
+    mismatches_fixed = 0
 
     if images_only:
+        fix_list = load_fix_list()
+        if fix_list.get("posts"):
+            log.info("Using fix list for image search terms (%d posts)", len(fix_list["posts"]))
         for path, post in posts:
-            if backfill_cover_images(post, path, dry_run):
+            if backfill_cover_images(post, path, dry_run, fix_list):
                 cover_images_updated += 1
                 if not dry_run:
                     fm.dump(post, path)
@@ -772,6 +820,13 @@ def run_backfill(
                 if not dry_run:
                     fm.dump(post, path)
                 log.info("Fixed Amazon images: %s", path.name)
+
+    for path, post in posts:
+        if fix_mismatched_excerpt(post):
+            mismatches_fixed += 1
+            if not dry_run:
+                fm.dump(post, path)
+            log.info("Fixed mismatched excerpt: %s", path.name)
 
     for path, post in posts:
         if fix_placeholder_excerpt(post):
@@ -824,7 +879,7 @@ def run_backfill(
             if changed:
                 log.info("Added inline images/featured product: %s", path.name)
 
-    if (tags_fixed or links_added or amazon_links_added or images_fixed or inline_images_added or featured_products_added or excerpts_fixed) and not dry_run:
+    if (tags_fixed or links_added or amazon_links_added or images_fixed or inline_images_added or featured_products_added or excerpts_fixed or mismatches_fixed) and not dry_run:
         from publisher import rebuild_blog_json
         rebuild_blog_json(config.git.repo_path)
 

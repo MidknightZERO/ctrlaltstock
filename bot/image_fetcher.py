@@ -31,6 +31,7 @@ log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [image_fetcher] %(levelname)s %(message)s")
 
 UNSPLASH_BASE = "https://api.unsplash.com"
+PEXELS_BASE = "https://api.pexels.com/v1"
 
 # Paths
 BOT_DIR = Path(__file__).parent
@@ -249,11 +250,37 @@ def search_unsplash(query: str, count: int = 3) -> List[str]:
         return []
 
 
-def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(min=1, max=5))
+def search_pexels(query: str, count: int = 3) -> List[str]:
+    """Search Pexels for images matching a query. Returns list of image URLs (landscape). Used for backfill (200 req/h)."""
+    if not config.pexels.api_key:
+        return []
+    try:
+        resp = httpx.get(
+            f"{PEXELS_BASE}/search",
+            params={"query": query, "per_page": count, "orientation": "landscape"},
+            headers={"Authorization": config.pexels.api_key},
+            timeout=10,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        urls = []
+        for photo in data.get("photos", []):
+            src = photo.get("src") or {}
+            url = src.get("landscape") or src.get("large") or src.get("original") or ""
+            if url:
+                urls.append(url)
+        return urls
+    except Exception as e:
+        log.debug("Pexels search failed: %s", e)
+        return []
+
+
+def fetch_images(draft: Dict[str, Any], use_pexels: bool = False) -> Dict[str, Any]:
     """
     Fetch images for an article draft.
-    Prefers query-based images (Unsplash from image_search_queries) for cover to avoid
-    same product image on every post; then Amazon product images; then stock.
+    use_pexels=True: backfill path — use Pexels (200 req/h). use_pexels=False: new posts — use Unsplash (50 req/h).
+    Prefers query-based search (image_search_queries); then Amazon product images; then stock.
     Excludes cover images used in the past 7 days.
     """
     title = draft["frontmatter"].get("title", "")
@@ -265,9 +292,21 @@ def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
     stock = _load_stock_images()
     used = _load_used_images()
 
-    # 1. Prefer Unsplash from image_search_queries (or title) for cover — avoids same Amazon image on every post
+    # 1. Query-based search: Pexels for backfill, Unsplash for new posts
     queries = draft.get("image_search_queries") or [title] + (draft.get("amazon_search_queries") or [])[:2]
-    if config.unsplash.access_key and queries:
+    if use_pexels and config.pexels.api_key and queries:
+        for query in queries:
+            clean_query = _clean_query_for_images(query, primary_topic)
+            images = search_pexels(clean_query, count=3)
+            for img in images:
+                base = img.split("?")[0]
+                if base not in recent_cover_bases and img not in all_images:
+                    all_images.append(img)
+                if len(all_images) >= 4:
+                    break
+            if len(all_images) >= 4:
+                break
+    elif not use_pexels and config.unsplash.access_key and queries:
         for query in queries:
             clean_query = _clean_query_for_images(query, primary_topic)
             images = search_unsplash(clean_query, count=3)

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { getAllPosts, getAllTags, formatPublishDate, getAllTagsSync, getAllPostsSync } from './utils/blogUtils';
+import { getAllPosts, getAllTags, formatPublishDate, getAllTagsSync, getAllPostsSync, stripExcerptArtifacts } from './utils/blogUtils';
 import { BlogPost } from '../types';
 import Layout from '../components/Layout';
 import MarkdownRenderer from './components/MarkdownRenderer';
@@ -336,7 +336,7 @@ const BlogHome: React.FC = () => {
                         </h3>
 
                         <div className="text-gray-400 text-sm mb-4 prose-sm prose-invert">
-                          <MarkdownRenderer content={post.excerpt} />
+                          <MarkdownRenderer content={stripExcerptArtifacts(post.excerpt)} />
                         </div>
 
                         <div className="flex items-center text-gray-500 text-xs">

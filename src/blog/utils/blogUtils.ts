@@ -205,4 +205,14 @@ export function getRelatedPostsByTopic(
     .filter((x) => x.score > 0)
     .sort((a, b) => b.score - a.score);
   return scored.slice(0, limit).map((x) => x.post);
+}
+
+/** Strip AI prompt artifacts from excerpt/preview so they don't show on cards. */
+export function stripExcerptArtifacts(text: string): string {
+  if (!text || typeof text !== 'string') return '';
+  return text
+    .replace(/^\s*\*\*Hook\*\*\s*[–\-:]?\s*/gim, '')
+    .replace(/^\s*##\s*Hook\s*:\s*/gim, '')
+    .replace(/<!--\s*featured-product\s*:[\s\S]*?-->/gi, '')
+    .trim();
 } 

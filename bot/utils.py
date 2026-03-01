@@ -98,6 +98,17 @@ def infer_primary_topic(draft: Dict[str, Any]) -> str:
     return "general"
 
 
+def strip_excerpt_prompt_artifacts(text: str) -> str:
+    """Remove **Hook:**, ## Hook:, and <!-- featured-product ... --> from excerpt or one-line preview."""
+    if not text or not text.strip():
+        return text or ""
+    s = text.strip()
+    s = re.sub(r"^\s*\*\*Hook\*\*\s*[–\-:]?\s*", "", s, flags=re.IGNORECASE)
+    s = re.sub(r"^\s*##\s*Hook\s*:\s*", "", s, flags=re.IGNORECASE)
+    s = re.sub(r"<!--\s*featured-product\s*:[^>]*-->", "", s, flags=re.IGNORECASE | re.DOTALL)
+    return s.strip()
+
+
 def strip_markdown_from_title(title: str) -> str:
     """
     Remove leading markdown heading syntax (#, ##, ###, etc.) from a title.
@@ -113,6 +124,7 @@ def sanitize_article_content(content: str, title: str = "") -> str:
     Strip AI artifacts from article content that cause bad rendering:
     - ```markdown / ``` wrappers (content gets shown as raw code)
     - Redundant leading H1 that duplicates the post title
+    - "**Hook:**" / "## Hook:" prompt leaks and <!-- featured-product ... --> comments
     """
     if not content or not content.strip():
         return content or ""
@@ -133,6 +145,28 @@ def sanitize_article_content(content: str, title: str = "") -> str:
     if re.match(r"^#+\s+.+", first_line):
         rest = "\n".join(text.split("\n")[1:]).lstrip()
         text = rest
+
+    # Remove prompt-leak lines: **Hook:**, ## Hook:, <!-- featured-product ... -->
+    lines = text.split("\n")
+    cleaned_lines = []
+    for line in lines:
+        stripped = line.strip()
+        # Drop lines that are only Hook header or featured-product comment
+        if re.match(r"^\*\*Hook\*\*\s*[–\-:]?\s*$", stripped, re.IGNORECASE):
+            continue
+        if re.match(r"^##\s*Hook\s*:", stripped, re.IGNORECASE):
+            continue
+        if "<!--" in stripped and "featured-product" in stripped and re.match(r"^\s*<!--", stripped):
+            continue
+        # Strip leading **Hook:** or **Hook** – from the line (keep the rest)
+        new_line = re.sub(r"^\s*\*\*Hook\*\*\s*[–\-:]?\s*", "", line, flags=re.IGNORECASE)
+        new_line = re.sub(r"^\s*##\s*Hook\s*:\s*", "", new_line, flags=re.IGNORECASE)
+        # Remove inline <!-- featured-product: ... -->
+        new_line = re.sub(r"<!--\s*featured-product\s*:[^>]*-->", "", new_line, flags=re.IGNORECASE | re.DOTALL)
+        new_line = new_line.strip()
+        if new_line:
+            cleaned_lines.append(new_line)
+    text = "\n".join(cleaned_lines)
 
     return text.strip()
 

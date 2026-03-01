@@ -1,13 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import type { BlogPost } from '../types';
+import MarkdownRenderer from '../blog/components/MarkdownRenderer';
+import { stripExcerptArtifacts } from '../blog/utils/blogUtils';
 
 const SLIDESHOW_INTERVAL_MS = 9000;
 
-/** First 5 lines of content for preview, stripped of markdown headers. */
+/** First 5 lines of content for preview, stripped of headers and prompt artifacts. */
 function getFirstFiveLines(content: string, maxChars: number = 320): string {
   if (!content) return '';
-  const lines = content
+  const cleaned = stripExcerptArtifacts(content);
+  const lines = cleaned
     .split(/\n/)
     .map((l) => l.replace(/^#+\s*/, '').trim())
     .filter((l) => l.length > 0);
@@ -183,9 +186,9 @@ const BlogFeaturedSlideshow: React.FC<BlogFeaturedSlideshowProps> = ({
                   <h3 className="text-xl md:text-2xl font-semibold text-white mb-2 line-clamp-2 hover:text-[#9ed04b] transition-colors">
                     {post.title}
                   </h3>
-                  <p className="text-gray-400 text-sm md:text-base line-clamp-4 mb-4">
-                    {getFirstFiveLines(post.content || post.excerpt)}
-                  </p>
+                  <div className="text-gray-400 text-sm md:text-base line-clamp-4 mb-4 prose prose-invert prose-sm max-w-none prose-p:my-0 prose-a:text-[#9ed04b]">
+                    <MarkdownRenderer content={getFirstFiveLines(post.content || post.excerpt)} />
+                  </div>
                   <span className="text-[#9ed04b] text-sm font-medium">Read more →</span>
                 </div>
               </Link>
