@@ -133,7 +133,7 @@ Playing with the VB‑01 is a trip. The red monochrome visuals, reminiscent of t
 **Pros:**  
 *   **Authentic nostalgia:** For £59.99 (the MSRP for the VB‑01 unit alone), you get a tangible piece of [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) history. It’s a conversation starter and a unique collectible.  
 *   **Portability:** The HMD is lightweight and easy to store.  
-*   **Curated library:** [Nintendo](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) offers a small but authentic selection of Virtual Boy classics.  
+*   **Curated library:** [Nintendo](https://ctrlaltstock.com/blog/lego-releases-a-stacked-lineup-of-new-sets-for-march-2026) offers a small but authentic selection of Virtual Boy classics.  
 *   **Unique experience:** Playing in red monochrome offers a distinct, albeit niche, atmosphere.  
 
 **Cons:**  
