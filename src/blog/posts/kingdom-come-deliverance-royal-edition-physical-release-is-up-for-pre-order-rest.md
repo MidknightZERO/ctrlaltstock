@@ -65,7 +65,7 @@ title: 'Kingdom Come: Deliverance Royal Edition Physical Release Is Up for Pre-O
   | Restart'
 ---
 
-**Upcoming [PS5](https://ctrlaltstock.com/blog/industry-murmurs-suggest-sony-will-no-longer-release-ps5-exclusives-on-pc-new-le) Upgrade Alert: The Royal Edition Pre-Order Surge Captures Hearts**  
+**Upcoming PS5 Upgrade Alert: The Royal Edition [Pre-Order](https://ctrlaltstock.com/blog/gta-vi-ps5-title-ids-added-what-this-means) Surge Captures Hearts**  
 
 
 <!-- featured-product: NVIDIA GeForce RTX 4070 Super | From £579 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21 -->
@@ -76,7 +76,7 @@ Witness the rollout of the very next generation of [gaming](https://ctrlaltstock
 
 ### What's the Story? The Royal Edition's Unveiling  
 
-The *Kingdom Come: Deliverance Royal Edition* promises to redefine the medieval RPG experience on PS5. This physical release combines the critically acclaimed base game with all previously released DLC expansions, creating the most comprehensive version of this historically-inspired adventure. At its core lies the award-winning single-player experience that immerses players in the year 1403, where they step into the shoes of Henry, a blacksmith's son thrust into a war-torn Bohemia. The Royal Edition includes the original game alongside the "From the Ashes" expansion, which adds the all-new Skalitz village area, plus the "A Woman's Lot" DLC that introduces new questlines and gameplay mechanics focused on female characters.  
+The *Kingdom Come: Deliverance Royal Edition* promises to redefine the medieval RPG experience on [PS5](https://ctrlaltstock.com/blog/gta-vi-ps5-title-ids-added-what-this-means). This physical release combines the critically acclaimed base game with all previously released DLC expansions, creating the most comprehensive version of this historically-inspired adventure. At its core lies the award-winning single-player experience that immerses players in the year 1403, where they step into the shoes of Henry, a blacksmith's son thrust into a war-torn Bohemia. The Royal Edition includes the original game alongside the "From the Ashes" expansion, which adds the all-new Skalitz village area, plus the "A Woman's Lot" DLC that introduces new questlines and gameplay mechanics focused on female characters.  
 
 Equally noteworthy are the graphical and performance enhancements tailored specifically for the PS5. The game features improved loading times thanks to the console's SSD, with fast-travel transitions reduced from over 30 seconds to just a few blinks. The visual fidelity has been elevated with higher resolution textures, enhanced lighting effects, and more detailed character models that bring the medieval world to life with unprecedented clarity. Additionally, the implementation of haptic feedback and adaptive triggers on the PS5 DualSense controller adds a new layer of immersion, making sword combat and horseback riding feel more tactile and responsive. These elements collectively position the Royal Edition as more than just a simple port—it's a definitive version designed to elevate every gaming session. Whether you're grinding through complex combat scenarios or simply exploring the vast open world, this package promises a consistently excellent experience that showcases the power of the PS5.  
 
