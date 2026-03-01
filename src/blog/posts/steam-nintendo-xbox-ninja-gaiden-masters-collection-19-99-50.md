@@ -63,7 +63,6 @@ The Radeon RX 7900 XT and RX 7800 XT have particularly stood out in the market, 
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -81,10 +80,7 @@ One of the most significant developments in AMD's [GPU](https://ctrlaltstock.com
 
 The recent frequency world record achieved with the [Radeon RX 9060 XT](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz) at 4.769 GHz showcases AMD's potential in the overclocking community. As reported in "[AMD Shatters GPU Frequency World Record with Radeon RX 9060 XT at 4.769 GHz](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz)", this achievement highlights the engineering prowess behind AMD's latest architecture, pushing the boundaries of what's possible in consumer graphics cards.
 
-
-
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Future Roadmap: What to Expect from AMD
 

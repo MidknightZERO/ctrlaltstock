@@ -79,7 +79,6 @@ The video also highlights a few quirks: the "Waifu" branding is a marketing nod 
 
 
 
-
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -126,6 +125,5 @@ If you're willing to navigate the import process, the Yeston Waifu offers except
 ---
 
 If you liked this, check out our article on AMD Halts Driver Updates for Ryzen Z1 Extreme: Impact on UK Gaming Handheld Market to see how AMD's decisions affect other gaming hardware categories.
-
 
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)

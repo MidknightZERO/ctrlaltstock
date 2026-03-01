@@ -73,7 +73,6 @@ Further analysis of the video by dedicated fans points to potential narrative co
 
 
 
-
 <!-- featured-product: PlayStation 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
 
 
@@ -94,6 +93,5 @@ If you're itching for [survival horror](https://ctrlaltstock.com/blog/resident-e
 **Alan Wake 2 (PS5) – £54.99** – A newer benchmark for psychological horror. While more focused on narrative and exploration than combat, its use of light as a mechanic and its dual-reality structure offer a sophisticated take on the genre. Full price, but a must-play for serious horror aficionados awaiting Requiem.
 **Mundaun (PS5) – £15.99** – A smaller, indie title with a unique hand-drawn aesthetic and profound, slow-burn dread. Often on sale for under £10. It demonstrates that the horror genre thrives outside the AAA space.
 All these titles are readily available at major UK retailers (GAME, Amazon UK, Currys, Argos), and you can often bundle them with PS5 accessories like the Pulse Explore wireless headset (£
-
 
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)

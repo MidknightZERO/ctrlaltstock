@@ -73,7 +73,6 @@ The update will be released globally in the coming weeks, with Sony stating it w
 
 
 
-
 <!-- featured-product: Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
 
 
@@ -89,7 +88,7 @@ The update will be released globally in the coming weeks, with Sony stating it w
 
 - **Standard edition**: *[Resident Evil](https://ctrlaltstock.com/blog/resident-evil-requiem-df-analysis-ps5-pro-performance) Requiem* will launch at the standard **£69.99** for PS5 users.
 - **Collector's edition**: A limited-run Collector's Edition, priced at **£119.99**, includes a steelbook, art book, and an exclusive "Biohazard Hunter" figurine.
-- **Potential discounts**: Early-bird price-watchers can set alerts on CtrlAltStock to be notified when bundles drop below **£79.99** for the standard edition or **£109.99** for the Collector's Edition. Retailers like Zavvi UK have already announced a [pre-order](https://ctrlaltstock.com/blog/gta-vi-ps5-title-ids-added-what-this-means) discount of **£15** for the Collector's Edition, bringing it down to **£104.99** by November 10, 2023.
+- **Potential discounts**: Early-bird price-watchers can set alerts on CtrlAltStock to be notified when bundles drop below **£79.99** for the standard edition or **£109.99** for the Collector's Edition. Retailers like Zavvi UK have already announced a pre-order discount of **£15** for the Collector's Edition, bringing it down to **£104.99** by November 10, 2023.
 
 ### Market ripple effects
 
@@ -115,10 +114,7 @@ The update will be released globally in the coming weeks, with Sony stating it w
 - **Wait for price drops**: Analysts predict the PS5 Pro could see a **£50-£100 reduction** by mid-2024, especially if Sony releases a slimmer model or bundles it with popular titles.
 - **Opt for used hardware**: Platforms like eBay UK and Facebook Marketplace may offer refurbished PS5 Pros at **£650-£700**, saving up to **£50** compared to new purchases. Verify seller ratings and warranty details before buying.
 
-
-
 [![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Final thoughts
 

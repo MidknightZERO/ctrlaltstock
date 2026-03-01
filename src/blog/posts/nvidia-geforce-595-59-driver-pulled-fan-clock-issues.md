@@ -73,7 +73,6 @@ The PS5 Pro also includes 16GB of GDDR6 RAM but with a higher bandwidth configur
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5070 Ti | From £699 | https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -93,10 +92,7 @@ The [Xbox Series X](https://ctrlaltstock.com/blog/dreamgame-resident-evil-requie
 
 The [PS5 Pro](https://ctrlaltstock.com/blog/ps5-pro-enhanced-games-pssr-2-0), while slightly less powerful in raw teraflops, makes up for it with superior ray tracing performance and the aforementioned PSSR AI upscaler. This technology allows the PS5 Pro to deliver better visual fidelity at lower performance costs, particularly in games with intensive lighting and shadow effects.
 
-
-
 [![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Storage and Expandability
 

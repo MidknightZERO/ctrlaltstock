@@ -63,7 +63,8 @@ AMD's RX 9070 GRE [graphics card](https://ctrlaltstock.com/blog/graphics-card-re
 <!-- featured-product: AMD Radeon RX 7800 XT | From £479 | https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21 -->
 
 
-What's the story behind this release? A China-exclusive version from Yeston includes aggressive cooling and updated fan curves. Early tests show cooler operation and slightly better [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) performance at 2,700 MHz. The GRE sits between the RX 9070 and XT models, offering a balanced option for 1440p gaming.
+
+What's the story behind this release? A China-exclusive version from Yeston includes aggressive cooling and updated fan curves. Early tests show cooler operation and slightly better [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) performance at 2,700 MHz. The GRE sits between the [RX 9070](https://ctrlaltstock.com/blog/china-only-amd-rx-9070-gre-yeston-waifu-thermals-gaming-noise-benchmarks) and XT models, offering a balanced option for 1440p gaming.
 The article mentions performance benchmarks: up to 2,700 MHz under load and solid frame rates in 1440p. Yeston's design focuses on aesthetics and cooling, appealing to the Asian market. Though not available in the UK, its launch signals AMD's experimentation with custom designs.
 This release could influence future pricing and stock availability. For UK buyers, monitoring stock is key, especially with demand rising from the Waifu edition's leaks.
 [Link to AMD RX 9070 GRE](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg) remains active for reference.

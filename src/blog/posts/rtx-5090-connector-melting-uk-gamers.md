@@ -70,7 +70,6 @@ The issue has affected specific models disproportionately. The Zotac RTX 5090 Tr
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -92,9 +91,7 @@ If you're in the market for a high-end GPU and want to avoid connector melting r
 For those who already own an RTX 5090 or are determined to get one, investing in proper accessories is crucial. High-quality 16-pin cables from manufacturers like CableMod (£50-£80) or official NVIDIA cables (£30-£40) can significantly reduce risk. Additionally, ensuring your case has good airflow and monitoring GPU temperatures during long gaming sessions can help prevent issues.
 Some UK PC builders have reported success with aftermarket cooling solutions specifically designed for the 12V-2x6 connector area. Products like the CableMod 5090 cooling bracket (£45) and the EKWB 5090 water block (£249) provide additional thermal headroom, though they represent significant additional investment.
 
-
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Final thoughts
 The RTX 5090 connector melting saga serves as a reminder that even premium hardware can have fundamental design flaws. For UK gamers, the decision to invest in a high-end GPU now requires careful consideration of not just performance and price, but also long-term reliability.

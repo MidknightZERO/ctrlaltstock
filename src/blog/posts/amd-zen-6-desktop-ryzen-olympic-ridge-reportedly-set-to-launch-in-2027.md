@@ -76,7 +76,6 @@ title: AMD Zen 6 desktop Ryzen “Olympic Ridge” reportedly set to launch in 2
 
 
 
-
 <!-- featured-product: AMD Ryzen 7 7800X3D | From £349 | https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21 -->
 
 
@@ -111,10 +110,7 @@ A 2027 release offers a window of opportunity but also introduces uncertainties.
 
 ---
 
-
-
 [![AMD Ryzen 5 7600](https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+5+7600&tag=ctrlaltstock-21)
-
 
 ## What Does This Mean for Prices?  
 

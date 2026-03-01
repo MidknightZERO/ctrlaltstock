@@ -75,7 +75,6 @@ For those who have been following the CtrlAltStock Discord, the conversation has
 
 
 
-
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -113,6 +112,5 @@ If you’re ready to upgrade, here are three concrete steps to secure the best d
 - ✅ Ports **Thunderbolt 4 (2x), HDMI 2.1, 3.5mm jack**  
 - ✅ Battery **Up to 10 hours (mixed use)**  
 - ✅ Build **MIL-STD-810H certified magnesium-aluminium chassis**
-
 
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)

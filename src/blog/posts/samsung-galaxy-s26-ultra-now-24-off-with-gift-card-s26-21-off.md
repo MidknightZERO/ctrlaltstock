@@ -73,7 +73,6 @@ This strategy is a clear departure from recent years, where preordering a new Ga
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -87,9 +86,7 @@ Crucially, these prices are pre-VAT for the US market but are presented here as 
 To appreciate this offer, it's helpful to contextualise it. Apple's iPhone 16 Pro Max, the Ultra's direct competitor, starts at £1,199 for 256GB, with a £120 jump to 512GB. Google's Pixel 9 Pro XL starts at £999 for 128GB, with storage upgrades costing £120 each. Samsung's move to effectively include the storage upgrade for free puts it on a much more competitive footing on a like-for-like storage basis. The effective price of the S26 Ultra with gift card—£961.99 after redeeming the £158 card—dips decisively below the iPhone 16 Pro Max's base price while offering more storage and, historically, a more versatile camera system with greater zoom capabilities.
 Furthermore, the bundling of the **Galaxy Buds4 Pro** (RRP £219) in some tiers is a significant add-on. Competing true wireless earbuds from Apple (AirPods Pro 2, £249) or Sony (WF-1000XM5, £279) are priced higher. Getting them for a net £185.48 in the S26+ bundle represents exceptional value for those wanting a complete audio ecosystem.
 
-
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Who is this deal for?
 This promotion is engineered for several buyer profiles:

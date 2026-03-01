@@ -59,7 +59,6 @@ Linux 7.0 has arrived with a fresh wave of AMDGPU [driver updates](https://ctrla
 
 
 
-
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -73,9 +72,7 @@ One of the standout features is enhanced support for pre-GCN architectures. Card
 Many Linux users continue to rely on older Radeon GPUs, whether due to budget constraints, the need for compatibility with legacy systems, or a commitment to reducing e-waste. These cards, while no longer cutting-edge, are still perfectly capable for everyday tasks like web browsing with GNOME or KDE Plasma, office work with LibreOffice, and media playback via VLC or MPV. However, outdated drivers often left them struggling with modern software stacks, compositors, and Wayland sessions.
 With Linux 7.0, AMD has addressed several critical issues. For instance, users with HD 5000 or HD 6000 series cards will notice improved 2D acceleration and reduced latency in graphical applications. This is particularly noticeable in desktop environments like XFCE or MATE when dragging windows or using smooth scrolling. Additionally, power-saving features like dynamic clock voltage adjustment (DPM) have been fine-tuned for older GCN 1.0/1.1 parts, which can lead to noticeable improvements in battery life for laptops with older AMD GPUs—a common sight in the second-hand UK market, where machines like the Dell Inspiron 15R or older HP Pavilion models often find new life with Linux.
 
-
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Performance and stability improvements
 Beyond bug fixes, Linux 7.0 brings measurable performance gains for older Radeon hardware. Benchmarks using tools like `Glmark2` and `vkpeak` show that certain HD 7000 series cards (e.g., R7 260X, HD 7870) now handle 4K video playback more efficiently, thanks to optimised shader compilation and better memory management within the Unified Video Decoder (UVD) block. This means smoother 4K H.265/HEVC playback in applications like Kodi or Jellyfin, a key feature for home theatre PC (HTPC) builds popular with UK enthusiasts.

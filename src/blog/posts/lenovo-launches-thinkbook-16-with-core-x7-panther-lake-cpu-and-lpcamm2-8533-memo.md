@@ -61,7 +61,6 @@ The most talked-about specification is the turbo boost clock, which is reported 
 
 
 
-
 <!-- featured-product: Intel Core i7-14700K | From £379 | https://m.media-amazon.com/images/I/61aAAg73uLL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=Intel+Core+i7-14700K&tag=ctrlaltstock-21 -->
 
 
@@ -86,9 +85,7 @@ Connectivity is robust and future-proof:
 *   **3.5mm headphone/mic combo jack:** Standard but always appreciated.
 *   **Wi-Fi 7 & Bluetooth 5.4:** The latest wireless standards will be included, ensuring the fastest possible local network speeds and the most stable Bluetooth connections with accessories.
 
-
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Power, Pricing, and Positioning
 Keeping the powerful components fed is a **75 Wh lithium-polymer battery**. Given the efficiency gains from both the Panther Lake CPU (built on Intel’s improved 18A or 20A process node) and the ultra-low-power LPCAMM2 memory, Lenovo is targeting all-day battery life. Real-world estimates will vary, but for typical office productivity (web browsing, Office apps, video calls), users can reasonably expect **8-10 hours** of use. More strenuous tasks like video rendering or software compilation will naturally reduce this, but the efficiency gains should mitigate the typical power draw of such a high-performance machine.

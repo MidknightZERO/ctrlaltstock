@@ -63,7 +63,6 @@ AMD's rapid product cadence means that new CPUs, GPUs and chipsets hit the marke
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 4080 Super | From £959 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -97,10 +96,7 @@ Many seasoned members of the **r/buildapc** subreddit recommend a staged rollout
 
 When a [motherboard](https://ctrlaltstock.com/blog/radeon-rx-9070-xt-taichi-white-review-details-asrock-s-first-card-with-built-in-) manufacturer announces a BIOS update, the community often dissects the release notes. The **MSI MPG B650 Carbon WiFi** BIOS 1.2.2.0 (released 22 January 2024) added support for **DDR5‑6600** modules on the **Ryzen 7 7700X**. By cross‑referencing the BIOS changelog with the [memory](https://ctrlaltstock.com/blog/rtx-50-micron-gddr7-memory-supplier-diversification) vendor's specifications, builders can decide whether the update is worth the potential downtime.
 
-
-
 [![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Practical Steps to Manage Updates  
 

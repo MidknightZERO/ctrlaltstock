@@ -63,7 +63,6 @@ This new record demonstrates AMD's advancements in semiconductor technology, coo
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -85,10 +84,7 @@ Achieving and sustaining a 4.769 GHz clock speed requires overcoming substantial
 
 - **Sophisticated Cooling Solutions**: The thermal challenges of operating at 4.769 GHz cannot be overstated. AMD's achievement likely involved advanced cooling technologies, possibly including liquid cooling or innovative heat dissipation methods.
 
-
-
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Context Within AMD's Product Strategy
 

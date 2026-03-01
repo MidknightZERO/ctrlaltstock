@@ -62,7 +62,6 @@ This sentiment is echoed across the CtrlAltStock Discord, where members trade al
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -75,9 +74,7 @@ The most significant factor exacerbating the memory crunch is the insatiable app
 Beyond AI, the root cause lies in a historic under-investment in memory fab capacity following the 2022-2023 downturn. Memory manufacturers like Samsung, SK Hynix, and Micron scaled back capital expenditures during that period, leading to a fragile supply base. The transition to more complex, denser nodes (e.g., 1α nm for DRAM, 232-layer for NAND) requires immense capital and time, creating a bottleneck that's proving difficult to overcome in the short term. Geopolitical tensions have further complicated matters, with trade restrictions and export controls affecting the flow of critical components and equipment.
 The situation is particularly acute for UK buyers, who are facing not only price increases but also reduced product availability. Retailers are reporting that certain configurations of popular devices are simply unavailable, with manufacturers prioritizing production of higher-margin models or those destined for markets with less stringent regulations. This has led to a situation where consumers may find themselves paying premium prices for hardware that would have been considered mid-range just a year ago.
 
-
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Impact on Gaming Hardware
 The gaming sector has been hit particularly hard by the memory shortage. Graphics cards, which rely heavily on high-speed GDDR memory, have seen prices increase by as much as 30% in some cases. The RTX 5090 Connector Melting: UK Gamers Face Ongoing Hardware Crisis article highlights how even when cards are available, quality control issues have emerged as manufacturers rush to meet demand with constrained components.

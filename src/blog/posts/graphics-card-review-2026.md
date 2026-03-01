@@ -86,7 +86,6 @@ Discussions on r/buildapc highlight that users with these cards report minimal s
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 4080 Super | From £959 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -122,6 +121,5 @@ Prices for these cards are volatile due to:
 - **Supply Chain Bottlenecks:** Shortages of components like GDDR6X memory can drive up costs.  
 - **Cryptocurrency Mining Demand:** Though mining has declined, occasional spikes in demand can temporarily inflate prices.  
 - **New Model Launches:** When NVIDIA releases a new card (e.g., the rumored
-
 
 [![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)

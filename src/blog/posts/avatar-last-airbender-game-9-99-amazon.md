@@ -50,7 +50,6 @@ The scoop comes straight from the r/GameDeals subreddit, where user *BendingEnth
 
 
 
-
 <!-- featured-product: Avatar The Last Airbender The Quest for Balance Nintendo Switch | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
 
 
@@ -66,8 +65,10 @@ This £9.99 price tag is a game-changer for the game's value proposition. Previo
 
 
 
-![Related](https://images.pexels.com/photos/3665442/pexels-photo-3665442.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200)
+[![Avatar The Last Airbender The Quest for Balance Nintendo Switch](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
 
+
+![Related](https://images.pexels.com/photos/3665442/pexels-photo-3665442.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200)
 
 ## Final Thoughts: A Bending [Bargain](https://ctrlaltstock.com/blog/micron-gddr7-rtx-50-gpu-deals) Worth Seizing
 

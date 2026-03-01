@@ -68,7 +68,6 @@ FSR, or FidelityFX Super Resolution, is AMD’s upscaling technology that enhanc
 A user in the r/Amd thread noted, *“If FSR 4 is real, I’m ditching my RX 6600 for a Ryzen 5 5000G build. No need for a dedicated GPU at 1080p anymore.”* This sentiment echoes across the CtrlAltStock Discord, where members are already discussing how this could shift demand away from mid-tier GPUs like the RTX 4060. For example, an RTX 4060 costs around £400, while a Ryzen 5 5000G with FSR 4 might cost £280. If FSR 4 delivers performance comparable to a discrete GPU, it could make budget builds more attractive.
 FSR 4 is expected to build on FSR 3’s machine learning algorithms, potentially offering better texture quality and reduced latency. While NVIDIA’s DLSS 3 has dominated AI upscaling, AMD’s FSR 4 could offer similar or better results with less reliance on proprietary hardware. This would be a significant advantage for gamers who prefer AMD’s ecosystem. However, it’s worth noting that FSR 4’s effectiveness will depend on game developer support. Titles like *Elder Scrolls VI* or *Starfield* might need
 
-
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
 

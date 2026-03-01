@@ -62,7 +62,6 @@ The dev also mentioned that the title will leverage the **Xbox Velocity Architec
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -82,10 +81,7 @@ So, what should you do with this information? Here’s our actionable advice for
 - **Upgrade your setup incrementally**. If you’re using a mid-range GPU like the RTX 3060 (£299), consider saving for an RTX 4070 Ti Super when prices stabilize. For consoles, the Xbox Series X|S is currently available refurbished for as low as £249 on eBay—perfect for experiencing the game’s full potential. Alternatively, the Series S (£249 new) offers a more affordable entry point, though it targets 1440p/120 FPS rather than 4K.
 - **Join the CtrlAltStock Discord** to stay ahead of the curve. Our community regularly shares deals on hardware and software, and members have already spotted £20 discounts on Xbox Game Pass Ultimate subscriptions this week. We also track price drops on peripherals like the **Razer DeathAdder V3 Pro** (£139) and **Logitech G502 X** (£99), which pair well with high-refresh-rate gaming.
 
-
-
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Final Thoughts
 

@@ -69,7 +69,6 @@ Meanwhile, the Reddit community r/Amd has been buzzing about this news. One user
 
 
 
-
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -92,6 +91,5 @@ Finally, the impact on power supply and efficiency shouldn’t be overlooked. Da
 Given the uncertainty around pricing and availability, the best approach is to stay informed and act quickly. If you’re looking to buy an AMD GPU, now is a good time to set price alerts on UK retailers like Scan.co.uk, Overclockers.co.uk, or Amazon UK, and monitor stock tracking tools. For example, the Radeon RX 7900 XTX is a strong contender if you’re a gamer or content creator. At around £1,200 for premium models, it offers excellent performance for 4K gaming and creative workloads in apps like DaVinci Resolve. If prices drop due to increased supply from the Meta deal, it could be an even better deal, potentially matching the £900-£1,000 range we’ve seen on sale.
 
 For those interested in AI or data center-grade hardware for a home server
-
 
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)

@@ -68,7 +68,6 @@ We understand that UK audiences are particularly interested in hard drives, gami
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -86,10 +85,7 @@ In the wake of AMD’s [driver update](https://ctrlaltstock.com/blog/amd-adrenal
 
 One common issue reported by UK users is a noticeable increase in GPU temperatures, especially after [driver updates](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market) that didn’t fully account for the GPU’s thermal curve. This is particularly relevant for the [RX 9070](https://ctrlaltstock.com/blog/china-only-amd-rx-9070-gre-yeston-waifu-thermals-gaming-noise-benchmarks) GRE, which, while a solid mid-tier model, can struggle under sustained load if fans aren’t operating within the manufacturer’s recommended thresholds. Our in-depth look at several UK PC builds reveals that maintaining optimal temperatures is essential not just for performance but also for extending the lifespan of these high-end GPUs.
 
-
-
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
-
 
 ## RTX 3070 and the Rise of VRAM and Power Efficiency
 

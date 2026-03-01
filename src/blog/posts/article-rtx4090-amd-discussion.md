@@ -66,7 +66,6 @@ Let's start with the big picture: this year has seen a surge in demand for high-
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 4080 Super | From £959 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -90,10 +89,7 @@ If you're comparing this card to similar models like the Intel i7-14700K or the 
 
 In fact, checking current prices across retailers reveals that this card is now available for around £499, a price that reflects both demand and the competitive landscape. For those in the UK, this is a good time to act before it sells out. Looking at price history, the card has dropped from its initial MSRP of £549 in January 2026, making it an even better value proposition. Major UK retailers like Overclockers UK, Ebuyer, and Scan currently have [stock](https://ctrlaltstock.com/blog/global-memory-chip-shortage-impacting-consumer-electronics-production), with occasional discounts bringing the price down to as low as £469 during promotional periods.
 
-
-
 [![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 ## What to Buy Right Now
 

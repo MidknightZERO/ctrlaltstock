@@ -86,7 +86,6 @@ title: 'Virtual Boy Review: Nintendo''s Oddest Switch Accessory Yet Is an Immers
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 4070 Super | From £579 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -104,14 +103,11 @@ Nintendo surprised the gaming community on 20 February 2026 with the **Virtual B
 
 ### Plugging into the past  
 
-Setting up the VB‑01 is straightforward but requires a few steps. First, plug the USB-C cable into your Switch dock. Then, connect the 3.5mm audio cable from the VB‑01 to your headphones or speakers. The VB‑01 itself connects to the Switch dock via a dedicated port. Crucially, you’ll also need the included USB-C to USB-A power adapter (a separate purchase for £9.99 on the Nintendo UK website) to power the HMD unit. Once powered, the VB‑01’s red-tinted goggles (model **VR‑G1**) are worn like VR headsets of today, displaying games in a single, fixed red monochrome display. The Switch screen remains off, creating a unique, isolated gaming experience.  
+Setting up the VB‑01 is straightforward but requires a few steps. First, plug the USB-C cable into your Switch dock. Then, connect the 3.5mm audio cable from the VB‑01 to your headphones or speakers. The VB‑01 itself connects to the Switch dock via a dedicated port. Crucially, you’ll also need the included USB-C to USB-A power adapter (a separate purchase for £9.99 on the [Nintendo](https://ctrlaltstock.com/blog/lego-releases-a-stacked-lineup-of-new-sets-for-march-2026) UK website) to power the HMD unit. Once powered, the VB‑01’s red-tinted goggles (model **VR‑G1**) are worn like VR headsets of today, displaying games in a single, fixed red monochrome display. The Switch screen remains off, creating a unique, isolated [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) experience.  
 
 ---
 
-
-
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
-
 
 ## The experience  
 
@@ -128,9 +124,9 @@ Playing with the VB‑01 is a trip. The red monochrome visuals, reminiscent of t
 ### Nostalgia vs. practicality  
 
 **Pros:**  
-*   **Authentic nostalgia:** For £59.99 (the MSRP for the VB‑01 unit alone), you get a tangible piece of [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) history. It’s a conversation starter and a unique collectible.  
+*   **Authentic nostalgia:** For £59.99 (the MSRP for the VB‑01 unit alone), you get a tangible piece of gaming history. It’s a conversation starter and a unique collectible.  
 *   **Portability:** The HMD is lightweight and easy to store.  
-*   **Curated library:** [Nintendo](https://ctrlaltstock.com/blog/lego-releases-a-stacked-lineup-of-new-sets-for-march-2026) offers a small but authentic selection of Virtual Boy classics.  
+*   **Curated library:** Nintendo offers a small but authentic selection of Virtual Boy classics.  
 *   **Unique experience:** Playing in red monochrome offers a distinct, albeit niche, atmosphere.  
 
 **Cons:**  

@@ -60,7 +60,6 @@ In terms of specifications, the RTX 5080 delivers up to 12 GB of GDDR7 memory ru
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5080 | From £1,199 | https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -75,9 +74,7 @@ For cooling, many UK builders opt for cases with excellent airflow, such as the 
 Pricing for the RTX 5080 in the UK can vary depending on the model and retailer. A full-featured RTX 5080 with a high-end power supply and premium cooling components typically ranges between £1,200 and £1,500. On the other hand, mid-tier options such as the RTX 5070 are available at around £950, offering a more budget-friendly alternative. It's essential to weigh these costs against your budget and system requirements.
 For instance, if you're building a custom rig with existing components, investing in a refurbished RTX 5080 might be a cost-effective solution while still delivering excellent performance. Retailers like Overclockers UK, Scan Computers, and Ebuyer often have competitive pricing and bundle deals that include games or accessories. Keep an eye out for seasonal sales, such as Black Friday or Boxing Day, when prices can drop significantly.
 
-
 [![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Thermal Management and Installation Tips
 When integrating the RTX 5080 into your build, it's crucial to follow best practices for thermal management. A well-designed case with adequate airflow, along with a reliable cooling solution such as a liquid cooler or high-quality air cooler, can help maintain optimal temperatures. Many UK retailers offer after-sales support, making it easier to troubleshoot any issues that may arise during the installation process.

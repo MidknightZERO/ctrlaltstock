@@ -67,7 +67,6 @@ This period also saw the emergence of iconic applications that defined the era. 
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 3080 Ti | Check used / refurb | https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -87,10 +86,7 @@ Moreover, the card’s legacy is evident in the development of subsequent produc
 
 When exploring modern GPU reviews, the Radeon RX 9070 XT Taichi White post provides a glimpse into how programmable shaders are still central to GPU design.  
 
-
-
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Price Dynamics and Market Fluctuations  
 Understanding the price trajectory of the GeForce 3 offers valuable insights into the volatile nature of technology markets. When launched, its launch coincided with a period of cautious investment in consumer electronics, where consumers often sought reliability and compatibility over raw performance. The £400 price point was a significant investment, reflecting the perceived value of its capabilities relative to contemporary alternatives, even as competition from emerging platforms was nascent. Over the intervening two decades, market dynamics reshaped its economic viability, with sales volumes declining as newer, cheaper options became accessible. This decline was compounded by shifts in consumer priorities, where energy efficiency and software support increasingly outweighed raw power metrics. Consequently, the card’s current market position hinges on its utility within specific use cases

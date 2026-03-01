@@ -67,7 +67,6 @@ A related factor is the rise of alternative technologies. AMD has shifted focus 
 
 
 
-
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -75,7 +74,7 @@ A related factor is the rise of alternative technologies. AMD has shifted focus 
 
 The halt in driver updates directly affects UK gamers using devices powered by the [Ryzen Z1 Extreme](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market). The ASUS ROG Ally, which integrates the Z1 Extreme, was marketed as a versatile [gaming handheld](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market) capable of running AAA titles. Without driver optimizations, performance bottlenecks may emerge, particularly in demanding games like *Elden Ring* or *Cyberpunk 2077*. These issues could manifest as reduced frame rates, graphical glitches, or instability during prolonged sessions.
 
-Moreover, the lack of driver support may deter potential buyers. Gamers seeking long-term value might opt for newer devices with ongoing AMD [driver updates](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market), such as those featuring the Ryzen 9000 series. This could lead to a decline in sales for Z1 Extreme-based handhelds, impacting manufacturers reliant on this chipset. For context, the [AMD Adrenalin 26.2.2 driver](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) update emphasizes AMD's focus on stabilizing newer hardware, further underscoring the disparity in support for older platforms.
+Moreover, the lack of driver support may deter potential buyers. Gamers seeking long-term value might opt for newer devices with ongoing AMD driver updates, such as those featuring the Ryzen 9000 series. This could lead to a decline in sales for Z1 Extreme-based handhelds, impacting manufacturers reliant on this chipset. For context, the [AMD Adrenalin 26.2.2 driver](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) update emphasizes AMD's focus on stabilizing newer hardware, further underscoring the disparity in support for older platforms.
 
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
@@ -85,10 +84,7 @@ The news has sparked mixed reactions within the UK gaming community. Some users 
 
 However, community-driven solutions may offer temporary relief. For example, third-party driver repositories or community-developed patches could extend the lifespan of the Ryzen Z1 Extreme. Additionally, users might explore alternative software optimizations, such as lowering in-game settings or using lightweight emulators. That said, these workarounds are not guaranteed to resolve all issues and may require technical expertise.
 
-
-
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Looking Ahead: What Does This Mean for AMD?
 

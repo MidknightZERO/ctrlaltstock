@@ -72,7 +72,6 @@ With a focus on accessibility and humor, Cat President: 3rd-Rate Candidate is de
 
 
 
-
 <!-- featured-product: Steam Deck | From £349 | https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=Steam+Deck&tag=ctrlaltstock-21 -->
 
 
@@ -88,9 +87,7 @@ As of now, Cat President: 3rd-Rate Candidate is available exclusively on Steam, 
 For context, similar indie visual novels like *Doki Doki Literature Club* (£7.19) or *Arcade Spirits* (£10.99) often sit in the same price range, especially during seasonal sales. The current discount on Cat President is part of Steam’s aggressive pricing strategy to boost sales and attract new players to the platform.
 Pricing details are essential for any viewer, and as the game is UK-based, it's important to note that regional fluctuations may apply. For those located outside the UK, the game remains available for purchase, though the exact pricing may vary slightly. Regardless, the £8.09 launch price ensures that you’re getting a competitive edge for this whimsical political adventure.
 
-
 [![Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
-
 
 ## Why Cat President Stands Out
 What makes Cat President: 3rd-Rate Candidate truly unique is its ability to blend humor with serious themes. The game tackles political satire in a way that's both entertaining and thought-provoking, using the whimsical setting of a cat-led political campaign to comment on real-world issues like governance, ethics, and media manipulation. The characters are crafted with care, ensuring that each personality brings its own brand of wit and charm to the table.

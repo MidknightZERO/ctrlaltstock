@@ -72,7 +72,6 @@ For the UK market specifically, this development could mean fewer grey market im
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 4070 Super | From £579 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -104,10 +103,7 @@ For budget-conscious UK gamers, the current market presents some interesting opp
 
 However, those holding out for the RTX 50 series should consider what they're getting for their wait. While the new architecture (codenamed "Blackwell" or "Blackwell GB") promises improvements in efficiency (more performance per watt) and features like a next-gen DLSS frame generation (DLSS 4), early leaks suggest the performance gains may be more evolutionary than revolutionary—perhaps 30-50% generational uplift over RTX 40, not the 80-100% jumps of past generations. A community member is quoted as saying, "I'm excited about the RTX 50, but I'm also realistic that it might not be a generational leap like we've seen before. That makes me question whether it's worth waiting another year, especially if I can get a great deal on a discounted 40-series now."
 
-
-
 [![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Our recommendation / What to buy right now
 

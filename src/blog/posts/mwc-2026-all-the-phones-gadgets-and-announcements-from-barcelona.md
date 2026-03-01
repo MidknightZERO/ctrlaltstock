@@ -71,7 +71,6 @@ Last year's weirdness is a [benchmark](https://ctrlaltstock.com/blog/amd-zen-6-d
 
 
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 
@@ -113,6 +112,5 @@ AMD's next CPU drop or AMD's Adrenalin 26.2.2 Driver.
 **5. Join the conversation.** Our Discord community is the best place to get real-time alerts and strategies.  
 
 By staying informed and acting quickly, you can turn MWC's mobile mayhem into tangible savings for your PC setup.
-
 
 [![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
