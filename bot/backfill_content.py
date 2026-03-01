@@ -51,6 +51,21 @@ log = logging.getLogger(__name__)
 
 SITE_BASE_URL = getattr(config.bot, "site_url", "https://ctrlaltstock.com").rstrip("/")
 
+# Validation report written by validate_existing_content.py; backfill uses it for distribution-aware linking
+VALIDATION_REPORT_PATH = _BOT_DIR / ".tmp" / "validation-report.json"
+
+
+def load_validation_report() -> Dict[str, Any]:
+    """Load validation report if present. Returns {"posts": {slug: {...}}} or empty dict."""
+    if not VALIDATION_REPORT_PATH.exists():
+        return {}
+    try:
+        data = json.loads(VALIDATION_REPORT_PATH.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except Exception as e:
+        log.warning("Could not load validation report %s: %s", VALIDATION_REPORT_PATH, e)
+        return {}
+
 
 def load_posts() -> List[Tuple[Path, fm.Post]]:
     """Load all markdown posts from posts_dir. Returns [(filepath, Post), ...]."""
@@ -170,59 +185,81 @@ def insert_internal_links(
     phrase_to_slug_url: List[Tuple[str, str, str]],  # (phrase, slug, url)
     exclude_slug: str,
     max_links: int,
+    distribution_aware: bool = False,
 ) -> str:
     """
     Insert internal links by phrase matching. Each phrase used at most once per article.
     Max 2 links per paragraph, at least one sentence apart.
+    When distribution_aware is True: first add links only in paragraphs after the first 30% of content;
+    then if slots remain, add links in the first 30% so we don't bunch all links at the top.
     """
     paragraphs = content.split("\n\n")
+    total_len = len(content)
+    first_30_threshold = int(total_len * 0.3) if distribution_aware else 0
     links_added = 0
     used_phrases: Set[str] = set()
+    pos = 0
+    # Precompute paragraph start positions for distribution-aware logic
+    para_starts: List[int] = []
+    for para in paragraphs:
+        para_starts.append(pos)
+        pos += len(para) + 2
 
-    for i, para in enumerate(paragraphs):
-        if links_added >= max_links:
-            break
-        if re.match(r"^# .+$", para.strip()):
-            continue
-
-        links_in_para = 0
-
-        while links_in_para < 2 and links_added < max_links:
-            link_spans = get_link_spans(para)
-            found = False
-            for phrase, slug, url in phrase_to_slug_url:
-                if slug == exclude_slug:
-                    continue
-                if phrase.lower() in used_phrases:
-                    continue
-                # Word-boundary match: "RAM" must not match inside "Ramifications"
-                pattern = r"\b" + re.escape(phrase) + r"\b"
-                m = re.search(pattern, para, re.IGNORECASE)
-                if not m:
-                    continue
-                if is_inside_link(m.start(), link_spans):
-                    continue
-                if links_in_para >= 1:
-                    if not all(
-                        _has_sentence_between_spans(
-                            para, lp[0], lp[1], m.start(), m.end()
-                        )
-                        for lp in link_spans
-                    ):
+    def add_links_in_paragraphs(allowed_indices: List[int]) -> None:
+        """Add links in paragraphs at allowed_indices; updates paragraphs, links_added, used_phrases in closure."""
+        nonlocal links_added
+        for i in allowed_indices:
+            if links_added >= max_links:
+                return
+            para = paragraphs[i]
+            if re.match(r"^# .+$", para.strip()):
+                continue
+            links_in_para = 0
+            while links_in_para < 2 and links_added < max_links:
+                link_spans = get_link_spans(para)
+                found = False
+                for phrase, slug, url in phrase_to_slug_url:
+                    if slug == exclude_slug:
                         continue
-                before = para[: m.start()]
-                after = para[m.end() :]
-                original = para[m.start() : m.end()]
-                replacement = f"[{original}]({url})"
-                para = before + replacement + after
-                paragraphs[i] = para
-                used_phrases.add(phrase.lower())
-                links_in_para += 1
-                links_added += 1
-                found = True
-                break
-            if not found:
-                break
+                    if phrase.lower() in used_phrases:
+                        continue
+                    pattern = r"\b" + re.escape(phrase) + r"\b"
+                    m = re.search(pattern, para, re.IGNORECASE)
+                    if not m:
+                        continue
+                    if is_inside_link(m.start(), link_spans):
+                        continue
+                    if links_in_para >= 1:
+                        if not all(
+                            _has_sentence_between_spans(para, lp[0], lp[1], m.start(), m.end())
+                            for lp in link_spans
+                        ):
+                            continue
+                    before = para[: m.start()]
+                    after = para[m.end() :]
+                    original = para[m.start() : m.end()]
+                    replacement = f"[{original}]({url})"
+                    para = before + replacement + after
+                    paragraphs[i] = para
+                    used_phrases.add(phrase.lower())
+                    links_in_para += 1
+                    links_added += 1
+                    found = True
+                    break
+                if not found:
+                    break
+
+    if distribution_aware and first_30_threshold > 0:
+        # Pass 1: only paragraphs in the last 70% of content
+        later_indices = [i for i in range(len(paragraphs)) if para_starts[i] >= first_30_threshold]
+        add_links_in_paragraphs(later_indices)
+        # Pass 2: fill remaining slots in the first 30%
+        if links_added < max_links:
+            first_indices = [i for i in range(len(paragraphs)) if para_starts[i] < first_30_threshold]
+            add_links_in_paragraphs(first_indices)
+    else:
+        # Single pass, any paragraph
+        add_links_in_paragraphs(list(range(len(paragraphs))))
 
     return "\n\n".join(paragraphs)
 
@@ -435,8 +472,10 @@ def add_links_to_post(
     path: Path,
     phrase_index: List[Tuple[str, str, str]],
     max_links: int,
+    validation_report: Optional[Dict[str, Any]] = None,
 ) -> bool:
-    """Add internal links to post content. Returns True if changed."""
+    """Add internal links to post content. Returns True if changed.
+    If validation_report is provided and post is flagged link_distribution_skewed, uses distribution-aware linking."""
     slug = post.get("slug") or path.stem
     original = post.content or ""
     # Strip links from H1 first (avoid links in title)
@@ -450,7 +489,17 @@ def add_links_to_post(
             return True
         return False
     slots = max(0, max_links - existing_count)
-    new_content = insert_internal_links(content, phrase_index, exclude_slug=slug, max_links=slots)
+    post_info = (validation_report or {}).get("posts", {}).get(slug, {})
+    distribution_aware = post_info.get("link_distribution_skewed", False)
+    if distribution_aware:
+        log.debug("Using distribution-aware linking for %s", slug)
+    new_content = insert_internal_links(
+        content,
+        phrase_index,
+        exclude_slug=slug,
+        max_links=slots,
+        distribution_aware=distribution_aware,
+    )
     if new_content != original:
         post.content = new_content
         return True
@@ -712,9 +761,12 @@ def run_backfill(
                 log.info("Fixed tags: %s", path.name)
 
     if links and len(posts) > 1:
+        validation_report = load_validation_report()
+        if validation_report.get("posts"):
+            log.info("Using validation report for distribution-aware linking (%d posts)", len(validation_report["posts"]))
         phrase_index = build_phrase_index(posts)
         for path, post in posts:
-            if add_links_to_post(post, path, phrase_index, max_links):
+            if add_links_to_post(post, path, phrase_index, max_links, validation_report):
                 links_added += 1
                 if not dry_run:
                     fm.dump(post, path)
