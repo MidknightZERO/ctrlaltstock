@@ -110,6 +110,7 @@ def mark_seen(db: sqlite3.Connection, post_id: str, source: str, title: str):
 # ── Existing blog posts (no-repeat) ────────────────────────────────────────────
 
 SIMILARITY_THRESHOLD = 0.6  # Filter out candidates above this (same topic as existing article)
+WITHIN_RUN_SIMILARITY_THRESHOLD = 0.5  # Among selected stories in one run, skip if too similar to already-selected
 RECENT_N_FOR_DIVERSITY = 10  # Number of recent posts to consider for topic balance
 SIMILARITY_LOOKBACK_DAYS = 7  # Only run similarity check against posts from the last N days (new week = new news)
 
@@ -214,6 +215,19 @@ def similarity_to_existing(story: Dict[str, Any], existing_posts: List[Dict[str,
         if overlap > best:
             best = overlap
     return min(1.0, best)
+
+
+def similarity_between(s1: Dict[str, Any], s2: Dict[str, Any]) -> float:
+    """
+    Return similarity in [0, 1] between two story titles. High = same topic.
+    Used for within-run dedup so we don't pick two very similar stories in one batch.
+    """
+    words1 = _title_words(s1.get("title", ""))
+    words2 = _title_words(s2.get("title", ""))
+    if not words1 or not words2:
+        return 0.0
+    overlap = len(words1 & words2) / len(words1)
+    return min(1.0, overlap)
 
 
 def classify_topic(story: Dict[str, Any]) -> str:
@@ -721,7 +735,17 @@ def get_top_stories(n: int = 3, dry_run: bool = False) -> List[Dict[str, Any]]:
         reverse=True,
     )
 
-    top = candidates[:n]
+    # Within-run dedup: greedily select top stories, skipping any too similar to already-selected
+    selected: List[Dict[str, Any]] = []
+    for s in candidates:
+        if len(selected) >= n:
+            break
+        if any(similarity_between(s, sel) >= WITHIN_RUN_SIMILARITY_THRESHOLD for sel in selected):
+            log.info("Skipping story (too similar to already-selected): %s", s.get("title", "")[:60])
+            continue
+        selected.append(s)
+
+    top = selected
     for s in top:
         s["story_angle"] = "personal" if s["personal_score"] >= 0.5 else "news"
         if s["source_type"] == "rss" and s.get("source_url"):

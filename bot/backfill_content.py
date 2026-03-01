@@ -195,7 +195,8 @@ def insert_internal_links(
                     continue
                 if phrase.lower() in used_phrases:
                     continue
-                pattern = re.escape(phrase)
+                # Word-boundary match: "RAM" must not match inside "Ramifications"
+                pattern = r"\b" + re.escape(phrase) + r"\b"
                 m = re.search(pattern, para, re.IGNORECASE)
                 if not m:
                     continue
@@ -322,7 +323,8 @@ def insert_amazon_links(
             for phrase, url in phrase_to_url:
                 if phrase.lower() in used_phrases:
                     continue
-                pattern = re.escape(phrase)
+                # Word-boundary match: "RAM" must not match inside "Ramifications"
+                pattern = r"\b" + re.escape(phrase) + r"\b"
                 m = re.search(pattern, para, re.IGNORECASE)
                 if not m:
                     continue

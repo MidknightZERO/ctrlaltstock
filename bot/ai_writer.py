@@ -58,6 +58,7 @@ Requirements (non-negotiable):
 - All prices in GBP (£) only — our audience is UK. Use pounds sterling throughout; do not use USD.
 - Add a Discord CTA: "Join our 10,000-member CtrlAltStock Discord for live stock alerts"
 - Use bullet points and subheadings liberally — scannable content
+- **Topic consistency**: The article body MUST be about the given HEADLINE/source story only. Do not write about a different product or deal. suggested_title and excerpt must describe the same topic as the body.
 - At the end of your response, include a JSON block like this (delimited by ```json and ```) with metadata:
 {
   "suggested_title": "SEO-friendly article title (can differ from the headline)",
@@ -66,8 +67,11 @@ Requirements (non-negotiable):
   "tags": ["GPU", "NVIDIA", "RTX 4090", "Price Drop"],
   "featured_product_keywords": ["RTX 4090", "RTX 4080 Super"],
   "amazon_search_queries": ["NVIDIA RTX 4090 graphics card", "RTX 4080 Super GPU"],
+  "image_search_queries": ["Nintendo Switch game case", "Avatar game cover", "Xbox console"],
   "related_topics": ["rtx-5090-revealed", "best-gpus-value"]
 }
+
+The image_search_queries field is required: 2–4 short phrases derived from the article content (product names, main subject, setting) for image search. Examples: "Nintendo Switch game case", "Avatar game cover", "Xbox console", "graphics card gaming".
 """
 
 # ── AI call helpers ───────────────────────────────────────────────────────────
@@ -208,6 +212,7 @@ def extract_metadata(raw_output: str) -> tuple[str, Dict[str, Any]]:
         "tags": [],
         "featured_product_keywords": [],
         "amazon_search_queries": [],
+        "image_search_queries": [],
         "related_topics": [],
     }
     if not (raw_output and raw_output.strip()):
@@ -349,6 +354,7 @@ def write_article(story: Dict[str, Any]) -> Dict[str, Any]:
         "frontmatter": frontmatter,
         "content": content,
         "amazon_search_queries": meta.get("amazon_search_queries", []),
+        "image_search_queries": meta.get("image_search_queries", []),
         "featured_product_keywords": meta.get("featured_product_keywords", []),
     }
 

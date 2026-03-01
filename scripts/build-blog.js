@@ -181,7 +181,15 @@ const parseMarkdownFile = (filepath, filename) => {
       id: slug,
       slug,
       title: String(frontMatter.title || ''),
-      publishedDate: String(frontMatter.date || ''),
+      publishedDate: (() => {
+        const d = String(frontMatter.date || ''),
+          fallback = '1970-01-01';
+        if (!d || isNaN(new Date(d).getTime())) {
+          console.warn(`Warning: ${filename} has missing or invalid date, using ${fallback}`);
+          return fallback;
+        }
+        return d;
+      })(),
       content: markdownContent.trim(),
       excerpt: String(frontMatter.excerpt || ''),
       readingTime: String(frontMatter.readingTime || ''),
@@ -212,8 +220,11 @@ const buildBlog = () => {
     .map(({ filepath, filename }) => parseMarkdownFile(filepath, filename))
     .filter(Boolean) // Remove null entries
     .sort((a, b) => {
-      // Sort by date (newest first)
-      return new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime();
+      // Sort by date (newest first); secondary sort by slug when dates equal for deterministic order
+      const ta = new Date(a.publishedDate || '1970-01-01').getTime();
+      const tb = new Date(b.publishedDate || '1970-01-01').getTime();
+      if (tb !== ta) return tb - ta;
+      return (a.slug || '').localeCompare(b.slug || '');
     });
 
   console.log(`Successfully parsed ${posts.length} blog posts`);

@@ -14,11 +14,19 @@ export const getAllTagsSync = (): string[] => {
   return cachedTags;
 };
 
+// Sort posts by publishedDate (newest first) for consistent display order
+const sortByDate = (posts: BlogPost[]): BlogPost[] =>
+  [...posts].sort((a, b) => {
+    const da = new Date(a.publishedDate || '1970-01-01').getTime();
+    const db = new Date(b.publishedDate || '1970-01-01').getTime();
+    return db - da;
+  });
+
 // Update cache when new data is fetched
 const updateCache = (posts: BlogPost[]) => {
-  cachedPosts = posts;
+  cachedPosts = sortByDate(posts);
   const tags = new Set<string>();
-  posts.forEach(post => {
+  cachedPosts.forEach(post => {
     post.tags.forEach(tag => tags.add(tag));
   });
   cachedTags = Array.from(tags);
@@ -33,7 +41,7 @@ export const getAllPosts = async (): Promise<BlogPost[]> => {
     if (response && response.ok) {
       const posts = await response.json();
       updateCache(posts);
-      return posts;
+      return sortByDate(posts);
     }
 
     // Fallback to static JSON in public folder
@@ -42,7 +50,7 @@ export const getAllPosts = async (): Promise<BlogPost[]> => {
     if (localResp.ok) {
       const posts = await localResp.json();
       updateCache(posts);
-      return posts;
+      return sortByDate(posts);
     }
 
     return [];

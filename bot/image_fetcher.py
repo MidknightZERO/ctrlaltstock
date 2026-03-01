@@ -296,7 +296,8 @@ def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
     stock = _load_stock_images()
     used = _load_used_images()
     if len(all_images) < 2 and config.unsplash.access_key:
-        queries = [title] + (draft.get("amazon_search_queries") or [])[:2]
+        # Prefer body-derived image_search_queries from writer; fallback to title + amazon_search_queries
+        queries = draft.get("image_search_queries") or [title] + (draft.get("amazon_search_queries") or [])[:2]
         for query in queries:
             clean_query = _clean_query_for_images(query, primary_topic)
             images = search_unsplash(clean_query, count=3)

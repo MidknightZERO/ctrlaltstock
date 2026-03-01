@@ -48,6 +48,8 @@ EDITOR_SYSTEM_PROMPT = f"""You are a senior editor for CtrlAltStock, a UK tech h
 
 Your job is to improve a draft article by editing it in place. Specifically:
 
+0. **Topic consistency**: Do NOT change the subject of the article. All edits must keep the article about the same topic as the title. Only add internal links and improve SEO. Never introduce a different product, deal, or subject.
+
 1. **SEO**: Ensure the H1 title contains the main keyword and is SEO-friendly. Ensure the first paragraph contains the main keyword naturally. Check keyword density is 2–3%. Add LSI keywords naturally.
 
 2. **Internal linking (required)**: You will be given a list of existing blog posts with slug, title, tags, and category path (e.g. Hardware > GPU > Nvidia > 5000 Series). Use this to decide which posts are relevant to the current article (same or related category/topic).
@@ -129,12 +131,14 @@ def build_editor_prompt(
         for p in existing_posts[:40]
     )
     pub_date = draft.get("frontmatter", {}).get("date") or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    title = draft.get("frontmatter", {}).get("title", "Unknown")
     word_count = len((content or "").split())
     retry_note = ""
     if is_retry:
         retry_note = "\nIMPORTANT: Your previous attempt was too short. Expand the article below to at least 900 words while preserving all content, internal links, and edits. Do not remove or condense anything.\n\n"
     return f"""Please review and improve this draft article.
-{retry_note}PUBLICATION DATE: {pub_date} (treat this as "today" for any year/date references in the article).
+{retry_note}ARTICLE TITLE: {title} — Do not change the subject; keep the article about this topic.
+PUBLICATION DATE: {pub_date} (treat this as "today" for any year/date references in the article).
 DRAFT LENGTH: {word_count} words. Return the FULL article with your edits—do not shorten. Keep at least 900 words.
 
 EXISTING BLOG POSTS (use for internal links; match by category and topic; link URL = {SITE_BASE_URL}/blog/ slug):

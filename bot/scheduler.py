@@ -136,6 +136,14 @@ def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
         last_step = "refiner"
         log.info("Article refined: %d words", len(draft["content"].split()))
 
+        # ── Step 2.5: Topic consistency validation ──────────────────────────
+        from validate_topic import validate_topic_consistency
+        passed, msg = validate_topic_consistency(draft, story)
+        if not passed:
+            log.error("Topic validation failed: %s — body does not match title/seed. Aborting.", msg)
+            return False
+        log.info("Topic validation passed: %s", msg)
+
         # ── Step 3: Editorial pass (incl. internal linking) ─────────────────
         log.info("[3/6] Running editorial pass...")
         from ai_editor import run_editorial_pass
