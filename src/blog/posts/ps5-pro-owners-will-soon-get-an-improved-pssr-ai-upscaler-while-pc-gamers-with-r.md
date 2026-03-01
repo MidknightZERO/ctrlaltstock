@@ -44,8 +44,7 @@ excerpt: PS5 Pro users are set to experience a significant upgrade in image qual
   is expected to enhance the performance of hig
 featuredProductId: ''
 images:
-- https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=1200
-- https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=1200
+- https://m.media-amazon.com/images/I/714nXgTiuAL._AC_UY218_.jpg?w=1200
 readingTime: 4 min read
 recommendedProductIds: []
 relatedPostSlugs: []

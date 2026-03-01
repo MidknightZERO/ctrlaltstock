@@ -51,7 +51,6 @@ excerpt: The publication date marked 2026-02-28 serves as a definitive anchor po
   in temporal alignment. This specific referenc
 featuredProductId: ''
 images:
-- https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=1200
 - https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=1200
 readingTime: 4 min read
 recommendedProductIds: []

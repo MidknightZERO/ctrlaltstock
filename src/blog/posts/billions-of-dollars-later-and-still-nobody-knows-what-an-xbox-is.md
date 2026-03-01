@@ -53,9 +53,7 @@ coverImage: https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_
   416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg
   208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg
 date: '2026-02-28'
-excerpt: 'The gaming world is buzzing as *Avatar: The Last Airbender* sees a major
-  price reduction, dropping to just £9.99 on Amazon UK with a compelling 50% discount.
-  This move not only highlights the enduring'
+excerpt: Billions of dollars later and still nobody knows what an Xbox is.
 featuredProductId: ''
 images:
 - https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/81onHymsYzL._AC_SX416_CB1169409_QL70_.jpg

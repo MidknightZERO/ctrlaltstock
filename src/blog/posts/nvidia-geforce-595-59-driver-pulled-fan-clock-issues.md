@@ -43,7 +43,6 @@ excerpt: NVIDIA has pulled its GeForce 595.59 driver after widespread reports of
   and clock issues, leaving UK gamers frustrated and wary of upgrading.
 featuredProductId: ''
 images:
-- https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=1200
 - https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=1200
 readingTime: 3 min read
 recommendedProductIds: []

@@ -44,7 +44,6 @@ excerpt: 'The gaming world is abuzz with whispers of AMD’s upcoming Ryzen 500 
   Discord community. A user on r/Amd claims '
 featuredProductId: ''
 images:
-- https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=1200
 - https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=1200
 readingTime: 3 min read
 recommendedProductIds: []

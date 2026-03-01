@@ -44,7 +44,6 @@ excerpt: The ASUS ProArt PX13 GoPro Edition has captured significant attention i
   and small business owners seeking a portabl
 featuredProductId: ''
 images:
-- https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=1200
 - https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=1200
 readingTime: 3 min read
 recommendedProductIds: []
