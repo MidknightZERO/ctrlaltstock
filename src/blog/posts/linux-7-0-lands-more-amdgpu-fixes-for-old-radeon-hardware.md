@@ -55,6 +55,9 @@ title: Linux 7.0 lands more AMDGPU fixes for old Radeon hardware
 # Linux 7.0 lands more AMDGPU fixes for old Radeon hardware
 Linux 7.0 has arrived with a fresh wave of AMDGPU [driver updates](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market), bringing much-needed fixes for older Radeon graphics hardware. This release is a boon for users still relying on legacy AMD GPUs, ensuring smoother performance and better compatibility with modern Linux distributions. For many in the UK's budget-conscious or sustainability-focused tech community, keeping an older, perfectly functional [graphics card](https://ctrlaltstock.com/blog/graphics-card-review-2026) alive with a modern OS is not just a hobby—it's a practical necessity.
 
+[![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
@@ -64,20 +67,21 @@ Linux 7.0 has arrived with a fresh wave of AMDGPU [driver updates](https://ctrla
 The latest Linux kernel introduces several key improvements for AMD's graphics drivers, particularly for older Radeon cards. These updates focus on [stability](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update), power management, and bug fixes that have been long-standing pain points for users. The work primarily centres on the `amdgpu` driver's "legacy" and "pre-GCN" code paths, which handle GPUs from the Radeon HD 5000 series up to the first generation of Graphics Core Next (GCN 1.0/1.1), such as the Radeon HD 7000 and R7/R9 200/300 series.
 One of the standout features is enhanced support for pre-GCN architectures. Cards like the HD 7000, HD 6000, and even older models are now better supported, with fixes for issues such as screen [flickering](https://ctrlaltstock.com/blog/vrr-flickering-with-nvidia-frame-gen-2026), memory leaks, and driver crashes. For example, the AMDGPU driver now includes patches that prevent system freezes when using multiple monitors on older hardware, a common issue when hot-plugging displays or changing refresh rates. Specific commits address problems with the display controller (DC) code initialisation on older ASICs, which could previously cause a black screen or hang during boot with certain monitor configurations.
 
-
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Why does this matter for old Radeon hardware?
 Many Linux users continue to rely on older Radeon GPUs, whether due to budget constraints, the need for compatibility with legacy systems, or a commitment to reducing e-waste. These cards, while no longer cutting-edge, are still perfectly capable for everyday tasks like web browsing with GNOME or KDE Plasma, office work with LibreOffice, and media playback via VLC or MPV. However, outdated drivers often left them struggling with modern software stacks, compositors, and Wayland sessions.
 With Linux 7.0, AMD has addressed several critical issues. For instance, users with HD 5000 or HD 6000 series cards will notice improved 2D acceleration and reduced latency in graphical applications. This is particularly noticeable in desktop environments like XFCE or MATE when dragging windows or using smooth scrolling. Additionally, power-saving features like dynamic clock voltage adjustment (DPM) have been fine-tuned for older GCN 1.0/1.1 parts, which can lead to noticeable improvements in battery life for laptops with older AMD GPUs—a common sight in the second-hand UK market, where machines like the Dell Inspiron 15R or older HP Pavilion models often find new life with Linux.
-## Performance and stability improvements
-Beyond bug fixes, Linux 7.0 brings measurable performance gains for older Radeon hardware. Benchmarks using tools like `Glmark2` and `vkpeak` show that certain HD 7000 series cards (e.g., R7 260X, HD 7870) now handle 4K video playback more efficiently, thanks to optimised shader compilation and better memory management within the Unified Video Decoder (UVD) block. This means smoother 4K H.265/HEVC playback in applications like Kodi or Jellyfin, a key feature for home theatre PC (HTPC) builds popular with UK enthusiasts.
-Users have also reported smoother frame rates in lightweight games and reduced input lag in desktop environments. For example, titles from the *Source* engine or older *Left 4 Dead 2* see more consistent frame pacing on an HD 7770. Stability has been a major focus as well. The AMDGPU driver now includes safeguards against common crash scenarios, such as sudden resolution changes or hot-plugging displays via DisplayPort MST hubs. This is particularly useful for multi-monitor setups in home offices or for digital signage, where older drivers often struggled to maintain consistent performance across different panel models.
 
 
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
 
+
+## Performance and stability improvements
+Beyond bug fixes, Linux 7.0 brings measurable performance gains for older Radeon hardware. Benchmarks using tools like `Glmark2` and `vkpeak` show that certain HD 7000 series cards (e.g., R7 260X, HD 7870) now handle 4K video playback more efficiently, thanks to optimised shader compilation and better memory management within the Unified Video Decoder (UVD) block. This means smoother 4K H.265/HEVC playback in applications like Kodi or Jellyfin, a key feature for home theatre PC (HTPC) builds popular with UK enthusiasts.
+Users have also reported smoother frame rates in lightweight games and reduced input lag in desktop environments. For example, titles from the *Source* engine or older *Left 4 Dead 2* see more consistent frame pacing on an HD 7770. Stability has been a major focus as well. The AMDGPU driver now includes safeguards against common crash scenarios, such as sudden resolution changes or hot-plugging displays via DisplayPort MST hubs. This is particularly useful for multi-monitor setups in home offices or for digital signage, where older drivers often struggled to maintain consistent performance across different panel models.
+
+[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
 
 ## How to update to Linux 7.0
 Updating to the latest kernel is straightforward for most Linux distributions. Users can either wait for their distro to push the update or manually install it. For the latest stable kernel, you can download the source or pre-built packages from kernel.org. However, for most UK users, the easiest path is through their distribution's package manager.
@@ -96,9 +100,7 @@ The Linux community, including vibrant UK forums like the [Ubuntu UK Podcast for
 One user on Reddit's r/linuxquestions noted that their **Sapphire HD 6870**, a card released in 2010 and still widely available on eBay UK for around £30-£50, now runs cooler and quieter thanks to improved DPM. The fan curve is more aggressive, reducing noise during desktop use—a big plus for a silent HTPC. Another mentioned on the [Phoronix forums](https://www.phoronix.com/forums/) that their **XFX HD 5450**, often used in cheap home theatre PCs and available new old stock for under £40, no longer suffers from intermittent display corruption during video playback. This was traced to a fix in the UVD clock gating logic.
 For UK-based retro-gaming enthusiasts building machines with older Radeon cards, the improved OpenGL 4.5 compliance and Vulkan 1.1 support (via the `radv` driver) on GCN 1.x GPUs means better compatibility with modern game engines like Godot 4 and older titles from the *Portal 2* or *BioShock* era that use newer API features. A user on the [Linux Gaming subreddit](https://www.reddit.com/r/linux_gaming/) reported their **PowerColor R7 265** (a great value at ~£60 used) now launches *CS:GO* without the occasional driver reset it experienced on kernel 6.6.
 
-
 [![AMD Radeon RX 7600](https://m.media-amazon.com/images/I/714nXgTiuAL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7600+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Looking ahead: What's next for AMDGPU?
 While Linux 7.0 addresses many long-standing issues, AMD's work on the GPU driver stack is far from over. The open-source `amdgpu` driver team continues to refactor code, with future updates expected to further refine support for hybrid graphics setups (common in laptops with both integrated and discrete GPUs, like older A-series APUs paired with a Radeon R5 M230). There's also ongoing work to expand compatibility with emerging display technologies, though for legacy hardware, support for standards like HDMI 2.1 or DisplayPort 2.1 remains unlikely due to hardware limitations.

@@ -107,6 +107,8 @@ Read more about the latest updates on NVIDIA’s RTX 4080 and AMD driver updates
 
 This version maintains a natural flow, integrates necessary SEO elements, and ensures that all requirements are met with precision and clarity.
 
+[![PlayStation 5 Pro](https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21)
+
 
 
 

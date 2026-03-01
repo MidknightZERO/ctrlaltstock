@@ -68,6 +68,9 @@ Cat President: 3rd-Rate Candidate is a unique entry in the visual novel genre th
 The gameplay is built around decision-making: you'll manage resources, interact with various characters, and navigate through multiple endings based on your choices. The storyline is driven by dialogue, animations, and branching narratives, making each playthrough feel fresh. The game also includes a new "Approval Rating" system that measures how voters from different demographics—such as cat lovers, political enthusiasts, and animal fans—respond to your decisions, adding a layer of strategic depth to your campaign.
 With a focus on accessibility and humor, Cat President: 3rd-Rate Candidate is designed to be engaging for a broad audience. It's perfect for casual players who enjoy light-hearted storytelling or hardcore fans who want to test their decision-making skills. The game is available on Steam, where it currently offers a launch discount that makes it an attractive purchase for budget-conscious gamers.
 
+[![Steam Deck](https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/s?k=Steam+Deck&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: Steam Deck | From £349 | https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=Steam+Deck&tag=ctrlaltstock-21 -->
@@ -78,22 +81,23 @@ One of the standout features of Cat President: 3rd-Rate Candidate is its **multi
 Each candidate has a distinct personality, visual style, and set of campaign objectives. For example, the British Shorthair may focus on stabilising the economy, the Siamese twins may argue for radical reform, and the Sphinx candidate may use riddles and puzzles to resolve political crises. As you progress through the story, your choices will shape the narrative and determine the ultimate outcome of the campaign.
 The game also incorporates a **"Furry Impact Score"** that tracks how your decisions affect not only the political landscape but also the fandom and community engagement. Positive outcomes can lead to further updates, DLC content, and even special events on [Steam](https://ctrlaltstock.com/blog/resident-evil-requiem-steam-concurrency-record). This scoring system adds a new layer of replayability, encouraging players to explore different paths and see how their decisions resonate with the feline community.
 
-
 [![Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
-
 
 ## Pricing and Availability
 As of now, Cat President: 3rd-Rate Candidate is available exclusively on Steam, with a launch price of **£8.09** during the promotional week. This price is significantly lower than the standard £8.99, making it an attractive [deal](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is) for budget-conscious buyers. The discount is valid from **October 15th to October 22nd, 2023**, giving you a limited-time opportunity to grab one of these adorable felines for just a fraction of the usual cost.
 For context, similar indie visual novels like *Doki Doki Literature Club* (£7.19) or *Arcade Spirits* (£10.99) often sit in the same price range, especially during seasonal sales. The current discount on Cat President is part of Steam’s aggressive pricing strategy to boost sales and attract new players to the platform.
 Pricing details are essential for any viewer, and as the game is UK-based, it's important to note that regional fluctuations may apply. For those located outside the UK, the game remains available for purchase, though the exact pricing may vary slightly. Regardless, the £8.09 launch price ensures that you’re getting a competitive edge for this whimsical political adventure.
+
+
+[![Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
+
+
 ## Why Cat President Stands Out
 What makes Cat President: 3rd-Rate Candidate truly unique is its ability to blend humor with serious themes. The game tackles political satire in a way that's both entertaining and thought-provoking, using the whimsical setting of a cat-led political campaign to comment on real-world issues like governance, ethics, and media manipulation. The characters are crafted with care, ensuring that each personality brings its own brand of wit and charm to the table.
 The game's art style is consistently bright and cartoonish, with expressive cat faces that make every dialogue exchange feel engaging. The animations and sound effects are top-notch, enhancing the immersive experience. With over 90 minutes of content across all six candidates, the game offers a solid playtime that's both fun and rewarding.
 For gamers looking for a new way to enjoy narrative-driven games, Cat President: 3rd-Rate Candidate is a must-try. Whether you're a fan of visual novels, political commentary, or just love cute animals, this game promises a delightful experience that’s as entertaining as it is informative.
 
-
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Conclusion
 In summary, Cat President: 3rd-Rate Candidate is a standout addition to the Steam library, offering a fresh take on visual novels with a unique political twist. At just £8.09, the 10% discount makes it an ideal purchase for anyone looking to explore a quirky and engaging story. With its vibrant characters, engaging gameplay, and appealing pricing, this game is a great addition to any gamer's collection.

@@ -84,6 +84,8 @@ Take the flagship Ryzen 7 8700G. For £329, you get an 8-core/16-thread CPU pair
 
 Compare this to Intel's current UHD Graphics 770 in a Core i5-13400 (£220). While competent for video playback and light desktop use, its 32 execution units are no match for the 512 stream processors of the RX 760M. The gaming gap is vast. For UK builders on a strict £600-£800 budget for a full system (including case, PSU, storage), the choice becomes stark: an Intel build with a weak iGPU and a plan to add a discrete GPU later.
 
+[![AMD Ryzen 7 7800X3D](https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21)
+
 
 
 

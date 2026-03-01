@@ -59,6 +59,9 @@ title: AMDXDNA Ryzen AI Driver Fixes Arrive in Linux 7.0-rc2
 # AMD XDNA Ryzen AI Driver Fixes Arrive in Linux 7.0-rc2
 For owners of the latest [AMD Ryzen](https://ctrlaltstock.com/blog/amd-ryzen-500-medusa-rdna-4m-igpu-shows-rdna-4-matrix-isa-support-fsr-4-support-) AI-powered laptops and desktops running Linux, the wait for stable, high-performance NPU (Neural Processing Unit) support is finally seeing meaningful progress. The recent release of Linux kernel 7.0-rc2 has incorporated a series of crucial driver fixes and updates specifically targeting the AMD XDNA architecture, which underpins the Ryzen AI branding on modern Ryzen 7040, 8040, and 8045 series mobile processors. This development marks a significant step towards maturing the open-source software stack for AMD's first consumer-focused AI accelerator, moving it from a promising but rough feature to a genuinely usable component for developers and enthusiasts on the Linux desktop.
 
+[![AMD Ryzen 7 7800X3D](https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: AMD Ryzen 7 7800X3D | From £349 | https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21 -->
@@ -78,9 +81,7 @@ The software challenge has been bridging this novel hardware to the open-source 
 4.  **The `kfd` (Kernel Framework Driver) and `amdkfd`** — This is the core open-source driver infrastructure for AMD's compute accelerators (formerly for GPUs, now extended for XDNA). It provides the user-space API (via `libdrm` and `ROCm` components) that applications use to offload AI models.
 5.  **The `amd-ucode` microcode package** — Contains the firmware blobs that are loaded onto the NPU at boot. The 7.0-rc2 updates include revised firmware images for stability.
 
-
 [![AMD Ryzen 7 7800X3D](https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21)
-
 
 ## What's Fixed in Linux 7.0-rc2?
 The changelog for 7.0-rc2 reveals a focused batch of fixes that directly address the most common pain points reported by early adopters on distributions like Ubuntu 23.10/24.04, Fedora 39/40, and Arch Linux. These are not flashy new features, but foundational [stability](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) and functionality patches.
@@ -89,12 +90,16 @@ The changelog for 7.0-rc2 reveals a focused batch of fixes that directly address
 **3. Power Management and Runtime D3 (RTD3):** To achieve the NPU's efficiency claims, it must enter very low-power states when idle. Previous kernels had issues with the NPU not properly entering or exiting Runtime D3 states, causing either excessive power drain (reducing laptop battery life) or latency spikes when an AI task was suddenly requested. Updates to the `amd-pstate` driver integration and the `amdkfd`'s power management hooks fix these transitions, making the NPU truly "sleep" when not in use.
 **4. Firmware Loading and Versioning:** The microcode for the XDNA NPU is delivered as a separate firmware file (`amd-picasso-xdna.bin` or similar). The kernel's firmware loader mechanism had race conditions and error-handling bugs that could cause the NPU to fail to load its firmware even if the file was present. The rc2 patches make this process more robust and add better logging (`dmesg`) for troubleshooting, which is invaluable for users on bleeding-edge distributions.
 **5. IOCTL and User-Space API Polish:** The character device interface (`/dev/kfd`) used by user-space libraries like **AMD's ROCm** or the **ONNX Runtime DirectML backend** had several edge-case bugs. These could cause `ioctl` calls to fail with `EIO` or `EINVAL` errors, halting AI inference pipelines. The fixes clean up the command submission and event handling paths, improving compatibility with existing AI frameworks that have begun adding XDNA support.
+
+
+[![AMD Ryzen 5 7600](https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+5+7600&tag=ctrlaltstock-21)
+
+
 ## Real-World Implications for Linux Users
 So, what does this actually mean for someone with a [Ryzen AI](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) laptop running, say, **Ubuntu 24.04 Noble Numbat** or **Fedora 40**?
 **Immediate Benefit:** If you were previously unable to get the NPU to show up in tools like `rocm-smi` (the system management utility) or `lspci -nn | grep -i xdna`, the 7.0-rc2 fixes are your likely solution. The NPU should now enumerate correctly as a PCIe device with ID `1002:1502` (or similar). You should see a new compute unit in the output of `/sys/class/drm/card0/device/compute_parms` and the `amdkfd` driver should bind to it.
 **AI Workloads Become Viable:** Projects like **Stable Diffusion** (via the **diffusers** library with DirectML or ROCm), **Whisper.cpp** for speech-to-text, and **llama.cpp** for local LLM inference have been experimenting with XDNA backends. With these driver stabilisations, these projects can move from "experimental, often broken" to "functional on supported hardware." Expect to see performance guides for specific models (like quantised `Llama-2-7B-Chat` or `stable-diffusion-2-1`) appearing on forums like the **Framework Community** or **r/linuxhardware** within months, citing NPU utilisation figures and power draw compared to the Radeon 780M iGPU.
 **The Distribution Lag:** It's crucial to note that these fixes are in the *mainline* kernel 7.0-rc2. They will not appear in stable kernel builds (like 6.8.x) until they are backported, a process that can take weeks or months. Your distribution's kernel package must be updated. For the bleeding-edge, you'll need to compile and install the 7.0-rc2 kernel yourself or use a kernel from a **mainline kernel PPA** (for Ubuntu) or **Fedora Rawhide**. For most users, the practical wait will be for the next point release of their distribution (e.g., Ubuntu 24.10 or Fedora 41) which will likely ship a newer, more stable kernel series (perhaps 6.9 or 6.10) that has already integrated these XDNA fixes.
 **The ROCm Question:** AMD's official, robust AI/HPC software stack is **ROCm**. While ROCm
-
 
 [![AMD Ryzen 5 7600](https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+5+7600&tag=ctrlaltstock-21)

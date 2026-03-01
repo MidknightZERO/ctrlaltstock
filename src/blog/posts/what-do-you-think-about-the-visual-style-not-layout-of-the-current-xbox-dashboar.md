@@ -90,6 +90,8 @@ The thread quickly gathered over 200 replies, with users split into two camps.
 - **Design‑forward enthusiasts** (roughly 60 % of the replies) praised the minimalist approach, noting that the UI feels “less cluttered” and “more like a premium TV experience.” They highlighted how the new dashboard integrates seamlessly with the Xbox App on Windows 11, allowing for cross‑platform consistency. For instance, a user might start a game on their console and seamlessly continue it on their PC via the app, with the dashboard’s visual style carrying over. Some users also pointed out that the dashboard’s responsiveness on the Series X’s 4K display is impressive, with animations running smoothly even on lower-end TVs.  
 - **Nostalgia‑driven fans** (the remaining 40 %) argued that the
 
+[![Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
+
 
 
 

@@ -66,6 +66,9 @@ The technical investigation reveals several contributing factors. The 12V-2x6 co
 NVIDIA and manufacturers have attempted various mitigation strategies, including improved connector designs, better thermal monitoring, and updated power delivery firmware. However, these measures haven't eliminated the problem entirely. Some users report that even with the latest firmware and certified cables, their RTX 5090 connectors still show signs of heat stress after extended gaming sessions.
 The issue has affected specific models disproportionately. The Zotac RTX 5090 Trinity OC has been mentioned in multiple failure reports, while Gigabyte's Aorus Master and Gaming OC models have shown better [reliability](https://ctrlaltstock.com/blog/asrock-powercolor-rx-9070-xt-service-rates). This suggests that board design and cooling implementation play crucial roles in preventing failures.
 
+[![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
@@ -78,9 +81,7 @@ For those considering purchasing an RTX 5090 in the UK, the current market offer
 The connector issues have also boosted demand for alternative high-end GPUs. AMD's RX 7900 XTX, priced around £749, has seen increased interest from gamers who want high performance without the connector concerns. Similarly, last-generation [RTX 4090](https://ctrlaltstock.com/blog/amd-ryzen-500-medusa-rdna-4m-igpu-shows-rdna-4-matrix-isa-support-fsr-4-support-) cards (£1,399-£1,599) are selling well as they represent a safer investment despite slightly lower performance.
 Interestingly, the UK's strict consumer protection laws under the Consumer Rights Act 2015 have provided some recourse for affected users. Several UK gamers have successfully claimed refunds or replacements from retailers when their RTX 5090 cards suffered connector failures within the first six months of purchase.
 
-
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
-
 
 ## What to buy right now
 If you're in the market for a high-end GPU and want to avoid connector melting risks entirely, here are your best options in the UK market:
@@ -90,12 +91,16 @@ If you're in the market for a high-end GPU and want to avoid connector melting r
 **RTX 5070 Ti** - For those wanting newer technology at a lower price point, the RTX 5070 Ti (£649-£749) has proven more reliable than the 5090 while still delivering excellent 1440p and respectable 4K performance.
 For those who already own an RTX 5090 or are determined to get one, investing in proper accessories is crucial. High-quality 16-pin cables from manufacturers like CableMod (£50-£80) or official NVIDIA cables (£30-£40) can significantly reduce risk. Additionally, ensuring your case has good airflow and monitoring GPU temperatures during long gaming sessions can help prevent issues.
 Some UK PC builders have reported success with aftermarket cooling solutions specifically designed for the 12V-2x6 connector area. Products like the CableMod 5090 cooling bracket (£45) and the EKWB 5090 water block (£249) provide additional thermal headroom, though they represent significant additional investment.
+
+
+[![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
+
+
 ## Final thoughts
 The RTX 5090 connector melting saga serves as a reminder that even premium hardware can have fundamental design flaws. For UK gamers, the decision to invest in a high-end GPU now requires careful consideration of not just performance and price, but also long-term reliability.
 The good news is that the market has adapted. Whether through discounted older-generation cards, alternative AMD options, or improved accessories for the RTX 5090, gamers have choices that balance performance with peace of mind.
 If you're experiencing connector issues or want to discuss the best GPU options for your setup, join our 10,000-member CtrlAltStock Discord community. Our members share real-time stock alerts, deal notifications, and personal experiences with different hardware configurations—helping you make informed decisions without the guesswork.
 For immediate assistance, UK gamers can also contact NVIDIA's UK support line at 0800 109 6522 or reach out to their point of purchase under the Consumer Rights Act, which provides protection for up to six years in England and Wales (five years in Scotland) for faulty goods.
 ---
-
 
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)

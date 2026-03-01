@@ -57,10 +57,15 @@ title: 'AMD''s China-Only RX 9070 GRE ''Waifu'' Edition: Exotic Cooling and Benc
   Leaks'
 ---
 
-AMD's RX 9070 GRE graphics card has entered a niche China-only release with a Waifu edition. This custom model features unique design elements like RGB accents and a dragon-themed shroud. UK enthusiasts are discussing its impact on pricing and availability.
-What's the story behind this release? A China-exclusive version from Yeston includes aggressive cooling and updated fan curves. Early tests show cooler operation and slightly better gaming performance at 2,700 MHz. The GRE sits between the RX 9070 and XT models, offering a balanced option for 1440p gaming.
+AMD's RX 9070 GRE [graphics card](https://ctrlaltstock.com/blog/graphics-card-review-2026) has entered a niche China-only release with a Waifu edition. This custom model features unique design elements like RGB accents and a dragon-themed shroud. UK enthusiasts are discussing its impact on pricing and availability.
+
+
+<!-- featured-product: AMD Radeon RX 7800 XT | From £479 | https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21 -->
+
+
+What's the story behind this release? A China-exclusive version from Yeston includes aggressive cooling and updated fan curves. Early tests show cooler operation and slightly better [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) performance at 2,700 MHz. The GRE sits between the RX 9070 and XT models, offering a balanced option for 1440p gaming.
 The article mentions performance benchmarks: up to 2,700 MHz under load and solid frame rates in 1440p. Yeston's design focuses on aesthetics and cooling, appealing to the Asian market. Though not available in the UK, its launch signals AMD's experimentation with custom designs.
 This release could influence future pricing and stock availability. For UK buyers, monitoring stock is key, especially with demand rising from the Waifu edition's leaks.
 [Link to AMD RX 9070 GRE](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg) remains active for reference.
-For more details, check [NVIDIA's RTX 4070 Ti pricing](https://ctrlaltstock.com/blog/amd-sdx6-premiere).
+For more details, check NVIDIA's RTX 4070 Ti pricing.
 Final thoughts highlight how custom models drive innovation, even if availability is limited. Stay updated with CtrlAltStock for alerts.

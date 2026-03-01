@@ -69,6 +69,9 @@ The deals then layer on additional value, primarily in the form of Amazon gift c
 The most notable takeaway is that the **"No extras" models are already a great [deal](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is)** because you're getting double the storage for the same price as the entry-level 256GB version would normally cost. The bundles with Amazon gift cards are where the true "24% off" headlines come from, as the gift card value is deducted from your effective spend if you were to buy those items separately. The inclusion of the Galaxy Buds4 Pro in some bundles further sweetens the pot for those needing wireless earbuds.
 This strategy is a clear departure from recent years, where preordering a new Galaxy S series phone meant paying full price with little to no incentive. It suggests Samsung is looking to stimulate demand in a competitive premium market and perhaps clear inventory ahead of its next-generation foldable releases later in the year.
 
+[![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
@@ -78,13 +81,16 @@ This strategy is a clear departure from recent years, where preordering a new Ga
 For the UK market, these US-centric deals translate into tangible savings, but with a few caveats. The direct GBP conversions mean the "free storage upgrade" is universally applicable, effectively setting a new, lower starting price point for each model in the UK. For example, the Galaxy S26 Ultra's entry point is now £1,119.99 for 512GB, compared to what would likely have been a £1,199.99 RRP for that storage tier. The Amazon gift card, while a fantastic boon, introduces a slight complexity: it's an Amazon.com code, not an Amazon.co.uk one. For UK buyers, this means you'll need to use it on the US Amazon site, which may involve currency conversion fees from your bank or a separate payment method for the UK site. However, many UK customers have US Amazon accounts or can use the card for digital purchases like Kindle books or video rentals that are accessible globally, retaining much of its value.
 Crucially, these prices are pre-VAT for the US market but are presented here as all-inclusive final [UK prices](https://ctrlaltstock.com/blog/graphics-card-review-2026). Samsung UK typically includes VAT in its advertised pricing, so these figures represent the total you would pay at checkout from a UK retailer participating in the promotion. It's also worth noting that carrier contracts from networks like EE, O2, or Vodafone often have their own [pre-order](https://ctrlaltstock.com/blog/gta-vi-ps5-title-ids-added-what-this-means) bundles, which might include extra data or airtime instead of a gift card. Always compare the total value of a contract deal against this SIM-free price.
 
-
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
-
 
 ## How do these deals stack up against the competition?
 To appreciate this offer, it's helpful to contextualise it. Apple's iPhone 16 Pro Max, the Ultra's direct competitor, starts at £1,199 for 256GB, with a £120 jump to 512GB. Google's Pixel 9 Pro XL starts at £999 for 128GB, with storage upgrades costing £120 each. Samsung's move to effectively include the storage upgrade for free puts it on a much more competitive footing on a like-for-like storage basis. The effective price of the S26 Ultra with gift card—£961.99 after redeeming the £158 card—dips decisively below the iPhone 16 Pro Max's base price while offering more storage and, historically, a more versatile camera system with greater zoom capabilities.
 Furthermore, the bundling of the **Galaxy Buds4 Pro** (RRP £219) in some tiers is a significant add-on. Competing true wireless earbuds from Apple (AirPods Pro 2, £249) or Sony (WF-1000XM5, £279) are priced higher. Getting them for a net £185.48 in the S26+ bundle represents exceptional value for those wanting a complete audio ecosystem.
+
+
+[![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
+
+
 ## Who is this deal for?
 This promotion is engineered for several buyer profiles:
 1.  **The Power User & Photographer:** The **Galaxy S26 Ultra** deal is the star. The free 512GB upgrade is essential for high-resolution photography and 8K video. The £158 Amazon gift card can be funneled into a high-capacity microSD card (like a 1TB Samsung EVO Plus for ~£85), a premium tripod, or editing software, effectively funding an entire accessory ecosystem.
@@ -92,9 +98,7 @@ This promotion is engineered for several buyer profiles:
 3.  **The Complete Package Buyer:** Anyone needing new earbuds should look at the bundles. The net cost of the S26+ with Buds4 Pro is £923.48 after valuing the earbuds at RRP. Buying a separate S26+ (£879.99) and Buds4 Pro (£219) separately would cost £1,098.99. You save over £175.
 4.  **The Storage-Conscious:** Anyone who ever bemoans paying extra for more storage wins outright. The 512GB models at the price of the old 256GB models are a no-brainer for app collectors, mobile gamers, and media consumers.
 
-
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Technical Context & What to Expect
 While the focus is on price, the underlying hardware is what makes these deals worthwhile. The Galaxy S26 series is expected to feature the **Snapdragon 8 Gen 4 for Galaxy** chipset globally, promising a significant CPU and GPU performance leap over the S25 series, with enhanced AI processing capabilities for features like real-time translation and advanced photo editing. The S26 Ultra will almost certainly retain its legendary **200MP main sensor** but with improved pixel-binning technology and a next-gen **5x periscope telephoto lens** (likely a 50MP sensor) for unprecedented zoom quality. The S26 and S26+ are expected to receive major camera upgrades too, potentially moving to a **50MP main sensor** from the current 50MP, but with a larger sensor size for better low-light performance.

@@ -63,6 +63,9 @@ AMD's decision to cease driver updates for the Ryzen Z1 Extreme stems from a com
 
 A related factor is the rise of alternative technologies. AMD has shifted focus to its RDNA 4 architecture, which powers next-generation GPUs like the RX 9070 GRE. By prioritizing newer hardware, AMD ensures that its development resources are directed toward areas with higher growth potential. For example, the RX 9070 GRE's custom cooling solutions and performance benchmarks (as detailed in our Ryzen Z1 Extreme driver halt analysis) highlight AMD's commitment to innovation in discrete GPUs rather than integrated solutions.
 
+[![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
@@ -74,10 +77,7 @@ The halt in driver updates directly affects UK gamers using devices powered by t
 
 Moreover, the lack of driver support may deter potential buyers. Gamers seeking long-term value might opt for newer devices with ongoing AMD [driver updates](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market), such as those featuring the Ryzen 9000 series. This could lead to a decline in sales for Z1 Extreme-based handhelds, impacting manufacturers reliant on this chipset. For context, the [AMD Adrenalin 26.2.2 driver](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) update emphasizes AMD's focus on stabilizing newer hardware, further underscoring the disparity in support for older platforms.
 
-
-
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Community Reactions and Workarounds
 
@@ -85,16 +85,18 @@ The news has sparked mixed reactions within the UK gaming community. Some users 
 
 However, community-driven solutions may offer temporary relief. For example, third-party driver repositories or community-developed patches could extend the lifespan of the Ryzen Z1 Extreme. Additionally, users might explore alternative software optimizations, such as lowering in-game settings or using lightweight emulators. That said, these workarounds are not guaranteed to resolve all issues and may require technical expertise.
 
+
+
+[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
+
+
 ## Looking Ahead: What Does This Mean for AMD?
 
 AMD's move signals a broader trend in the tech industry, where companies prioritize newer architectures to stay competitive. While this may benefit consumers in the long run through improved hardware, it leaves a gap in support for existing products. For AMD, this decision could affect its reputation in the gaming handheld space, where reliability and long-term support are key selling points.
 
 That said, AMD has not entirely abandoned the Z1 Extreme ecosystem. The company continues to support its discrete GPUs, as seen in the RX 9070 GRE's thermal and benchmark performance. This duality highlights the importance of diversifying hardware investments to mitigate risks associated with older platforms.
 
-
-
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
-
 
 ## What Gamers Can Do Now
 
@@ -111,10 +113,7 @@ This situation reflects a wider industry pattern where hardware support timeline
 
 For UK consumers, this means being more strategic about hardware purchases. Understanding a product's expected support lifecycle before investing can prevent disappointment down the road. It also highlights the value of platforms with strong community support, as these can often extend the useful life of hardware beyond official support periods.
 
-
-
 [![AMD Radeon RX 7600](https://m.media-amazon.com/images/I/714nXgTiuAL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7600+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Conclusion
 

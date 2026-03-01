@@ -62,6 +62,9 @@ This year's tech landscape is buzzing with upgrades, and if you're a gamer or bu
 
 Let's start with the big picture: this year has seen a surge in demand for high-performance gaming cards, and AMD continues to push the envelope with its Ryzen 7 5800X lineup. If you're considering this model for your next build, it's worth understanding why it stands out—not just for its specs, but for the real-world performance you can expect. The Ryzen 7 5800X, priced around £349 in the UK, offers 8 cores, 16 threads, a base clock of 3.8GHz, and a boost clock up to 4.7GHz. In gaming benchmarks, it consistently delivers high fe rates in popular titles like Cyberpunk 2077 and Elden Ring, making it a solid mid-range option for 2026.
 
+[![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 4080 Super | From £959 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21 -->
@@ -77,10 +80,7 @@ A user on r/Amd shared an intriguing update about the **AMD RX 9070 GRE Yeston W
 
 The video itself, available on YouTube, walks through these details, giving a visual overview that complements the written analysis. If you're on the lookout for a card that balances power and peace of mind, this is worth noting. The [RX 9070 GRE](https://ctrlaltstock.com/blog/amd-rx-9070-gre-waifu-edition-china-benchmarks) Yeston Waifu features 5,120 stream processors, a 256-bit memory interface with 16GB of GDDR6 memory running at 18Gbps, and a boost clock of 2.6GHz, positioning it as a strong competitor to NVIDIA's RTX 4070.
 
-
-
 [![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Why This Matters for Prices This Year
 
@@ -89,6 +89,11 @@ As we look ahead into this year's market, it's clear that pricing strategies are
 If you're comparing this card to similar models like the Intel i7-14700K or the [NVIDIA GeForce](https://ctrlaltstock.com/blog/micron-gddr7-memory-finally-spotted-on-a-geforce-rtx-50-card-bringing-the-series) RTX 4070, the RX 9070 GRE Yeston provides a compelling value proposition. It's not the highest on the market, but it delivers strong results for the price—making it a practical choice for everyday [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming). In fact, the RTX 4070 currently retails for around £599 in the UK, while AMD's offering sits at approximately £499, offering a 20% price advantage with only a 5-10% performance difference in most gaming scenarios.
 
 In fact, checking current prices across retailers reveals that this card is now available for around £499, a price that reflects both demand and the competitive landscape. For those in the UK, this is a good time to act before it sells out. Looking at price history, the card has dropped from its initial MSRP of £549 in January 2026, making it an even better value proposition. Major UK retailers like Overclockers UK, Ebuyer, and Scan currently have [stock](https://ctrlaltstock.com/blog/global-memory-chip-shortage-impacting-consumer-electronics-production), with occasional discounts bringing the price down to as low as £469 during promotional periods.
+
+
+
+[![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
+
 
 ## What to Buy Right Now
 
@@ -100,10 +105,7 @@ If you're ready to upgrade or upgrade your existing rig, here are some actionabl
 
 One of the standout features of this card is its compatibility with future upgrades. Whether you're planning to add a new GPU or upgrade your CPU, this RX model is built to handle the demands of the next generation of games. It supports PCIe 4.0, ensuring compatibility with current and next-gen motherboards, and its 16GB of VRAM provides ample headroom for future game titles that are expected to require more memory as 4K gaming becomes more mainstream.
 
-
-
 [![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Final Thoughts
 

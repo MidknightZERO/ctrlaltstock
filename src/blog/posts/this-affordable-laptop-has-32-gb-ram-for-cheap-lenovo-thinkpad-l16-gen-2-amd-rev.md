@@ -71,6 +71,9 @@ Beyond the raw specs, the laptop’s build quality remains true to the ThinkPad 
 
 For those who have been following the CtrlAltStock Discord, the conversation has shifted from “when will the [RTX 4090](https://ctrlaltstock.com/blog/amd-ryzen-500-medusa-rdna-4m-igpu-shows-rdna-4-matrix-isa-support-fsr-4-support-) drop in price?” to “which budget-friendly workstation should I grab before the next price hike?” The consensus is that the Lenovo ThinkPad L16 Gen 2 AMD offers a rare blend of RAM, CPU, and GPU at a price that aligns with the current market dip.  
 
+[![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
@@ -90,10 +93,7 @@ Price trends over the past six months show a modest **3-5% dip** in mid-range wo
 
 For price-sensitive buyers, the implication is clear: waiting for a “perfect” moment may no longer be necessary. The current discount is unlikely to be matched soon, especially as the **AMD Ryzen 7 7840HS** is expected to remain in production for at least another year. However, savvy shoppers should keep an eye on seasonal sales — **Black Friday** and **Boxing Day** often bring additional markdowns of **10-15%** on premium laptops.  
 
-
-
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Our recommendation / What to buy right now  
 
@@ -113,3 +113,6 @@ If you’re ready to upgrade, here are three concrete steps to secure the best d
 - ✅ Ports **Thunderbolt 4 (2x), HDMI 2.1, 3.5mm jack**  
 - ✅ Battery **Up to 10 hours (mixed use)**  
 - ✅ Build **MIL-STD-810H certified magnesium-aluminium chassis**
+
+
+[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)

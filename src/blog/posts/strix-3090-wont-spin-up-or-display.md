@@ -66,6 +66,9 @@ From a reporting standpoint, the incident is framed as a community-driven warnin
 
 One user recounted a story where they purchased an RTX 3080 for £350, only to find that the [thermal paste](https://ctrlaltstock.com/blog/gigabyte-rtx-2080-thermal-case-study-289c-hotspot-156c-dt-1347-score) had dried out, causing overheating issues. Another shared an experience with an RX 6800 XT that had a defective [memory](https://ctrlaltstock.com/blog/rtx-50-micron-gddr7-memory-supplier-diversification) module, requiring a professional repair that cost nearly as much as the card itself. These anecdotes serve as cautionary tales for those considering the second-hand market, emphasizing the need for thorough inspection and, if possible, professional testing.
 
+[![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 4070 Super | From £579 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21 -->
@@ -86,6 +89,5 @@ These figures suggest that while the RTX 3090 remains a price-attractive option 
 For those still drawn to the allure of the RTX 3090, it’s crucial to approach the second-hand market with caution. Buyers should insist on seeing the card in action, checking for any signs of physical damage, and, if possible, running a stress test to ensure stability. Additionally, considering the card’s age and the potential for wear and tear, investing in a high-quality power supply and a robust cooling solution can help mitigate some of the risks associated with older hardware.
 
 The market for second-hand GPUs can be a goldmine for those willing to put in the effort, but it requires a keen eye and a healthy dose of skepticism. As the Reddit incident demonstrates, even seemingly minor issues can lead to significant headaches and unexpected costs. By staying informed and vigilant, UK PC enthusiasts can navigate the second-hand market with confidence, snagging great deals without falling victim to the hidden pitfalls of pre-owned hardware.
-
 
 [![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)

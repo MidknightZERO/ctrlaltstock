@@ -82,6 +82,9 @@ title: 'Virtual Boy Review: Nintendo''s Oddest Switch Accessory Yet Is an Immers
 
 ---
 
+[![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 4070 Super | From £579 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21 -->
@@ -95,10 +98,7 @@ Nintendo surprised the gaming community on 20 February 2026 with the **Virtual B
 
 ---
 
-
-
 [![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 ## How does it work?  
 
@@ -108,6 +108,11 @@ Setting up the VB‑01 is straightforward but requires a few steps. First, plug 
 
 ---
 
+
+
+[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
+
+
 ## The experience  
 
 ### A monochrome museum piece  
@@ -115,8 +120,6 @@ Setting up the VB‑01 is straightforward but requires a few steps. First, plug 
 Playing with the VB‑01 is a trip. The red monochrome visuals, reminiscent of the original Virtual Boy’s 1995 launch, create a stark, immersive environment. Games like **Mario’s Tennis** (1995) and **Red Alarm** (1995) showcase the limitations of the original [hardware](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) – blocky graphics, no color, and a distinct 3D illusion achieved through parallax scrolling. The experience feels more like a museum exhibit than a practical gaming device today. The "3D" effect is subtle, relying on the brain’s perception of depth from the red/green separation, but it’s not true stereoscopic 3D. The lack of modern features like motion controls or online play is immediately apparent, highlighting why the Virtual Boy was discontinued after just 13 months in 1995.  
 
 ---
-
-
 
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
 
@@ -147,10 +150,7 @@ The original Virtual Boy (released in 1995) was a commercial and critical failur
 
 ---
 
-
-
 [![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Final verdict  
 

@@ -59,6 +59,9 @@ AMD's current generation of Radeon GPUs has impressed critics and consumers alik
 
 The Radeon RX 7900 XT and RX 7800 XT have particularly stood out in the market, delivering 4K gaming performance that was previously reserved for much more expensive cards. This has forced NVIDIA to adjust its pricing strategy, ultimately benefiting consumers across the board. As we've seen in recent driver updates like the AMD Software: Adrenalin Edition 26.2.2 Release Notes, AMD continues to optimize their software stack to extract maximum performance from their hardware.
 
+[![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
@@ -70,10 +73,7 @@ As of February 2026, AMD GPUs have maintained their reputation as budget-friendl
 
 The recent AMD Adrenalin 26.2.2 Driver: Stability Fixes for RX 7000 Gamers has addressed several performance issues that early adopters reported, further solidifying AMD's position in the market. These stability improvements have translated to better real-world performance, making AMD GPUs even more attractive to potential buyers concerned about long-term reliability.
 
-
-
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
-
 
 ## [AMD](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update)'s Technological Advancements in 2026
 
@@ -81,16 +81,18 @@ One of the most significant developments in AMD's [GPU](https://ctrlaltstock.com
 
 The recent frequency world record achieved with the [Radeon RX 9060 XT](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz) at 4.769 GHz showcases AMD's potential in the overclocking community. As reported in "[AMD Shatters GPU Frequency World Record with Radeon RX 9060 XT at 4.769 GHz](https://ctrlaltstock.com/blog/amd-radeon-rx-9060-xt-frequency-world-record-4-769-ghz)", this achievement highlights the engineering prowess behind AMD's latest architecture, pushing the boundaries of what's possible in consumer graphics cards.
 
+
+
+[![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
+
+
 ## Future Roadmap: What to Expect from AMD
 
 Looking ahead, AMD's roadmap reveals exciting developments that will shape the GPU market in the coming years. The upcoming Zen 6 architecture, codenamed "Olympic Ridge," is reportedly set to launch in 2027 according to "AMD Zen 6 desktop Ryzen 'Olympic Ridge' reportedly set to launch in 2027". This next-generation CPU architecture will likely be paired with an equally impressive GPU evolution, potentially introducing revolutionary performance improvements.
 
 Speculations suggest that the "AMD Zen 6 'Olympic Ridge' Ryzen desktop CPUs may come in in 6, 8, 10, 12, 16, 20 and 24-core configs" could represent a significant leap in multi-threaded performance, which would benefit GPU rendering and compute tasks. This diversification of core configurations indicates AMD's commitment to addressing various market segments from budget to high-end solutions.
 
-
-
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
-
 
 ## UK Market Considerations and Availability
 
@@ -104,10 +106,7 @@ AMD's driver team has made remarkable progress in optimizing performance across 
 
 The stability improvements in the latest driver updates have reduced the frequency of crashes and graphical glitches that some users experienced with earlier iterations. This increased reliability has been particularly important for content creators who depend on their GPUs for professional work, as system stability is paramount for productivity applications.
 
-
-
 [![NVIDIA GeForce RTX 5070 Ti](https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Competitive Landscape in 2026
 
@@ -124,6 +123,5 @@ The combination of strong performance, competitive pricing, and continuous drive
 For those considering an upgrade, the current state of the market presents an opportune moment to evaluate AMD's offerings, as the combination of mature technology and competitive pricing makes their GPUs excellent choices for various use cases.
 
 If you liked this, check out our article on AMD Zen 6 desktop Ryzen "Olympic Ridge" reportedly set to launch in 2027.
-
 
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)

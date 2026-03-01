@@ -81,6 +81,9 @@ Microsoft doubled down with the Xbox One in 2013, making the updated Kinect 2.0 
 
 The final cessation of manufacturing, confirmed this week, merely codifies a long-observed reality. Retail shelves have been bare of new Kinect units for years. The accessory that once sold millions now joins the Sega Dreamcast VMU and the Nintendo 64 Expansion Pak in the hall of discontinued hardware. For the community, it's a closed chapter. As another r/XboxSeriesX member put it, "It was fun while it lasted, but the writing was on the wall after the Xbox One X launched with no mention of it. This just makes it official."
 
+[![PlayStation 5 Pro](https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: PlayStation 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
@@ -97,10 +100,7 @@ With manufacturing officially dead, the new-in-box market for Kinect is now a fi
 
 **The Bottom Line:** If you want a Kinect for a retro [Xbox](https://ctrlaltstock.com/blog/billions-of-dollars-later-and-still-nobody-knows-what-an-xbox-is) 360 or Xbox One setup, prices won't plummet. They're already at rock bottom for what is essentially obsolete tech. The opportunity is in the slight increase in supply, making it easier to find one *at all*. Set a eBay saved search for "Kinect sensor" with a max price of £20 and be ready to pounce on a local collection deal.
 
-
-
 [![Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
-
 
 ## Our Recommendation: What to Buy Right Now for Motion Gaming
 
@@ -125,3 +125,6 @@ The death of Kinect forces a choice: embrace its ghost for cheap retro fun, or l
 *   Used Xbox 360 Kinect: **£5 - £15**
 *   Used Xbox One Kinect 2.0: **£15 - £30**
 *   New
+
+
+[![Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)

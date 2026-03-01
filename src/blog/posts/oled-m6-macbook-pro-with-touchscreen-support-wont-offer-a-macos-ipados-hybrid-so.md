@@ -73,6 +73,8 @@ To understand Apple’s stance, it’s helpful to compare the OLED M6 MacBook Pr
 #### 1. **Ecosystem Integration**
 Apple’s ecosystem is built on tight integration between hardware, software, and services. While competitors may offer hybrid functionality, Apple prioritizes a cohesive experience across its devices. For example, features like AirDrop, Handoff, and Universal Clipboard work best when users stick to a single operating system. A hybrid MacBook
 
+[![AMD Ryzen 7 7800X3D](https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21)
+
 
 
 

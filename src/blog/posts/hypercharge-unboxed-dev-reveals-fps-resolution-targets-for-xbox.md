@@ -58,6 +58,9 @@ The latest buzz comes from a Reddit user who shared details from a recent dev li
 
 The dev also mentioned that the title will leverage the **Xbox Velocity Architecture** to stream assets dynamically, reducing load times and maintaining smooth performance even during intense firefights. For context, *Hypercharge: Unboxed* is shaping up to be a spiritual successor to *Unreal Tournament*, with a focus on arena-style combat and fluid movement. Achieving 120 FPS in such a demanding genre isn’t just a technical achievement—it’s a game-changer for players who prioritize responsiveness in competitive shooters.
 
+[![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
@@ -69,10 +72,7 @@ With *[Hypercharge: Unboxed](https://ctrlaltstock.com/blog/xbox-series-x-hyperch
 
 For PC gamers, the news is equally relevant. If *Hypercharge: Unboxed* launches on PC alongside Xbox, its performance targets could influence hardware upgrades. A GPU like the **NVIDIA [RTX 4080 Super](https://ctrlaltstock.com/blog/ctrlaltstock-guide-2026)** (priced at £899 in the UK) or **AMD Radeon RX 7900 XTX** (£849) would be ideal for hitting those 120 FPS/4K specs, but budget-conscious builders might consider the **RTX 4070 Ti Super** (£679) for a more affordable yet capable option. On the CPU front, pairing the game with an **[AMD Ryzen](https://ctrlaltstock.com/blog/amd-ryzen-500-medusa-rdna-4m-igpu-shows-rdna-4-matrix-isa-support-fsr-4-support-) 5 7600** (£180) ensures smooth multitasking without bottlenecking the GPU. For those on tighter budgets, the **RTX 4060 Ti** (£379) paired with a **Ryzen 5 5600** (£120) could still deliver a solid 1080p/120 FPS experience.
 
-
-
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Our Recommendation: Watch, Wait, and Save
 
@@ -82,12 +82,16 @@ So, what should you do with this information? Here’s our actionable advice for
 - **Upgrade your setup incrementally**. If you’re using a mid-range GPU like the RTX 3060 (£299), consider saving for an RTX 4070 Ti Super when prices stabilize. For consoles, the Xbox Series X|S is currently available refurbished for as low as £249 on eBay—perfect for experiencing the game’s full potential. Alternatively, the Series S (£249 new) offers a more affordable entry point, though it targets 1440p/120 FPS rather than 4K.
 - **Join the CtrlAltStock Discord** to stay ahead of the curve. Our community regularly shares deals on hardware and software, and members have already spotted £20 discounts on Xbox Game Pass Ultimate subscriptions this week. We also track price drops on peripherals like the **Razer DeathAdder V3 Pro** (£139) and **Logitech G502 X** (£99), which pair well with high-refresh-rate gaming.
 
+
+
+[![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
+
+
 ## Final Thoughts
 
 *Hypercharge: Unboxed* isn’t just another FPS—it’s a litmus test for how far next-gen hardware can push the envelope. For UK gamers, this means opportunities to snag high-performance gear at reduced prices, provided you stay informed and proactive. Whether you’re building a PC or upgrading your console, the key is to act quickly when deals arise. The game’s 120 FPS/4K targets also highlight the growing importance of high-refresh-rate monitors. A 27” 1440p/144Hz display like the **Dell S2722DGM** (£279) or the **LG UltraGear 27GP850-B** (£299) would be a perfect match for the Xbox Series X|S version, while PC gamers might consider a 4K/144Hz monitor like the **Samsung Odyssey G7** (£649) for future-proofing.
 
 Ready to dive deeper? **Join our 10,000-member CtrlAltStock Discord** for live stock alerts, hardware comparisons, and exclusive member-only discounts. Let’s keep pushing the limits of what’s possible in gaming—together.
 ---
-
 
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)

@@ -66,6 +66,9 @@ Recent retailer service-rate data has identified two specific AMD RX 9070 XT mod
 The ASRock Taichi variant, typically priced around £649-£699, features a premium triple-fan cooler design with RGB lighting and a robust PCB incorporating enhanced VRMs and a larger 12-phase power delivery system. Meanwhile, the PowerColor Reaper, usually available for £599-£649, opts for a more aggressive aesthetic with its angular shroud and dual-fan configuration. Both cards utilize the same Navi 48 GPU core and deliver identical gaming performance when compared at stock settings. However, the service-rate data suggests that build quality or component choices may differ significantly between these models and their competitors.
 Other RX 9070 XT models from brands like Gigabyte, MSI, and ASUS showed notably lower service rates in the same dataset, with some reporting up to 40% fewer warranty returns than the ASRock and PowerColor variants. This discrepancy highlights that even within the same model line, variations in manufacturing quality, component sourcing, and thermal management can lead to vastly different reliability outcomes.
 
+[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: AMD Radeon RX 7800 XT | From £479 | https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21 -->
@@ -75,9 +78,7 @@ Other RX 9070 XT models from brands like Gigabyte, MSI, and ASUS showed notably 
 The revelation about higher service rates hasn't yet translated into significant price drops for these specific models. Currently, the ASRock [RX 9070](https://ctrlaltstock.com/blog/china-only-amd-rx-9070-gre-yeston-waifu-thermals-gaming-noise-benchmarks) XT Taichi remains priced at £679 at Overclockers UK, while the PowerColor RX 9070 XT Reaper sits at £629 on Scan.co.uk. However, price tracking data from the past month shows these models have been slightly more prone to discounts compared to lower-service-rate alternatives. The ASRock variant has seen three price drops in the past 30 days, with the largest being £20 off, while the PowerColor Reaper has had two £15 reductions.
 For budget-conscious buyers, this presents a potential opportunity. Retailers may become more aggressive with pricing on these higher-service-rate models to move inventory, particularly as newer RX 9070 XT variants from other manufacturers continue to launch. The standard RX 9070 XT models from brands with better service records currently range from £599-£649, making them competitive options despite the higher-service-rate models' occasional discounts. Buyers should also consider that models with higher failure rates might carry shorter warranty periods or stricter return policies from some retailers.
 
-
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
-
 
 ## What to buy right now
 If you're in the market for an RX 9070 XT this month, our recommendation depends on your priorities:
@@ -85,11 +86,15 @@ If you're in the market for an RX 9070 XT this month, our recommendation depends
 **For the best value:** The ASRock Challenger models (£599) offer solid performance with better reliability than their Taichi siblings. These represent the sweet spot between price and dependability. Alternatively, the MSI RX 9070 XT Gaming X (£649) provides a balanced option with strong cooling and proven reliability.
 **For maximum performance:** If you're specifically interested in the ASRock Taichi or PowerColor Reaper, wait for additional price drops. Set price alerts through services like CamelCamelCamel or join our CtrlAltStock Discord where members share real-time stock and price updates. These models often see deeper discounts as newer stock arrives or during seasonal sales events.
 For those willing to consider alternatives, the RX 9070 (£499-£549) offers nearly identical 1440p performance with better power efficiency, while NVIDIA's RTX 4070 Ti Super (£589-£629) provides superior ray tracing performance if that's a priority for your gaming setup. The RTX 4070 Ti Super also typically has lower service rates than the highest-risk RX 9070 XT models.
+
+
+[![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
+
+
 ## Final thoughts
 The service-rate data serves as an important reminder that not all graphics cards are created equal, even within the same model line. While the ASRock RX 9070 XT Taichi and PowerColor RX 9070 XT Reaper may offer attractive designs and competitive pricing, their higher failure rates suggest they might not represent the best long-term value. This is particularly true when considering the potential cost of warranty claims or replacement parts.
 For UK PC builders watching their budgets, this information could save both money and frustration in the long run. Whether you're building a new system or upgrading an existing one, choosing a model with better reliability statistics often proves more economical than chasing the lowest upfront price. Always factor in potential support costs and downtime when evaluating the true cost of ownership.
 Join our 10,000-member CtrlAltStock Discord community for live stock alerts, price tracking, and discussions about which GPUs offer the best bang for your buck. Our members regularly share their experiences with different models, helping everyone make more informed purchasing decisions.
 If you liked this, check out our article on RTX 4090 Price Plummets: [Max Crash Mystery Solved by Community Wisdom](https://ctrlaltstock.com/blog/rtx-4090-price-drop-max-crash-community-solution).
-
 
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)

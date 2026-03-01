@@ -68,6 +68,9 @@ This diversification of memory suppliers also carries implications for performan
 
 For the UK market specifically, this development could mean fewer grey market imports and more cards available through official channels like Scan, Overclockers UK, and Box Limited. A Reddit user commented on this aspect: "As someone in the UK who struggled to find cards at launch prices during the last generation, having proper supply through authorised channels would make a massive difference to how we buy GPUs. It means proper UK warranty, easier returns, and no surprise import VAT bills." The presence of a major US-based supplier like Micron also strengthens the global logistics network, potentially streamlining shipments to European distribution hubs.
 
+[![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 4070 Super | From £579 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21 -->
@@ -84,10 +87,7 @@ The shift to GDDR7 is more than just a new supplier; it's a generational leap in
 
 Micron's entry is particularly notable because they have been a leader in developing high-speed, low-power DRAM for data centres and have recently announced their "G9X" node for graphics memory, which they claim offers superior performance-per-watt. This could be a key differentiator for [NVIDIA](https://ctrlaltstock.com/blog/celebrating-the-geforce-3-its-revolutionary-programmable-shaders-25-years-later) in managing the higher power demands of PAM4.
 
-
-
 [![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 ## What does this mean for prices?
 
@@ -104,6 +104,11 @@ For budget-conscious UK gamers, the current market presents some interesting opp
 
 However, those holding out for the RTX 50 series should consider what they're getting for their wait. While the new architecture (codenamed "Blackwell" or "Blackwell GB") promises improvements in efficiency (more performance per watt) and features like a next-gen DLSS frame generation (DLSS 4), early leaks suggest the performance gains may be more evolutionary than revolutionary—perhaps 30-50% generational uplift over RTX 40, not the 80-100% jumps of past generations. A community member is quoted as saying, "I'm excited about the RTX 50, but I'm also realistic that it might not be a generational leap like we've seen before. That makes me question whether it's worth waiting another year, especially if I can get a great deal on a discounted 40-series now."
 
+
+
+[![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)
+
+
 ## Our recommendation / What to buy right now
 
 Based on current market conditions, pricing trends, and the RTX 50 developments, we recommend UK gamers consider their specific needs and timelines carefully. If you need a GPU immediately and find a good deal on current-generation hardware, there are solid options available. However, if you can wait and want the latest technology with potentially better availability, the RTX 50 series launch could be worth the patience.
@@ -111,6 +116,5 @@ Based on current market conditions, pricing trends, and the RTX 50 developments,
 The inclusion of Micron as a memory supplier is a positive sign for the UK market, suggesting we might see better stock levels and more competitive pricing when these cards arrive. Keep an eye on official UK retailers rather than relying on grey imports, and be prepared for launch day if you want to secure a card at MSRP.
 
 If you liked this, check out our article on Micron GDDR7 on RTX 50: What This Means for Your Next GPU Deal.
-
 
 [![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)

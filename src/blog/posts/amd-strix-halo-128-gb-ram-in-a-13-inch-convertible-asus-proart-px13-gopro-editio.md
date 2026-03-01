@@ -54,6 +54,11 @@ title: AMD Strix Halo &amp; 128 GB RAM in a 13-inch convertible - Asus ProArt PX
 ---
 
 The ASUS ProArt PX13 GoPro Edition has captured significant attention in the UK market. It positions itself as a standout option for professionals, students, and small business owners. This review highlights its robust performance and value for those seeking a portable workstation.
+
+
+<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
+
+
 The device features the AMD Ryzen AI 9 3990HX processor, known as the Strix Halo. This chip is designed for efficiency and multitasking, paired with an RDNA 3-based GPU. These components enable smooth operation for demanding tasks like 3D rendering and video editing. For further updates, check the latest driver releases for the AI 9 3990HX.
 One of its key strengths is the 128 GB DDR5-6000 RAM, supplied by Corsair. This upgrade from typical 16 GB provides ample memory for professionals. The RAM module, priced at £179.99, adds significant value for its performance.
 The 13-inch 2.8K OLED display stands out with high visibility and 360-degree rotation. This makes it ideal for graphic designers and video producers. The release timeline was set for early 2026, with availability expected by mid-2026.
@@ -67,5 +72,5 @@ Software compatibility with Windows 11 Pro is excellent, leveraging the AMD proc
 Upgrade paths are possible, with user-accessible RAM and expandable storage options. The PC supports PCIe 4.0 NVMe SSDs for more storage.
 Security features include a fingerprint reader and Windows Hello, protecting sensitive data. This is crucial for business users handling confidential information.
 In summary, the ProArt PX13 GoPro Edition is a strong contender in the UK market. Its blend of performance, build quality, and features makes it suitable for diverse professional needs.
-Check out more on AMD’s latest processor updates for stability fixes and performance enhancements.
-For those interested in similar options, explore AMD’s gaming handheld releases and driver updates.
+Check out more on AMD’s latest processor updates for [stability](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) fixes and performance enhancements.
+For those interested in similar options, explore AMD’s [gaming handheld](https://ctrlaltstock.com/blog/amd-halts-driver-updates-ryzen-z1-extreme-uk-market) releases and driver updates.

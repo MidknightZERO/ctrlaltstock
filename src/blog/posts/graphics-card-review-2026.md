@@ -82,6 +82,9 @@ The *[RTX 4080 Super](https://ctrlaltstock.com/blog/ctrlaltstock-guide-2026)* is
 
 Discussions on r/buildapc highlight that users with these cards report minimal stuttering in *GTA VI* previews, even on high settings. One user noted, “I ran *GTA VI* at 4K with ray tracing on medium settings using an RTX 4080 Super, and it averaged 45 FPS—smooth enough for me.” Another added, “The RTX 4090 takes it to 70+ FPS, but the price jump isn’t justified unless you’re a hardcore 4K enthusiast.”  
 
+[![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 4080 Super | From £959 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21 -->
@@ -101,10 +104,7 @@ Beyond *GTA VI*, these cards excel in other titles. For example, the *RTX 4090* 
 
 A UK-based reviewer on CtrlAltStock tested both cards and found that the *RTX 4080 Super* performs similarly to the older *RTX 3080 Ti* in many titles, making it a cost-effective upgrade for those with a mid-range budget.  
 
-
-
 [![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Price Analysis: What You Should Know This Year  
 
@@ -122,3 +122,6 @@ Prices for these cards are volatile due to:
 - **Supply Chain Bottlenecks:** Shortages of components like GDDR6X memory can drive up costs.  
 - **Cryptocurrency Mining Demand:** Though mining has declined, occasional spikes in demand can temporarily inflate prices.  
 - **New Model Launches:** When NVIDIA releases a new card (e.g., the rumored
+
+
+[![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)

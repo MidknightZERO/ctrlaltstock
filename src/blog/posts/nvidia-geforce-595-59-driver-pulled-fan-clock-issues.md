@@ -69,6 +69,9 @@ The Xbox Series X and PS5 Pro both represent the pinnacle of current-gen gaming 
 
 The PS5 Pro also includes 16GB of GDDR6 RAM but with a higher bandwidth configuration, and features a 1TB SSD with even faster read speeds than the Xbox Series X.
 
+[![NVIDIA GeForce RTX 5070 Ti](https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 5070 Ti | From £699 | https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21 -->
@@ -80,10 +83,7 @@ When it comes to exclusive titles, both consoles have their strengths. The PS5 P
 
 The Xbox Series X, meanwhile, benefits from Microsoft's Game Pass subscription service, which offers access to hundreds of games including day-one releases of Xbox exclusives like *Halo Infinite*, *Forza Horizon 5*, and *Starfield*. The value proposition of Game Pass cannot be overstated, especially when considering the cost of building a game library over time.
 
-
-
 [![NVIDIA GeForce RTX 5070 Ti](https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Performance in Real-World [Gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming)
 
@@ -93,16 +93,18 @@ The [Xbox Series X](https://ctrlaltstock.com/blog/dreamgame-resident-evil-requie
 
 The [PS5 Pro](https://ctrlaltstock.com/blog/ps5-pro-enhanced-games-pssr-2-0), while slightly less powerful in raw teraflops, makes up for it with superior ray tracing performance and the aforementioned PSSR AI upscaler. This technology allows the PS5 Pro to deliver better visual fidelity at lower performance costs, particularly in games with intensive lighting and shadow effects.
 
+
+
+[![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
+
+
 ## Storage and Expandability
 
 Both consoles offer 1TB of internal storage, but their approaches to expansion differ significantly. The Xbox Series X uses a proprietary Seagate Storage Expansion Card that slots directly into the console's rear port. While this solution offers seamless integration and identical performance to the internal SSD, it comes at a premium price point.
 
 The PS5 Pro uses a standard M.2 NVMe SSD slot for expansion, allowing users to choose from a wider range of compatible drives at various price points. This flexibility can be particularly appealing for users who want to maximize their storage without breaking the bank.
 
-
-
 [![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
-
 
 ## User Interface and Features
 
@@ -116,10 +118,7 @@ Xbox Series X takes the crown when it comes to backward compatibility. The conso
 
 The PS5 Pro offers backward compatibility with most PS4 games, and an increasing number of PS5 titles are receiving Pro enhancements. However, its backward compatibility doesn't extend as far back as the Xbox Series X's impressive catalog.
 
-
-
 [![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Price and Value Proposition
 
@@ -147,10 +146,7 @@ Choose the **PS5 Pro** if you:
 - Value the upcoming enhanced PSSR AI upscaler
 - Don't mind paying a premium for Sony's first-party experiences
 
-
-
 [![NVIDIA GeForce RTX 5070 Ti](https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21)
-
 
 ## The Verdict
 

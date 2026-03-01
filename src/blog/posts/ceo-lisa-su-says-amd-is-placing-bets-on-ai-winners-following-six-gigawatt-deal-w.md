@@ -65,6 +65,9 @@ Another angle to consider is how this deal might influence AMD’s product roadm
 
 Meanwhile, the Reddit community r/Amd has been buzzing about this news. One user, u_GPU_Guru, posted: “This is huge. If AMD is getting such a massive contract, they’ll need to ramp up production. I’m already seeing [stock](https://ctrlaltstock.com/blog/global-memory-chip-shortage-impacting-consumer-electronics-production) alerts for the MI300X on Discord.” Another user, u_BudgetGamerUK, added: “I hope this means better prices for consumer GPUs. I’ve been waiting for a decent RX 7900 XTX deal for months.” These reactions highlight the community’s eagerness to see how this partnership translates to real-world benefits. UK-focused forums like Overclockers UK’s forums and the TechSpot UK community have echoed this sentiment, with threads dissecting whether this is a “good omen for Black Friday deals” or a “sign to buy [NVIDIA](https://ctrlaltstock.com/blog/celebrating-the-geforce-3-its-revolutionary-programmable-shaders-25-years-later) instead.”
 
+[![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
@@ -83,12 +86,12 @@ For those tracking specific products, the AMD Radeon RX 7900 XTX and the Instinc
 
 Finally, the impact on power supply and efficiency shouldn’t be overlooked. Data centers require massive amounts of energy, and AMD’s six-gigawatt deal with Meta might influence how the company designs its future GPUs. If AMD develops more energy-efficient chips for Meta—focusing on performance-per-watt to reduce operational costs—those technologies (like advanced voltage regulation, chiplet packaging optimisations, or new low-power states) could eventually trickle down to consumer products. This could make future RDNA 4 GPUs not just faster, but also cheaper to run, a significant consideration with rising UK electricity prices.
 
-
-
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Our Recommendation / What to Buy Right Now  
 Given the uncertainty around pricing and availability, the best approach is to stay informed and act quickly. If you’re looking to buy an AMD GPU, now is a good time to set price alerts on UK retailers like Scan.co.uk, Overclockers.co.uk, or Amazon UK, and monitor stock tracking tools. For example, the Radeon RX 7900 XTX is a strong contender if you’re a gamer or content creator. At around £1,200 for premium models, it offers excellent performance for 4K gaming and creative workloads in apps like DaVinci Resolve. If prices drop due to increased supply from the Meta deal, it could be an even better deal, potentially matching the £900-£1,000 range we’ve seen on sale.
 
 For those interested in AI or data center-grade hardware for a home server
+
+
+[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)

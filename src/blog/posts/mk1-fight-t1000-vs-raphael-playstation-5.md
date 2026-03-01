@@ -61,6 +61,9 @@ While Sony has not issued an official statement, the speculation has already fil
 Industry analysts have noted that the hype is not limited to the console itself. Accessories that enhance the fighting-game experience — particularly high-performance controllers — are also seeing renewed interest. The DualSense Edge (CUH-1000), Sony's premium controller, has been highlighted in several threads as a potential companion for *Mortal Kombat 1* enthusiasts who want customisable button mappings, hair-trigger triggers, and haptic feedback tailored to combat mechanics. Some users on r/PS5 have reported that retailers are bundling the DualSense Edge with MK1 promotional codes, offering a "fighting bundle" that includes a custom skin for the T1000 character.
 The conversation has also spilled over onto Discord, where the CtrlAltStock community has been monitoring real-time stock changes. Members are sharing live alerts on price drops, limited-time bundle offers, and restocks of the PS5 Slim (model CFI-1000) that often appear in the early morning hours. For instance, one CtrlAltStock moderator noted that the PS5 Slim restocked at 2:17 AM GMT on March 1, 2026, selling out within 90 minutes.
 
+[![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
+
+
 
 
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
@@ -86,6 +89,5 @@ The viral MK1 clip has set off a chain reaction that is subtly reshaping the UK 
 - **Future impact**: Analysts predict the Pro's ray tracing capabilities will enhance *Mortal Kombat 1*'s visuals, potentially making the standard PS5 seem outdated.
 These price shifts are relatively modest, but they illustrate how quickly a trending title can influence perceived scarcity and, consequently, consumer willingness to pay a slight premium. For budget-conscious gamers, the lesson is clear: waiting for a post-launch dip may no longer guarantee the lowest price. Last year's *Baldur's Gate 3* launch saw similar patterns, with prices remaining elevated for six weeks after release. If you're considering a PS5 purchase, monitoring real-time price tracking tools like those offered by CtrlAltStock can help you identify the optimal buying window. The community is already reporting that MK1-themed bundles may arrive within the next two weeks, potentially offering better value than standalone consoles.
 If you liked this, check out our article on [Grand Theft Auto VI title IDs have been added to the PlayStation database](https://ctrlaltstock.com/blog/grand-theft-auto-vi-title-ids-have-been-added-to-the-playstation-database).
-
 
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
