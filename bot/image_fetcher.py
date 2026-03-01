@@ -252,8 +252,9 @@ def search_unsplash(query: str, count: int = 3) -> List[str]:
 def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
     """
     Fetch images for an article draft.
-    Prefers Amazon product images (topic-matched, not recently used). Falls back to Unsplash or stock.
-    Excludes cover images used in the past 7 days. Uses primary topic for pool/query selection.
+    Prefers query-based images (Unsplash from image_search_queries) for cover to avoid
+    same product image on every post; then Amazon product images; then stock.
+    Excludes cover images used in the past 7 days.
     """
     title = draft["frontmatter"].get("title", "")
     tags = draft["frontmatter"].get("tags", [])
@@ -261,12 +262,28 @@ def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
     lookback_days = getattr(config.bot, "image_reuse_lookback_days", 7)
     recent_cover_bases = _load_recent_cover_images(lookback_days)
     all_images: List[str] = []
+    stock = _load_stock_images()
+    used = _load_used_images()
 
-    # 1. Prefer Amazon product images — sort by topic match, skip recently used
+    # 1. Prefer Unsplash from image_search_queries (or title) for cover — avoids same Amazon image on every post
+    queries = draft.get("image_search_queries") or [title] + (draft.get("amazon_search_queries") or [])[:2]
+    if config.unsplash.access_key and queries:
+        for query in queries:
+            clean_query = _clean_query_for_images(query, primary_topic)
+            images = search_unsplash(clean_query, count=3)
+            for img in images:
+                base = img.split("?")[0]
+                if base not in recent_cover_bases and img not in all_images:
+                    all_images.append(img)
+                if len(all_images) >= 4:
+                    break
+            if len(all_images) >= 4:
+                break
+
+    # 2. Add Amazon product images — topic-matched, skip recently used
     products = draft["frontmatter"].get("amazonProducts") or []
     if primary_topic == "streaming":
         products = [p for p in products if (p.get("category") or "").lower() != "gpu"]
-    # Put topic-matched products first
     def topic_sort_key(p: Dict[str, Any]) -> int:
         cat = (p.get("category") or "").lower()
         if primary_topic == "gpu" and cat == "gpu":
@@ -278,7 +295,6 @@ def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
         if primary_topic == "storage" and ("storage" in cat or "ssd" in cat):
             return 0
         return 1
-
     sorted_products = sorted(products, key=topic_sort_key)
     for p in sorted_products:
         img = p.get("imageUrl") or ""
@@ -292,25 +308,7 @@ def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
         if len(all_images) >= 4:
             break
 
-    # 2. Try Unsplash API if key available and we need more
-    stock = _load_stock_images()
-    used = _load_used_images()
-    if len(all_images) < 2 and config.unsplash.access_key:
-        # Prefer body-derived image_search_queries from writer; fallback to title + amazon_search_queries
-        queries = draft.get("image_search_queries") or [title] + (draft.get("amazon_search_queries") or [])[:2]
-        for query in queries:
-            clean_query = _clean_query_for_images(query, primary_topic)
-            images = search_unsplash(clean_query, count=3)
-            for img in images:
-                base = img.split("?")[0]
-                if base not in recent_cover_bases and img not in all_images:
-                    all_images.append(img)
-                if len(all_images) >= 4:
-                    break
-            if len(all_images) >= 4:
-                break
-
-    # 3. Fall back to topic-aligned stock images (primary topic first, then tags)
+    # 3. Fall back to topic-aligned stock images if we still need more
     if len(all_images) < 2:
         pool = _get_pool_for_primary_topic(primary_topic, stock)
         if not pool:
@@ -351,6 +349,18 @@ def fetch_images(draft: Dict[str, Any]) -> Dict[str, Any]:
     if unique_images:
         new_used = [unique_images[0]] + used
         _save_used_images(new_used[:USED_IMAGES_MAX])
+
+    # #region agent log
+    try:
+        _logpath = BOT_DIR.parent / ".cursor" / "debug.log"
+        _logpath.parent.mkdir(parents=True, exist_ok=True)
+        first_prod = (draft["frontmatter"].get("amazonProducts") or [])[0] if draft["frontmatter"].get("amazonProducts") else None
+        cover_url = (unique_images[0][:60] + "...") if unique_images and len(unique_images[0]) > 60 else (unique_images[0] if unique_images else "")
+        with open(_logpath, "a", encoding="utf-8") as _f:
+            _f.write(json.dumps({"hypothesisId": "H2", "location": "image_fetcher.fetch_images", "message": "cover_selection", "data": {"primary_topic": primary_topic, "first_product_title": (first_prod.get("title", "")[:40] if first_prod else ""), "first_product_category": (first_prod.get("category", "") if first_prod else ""), "cover_url_preview": cover_url, "title": title[:40]}, "timestamp": __import__("time").time_ns() // 1_000_000}) + "\n")
+    except Exception:
+        pass
+    # #endregion
 
     updated = dict(draft)
     updated["frontmatter"] = dict(draft["frontmatter"])

@@ -98,6 +98,26 @@ def fix_tags(post: fm.Post) -> bool:
     return False
 
 
+def fix_placeholder_excerpt(post: fm.Post) -> bool:
+    """If excerpt is missing or placeholder '---', set from first line of body (word-boundary). Returns True if changed."""
+    existing = (post.get("excerpt") or "").strip()
+    if existing and existing != "---":
+        return False
+    content = post.content or ""
+    lines = [l.strip() for l in content.split("\n") if l.strip() and not l.startswith("#")]
+    if not lines:
+        return False
+    first_line = lines[0]
+    max_len = 200
+    if len(first_line) > max_len:
+        truncated = first_line[: max_len + 1].rsplit(" ", 1)[0]
+        new_excerpt = truncated if len(truncated) >= 50 else first_line[:max_len]
+    else:
+        new_excerpt = first_line
+    post["excerpt"] = new_excerpt
+    return True
+
+
 def extract_phrases(slug: str, title: str, tags: List[str]) -> List[str]:
     """Extract linkable phrases from a post. Longer phrases first for better matching."""
     phrases = []
@@ -731,6 +751,7 @@ def run_backfill(
     amazon_links_added = 0
     images_fixed = 0
     cover_images_updated = 0
+    excerpts_fixed = 0
 
     if images_only:
         for path, post in posts:
@@ -751,6 +772,13 @@ def run_backfill(
                 if not dry_run:
                     fm.dump(post, path)
                 log.info("Fixed Amazon images: %s", path.name)
+
+    for path, post in posts:
+        if fix_placeholder_excerpt(post):
+            excerpts_fixed += 1
+            if not dry_run:
+                fm.dump(post, path)
+            log.info("Fixed placeholder excerpt: %s", path.name)
 
     if tags:
         for path, post in posts:
@@ -796,7 +824,7 @@ def run_backfill(
             if changed:
                 log.info("Added inline images/featured product: %s", path.name)
 
-    if (tags_fixed or links_added or amazon_links_added or images_fixed or inline_images_added or featured_products_added) and not dry_run:
+    if (tags_fixed or links_added or amazon_links_added or images_fixed or inline_images_added or featured_products_added or excerpts_fixed) and not dry_run:
         from publisher import rebuild_blog_json
         rebuild_blog_json(config.git.repo_path)
 

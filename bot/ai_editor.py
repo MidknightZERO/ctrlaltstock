@@ -224,10 +224,39 @@ def run_editorial_pass(draft: Dict[str, Any]) -> Dict[str, Any]:
     edited = dict(draft)
     edited["content"] = improved_content.strip()
 
-    if not edited["frontmatter"].get("excerpt"):
+    # Treat missing or placeholder excerpt as unset; set from first line with word-boundary truncation
+    existing = (edited["frontmatter"].get("excerpt") or "").strip()
+    if not existing or existing == "---":
         lines = [l.strip() for l in improved_content.split("\n") if l.strip() and not l.startswith("#")]
         if lines:
-            edited["frontmatter"]["excerpt"] = lines[0][:200]
+            first_line = lines[0]
+            max_len = 200
+            if len(first_line) > max_len:
+                truncated = first_line[: max_len + 1].rsplit(" ", 1)[0]
+                edited["frontmatter"]["excerpt"] = truncated if len(truncated) >= 50 else first_line[:max_len]
+            else:
+                edited["frontmatter"]["excerpt"] = first_line
+            # #region agent log
+            try:
+                ex = edited["frontmatter"]["excerpt"]
+                _path = __import__("pathlib").Path(__file__).resolve().parent.parent / ".cursor" / "debug.log"
+                _path.parent.mkdir(parents=True, exist_ok=True)
+                with open(_path, "a", encoding="utf-8") as _f:
+                    _f.write(__import__("json").dumps({"hypothesisId": "H3", "location": "ai_editor.run_editorial_pass", "message": "excerpt_from_first_line", "data": {"excerpt_len": len(ex), "excerpt_tail": ex[-30:] if len(ex) >= 30 else ex}, "timestamp": __import__("time").time_ns() // 1_000_000}) + "\n")
+            except Exception:
+                pass
+            # #endregion
+    else:
+        # #region agent log
+        try:
+            ex = edited["frontmatter"].get("excerpt") or ""
+            _path = __import__("pathlib").Path(__file__).resolve().parent.parent / ".cursor" / "debug.log"
+            _path.parent.mkdir(parents=True, exist_ok=True)
+            with open(_path, "a", encoding="utf-8") as _f:
+                _f.write(__import__("json").dumps({"hypothesisId": "H4", "location": "ai_editor.run_editorial_pass", "message": "excerpt_already_set", "data": {"excerpt_preview": ex[:80], "is_placeholder": ex.strip() in ("---", "")}, "timestamp": __import__("time").time_ns() // 1_000_000}) + "\n")
+        except Exception:
+            pass
+        # #endregion
 
     return edited
 

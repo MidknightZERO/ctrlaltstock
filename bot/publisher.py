@@ -74,6 +74,17 @@ def write_post_file(draft: Dict[str, Any], repo_path: str) -> Path:
     slug = draft.get("slug") or draft["frontmatter"].get("slug", "untitled")
     filepath = posts_dir / f"{slug}.md"
 
+    # #region agent log
+    try:
+        _logpath = Path(repo_path) / ".cursor" / "debug.log"
+        _logpath.parent.mkdir(parents=True, exist_ok=True)
+        excerpt_preview = (fm_dict.get("excerpt") or "")[:80]
+        with open(_logpath, "a", encoding="utf-8") as _f:
+            _f.write(json.dumps({"hypothesisId": "H1", "location": "publisher.write_post_file", "message": "write_post_file", "data": {"slug": slug, "path_name": filepath.name, "title": (fm_dict.get("title") or "")[:50], "excerpt_preview": excerpt_preview}, "timestamp": __import__("time").time_ns() // 1_000_000}) + "\n")
+    except Exception:
+        pass
+    # #endregion
+
     markdown = assemble_markdown(draft)
     filepath.write_text(markdown, encoding="utf-8")
     log.info("Written post to: %s", filepath)
