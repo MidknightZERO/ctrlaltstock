@@ -67,7 +67,10 @@ The consequences of this halt extend beyond technical compatibility issues. It r
 
 [![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
 
+
+
 <!-- featured-product: NVIDIA GeForce RTX 3080 Ti | Check used / refurb | https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## The Z1 Extreme: A Key Player in the UK Gaming Landscape  
 

@@ -54,7 +54,10 @@ title: 390TB video game archive being taken offline due to skyrocketing RAM, SSD
 
 The sky‑rocketing price of [RAM](https://ctrlaltstock.com/blog/amd-strix-halo-128-gb-ram-in-a-13-inch-convertible-asus-proart-px13-gopro-editio), SSDs, and hard drive costs isn’t just affecting PC builders. One of the biggest online video‑game archives in the world is now offline. A post went viral on r/pcgaming about the 390 TB "RetroGameVault" collection. This treasure trove of classic titles and indie games will be taken down because keeping the servers running has become unaffordable. With AI‑driven demand squeezing the [supply chain](https://ctrlaltstock.com/blog/rtx-50-micron-gddr7-memory-supplier-diversification), gamers who rely on digital libraries face a new reality: the cheapest way to secure a game may be a price‑alert, not a download button. This situation highlights a broader trend where technological shifts impact individual consumers unexpectedly.
 
-<!-- featured-product: Avatar: The Last Airbender - The Quest for Balance ([Nintendo Switch](https://ctrlaltstock.com/blog/avatar-last-airbender-game-9-99-amazon)) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
+
+<!-- featured-product: Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
+
+
 
 The hardware market has seen significant volatility. Components like those in high‑end builds are becoming increasingly expensive due to [RTX 5090 Connector Melting: UK Gamers Face Ongoing Hardware Crisis](https://ctrlaltstock.com/blog/rtx-5090-connector-melting-uk-gamers). This trend forces a reevaluation of cost‑effective solutions for gamers.
 This collapse underscores the impact of economic pressures on digital preservation. The archive, which once had 150,000 registered users across the UK and Europe, now stands as a cautionary example of how market demands can disrupt essential services. Its creators balanced affordability with functionality, but rising operational costs proved insurmountable. This mirrors other sectors where similar challenges have led to closures or forced changes.

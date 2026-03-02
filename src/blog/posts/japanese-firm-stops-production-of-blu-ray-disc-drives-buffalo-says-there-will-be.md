@@ -56,7 +56,10 @@ title: Japanese firm stops production of Blu-ray disc drives — Buffalo says th
 
 Japanese firm has decided to halt production of its flagship Blu-ray disc drives, marking a significant shift in the UK market for portable storage solutions. This decision comes as part of a broader strategy by the company to pivot away from traditional physical media and embrace digital solutions, much like the trend seen in the GPU market with the adoption of Micron GDDR7 memory for RTX 50 series. The firm, best known for its networking and hub products, is no longer planning to manufacture its current trio of portable USB-attached drives. For UK enthusiasts and professionals relying on these devices, the news brings both uncertainty and a deeper understanding of the evolving storage landscape.
 
+
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
+
+
 
 The impact of this move is particularly felt by users of popular models such as the NiFi P3 and Rugged USB 3.0 drives, which have long been staples in both home and enterprise environments. With production set to cease, consumers will need to turn to alternative suppliers or consider digital alternatives for backing up their data, potentially exploring cloud-based storage services that offer convenience and accessibility. The timing of this decision has sparked concern among retailers and tech ers who had anticipated a transition to cloud-based storage options. However, it reflects a strategic recalibration rather than a failure to innovate, similar to how AMD has been adapting with updates like the Adrenalin Edition 26.2.2.
 

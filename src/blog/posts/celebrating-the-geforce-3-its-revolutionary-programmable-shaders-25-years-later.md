@@ -65,7 +65,10 @@ This period also saw the emergence of iconic applications that defined the era. 
 
 [![NVIDIA GeForce RTX 3080 Ti](https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21)
 
-<!-- featured-product: [NVIDIA GeForce](https://ctrlaltstock.com/blog/micron-gddr7-memory-finally-spotted-on-a-geforce-rtx-50-card-bringing-the-series) RTX 3080 Ti | Check used / refurb | https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21 -->
+
+
+<!-- featured-product: NVIDIA GeForce RTX 3080 Ti | Check used / refurb | https://m.media-amazon.com/images/I/71z3ijEjNhL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+3080+Ti+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## Technical Specifications and Performance Realities  
 While the GeForce 3’s initial specifications might seem modest by today’s standards, contemporary performance demands necessitate a closer examination of its capabilities. At its release, the [NVIDIA](https://ctrlaltstock.com/blog/ctrlaltstock-guide-2026) N2-based architecture featured a 150 nm processor capable of processing approximately 57 million transistors—a figure that, while impressive for the time, contrasts sharply with modern single-core processors. The shaders themselves, though originally optimized for entry-level tasks, benefited from the card’s parallel processing capabilities, enabling concurrent rendering of multiple effects without bottlenecking. However, these performance gains were constrained by warmth management and thermal dynamics, which became critical considerations as users pushed their systems beyond safe operating temperatures. This interplay between [hardware](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) limitations and user needs shaped the card’s role as both a tool and a compromise, often requiring careful tuning to avoid overheating—a challenge that persists in newer models today.  

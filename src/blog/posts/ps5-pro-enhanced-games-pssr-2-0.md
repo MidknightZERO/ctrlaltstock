@@ -70,7 +70,10 @@ title: 'PS5 Pro Enhanced Games: All 107 Titles Including PSSR 2.0 Now Available'
 
 The GeForce 3Revolution: How NVIDIA's Programmable Shaders Changed Gaming Forever (25 Years Later)
 
+
 <!-- featured-product: PlayStation 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
+
+
 
 The landscape of PC gaming has been shaped by countless technological milestones, but few were as transformative as NVIDIA's introduction of the GeForce 3 series in 2001. This wasn't just another graphics card; it was the dawn of programmable shaders, a revolutionary leap that fundamentally altered how graphics were rendered on the screen. Twenty-five years later, the legacy of the GeForce 3, codenamed "NV20," continues to resonate, reminding us of a pivotal moment when NVIDIA seized the lead in the GPU race and set the stage for decades of innovation.
 

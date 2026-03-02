@@ -57,7 +57,10 @@ As we've seen in recent market developments, companies are placing significant b
 
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
-<!-- featured-product: [AMD Radeon](https://ctrlaltstock.com/blog/amd-software-adrenalin-edition-26-2-2-release-notes) RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
+
+
+<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## Technical Specifications of Helios Racks
 The Helios rack systems represent a comprehensive approach to high-performance computing, designed specifically to maximize the capabilities of the MI400 Series GPUs. These racks are engineered with advanced thermal management systems to handle the substantial heat output of the GPUs, ensuring optimal performance even under continuous heavy workloads. The modular design allows for flexible scaling, enabling organizations to start with a smaller configuration and expand as their computational needs grow.

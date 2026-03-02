@@ -74,7 +74,10 @@ The technical aspects of the raids also warrant closer examination. High-resolut
 
 [![Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
 
-<!-- featured-product: Avatar: The Last Airbender - The Quest for Balance ([Nintendo Switch](https://ctrlaltstock.com/blog/avatar-last-airbender-game-9-99-amazon)) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
+
+
+<!-- featured-product: Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
+
 
 ## What does this mean for prices?  
 While the direct link between seized components and consumer pricing isn’t immediately apparent, the interconnectedness of supply chains suggests potential consequences that warrant close attention. The disruption caused by confiscated [hardware](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) could lead to short-term volatility, particularly in sectors relying heavily on specific technologies. For instance, developers using custom ASICs for rendering or [AI](https://ctrlaltstock.com/blog/rtx-news-2026) applications might face bottlenecks that delay project timelines, potentially increasing costs for game development studios that depend on timely asset delivery. Conversely, sudden scarcity could also prompt increased demand for alternative components, driving up prices if supply cannot be replenished quickly enough.  

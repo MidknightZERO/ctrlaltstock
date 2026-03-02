@@ -61,7 +61,10 @@ title: 'VRR Flickering with Nvidia Frame Gen: What Gamers Need to Know in 2026'
 
 The latest buzz in the CtrlAltStock community isn't about a brand-new GPU release, but rather a persistent and frustrating issue plaguing some gamers: VRR flickering triggered by toggling Nvidia Frame Gen. A user on r/nvidia shared a video demonstrating the problem, sparking concern among enthusiasts using high-refresh OLED monitors like the AW2725DF. This isn't just a theoretical concern; it's a practical headache for anyone experiencing it, especially during critical moments in games like *Star Wars Jedi Survivor*. For those interested in the latest GPU deals, including the RTX 50 series, it's essential to stay informed about such issues.
 
+
 <!-- featured-product: NVIDIA GeForce RTX 5070 Ti | From £699 | https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21 -->
+
+
 
 **What's the Story? A Flickering Frustration**
 The core issue revolves around Nvidia Frame Gen, a technology designed to enhance performance by generating frames where the GPU struggles, particularly beneficial for less powerful hardware like the RTX 5070 Ti mentioned in the Reddit post. However, as the user vividly illustrates, enabling or disabling Frame Gen can cause the screen to flicker dramatically – bright flashes followed by darkness. This isn't just a minor visual glitch; it's a disruptive artifact that breaks immersion and can be difficult to ignore during gameplay. The flickering occurs specifically when toggling Frame Gen on and off, suggesting a potential in or conflict within the display pipeline when Frame Gen is activated or deactivated. Users experiencing such issues might want to explore driver updates to see if newer versions address the problem.

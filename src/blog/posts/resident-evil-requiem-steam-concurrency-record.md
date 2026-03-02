@@ -67,7 +67,10 @@ title: Resident Evil Requiem Breaks Steam Player Concurrency Records
 
 **H1: Resident Evil Requiem Shatters Steam Concurrency Records, Setting New Franchise Benchmark**
 
+
 <!-- featured-product: Steam Deck | From £349 | https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=Steam+Deck&tag=ctrlaltstock-21 -->
+
+
 
 **Hook:** Just hours after launching across PC, PlayStation 5, Xbox Series X/S, and Nintendo Switch 2, Capcom's survival horror masterpiece *Resident Evil Requiem* has already achieved a staggering feat: crushing all previous records for simultaneous players on Steam. This unprecedented surge isn't just a number – it's a powerful early indicator that Capcom's latest entry into the beloved franchise is resonating deeply with gamers right now, potentially signaling strong commercial success in 2026. Data from SteB confirms the game's launch momentum is off the charts, with *Resident Evil Requiem* achieving a peak concurrent player count of **267,000** players within its first few hours online.
 

@@ -58,7 +58,10 @@ The most talked-about specification is the turbo boost clock, which is reported 
 
 [![Intel Core i7-14700K](https://m.media-amazon.com/images/I/61aAAg73uLL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=Intel+Core+i7-14700K&tag=ctrlaltstock-21)
 
-<!-- featured-product: [Intel](https://ctrlaltstock.com/blog/macbook-pro-m5-vs-intel-panther-lake-windows-is-finally-back-sort-of) Core i7-14700K | From £379 | https://m.media-amazon.com/images/I/61aAAg73uLL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=Intel+Core+i7-14700K&tag=ctrlaltstock-21 -->
+
+
+<!-- featured-product: Intel Core i7-14700K | From £379 | https://m.media-amazon.com/images/I/61aAAg73uLL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=Intel+Core+i7-14700K&tag=ctrlaltstock-21 -->
+
 
 ## [Memory](https://ctrlaltstock.com/blog/rtx-50-micron-gddr7-memory-supplier-diversification) Revolution: LPCAMM2-8533
 Perhaps the most technically significant innovation in this ThinkBook 16+ is the adoption of **LPCAMM2-8533 memory**. This represents a fundamental shift from the traditional SO-DIMM modules used in most laptops for over two decades. LPCAMM (Low-Power Compression Attached Memory Module) is a new standard that solderless, stick-based RAM directly onto the [motherboard](https://ctrlaltstock.com/blog/radeon-rx-9070-xt-taichi-white-review-details-asrock-s-first-card-with-built-in-) via a high-density, low-profile connector, similar to how some modern SSDs are attached.

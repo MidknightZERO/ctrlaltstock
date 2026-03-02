@@ -65,7 +65,10 @@ A related factor is the rise of alternative technologies. AMD has shifted focus 
 
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
-<!-- featured-product: [AMD Radeon](https://ctrlaltstock.com/blog/amd-software-adrenalin-edition-26-2-2-release-notes) RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
+
+
+<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## Impact on UK [Gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) Handhelds
 

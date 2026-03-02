@@ -60,7 +60,10 @@ The dev also mentioned that the title will leverage the **Xbox Velocity Architec
 
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
 
-<!-- featured-product: [NVIDIA GeForce](https://ctrlaltstock.com/blog/micron-gddr7-memory-finally-spotted-on-a-geforce-rtx-50-card-bringing-the-series) RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
+
+
+<!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## What Does This Mean for Prices?
 

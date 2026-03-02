@@ -60,7 +60,10 @@ This sentiment is echoed across the CtrlAltStock Discord, where members trade al
 
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
 
-<!-- featured-product: [NVIDIA GeForce](https://ctrlaltstock.com/blog/micron-gddr7-memory-finally-spotted-on-a-geforce-rtx-50-card-bringing-the-series) RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
+
+
+<!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## The AI Demand Tsunami: A Two-Edged Sword
 The most significant factor exacerbating the memory crunch is the insatiable appetite for AI. Training and inference for large language models and generative AI require colossal amounts of high-bandwidth memory (HBM). Every H100 and B200 GPU NVIDIA ships to cloud providers consumes multiple stacks of HBM3e, directly competing with the GDDR6X and upcoming GDDR7 supply destined for [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) graphics cards. This isn't a theoretical conflict; it's a tangible allocation decision made in boardrooms. As AI infrastructure build-outs accelerate through 2026, the memory industry's "bit growth" is being overwhelmingly consumed by segments with higher margins, leaving the consumer gaming and PC segment to fight over the scraps. This paradigm shift means that even a successful [Nvidia Stock Plummets as Tech Sector Suffers Worst Week of 2026](https://ctrlaltstock.com/blog/nvidia-stock-plummets-tech-sector-2026) event, while alarming for investors, does little to alleviate the physical supply constraints for gamers; the memory chips simply aren't being fabricated for them.

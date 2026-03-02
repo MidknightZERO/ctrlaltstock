@@ -66,7 +66,10 @@ The core focus of Adrenalin 26.2.2 is addressing long-standing issues that plagu
 
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
-<!-- featured-product: [AMD Radeon](https://ctrlaltstock.com/blog/amd-zen-6-olympic-ridge-ryzen-desktop-cpus-may-come-in-in-6-8-10-12-16-20-and-24) RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
+
+
+<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## **What Does This Mean for Prices? A Stability Boost, Not a [Price Drop](https://ctrlaltstock.com/blog/article-rtx4090-amd-discussion)**
 Crucially, **Adrenalin 26.2.2 is a free update.** There’s no direct impact on the purchase price of AMD Radeon GPUs themselves. However, the update’s purpose is to enhance the *value* proposition of owning these cards. By fixing critical stability issues and improving compatibility with popular games, AMD is making their hardware more reliable and enjoyable out-of-the-box.

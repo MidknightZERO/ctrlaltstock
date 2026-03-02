@@ -82,7 +82,10 @@ What makes this particularly interesting is the strategic timing. With NVIDIA's 
 The overclocking community is already buzzing about the implications. Members of our CtrlAltStock Discord have been analysing the 1usmus run, which was validated with a 3DMark Time Spy Extreme score that would place it ahead of an RTX 4090 in that specific benchmark—a testament to pure clock speed. The consensus among our members? We could be looking at a GPU that punches well above its weight class in traditional raster games, while its ray tracing and AI performance, while improved, will need to be validated against NVIDIA's mature DLSS 3/4 ecosystem.
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
 
-<!-- featured-product: AMD Radeon [RX 7800 XT](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) | From £479 | https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21 -->
+
+
+<!-- featured-product: AMD Radeon RX 7800 XT | From £479 | https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## What does this mean for prices?
 AMD's frequency record is a powerful psychological and engineering signal that could trigger an aggressive price war in the mid-to-high-end [GPU](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) market. Here's what we're watching, with concrete UK pricing:

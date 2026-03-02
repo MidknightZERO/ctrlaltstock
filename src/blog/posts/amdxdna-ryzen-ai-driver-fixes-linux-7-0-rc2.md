@@ -61,7 +61,10 @@ For owners of the latest [AMD Ryzen](https://ctrlaltstock.com/blog/amd-ryzen-500
 
 [![AMD Ryzen 7 7800X3D](https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21)
 
+
+
 <!-- featured-product: AMD Ryzen 7 7800X3D | From £349 | https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21 -->
+
 
 ## Understanding the AMD XDNA & Ryzen AI Stack
 To grasp the importance of these kernel updates, it's essential to understand the hardware and software layers involved. The **AMD XDNA** is the foundational microarchitecture for the dedicated AI engine, the NPU, found in Ryzen 7040 "Phoenix" and subsequent mobile APUs. This is not a rebranded GPU or CPU block; it's a purpose-built, low-power matrix compute engine designed for sustained inference workloads.

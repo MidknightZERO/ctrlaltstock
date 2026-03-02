@@ -71,7 +71,10 @@ This strategy is a clear departure from recent years, where preordering a new Ga
 
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
 
-<!-- featured-product: [NVIDIA GeForce](https://ctrlaltstock.com/blog/micron-gddr7-memory-finally-spotted-on-a-geforce-rtx-50-card-bringing-the-series) RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
+
+
+<!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
+
 
 ## What does this mean for prices?
 For the UK market, these US-centric deals translate into tangible savings, but with a few caveats. The direct GBP conversions mean the "free storage upgrade" is universally applicable, effectively setting a new, lower starting price point for each model in the UK. For example, the Galaxy S26 Ultra's entry point is now £1,119.99 for 512GB, compared to what would likely have been a £1,199.99 RRP for that storage tier. The Amazon gift card, while a fantastic boon, introduces a slight complexity: it's an Amazon.com code, not an Amazon.co.uk one. For UK buyers, this means you'll need to use it on the US Amazon site, which may involve currency conversion fees from your bank or a separate payment method for the UK site. However, many UK customers have US Amazon accounts or can use the card for digital purchases like Kindle books or video rentals that are accessible globally, retaining much of its value.
