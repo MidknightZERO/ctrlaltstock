@@ -64,11 +64,9 @@ title: Galactic Space Guard Blends Turn-Based Tactics with Shooter Combat
 ## What's the story?
 Galactic Space Guard is a passion project by developer **Lukas Meier**, a 28-year-old Swiss game designer based in Zurich. Meier, who previously worked on modding tools for popular strategy games, created this title to merge his love for tactical depth and fast-paced action. The game’s concept was born from his frustration with the randomness of hit chances in titles like *XCOM 2* and *Fire Emblem*. “I wanted to eliminate the luck-based elements that can derail a strategy game,” Meier explained in an interview with *PC Gamer UK*.
 The game’s narrative is intentionally minimalist, focusing on exploration and survival rather than a linear story. Players take on the role of a spaceguard commander leading a squad of customizable soldiers through procedurally generated missions across a vast sci-fi universe. Each mission occurs on a unique space station, derelict ship, or abandoned outpost, with environmental hazards, enemy patrols, and resource management adding layers of challenge. The procedural generation ensures that no two playthroughs are identical, with variables like enemy types, mission objectives, and layout changing dynamically.
-The **free Steam demo** (available since March 2024) includes a single mission set on a derelict space station, where players must extract survivors while fending off waves of alien drones. While the demo is limited in scope, it showcases the game’s core mechanics: manual aiming, action-point management, and overwatch systems. Meier has stated that the full game will expand on this with 10+ missions, each offering different challenges, from stealth-based extractions to full-scale assaults.
-
+The **free [Steam](https://ctrlaltstock.com/blog/cat-president-3rd-rate-candidate-steam-launch-deal) demo** (available since March 2024) includes a single mission set on a derelict space station, where players must extract survivors while fending off waves of alien drones. While the demo is limited in scope, it showcases the game’s core mechanics: manual aiming, action-point management, and overwatch systems. Meier has stated that the full game will expand on this with 10+ missions, each offering different challenges, from stealth-based extractions to full-scale assaults.
 
 [![Steam Deck](https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71peof84jPL._AC_SX416_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/s?k=Steam+Deck&tag=ctrlaltstock-21)
-
 
 
 
@@ -80,9 +78,7 @@ As an indie title, *Galactic Space Guard* is expected to launch at a budget-frie
 For UK gamers, timing purchases is key. Indie games often see launch discounts of **10–15%** within the first week, with some titles dropping to as low as **£15** during sales. Steam’s regional pricing can vary slightly by area, with UK players sometimes getting better deals than those in Europe. Meier has also mentioned that the game will be available on **Epic Games Store** at a comparable price, though he hasn’t confirmed if there will be exclusive content there.
 No physical editions or collector’s items are planned at this stage, though Meier has left the door open for future physical releases if there’s enough community demand. For now, digital is the sole purchasing option, with no plans for VR or console versions.
 
-
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Our recommendation / What to buy right now
 If you enjoy [turn-based](https://ctrlaltstock.com/blog/galactic-space-guard-discussion) tactics but want a more hands-on, skill-based twist, the **Galactic Space Guard demo** is absolutely worth a download—it’s free, after all. The demo’s single mission offers a taste of the game’s thrilling manual aiming system, where every shot matters. For example, players can line up shots using a grid-based aiming mechanic, adjusting for distance and enemy armor. This contrasts sharply with luck-based systems, where a 95% chance to hit could still fail.
@@ -95,11 +91,9 @@ No special peripherals are required, but a mouse with a high DPI (e.g., **Logite
 The game’s development has been transparent, with Meier regularly engaging with players on Reddit and Discord. Early feedback has been overwhelmingly positive, with many praising the “skill-based turn system” and “fast-paced combat.” Meier has also announced plans for a **co-op mode** in the future, allowing up to four players to team up for missions. This feature is still in early development but could add replayability.
 Additionally, the game’s soundtrack, composed by indie musician **Elias Voss**, blends synthwave and orchestral elements to match its sci-fi setting. While not a core gameplay feature, Meier has stated that the music will adapt dynamically based on in-game events, such as intense combat or exploration.
 
-
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Final thoughts
 Galactic Space Guard is shaping up to be a refreshing take on turn-based tactics, mixing the strategic depth of the genre with the immediacy of shooter combat. The free demo offers a no-risk way to see if its manual aiming and fast-paced turns click with you. If you’re tired of RNG frustration and want a more skill-driven tactical experience, this is one to watch.
-For UK gamers, the game’s budget-friendly price point and potential launch discounts make it an attractive purchase. Pair it with a mid-range GPU for the best performance, and consider joining the **CtrlAltStock Discord** to track updates, share tips, or discuss hardware deals. With its unique blend of genres and active development, *Galactic Space Guard* could become a standout title in 2024.
+For UK gamers, the game’s budget-friendly price point and potential launch discounts make it an attractive purchase. Pair it with a mid-range GPU for the best performance, and consider joining the **CtrlAltStock Discord** to track updates, share tips, or discuss [hardware](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) deals. With its unique blend of genres and active development, *Galactic Space Guard* could become a standout title in 2024.
 Want to discuss the demo, share your first impressions, or hear about the latest indie gems and hardware deals? Join our 10,000-member CtrlAltStock Discord for live stock alerts and community chat.
