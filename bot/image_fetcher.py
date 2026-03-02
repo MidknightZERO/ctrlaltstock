@@ -25,7 +25,7 @@ import httpx
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 import config
-from utils import infer_primary_topic
+from utils import infer_primary_topic, pipeline_log
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [image_fetcher] %(levelname)s %(message)s")
@@ -292,77 +292,108 @@ def fetch_images(draft: Dict[str, Any], use_pexels: bool = False) -> Dict[str, A
     stock = _load_stock_images()
     used = _load_used_images()
 
-    # 1. Query-based search: Pexels for backfill, Unsplash for new posts
+    # 1. Query-based search with fallback: Pexels (with word-drop variants) -> Unsplash -> Groq phrase -> SerpAPI -> CAS logo
+    MIN_USABLE = 2
     queries = draft.get("image_search_queries") or [title] + (draft.get("amazon_search_queries") or [])[:2]
+    image_source = ""
     if draft.get("image_search_queries"):
         log.info("Using AI image search terms: %s", draft.get("image_search_queries")[:4])
     else:
         log.info("No image_search_queries in draft; using title + amazon fallback: %s", queries[:3])
+
+    def add_usable(urls: List[str], source: str) -> None:
+        nonlocal all_images, image_source
+        for img in urls:
+            base = img.split("?")[0]
+            if base not in recent_cover_bases and img not in all_images:
+                all_images.append(img)
+        if all_images and not image_source:
+            image_source = source
+
     if use_pexels and config.pexels.api_key and queries:
-        for query in queries:
-            clean_query = _clean_query_for_images(query, primary_topic)
-            images = search_pexels(clean_query, count=3)
-            for img in images:
-                base = img.split("?")[0]
-                if base not in recent_cover_bases and img not in all_images:
-                    all_images.append(img)
-                if len(all_images) >= 4:
+        for raw_q in queries:
+            if len(all_images) >= MIN_USABLE:
+                break
+            clean_q = _clean_query_for_images(raw_q, primary_topic)
+            for q in _query_variants(clean_q):
+                if len(all_images) >= MIN_USABLE:
                     break
+                add_usable(search_pexels(q, count=3), "pexels_api")
+    if len(all_images) < MIN_USABLE and config.unsplash.access_key and queries:
+        for raw_q in queries:
+            if len(all_images) >= MIN_USABLE:
+                break
+            clean_q = _clean_query_for_images(raw_q, primary_topic)
+            for q in _query_variants(clean_q):
+                if len(all_images) >= MIN_USABLE:
+                    break
+                add_usable(search_unsplash(q, count=3), "unsplash_api")
+    if len(all_images) < MIN_USABLE:
+        suggested = _groq_suggest_image_query(title, list(queries[:4]))
+        if suggested:
+            if use_pexels and config.pexels.api_key:
+                add_usable(search_pexels(suggested, count=3), "pexels_api")
+            if len(all_images) < MIN_USABLE and config.unsplash.access_key:
+                add_usable(search_unsplash(suggested, count=3), "unsplash_api")
+    if len(all_images) < MIN_USABLE and getattr(config, "serpapi", None) and getattr(config.serpapi, "api_key", None):
+        for raw_q in queries[:2]:
+            if len(all_images) >= MIN_USABLE:
+                break
+            clean_q = _clean_query_for_images(raw_q, primary_topic)
+            urls = _search_google_images_via_serpapi(clean_q, config.serpapi.api_key, count=3)
+            if urls:
+                add_usable(urls, "serpapi_google_images")
+    if len(all_images) < MIN_USABLE:
+        cas_url = getattr(config.bot, "cas_logo_fallback_url", None) or (config.bot.site_url.rstrip("/") + "/Logo.png")
+        all_images = [cas_url]
+        image_source = "cas_logo_fallback"
+        log.info("All image sources exhausted; using CAS logo fallback for: %s", title[:50])
+
+    # 2. Add Amazon product images — skip when we already used CAS logo fallback
+    if image_source != "cas_logo_fallback":
+        products = draft["frontmatter"].get("amazonProducts") or []
+        if primary_topic == "streaming":
+            products = [p for p in products if (p.get("category") or "").lower() != "gpu"]
+        def topic_sort_key(p: Dict[str, Any]) -> int:
+            cat = (p.get("category") or "").lower()
+            if primary_topic == "gpu" and cat == "gpu":
+                return 0
+            if primary_topic == "cpu" and cat == "cpu":
+                return 0
+            if primary_topic == "console" and "console" in cat:
+                return 0
+            if primary_topic == "storage" and ("storage" in cat or "ssd" in cat):
+                return 0
+            return 1
+        sorted_products = sorted(products, key=topic_sort_key)
+        for p in sorted_products:
+            img = p.get("imageUrl") or ""
+            if not img:
+                continue
+            base = img.split("?")[0]
+            if base in recent_cover_bases:
+                continue
+            if img not in all_images:
+                all_images.append(img)
             if len(all_images) >= 4:
                 break
-    elif not use_pexels and config.unsplash.access_key and queries:
-        for query in queries:
-            clean_query = _clean_query_for_images(query, primary_topic)
-            images = search_unsplash(clean_query, count=3)
-            for img in images:
-                base = img.split("?")[0]
-                if base not in recent_cover_bases and img not in all_images:
-                    all_images.append(img)
-                if len(all_images) >= 4:
-                    break
-            if len(all_images) >= 4:
-                break
+        if all_images and not image_source:
+            image_source = "amazon_products"
 
-    # 2. Add Amazon product images — topic-matched, skip recently used
-    products = draft["frontmatter"].get("amazonProducts") or []
-    if primary_topic == "streaming":
-        products = [p for p in products if (p.get("category") or "").lower() != "gpu"]
-    def topic_sort_key(p: Dict[str, Any]) -> int:
-        cat = (p.get("category") or "").lower()
-        if primary_topic == "gpu" and cat == "gpu":
-            return 0
-        if primary_topic == "cpu" and cat == "cpu":
-            return 0
-        if primary_topic == "console" and "console" in cat:
-            return 0
-        if primary_topic == "storage" and ("storage" in cat or "ssd" in cat):
-            return 0
-        return 1
-    sorted_products = sorted(products, key=topic_sort_key)
-    for p in sorted_products:
-        img = p.get("imageUrl") or ""
-        if not img:
-            continue
-        base = img.split("?")[0]
-        if base in recent_cover_bases:
-            continue
-        if img not in all_images:
-            all_images.append(img)
-        if len(all_images) >= 4:
-            break
-
-    # 3. Fall back to topic-aligned stock images if we still need more
-    if len(all_images) < 2:
-        pool = _get_pool_for_primary_topic(primary_topic, stock)
-        if not pool:
-            pool = _get_pool_for_tags(tags, stock)
-        if not pool:
-            pool = stock.get("default", [])
-        if isinstance(pool, list):
-            pool = [p for p in pool if p]
-        else:
-            pool = []
-        all_images = _pick_least_recently_used(pool, used, count=4, exclude_bases=recent_cover_bases)
+        # 3. Fall back to topic-aligned stock images if we still need more
+        if len(all_images) < 2:
+            pool = _get_pool_for_primary_topic(primary_topic, stock)
+            if not pool:
+                pool = _get_pool_for_tags(tags, stock)
+            if not pool:
+                pool = stock.get("default", [])
+            if isinstance(pool, list):
+                pool = [p for p in pool if p]
+            else:
+                pool = []
+            all_images = _pick_least_recently_used(pool, used, count=4, exclude_bases=recent_cover_bases)
+        if all_images and not image_source:
+            image_source = "stock_pool"
 
     # Deduplicate
     seen = set()
@@ -373,8 +404,8 @@ def fetch_images(draft: Dict[str, Any], use_pexels: bool = False) -> Dict[str, A
             seen.add(base)
             unique_images.append(img)
 
-    # Ensure we have enough (exclude recent covers)
-    if len(unique_images) < 2:
+    # Ensure we have enough (exclude recent covers) — skip when CAS logo fallback (keep single logo)
+    if len(unique_images) < 2 and image_source != "cas_logo_fallback":
         default_pool = stock.get("default", [])
         if isinstance(default_pool, list):
             for url in default_pool:
@@ -388,8 +419,8 @@ def fetch_images(draft: Dict[str, Any], use_pexels: bool = False) -> Dict[str, A
                 if len(unique_images) >= 4:
                     break
 
-    # Update used_images
-    if unique_images:
+    # Update used_images (skip for CAS logo fallback so we don't pollute the list)
+    if unique_images and image_source != "cas_logo_fallback":
         new_used = [unique_images[0]] + used
         _save_used_images(new_used[:USED_IMAGES_MAX])
 
@@ -412,6 +443,12 @@ def fetch_images(draft: Dict[str, Any], use_pexels: bool = False) -> Dict[str, A
         updated["frontmatter"]["coverImage"] = unique_images[0]
         updated["frontmatter"]["images"] = unique_images[1:4]
 
+    slug = draft["frontmatter"].get("slug", "") or (draft.get("slug", ""))
+    cover_preview = (unique_images[0][:80] + "…") if unique_images and len(unique_images[0]) > 80 else (unique_images[0] if unique_images else "")
+    pipeline_log(
+        f"cover slug={slug} title={title[:50]} source={image_source or 'unknown'} cover={cover_preview}",
+        "image_fetcher",
+    )
     log.info("Fetched %d images for: %s", len(unique_images), title)
     return updated
 
@@ -451,6 +488,61 @@ def _clean_query_for_images(query: str, primary_topic: str = "general") -> str:
     if primary_topic == "streaming":
         return "streaming stick smart tv"
     return (clean.strip() or "technology computer gaming")[:80]
+
+
+def _query_variants(clean_query: str) -> List[str]:
+    """Return [query, query without first word, query without last word] for retries when API returns no usable results."""
+    words = [w for w in clean_query.split() if w]
+    if len(words) <= 1:
+        return [clean_query] if clean_query.strip() else []
+    out = [clean_query]
+    out.append(" ".join(words[1:]))
+    out.append(" ".join(words[:-1]))
+    return list(dict.fromkeys(s.strip() for s in out if s.strip()))
+
+
+def _groq_suggest_image_query(title: str, queries_used: List[str]) -> Optional[str]:
+    """Ask Groq for one short image-search phrase; used when Pexels/Unsplash return nothing usable."""
+    if not getattr(config.groq, "api_key", None):
+        return None
+    try:
+        from groq import Groq
+        client = Groq(api_key=config.groq.api_key)
+        q_used = ", ".join(queries_used[:3]) if queries_used else "none"
+        resp = client.chat.completions.create(
+            model="llama-3.1-8b-instant",
+            messages=[
+                {"role": "system", "content": "Reply with exactly one short phrase (2-5 words) for an image search. No quotes, no explanation."},
+                {"role": "user", "content": f"Article title: {title[:80]}. Queries already tried: {q_used}. Suggest one different image search phrase."},
+            ],
+            max_tokens=20,
+        )
+        text = (resp.choices[0].message.content or "").strip().strip('"\'')
+        return text[:60] if text else None
+    except Exception as e:
+        log.debug("Groq suggest image query failed: %s", e)
+        return None
+
+
+def _search_google_images_via_serpapi(query: str, api_key: str, count: int = 2) -> List[str]:
+    """Optional: fetch image URLs from Google Images via SerpAPI. Returns list of image URLs."""
+    try:
+        resp = httpx.get(
+            "https://serpapi.com/search",
+            params={"q": query, "tbm": "isch", "engine": "google_images", "api_key": api_key, "num": count},
+            timeout=15,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        urls = []
+        for img in data.get("images_results", [])[:count]:
+            u = img.get("original") or img.get("image") or ""
+            if u and u.startswith("http"):
+                urls.append(u)
+        return urls
+    except Exception as e:
+        log.debug("SerpAPI Google Images failed: %s", e)
+        return []
 
 
 if __name__ == "__main__":

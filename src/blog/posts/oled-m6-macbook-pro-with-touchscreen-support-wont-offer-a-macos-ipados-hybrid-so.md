@@ -75,7 +75,4 @@ Apple’s ecosystem is built on tight integration between hardware, software, an
 
 [![AMD Ryzen 7 7800X3D](https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21)
 
-
-
-
-<!-- featured-product: AMD Ryzen 7 7800X3D | From £349 | https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21 -->
+<!-- featured-product: [AMD Ryzen](https://ctrlaltstock.com/blog/amd-ryzen-500-medusa-rdna-4m-igpu-shows-rdna-4-matrix-isa-support-fsr-4-support-) 7 7800X3D | From £349 | https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21 -->

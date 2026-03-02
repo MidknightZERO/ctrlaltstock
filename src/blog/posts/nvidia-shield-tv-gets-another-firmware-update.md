@@ -34,7 +34,7 @@ coverImage: https://images.pexels.com/photos/5202917/pexels-photo-5202917.jpeg?a
 date: '2026-02-27'
 excerpt: In a stunning display of engineering prowess, AMD has shattered the GPU frequency
   world record with its upcoming Radeon RX 9060 XT graphics card, achieving an unprecedented
-  clock speed of 4.769 GHz. T
+  clock speed of 4.769 GHz.
 featuredProductId: ''
 images:
 - https://images.pexels.com/photos/5202925/pexels-photo-5202925.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
@@ -61,10 +61,7 @@ This new record demonstrates AMD's advancements in semiconductor technology, coo
 
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
 
-
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
-
 
 ## What This Means for Gamers and Enthusiasts
 

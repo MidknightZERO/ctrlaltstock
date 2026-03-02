@@ -58,10 +58,7 @@ title: 'Micron GDDR7 on RTX 50: What This Means for Your Next GPU Deal'
 
 **The tech world just got a little more exciting for PC builders and gamers on a budget.** A significant development has emerged from the r/nvidia subreddit, sending ripples through the hardware community and potentially paving the way for more affordable high-performance graphics cards. **A Reddit user shared a photo and details of a GeForce RTX 50 graphics card equipped with Micron's cutting-edge GDDR7 memory**, marking a crucial milestone. This sighting confirms that Micron has joined the ranks of memory suppliers for NVIDIA's next-generation GPU architecture, alongside industry giants Samsung and SK Hynix. The appearance of Micron GDDR7 on an RTX 50 card is more than just a technical footnote; it signals a potential shift towards greater competition and, crucially, **lower prices for consumers** this year.
 
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
-
-
 
 The discovery was made public by a community member who stumbled upon the card while browsing online marketplaces. The user, who wished to remain anonymous, posted clear images showing the card's specifications prominently displayed, including the Micron GDDR7 label. This sighting is particularly noteworthy because it represents the **first confirmed instance of Micron GDDR7 being used in a consumer-grade GeForce card**, moving beyond the specialized, high-end professional cards previously rumored to utilize the technology. The card in question appears to be a standard retail model, suggesting that Micron's memory is now viable for mainstream high-end gaming GPUs. According to the original post on May 15th, 2024, the card featured 24GB of Micron's GDDR7 memory, which boasts an impressive 32 Gbps speed and 1.5TB/s bandwidth – a significant jump from the 24 Gbps speeds common in current GDDR6 memory.
 

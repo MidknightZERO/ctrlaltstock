@@ -27,7 +27,14 @@ import yaml  # PyYAML — part of python-frontmatter deps
 import frontmatter as fm
 
 import config
-from utils import strip_markdown_from_title
+from utils import (
+    strip_markdown_from_title,
+    strip_title_bracket_suffix,
+    strip_meta_sections_by_heading,
+    strip_ai_meta_commentary,
+    fix_truncated_link_deterministic,
+    strip_excerpt_prompt_artifacts,
+)
 
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
@@ -48,6 +55,40 @@ logging.basicConfig(
 Path(config.bot.logs_dir).mkdir(parents=True, exist_ok=True)
 
 
+# ── Final sanitization before write ───────────────────────────────────────────
+
+def _sanitize_draft_before_write(draft: Dict[str, Any]) -> None:
+    """
+    Apply deterministic cleanup to draft so every published file is clean.
+    Mutates draft in place: content, excerpt, title.
+    """
+    fm_dict = draft.get("frontmatter", {})
+    content = (draft.get("content") or "").strip()
+    if content:
+        content = strip_meta_sections_by_heading(content)
+        content = strip_ai_meta_commentary(content)
+        content = fix_truncated_link_deterministic(content)
+        draft["content"] = content.strip()
+
+    excerpt = (fm_dict.get("excerpt") or "").strip()
+    needs_derive = not excerpt or excerpt == "---" or (len(excerpt) > 20 and not excerpt.endswith((".", "!", "?")))
+    if needs_derive:
+        lines = [l.strip() for l in (draft.get("content") or "").split("\n") if l.strip() and not l.strip().startswith("#")]
+        if lines:
+            first = strip_excerpt_prompt_artifacts(lines[0])
+            if first:
+                max_len = 200
+                excerpt = first[: max_len + 1].rsplit(" ", 1)[0] if len(first) > max_len else first
+                if len(excerpt) < 50 and len(first) > max_len:
+                    excerpt = first[:max_len]
+    if excerpt:
+        fm_dict["excerpt"] = strip_excerpt_prompt_artifacts(excerpt)
+
+    title = (fm_dict.get("title") or "").strip()
+    if title:
+        fm_dict["title"] = strip_title_bracket_suffix(strip_markdown_from_title(title))
+
+
 # ── Markdown assembly ─────────────────────────────────────────────────────────
 
 def assemble_markdown(draft: Dict[str, Any]) -> str:
@@ -63,10 +104,8 @@ def assemble_markdown(draft: Dict[str, Any]) -> str:
 
 def write_post_file(draft: Dict[str, Any], repo_path: str) -> Path:
     """Write the assembled markdown to the posts directory."""
-    # Safety net: strip markdown from title (AI sometimes returns "# Title")
+    _sanitize_draft_before_write(draft)
     fm_dict = draft.get("frontmatter", {})
-    if "title" in fm_dict:
-        fm_dict["title"] = strip_markdown_from_title(fm_dict["title"])
 
     posts_dir = Path(repo_path) / config.bot.posts_dir
     posts_dir.mkdir(parents=True, exist_ok=True)

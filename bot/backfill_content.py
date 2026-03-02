@@ -113,10 +113,15 @@ def fix_tags(post: fm.Post) -> bool:
 
 
 def fix_placeholder_excerpt(post: fm.Post) -> bool:
-    """If excerpt is missing or placeholder '---', set from first line of body (word-boundary). Returns True if changed."""
+    """If excerpt is missing, placeholder '---', or truncated mid-sentence (no .!? at end), set from first line of body (word-boundary). Returns True if changed."""
     from utils import strip_excerpt_prompt_artifacts
     existing = (post.get("excerpt") or "").strip()
-    if existing and existing != "---":
+    needs_derive = (
+        not existing
+        or existing == "---"
+        or (len(existing) > 20 and not existing.endswith((".", "!", "?")))
+    )
+    if not needs_derive:
         return False
     content = post.content or ""
     lines = [l.strip() for l in content.split("\n") if l.strip() and not l.startswith("#")]
@@ -131,7 +136,7 @@ def fix_placeholder_excerpt(post: fm.Post) -> bool:
         new_excerpt = truncated if len(truncated) >= 50 else first_line[:max_len]
     else:
         new_excerpt = first_line
-    post["excerpt"] = new_excerpt
+    post["excerpt"] = strip_excerpt_prompt_artifacts(new_excerpt)
     return True
 
 
@@ -152,6 +157,49 @@ def fix_mismatched_excerpt(post: fm.Post) -> bool:
             mismatch = True
     if mismatch:
         post["excerpt"] = title + "." if not title.endswith(".") else title
+        return True
+    return False
+
+
+def fix_ai_meta_content(post: fm.Post) -> bool:
+    """Remove AI meta-commentary paragraphs from body (e.g. 'This article, totaling over X words, has been meticulously expanded...'). Returns True if changed."""
+    from utils import strip_ai_meta_commentary
+    content = post.content or ""
+    cleaned = strip_ai_meta_commentary(content)
+    if cleaned != content:
+        post.content = cleaned
+        return True
+    return False
+
+
+def fix_deterministic_content(post: fm.Post) -> bool:
+    """Apply full deterministic body cleanup: meta sections by heading, meta commentary, truncated link. Returns True if changed."""
+    from utils import (
+        strip_meta_sections_by_heading,
+        strip_ai_meta_commentary,
+        fix_truncated_link_deterministic,
+    )
+    content = post.content or ""
+    if not content.strip():
+        return False
+    text = strip_meta_sections_by_heading(content)
+    text = strip_ai_meta_commentary(text)
+    text = fix_truncated_link_deterministic(text)
+    if text.strip() != content.strip():
+        post.content = text.strip()
+        return True
+    return False
+
+
+def fix_title_bracket_suffix(post: fm.Post) -> bool:
+    """Remove trailing editor notes in brackets from title, e.g. 'Title [Story-driven...]' -> 'Title'. Returns True if changed."""
+    from utils import strip_title_bracket_suffix
+    title = (post.get("title") or "").strip()
+    if not title:
+        return False
+    new_title = strip_title_bracket_suffix(title)
+    if new_title != title:
+        post["title"] = new_title
         return True
     return False
 
@@ -600,7 +648,7 @@ def _strip_trailing_cover_image(content: str, cover_url: str) -> str:
 
 def insert_inline_images(content: str, images: List[Tuple[str, str, Optional[str]]], max_images: int = 3) -> str:
     """
-    Insert inline images after every 2nd H2/H3. Target ~3 images per article.
+    Insert inline images after the 1st, 2nd, and 3rd H2 (or H3) to break up the body, like Editors Pick.
     Images: (url, alt, amazon_url?). If amazon_url, wrap in link.
     """
     if not images:
@@ -615,7 +663,8 @@ def insert_inline_images(content: str, images: List[Tuple[str, str, Optional[str
         if re.match(r"^##?\s+", line):
             section_count += 1
             result.append(line)
-            if section_count % 2 == 0 and inserted < max_images:
+            # Insert after 1st, 2nd, 3rd H2/H3 (not every 2nd) so images are spread early in the article
+            if section_count <= max_images and inserted < max_images:
                 j = i + 1
                 while j < len(lines) and not re.match(r"^##?\s+", lines[j]) and not re.match(r"^!\[", lines[j]):
                     result.append(lines[j])
@@ -640,7 +689,7 @@ def insert_inline_images(content: str, images: List[Tuple[str, str, Optional[str
 
 
 def add_inline_images_to_post(post: fm.Post) -> bool:
-    """Insert inline images after every 2nd H2/H3. Returns True if changed."""
+    """Insert inline images after 1st, 2nd, 3rd H2/H3. Returns True if changed."""
     content = post.content or ""
     cover_url = (post.get("coverImage") or "").strip()
     # Strip trailing duplicate cover image (AI sometimes adds it at the end)
@@ -754,10 +803,12 @@ def backfill_cover_images(post: fm.Post, path: Path, dry_run: bool, fix_list: Op
     """Re-fetch cover images for a post using topic-aware image_fetcher. If fix_list has image_search_queries for this slug, use them so we search for topic-relevant images instead of fallbacks."""
     slug = post.get("slug") or path.stem
     draft = {"frontmatter": dict(post.metadata), "content": post.content or ""}
+    used_fix_list = False
     if fix_list and fix_list.get("posts") and slug in fix_list["posts"]:
         queries = (fix_list["posts"][slug] or {}).get("image_search_queries")
         if queries:
             draft["image_search_queries"] = queries
+            used_fix_list = True
             log.debug("Using fix-list image_search_queries for %s: %s", slug, queries[:2])
     from image_fetcher import fetch_images
     result = fetch_images(draft, use_pexels=True)
@@ -769,6 +820,11 @@ def backfill_cover_images(post: fm.Post, path: Path, dry_run: bool, fix_list: Op
         if not dry_run:
             post["coverImage"] = new_cover
             post["images"] = new_images
+        from utils import pipeline_log
+        pipeline_log(
+            f"backfill_cover slug={slug} source={'fix_list' if used_fix_list else 'fallback'} new_cover={(new_cover[:80] + '…') if len(new_cover) > 80 else new_cover}",
+            "backfill",
+        )
         return True
     return False
 
@@ -780,14 +836,18 @@ def run_backfill(
     fix_amazon_images_flag: bool = False,
     inline_images: bool = True,
     images_only: bool = False,
+    only_failed_covers: bool = False,
     max_links: int = 5,
     max_amazon_links: int = 5,
     dry_run: bool = False,
 ) -> Tuple[int, int, int, int, int]:
     """Run backfill. Returns (tags_fixed, links_added, amazon_links_added, images_fixed, inline_images_added)."""
+    from utils import pipeline_log
+    pipeline_log(f"run_backfill started tags={tags} links={links} amazon_links={amazon_links} inline_images={inline_images} images_only={images_only} only_failed_covers={only_failed_covers} dry_run={dry_run}", "backfill")
     posts = load_posts()
     if not posts:
         log.warning("No posts found")
+        pipeline_log("run_backfill no posts found", "backfill")
         return 0, 0, 0, 0, 0
 
     tags_fixed = 0
@@ -797,17 +857,29 @@ def run_backfill(
     cover_images_updated = 0
     excerpts_fixed = 0
     mismatches_fixed = 0
+    meta_content_fixed = 0
+    deterministic_content_fixed = 0
+    title_bracket_fixed = 0
 
     if images_only:
+        cas_logo_url = getattr(config.bot, "cas_logo_fallback_url", None) or (SITE_BASE_URL + "/Logo.png")
         fix_list = load_fix_list()
         if not fix_list or not fix_list.get("posts"):
             log.warning(
                 "fix-list.json missing or empty. Run generate_fix_list.py first for topic-relevant images. "
                 "Proceeding with title-based search only — images may be generic or repeated."
             )
-        elif fix_list.get("posts"):
+            pipeline_log("run_backfill --images-only: fix-list missing or empty; using title fallback for all posts", "backfill")
+        else:
             log.info("Using fix list for image search terms (%d posts)", len(fix_list["posts"]))
+            pipeline_log(f"run_backfill --images-only: using fix list for {len(fix_list['posts'])} posts", "backfill")
         for path, post in posts:
+            if only_failed_covers:
+                cover = (post.get("coverImage") or "").strip()
+                base_cover = cover.split("?")[0]
+                if base_cover != cas_logo_url.split("?")[0]:
+                    log.debug("Skipping %s (cover is not CAS logo)", path.name)
+                    continue
             if backfill_cover_images(post, path, dry_run, fix_list):
                 cover_images_updated += 1
                 if not dry_run:
@@ -816,6 +888,7 @@ def run_backfill(
         if cover_images_updated and not dry_run:
             from publisher import rebuild_blog_json
             rebuild_blog_json(config.git.repo_path)
+        pipeline_log(f"run_backfill --images-only done; cover_images_updated={cover_images_updated}", "backfill")
         return 0, 0, 0, 0, cover_images_updated
 
     if fix_amazon_images_flag:
@@ -832,6 +905,27 @@ def run_backfill(
             if not dry_run:
                 fm.dump(post, path)
             log.info("Fixed mismatched excerpt: %s", path.name)
+
+    for path, post in posts:
+        if fix_ai_meta_content(post):
+            meta_content_fixed += 1
+            if not dry_run:
+                fm.dump(post, path)
+            log.info("Removed AI meta-commentary: %s", path.name)
+
+    for path, post in posts:
+        if fix_deterministic_content(post):
+            deterministic_content_fixed += 1
+            if not dry_run:
+                fm.dump(post, path)
+            log.info("Deterministic content cleanup: %s", path.name)
+
+    for path, post in posts:
+        if fix_title_bracket_suffix(post):
+            title_bracket_fixed += 1
+            if not dry_run:
+                fm.dump(post, path)
+            log.info("Fixed title bracket suffix: %s", path.name)
 
     for path, post in posts:
         if fix_placeholder_excerpt(post):
@@ -884,7 +978,7 @@ def run_backfill(
             if changed:
                 log.info("Added inline images/featured product: %s", path.name)
 
-    if (tags_fixed or links_added or amazon_links_added or images_fixed or inline_images_added or featured_products_added or excerpts_fixed or mismatches_fixed) and not dry_run:
+    if (tags_fixed or links_added or amazon_links_added or images_fixed or inline_images_added or featured_products_added or excerpts_fixed or mismatches_fixed or meta_content_fixed or deterministic_content_fixed or title_bracket_fixed) and not dry_run:
         from publisher import rebuild_blog_json
         rebuild_blog_json(config.git.repo_path)
 
@@ -902,6 +996,7 @@ def main():
     parser.add_argument("--no-inline-images", action="store_true", help="Skip inline images during backfill")
     parser.add_argument("--inline-images-only", action="store_true", help="Only add inline images")
     parser.add_argument("--images-only", action="store_true", help="Re-fetch cover images (topic-aware, 7-day exclusion)")
+    parser.add_argument("--only-failed-covers", action="store_true", help="With --images-only: only update posts whose cover is the CAS logo (failed fetch); skip the rest")
     parser.add_argument("--require-fix-list", action="store_true", help="With --images-only: exit with error if fix-list.json missing (run generate_fix_list.py first)")
     parser.add_argument("--max-links", type=int, default=5, help="Max internal links per post (default: 5)")
     parser.add_argument("--max-amazon-links", type=int, default=5, help="Max Amazon links per post (default: 5)")
@@ -951,6 +1046,7 @@ def main():
         fix_amazon_images_flag=args.fix_amazon_images,
         inline_images=do_inline_images,
         images_only=args.images_only,
+        only_failed_covers=args.only_failed_covers,
         max_links=args.max_links,
         max_amazon_links=args.max_amazon_links,
         dry_run=args.dry_run,

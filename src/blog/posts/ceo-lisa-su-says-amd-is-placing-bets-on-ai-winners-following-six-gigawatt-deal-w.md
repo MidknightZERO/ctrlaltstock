@@ -67,10 +67,7 @@ Meanwhile, the Reddit community r/Amd has been buzzing about this news. One user
 
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
-
-
-<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
-
+<!-- featured-product: [AMD Radeon](https://ctrlaltstock.com/blog/amd-software-adrenalin-edition-26-2-2-release-notes) RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
 
 ## What Does This Mean for Prices?  
 The most immediate question for bargain hunters is: Will this deal lead to cheaper AMD GPUs? The answer isn’t simple. On one hand, a six-gigawatt contract with Meta could mean AMD increases its production capacity at its TSMC-fabricated plants (likely using the advanced N4 or N3 processes for MI300 variants). More chips in the pipeline might lead to price drops, especially for models like the Radeon RX 7900 XTX or the Instinct MI300X. If AMD is confident in securing long-term revenue from Meta, it might be less inclined to keep prices high for consumers and could use economies of scale to reduce costs. Historically, AMD has been more aggressive on price-to-performance than NVIDIA, and a stable enterprise cash cow could allow them to double down on that strategy.

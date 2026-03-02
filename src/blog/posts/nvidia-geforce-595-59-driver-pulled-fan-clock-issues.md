@@ -71,10 +71,7 @@ The PS5 Pro also includes 16GB of GDDR6 RAM but with a higher bandwidth configur
 
 [![NVIDIA GeForce RTX 5070 Ti](https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21)
 
-
-
 <!-- featured-product: NVIDIA GeForce RTX 5070 Ti | From £699 | https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21 -->
-
 
 ## Gaming Library and Exclusives
 

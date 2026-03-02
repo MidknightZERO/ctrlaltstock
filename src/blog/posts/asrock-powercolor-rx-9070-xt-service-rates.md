@@ -68,10 +68,7 @@ Other RX 9070 XT models from brands like Gigabyte, MSI, and ASUS showed notably 
 
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
 
-
-
-<!-- featured-product: AMD Radeon RX 7800 XT | From £479 | https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21 -->
-
+<!-- featured-product: AMD Radeon [RX 7800 XT](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) | From £479 | https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21 -->
 
 ## What does this mean for prices?
 The revelation about higher service rates hasn't yet translated into significant price drops for these specific models. Currently, the ASRock [RX 9070](https://ctrlaltstock.com/blog/china-only-amd-rx-9070-gre-yeston-waifu-thermals-gaming-noise-benchmarks) XT Taichi remains priced at £679 at Overclockers UK, while the PowerColor RX 9070 XT Reaper sits at £629 on Scan.co.uk. However, price tracking data from the past month shows these models have been slightly more prone to discounts compared to lower-service-rate alternatives. The ASRock variant has seen three price drops in the past 30 days, with the largest being £20 off, while the PowerColor Reaper has had two £15 reductions.

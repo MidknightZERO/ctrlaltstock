@@ -57,10 +57,7 @@ Linux 7.0 has arrived with a fresh wave of AMDGPU [driver updates](https://ctrla
 
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
-
-
-<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
-
+<!-- featured-product: [AMD Radeon](https://ctrlaltstock.com/blog/amd-software-adrenalin-edition-26-2-2-release-notes) RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
 
 ## What's new in Linux 7.0 for AMDGPU?
 The latest Linux kernel introduces several key improvements for AMD's graphics drivers, particularly for older Radeon cards. These updates focus on [stability](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update), power management, and bug fixes that have been long-standing pain points for users. The work primarily centres on the `amdgpu` driver's "legacy" and "pre-GCN" code paths, which handle GPUs from the Radeon HD 5000 series up to the first generation of Graphics Core Next (GCN 1.0/1.1), such as the Radeon HD 7000 and R7/R9 200/300 series.

@@ -61,10 +61,7 @@ AMD's rapid product cadence means that new CPUs, GPUs and chipsets hit the marke
 
 [![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)
 
-
-
 <!-- featured-product: NVIDIA GeForce RTX 4080 Super | From £959 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21 -->
-
 
 ## Why Updates Matter for AMD Hardware  
 

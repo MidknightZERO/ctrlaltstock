@@ -34,7 +34,7 @@ coverImage: https://images.pexels.com/photos/39018/cards-jass-cards-card-game-st
 date: '2026-02-27'
 excerpt: In today’s rapidly evolving tech landscape, the GPU market remains a focal
   point for both consumers and gamers alike. With the UK tech hardware price-tracking
-  blog, CtrlAltStock, consistently deliveri
+  blog, CtrlAltStock, consistently
 featuredProductId: ''
 images:
 - https://images.pexels.com/photos/7708407/pexels-photo-7708407.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
@@ -92,8 +92,5 @@ With prices in GBP and a focus on UK relevance, this content serves as a reliabl
 (Word count: 859)
 
 [![AMD Ryzen 7 7800X3D](https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21)
-
-
-
 
 <!-- featured-product: AMD Ryzen 7 7800X3D | From £349 | https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21 -->

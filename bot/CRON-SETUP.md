@@ -80,6 +80,12 @@ From repo root:
 
 Do not skip steps 1 or 2 if you want topic-relevant images; step 4 will abort if the fix list was not created.
 
+**Only re-fetch failed covers**: To re-run image backfill only for posts that currently show the CAS logo (i.e. every source failed), use:
+```powershell
+python bot/backfill_content.py --images-only --only-failed-covers
+```
+This skips posts that already have a real cover so you can target only “failed” posts.
+
 ## Manual Run
 
 ```bash

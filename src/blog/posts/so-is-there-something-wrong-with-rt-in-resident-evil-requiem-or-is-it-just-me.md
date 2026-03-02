@@ -55,10 +55,7 @@ title: So is there something wrong with RT in Resident Evil Requiem or is it jus
 
 Certainly! Here’s a refined and expanded version of your article, ensuring it meets the 900-word target while providing rich, accurate details, examples, and relevant UK-specific information.
 
-
-<!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
-
-
+<!-- featured-product: [NVIDIA GeForce](https://ctrlaltstock.com/blog/micron-gddr7-memory-finally-spotted-on-a-geforce-rtx-50-card-bringing-the-series) RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
 
 ---
 So is there something wrong with RT in *[Resident Evil Requiem](https://ctrlaltstock.com/blog/resident-evil-requiem-hdr-review-best-hdr-settings-hdr-is-broken-great-game-on-p)* or is it just me? The conversation around the latest *Resident Evil Requiem* release has become a hot topic among UK gamers, particularly those who rely on high-performance GPUs like the NVIDIA RTX 4070. While the game is widely praised for its visuals and immersive atmosphere, a growing number of PC enthusiasts—especially those with powerful RTX 4070 models—have reported persistent visual issues that are both intriguing and concerning. These reports centre around excessive noise and grain appearing in ray-traced sections of the game, especially during dynamic scenes such as Leon’s city chase. This phenomenon has sparked a wave of analysis, with many users and experts diving deep into the technical aspects to determine whether this is a hardware limitation or a software quirk.

@@ -64,10 +64,7 @@ Let's start with the big picture: this year has seen a surge in demand for high-
 
 [![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)
 
-
-
 <!-- featured-product: NVIDIA GeForce RTX 4080 Super | From £959 | https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21 -->
-
 
 ## What's in the News?
 

@@ -63,10 +63,7 @@ title: Portable Sonos Play speaker leaks on Canadian Best Buy
 
 **Portable Sonos Play speaker leaks on Canadian Best Buy**
 
-
-<!-- featured-product: PlayStation 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
-
-
+<!-- featured-product: [PlayStation](https://ctrlaltstock.com/blog/grand-theft-auto-vi-title-ids-have-been-added-to-the-playstation-database) 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
 
 A new Sonos speaker has just leaked ahead of a March 31st release, and it could be the perfect blend of portability, durability, and sound quality for UK buyers. The Sonos Play, spotted on Canadian Best Buy, promises a rugged design, 24-hour battery life, and a £299 price point that undercuts the Move 2. For bargain hunters tracking [hardware](https://ctrlaltstock.com/blog/nintendo-sega-police-raids-gaming-hardware-impact) deals, this leak is worth paying attention to—especially with a potential UK launch on the horizon.
 **What's the story?**

@@ -104,15 +104,21 @@ class UnsplashConfig:
 @dataclass
 class PexelsConfig:
     """Used for backfill (200 req/h). New posts use Unsplash (50 req/h)."""
-    api_key: str = os.getenv("PEXELS_API_KEY", "")
+    api_key: str = os.getenv("PEXELS_API_KEY") or os.getenv("PEXELS_ACCESS_KEY", "")
     base_url: str = "https://api.pexels.com/v1"
 
 
 @dataclass
 class GroqConfig:
-    """Groq API for vision (hero image validation)."""
+    """Groq API for vision (hero image validation) and optional image-query suggestion fallback."""
     api_key: str = os.getenv("GROQ_API_KEY", "")
     vision_model: str = "meta-llama/llama-4-scout-17b-16e-instruct"
+
+
+@dataclass
+class SerpAPIConfig:
+    """Optional: Google Images fallback when Pexels/Unsplash return no usable results."""
+    api_key: str = os.getenv("SERPAPI_API_KEY", "")
 
 
 @dataclass
@@ -144,6 +150,8 @@ class BotConfig:
     # Site info
     site_name: str = "CtrlAltStock"
     site_url: str = "https://ctrlaltstock.com"
+    # Cover image when all search sources fail (source file: src/images/Logo.png; served at /Logo.png)
+    cas_logo_fallback_url: str = (os.getenv("CAS_LOGO_FALLBACK_URL") or "").strip() or f"{(os.getenv('SITE_URL') or 'https://ctrlaltstock.com').rstrip('/')}/Logo.png"
     author_name: str = "CtrlAltStock Team"
     author_avatar: str = "https://ctrlaltstock.com/logo.png"
     author_bio: str = "The CtrlAltStock team monitors tech hardware prices and stock levels 24/7 so you don't have to."
@@ -197,6 +205,7 @@ class BotConfig:
 # Global config instances
 ai = AIConfig()
 groq = GroqConfig()
+serpapi = SerpAPIConfig()
 newsapi = NewsAPIConfig()
 giantbomb = GiantBombConfig()
 reddit = RedditConfig()

@@ -96,6 +96,7 @@ http://localhost:5173/blog-editor
 - Add images, tags, and product recommendations
 - Use the preview feature to see how your post will look
 - Save your posts and export them for backup
+- **After pulling or changing posts:** run `npm run build:blog` to regenerate `public/blog-posts.json` (ensures blog list is ordered newest first for fallback/static builds)
 
 ## Deployment
 

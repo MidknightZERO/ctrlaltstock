@@ -11,10 +11,12 @@ export interface BlogHeroProps {
   className?: string;
 }
 
+const BRAND_GREEN = '#9ed04b';
+
 /**
  * Hero section with background image and SVG title overlay.
- * The title is rendered as vector text so it can be animated, recolored,
- * and scaled per viewport without baking into the image.
+ * Title wraps to container via foreignObject; subtle glow and fade-in animation.
+ * CAS logo in bottom-right with glow and animation.
  */
 const BlogHero: React.FC<BlogHeroProps> = ({
   coverImage,
@@ -51,30 +53,75 @@ const BlogHero: React.FC<BlogHeroProps> = ({
         className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/70"
         aria-hidden
       />
-      {/* SVG title overlay - scales with viewport, animatable, recolorable */}
+      {/* Title overlay: SVG with foreignObject so text wraps to container; glow + fade-in */}
       <div
         className={`absolute inset-0 flex p-6 md:p-8 lg:p-10 ${positionClass}`}
       >
         <svg
-          className="h-auto w-full max-w-4xl"
-          viewBox="0 0 800 120"
+          className="h-full w-full max-w-4xl animate-hero-title-fade"
+          viewBox="0 0 800 200"
           preserveAspectRatio="xMidYMid meet"
-          style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.5))' }}
         >
-          <text
-            x={titlePosition === 'center' ? '400' : '0'}
-            y="70"
-            textAnchor={titlePosition === 'center' ? 'middle' : 'start'}
-            className="fill-white font-bold"
-            style={{
-              fontFamily: 'system-ui, -apple-system, sans-serif',
-              fontSize: '48px',
-            }}
+          <foreignObject
+            x={0}
+            y={0}
+            width="100%"
+            height="100%"
+            className="overflow-visible"
           >
-            {title}
-          </text>
+            <div
+              xmlns="http://www.w3.org/1999/xhtml"
+              className="h-full w-full flex flex-col justify-center"
+              style={{
+                wordWrap: 'break-word',
+                overflowWrap: 'break-word',
+                maxHeight: '100%',
+              }}
+            >
+              <div
+                className="text-white font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight"
+                style={{
+                  fontFamily: 'system-ui, -apple-system, sans-serif',
+                  filter: `drop-shadow(0 0 10px ${BRAND_GREEN}40) drop-shadow(0 2px 8px rgba(0,0,0,0.5))`,
+                }}
+              >
+                {title}
+              </div>
+            </div>
+          </foreignObject>
         </svg>
       </div>
+      {/* CAS logo bottom-right with subtle glow and animation */}
+      <div
+        className="absolute bottom-4 right-4 flex items-center justify-center animate-hero-logo-fade"
+        aria-hidden
+      >
+        <img
+          src="/Logo.png"
+          alt=""
+          className="h-12 w-auto md:h-14 object-contain"
+          style={{
+            filter: 'drop-shadow(0 0 12px rgba(158, 208, 75, 0.4)) drop-shadow(0 2px 8px rgba(0,0,0,0.4))',
+          }}
+        />
+      </div>
+      <style>{`
+        @keyframes hero-title-fade {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        @keyframes hero-logo-fade {
+          from { opacity: 0; transform: scale(0.95); }
+          to { opacity: 1; transform: scale(1); }
+        }
+        .animate-hero-title-fade {
+          animation: hero-title-fade 0.4s ease-out forwards;
+        }
+        .animate-hero-logo-fade {
+          animation: hero-logo-fade 0.5s ease-out 0.2s forwards;
+          opacity: 0;
+        }
+      `}</style>
     </div>
   );
 };

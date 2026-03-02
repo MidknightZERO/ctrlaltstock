@@ -58,10 +58,7 @@ In terms of specifications, the RTX 5080 delivers up to 12 GB of GDDR7 memory ru
 
 [![NVIDIA GeForce RTX 5080](https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21)
 
-
-
-<!-- featured-product: NVIDIA GeForce RTX 5080 | From £1,199 | https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21 -->
-
+<!-- featured-product: [NVIDIA GeForce](https://ctrlaltstock.com/blog/micron-gddr7-memory-finally-spotted-on-a-geforce-rtx-50-card-bringing-the-series) RTX 5080 | From £1,199 | https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21 -->
 
 ## Building Around the RTX 5080
 Building an RTX 5080 setup in the UK can be straightforward, but it's important to consider compatibility with your existing hardware. Most enthusiasts pair the RTX 5080 with a robust [motherboard](https://ctrlaltstock.com/blog/radeon-rx-9070-xt-taichi-white-review-details-asrock-s-first-card-with-built-in-) that supports its PCIe 4.0 interface and vertical slot configurations. For example, the ASUS ROG Strix Z790-E is a popular choice for RTX 5080 configurations due to its excellent thermal management and reliable power delivery. Similarly, the MSI MPG Z790 Carbon WiFi offers great value for those looking to balance performance and cost.

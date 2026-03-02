@@ -34,7 +34,7 @@ coverImage: https://images.pexels.com/photos/32728404/pexels-photo-32728404.jpeg
 date: '2026-02-28'
 excerpt: The gaming handheld market in the UK has seen a surge in popularity, with
   devices like the ASUS ROG Ally leading the charge. However, recent developments
-  involving AMD's Ryzen Z1 Extreme processor hav
+  involving AMD's Ryzen Z1 Extreme processor
 featuredProductId: ''
 images:
 - https://images.pexels.com/photos/33022723/pexels-photo-33022723.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
@@ -65,10 +65,7 @@ A related factor is the rise of alternative technologies. AMD has shifted focus 
 
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
-
-
-<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
-
+<!-- featured-product: [AMD Radeon](https://ctrlaltstock.com/blog/amd-software-adrenalin-edition-26-2-2-release-notes) RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
 
 ## Impact on UK [Gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) Handhelds
 

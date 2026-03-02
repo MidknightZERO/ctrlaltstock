@@ -39,6 +39,13 @@ const BlogHome: React.FC = () => {
     };
   }, []);
 
+  // Scroll to top when content finishes loading (layout may shift; ensure user stays at top)
+  useEffect(() => {
+    if (!isInitialLoading) {
+      window.scrollTo(0, 0);
+    }
+  }, [isInitialLoading]);
+
   const totalPages = Math.max(1, Math.ceil(filteredPosts.length / POSTS_PER_PAGE));
   const displayedPosts = useMemo(() => {
     const start = (page - 1) * POSTS_PER_PAGE;
@@ -115,7 +122,7 @@ const BlogHome: React.FC = () => {
       );
     }
 
-    setFilteredPosts(result);
+    setFilteredPosts([...result].sort(sortByDate));
     setPage(1);
   };
 

@@ -10,7 +10,6 @@ import { getPostBySlug, getAllPosts, formatPublishDate, savePost, getRelatedPost
 import { ShoppingCart, ExternalLink } from 'react-feather';
 import { AmazonProductGrid } from './components/AmazonProductCard';
 import ArticleDiscordCTA from './components/ArticleDiscordCTA';
-import ArticleQuiz from './components/ArticleQuiz';
 import BlogHero from './components/BlogHero';
 import BlogPageBackground from './components/BlogPageBackground';
 import { useToast } from '../components/Toast';
@@ -24,6 +23,23 @@ const BlogPost: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
   const { showToast } = useToast();
+
+  // Scroll to top on mount and when slug changes
+  useEffect(() => {
+    const prev = history.scrollRestoration;
+    history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+    return () => {
+      history.scrollRestoration = prev;
+    };
+  }, [slug]);
+
+  // Scroll to top when post content loads (viewport can end up mid-page otherwise)
+  useEffect(() => {
+    if (post) {
+      window.scrollTo(0, 0);
+    }
+  }, [post]);
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -253,35 +269,8 @@ const BlogPost: React.FC = () => {
               </div>
             )}
 
-            {/* Frontmatter images (e.g. from bot) when present */}
-            {post.images && post.images.length > 0 && (
-              <section className="mt-10 mb-10" aria-label="Images">
-                <h2 className="text-xl font-semibold mb-6 text-[#9ed04b]">Images</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {post.images.filter((url): url is string => typeof url === 'string' && url.trim() !== '').map((url, idx) => (
-                    <figure key={idx} className="flex justify-center">
-                      <div className="inline-block p-4 md:p-6 bg-white rounded-xl shadow-lg border border-gray-200/80 max-w-full">
-                        <img
-                          src={url}
-                          alt=""
-                          className="rounded-lg max-h-80 md:max-h-96 object-contain mx-auto block"
-                          onError={(e) => {
-                            const el = e.currentTarget;
-                            if (el && el.src !== '/Logo.png') el.src = '/Logo.png';
-                          }}
-                        />
-                      </div>
-                    </figure>
-                  ))}
-                </div>
-              </section>
-            )}
-
             {/* Discord CTA */}
             <ArticleDiscordCTA />
-
-            {/* Quiz */}
-            <ArticleQuiz tags={post.tags || []} />
 
             {/* Share buttons */}
             <div className="mt-12 flex justify-center">

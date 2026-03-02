@@ -34,7 +34,7 @@ coverImage: https://images.pexels.com/photos/39018/cards-jass-cards-card-game-st
 date: '2026-02-28'
 excerpt: If you've been waiting for a budget-friendly AMD GPU that doesn't sacrifice
   performance, the freshly-released China-only RX 9070 GRE "Yeston Waifu" might just
-  be the answer. With fresh benchmarks, the
+  be the answer. With fresh benchmarks,
 featuredProductId: ''
 images:
 - https://images.pexels.com/photos/7708407/pexels-photo-7708407.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
@@ -77,10 +77,7 @@ The video also highlights a few quirks: the "Waifu" branding is a marketing nod 
 
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
-
-
-<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
-
+<!-- featured-product: [AMD Radeon](https://ctrlaltstock.com/blog/amd-software-adrenalin-edition-26-2-2-release-notes) RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->
 
 ## What does this mean for prices?
 

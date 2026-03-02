@@ -99,11 +99,14 @@ def run(dry_run: bool = False) -> dict:
     Build fix list in one or few batched API calls: send all posts (or chunks),
     get back image_search_queries for every post in one response per chunk.
     """
+    from utils import pipeline_log
     posts = load_posts()
     if not posts:
         log.warning("No posts found")
+        pipeline_log("generate_fix_list no posts found", "generate_fix_list")
         return {"posts": {}, "generated_at": datetime.now(timezone.utc).isoformat()}
 
+    pipeline_log(f"generate_fix_list started {len(posts)} posts dry_run={dry_run}", "generate_fix_list")
     fix_list = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "posts": {},
@@ -129,11 +132,44 @@ def run(dry_run: bool = False) -> dict:
         try:
             raw = call_ai(prompt, system=SYSTEM_PROMPT)
             data = extract_json_from_response(raw)
-            posts_data = data.get("posts") or {}
+            posts_data = data.get("posts")
+
+            # API sometimes returns "posts" as a list instead of object; normalize to dict keyed by slug
+            if isinstance(posts_data, list):
+                new_posts = {}
+                for i, item in enumerate(posts_data):
+                    slug = (chunk[i][1].get("slug") or chunk[i][0].stem) if i < len(chunk) else f"unknown_{i}"
+                    title_fallback = (chunk[i][1].get("title") or "")[:50] if i < len(chunk) else ""
+                    if isinstance(item, dict):
+                        if "slug" in item and "image_search_queries" in item:
+                            new_posts[item["slug"]] = {"image_search_queries": item.get("image_search_queries") or [title_fallback]}
+                        elif "image_search_queries" in item:
+                            new_posts[slug] = {"image_search_queries": item.get("image_search_queries") or [title_fallback]}
+                        elif len(item) == 1:
+                            k, v = next(iter(item.items()))
+                            if isinstance(v, dict) and "image_search_queries" in v:
+                                new_posts[k] = v
+                            elif isinstance(v, list):
+                                new_posts[k] = {"image_search_queries": v}
+                            else:
+                                new_posts[slug] = {"image_search_queries": [title_fallback]}
+                        else:
+                            new_posts[slug] = {"image_search_queries": [title_fallback]}
+                    else:
+                        new_posts[slug] = {"image_search_queries": [title_fallback]}
+                posts_data = new_posts
+            elif not isinstance(posts_data, dict):
+                posts_data = {}
+
             for path, post in chunk:
                 slug = post.get("slug") or path.stem
                 entry = posts_data.get(slug) or {}
-                queries = entry.get("image_search_queries") or []
+                if isinstance(entry, list):
+                    queries = [str(q).strip() for q in entry if str(q).strip()][:4]
+                elif isinstance(entry, dict):
+                    queries = entry.get("image_search_queries") or []
+                else:
+                    queries = []
                 if isinstance(queries, list):
                     queries = [str(q).strip() for q in queries if str(q).strip()][:4]
                 if not queries:
@@ -150,7 +186,12 @@ def run(dry_run: bool = False) -> dict:
     FIX_LIST_DIR.mkdir(parents=True, exist_ok=True)
     FIX_LIST_PATH.write_text(json.dumps(fix_list, indent=2, ensure_ascii=False), encoding="utf-8")
     log.info("Wrote fix list to %s (%d posts)", FIX_LIST_PATH, len(fix_list["posts"]))
-
+    pipeline_log(f"generate_fix_list wrote fix-list.json {len(fix_list['posts'])} posts", "generate_fix_list")
+    for i, (slug, entry) in enumerate(list(fix_list["posts"].items())[:10]):
+        q = (entry or {}).get("image_search_queries", [])[:3]
+        pipeline_log(f"  slug={slug} queries={q}", "generate_fix_list")
+    if len(fix_list["posts"]) > 10:
+        pipeline_log(f"  ... and {len(fix_list['posts']) - 10} more", "generate_fix_list")
     return fix_list
 
 

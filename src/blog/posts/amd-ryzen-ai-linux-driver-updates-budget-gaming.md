@@ -65,10 +65,7 @@ Previously, issues emerged with XDNA accelerators. New fixes enhance compatibili
 
 [![AMD Ryzen 5 7600](https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+Ryzen+5+7600&tag=ctrlaltstock-21)
 
-
-
-<!-- featured-product: AMD Ryzen 5 7600 | From £199 | https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+Ryzen+5+7600&tag=ctrlaltstock-21 -->
-
+<!-- featured-product: [AMD Ryzen](https://ctrlaltstock.com/blog/amd-ryzen-500-medusa-rdna-4m-igpu-shows-rdna-4-matrix-isa-support-fsr-4-support-) 5 7600 | From £199 | https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+Ryzen+5+7600&tag=ctrlaltstock-21 -->
 
 ## Impact on Pricing
 Updated [drivers](https://ctrlaltstock.com/blog/amdxdna-ryzen-ai-driver-fixes-linux-7-0-rc2) influence market dynamics. Competitive pricing may follow as demand grows. Current availability remains stable.

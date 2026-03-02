@@ -195,6 +195,11 @@ def check_image_relevance(post: fm.Post) -> Tuple[bool, str]:
 
 def run_validation(fix: bool = False) -> None:
     """Run all validations, optionally apply fixes, and write validation-report.json for backfill."""
+    try:
+        from utils import pipeline_log
+        pipeline_log(f"validate_existing_content started fix={fix}", "validate_existing")
+    except Exception:
+        pass
     posts = load_posts()
     log.info("Validating %d posts (fix=%s)", len(posts), fix)
 
@@ -264,6 +269,11 @@ def run_validation(fix: bool = False) -> None:
     except Exception as e:
         log.warning("Could not write validation report: %s", e)
 
+    try:
+        from utils import pipeline_log
+        pipeline_log(f"validate_existing_content wrote validation-report.json {len(report.get('posts', {}))} posts", "validate_existing")
+    except Exception:
+        pass
     log.info("Done. H1 fixed=%d, partial-word fixed=%d", h1_fixed, partial_fixed)
 
 

@@ -41,7 +41,7 @@ coverImage: https://images.pexels.com/photos/39018/cards-jass-cards-card-game-st
 date: '2026-02-28'
 excerpt: The upcoming release of *Resident Evil Requiem* on the PlayStation 5 Pro
   has ignited fresh excitement among UK gamers, particularly budget-conscious players
-  eager to see how Sony's new PSSR (PlayStati
+  eager to see how Sony's new PSSR
 featuredProductId: ''
 images:
 - https://images.pexels.com/photos/7708407/pexels-photo-7708407.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
@@ -71,10 +71,7 @@ The update will be released globally in the coming weeks, with Sony stating it w
 
 [![Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
 
-
-
-<!-- featured-product: Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
-
+<!-- featured-product: Avatar: The Last Airbender - The Quest for Balance ([Nintendo Switch](https://ctrlaltstock.com/blog/avatar-last-airbender-game-9-99-amazon)) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
 
 ## What does this mean for prices?
 

@@ -66,10 +66,7 @@ title: Grand Theft Auto VI title IDs have been added to the PlayStation database
 ---
 **Title:** Grand Theft Auto VI Title IDs Added to [PlayStation Database](https://ctrlaltstock.com/blog/gatax6-updates-playstation-harmony) – What This Means for Gamers
 
-
-<!-- featured-product: PlayStation 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
-
-
+<!-- featured-product: [PlayStation](https://ctrlaltstock.com/blog/industry-murmurs-suggest-sony-will-no-longer-release-ps5-exclusives-on-pc-new-le) 5 Pro | From £699 | https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg 416w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX208_CB1169409_QL70_.jpg 208w,https://m.media-amazon.com/images/I/71se8WEmEvL._AC_SX416_CB1169409_QL70_.jpg | https://www.amazon.co.uk/s?k=PlayStation+5+Pro&tag=ctrlaltstock-21 -->
 
 **H1:** Grand Theft Auto VI Title IDs Have Been Added to the PlayStation Database: A Major Update for Gamers
 **Introduction**

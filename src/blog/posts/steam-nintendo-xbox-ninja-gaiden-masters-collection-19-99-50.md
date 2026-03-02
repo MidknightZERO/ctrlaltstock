@@ -34,7 +34,7 @@ coverImage: https://images.pexels.com/photos/5626726/pexels-photo-5626726.jpeg?a
 date: '2026-02-27'
 excerpt: In the rapidly evolving landscape of graphics cards, AMD continues to make
   significant strides in the GPU market as we move through 2026. With technological
-  advancements and competitive pricing strate
+  advancements and competitive pricing
 featuredProductId: ''
 images:
 - https://images.pexels.com/photos/28774616/pexels-photo-28774616.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200
@@ -61,10 +61,7 @@ The Radeon RX 7900 XT and RX 7800 XT have particularly stood out in the market, 
 
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
 
-
-
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
-
 
 ## Price Trends and Market Position
 

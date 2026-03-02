@@ -87,6 +87,14 @@ def _release_lock():
 
 # ── Import pipeline modules ───────────────────────────────────────────────────
 
+def _pipeline_log(msg: str) -> None:
+    try:
+        from utils import pipeline_log
+        pipeline_log(msg, "scheduler")
+    except Exception:
+        pass
+
+
 def _save_partial_draft(draft: dict, story: dict, run_id: str, last_step: str, error: str) -> Path | None:
     """Save partial draft to .tmp/drafts so it can be resumed."""
     from utils import save_partial_draft
@@ -223,6 +231,7 @@ def run_pipeline_for_story(story: dict, dry_run: bool = False) -> bool:
 
         if success:
             log.info("[SUCCESS] Pipeline completed successfully: %s", draft["frontmatter"].get("title", ""))
+            _pipeline_log(f"published slug={draft['frontmatter'].get('slug', '')} title={draft['frontmatter'].get('title', '')[:40]}")
         else:
             log.error("[ERROR] Pipeline: publish step failed")
 
@@ -295,6 +304,7 @@ def run_pipeline(dry_run: bool = False) -> bool:
 
 def _run_pipeline_inner(dry_run: bool = False) -> bool:
     from scraper import get_top_stories
+    _pipeline_log(f"run started dry_run={dry_run}")
 
     success_count = 0
     total_attempted = 0
@@ -321,6 +331,7 @@ def _run_pipeline_inner(dry_run: bool = False) -> bool:
         return False
 
     if success_count > 0 and not dry_run:
+        _pipeline_log("backfill (links, inline images) starting")
         log.info("Running backfill (internal links, inline images, featured product)...")
         try:
             from backfill_content import run_backfill
@@ -329,6 +340,7 @@ def _run_pipeline_inner(dry_run: bool = False) -> bool:
             log.warning("Backfill failed (non-fatal): %s", e)
 
         if getattr(config.bot, "run_image_refresh_after_cron", False):
+            _pipeline_log("image_refresh (fix_list + backfill --images-only) starting")
             log.info("Running image refresh (fix list + cover images for existing posts)...")
             try:
                 from generate_fix_list import run as generate_fix_list_run
@@ -338,6 +350,8 @@ def _run_pipeline_inner(dry_run: bool = False) -> bool:
                 log.info("Image refresh (fix list + covers) completed.")
             except Exception as e:
                 log.warning("Image refresh failed (non-fatal): %s", e)
+            finally:
+                _pipeline_log("image_refresh done")
 
         log.info("Pushing commits to remote...")
         try:

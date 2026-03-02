@@ -58,10 +58,7 @@ title: 'Prime Backgammon FREE: Grab the Classic Board Game Now (100% Off!)'
 ---
 ##The Ultimate Free Xbox Game Alert: Grab Prime Backgammon While It’s Free (100% Off!)
 
-
-<!-- featured-product: Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
-
-
+<!-- featured-product: Avatar: The Last Airbender - The Quest for Balance ([Nintendo Switch](https://ctrlaltstock.com/blog/avatar-last-airbender-game-9-99-amazon)) | From £9.99 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg | https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21 -->
 
 **Hook:** Gamers, mark your calendars! This weekend, [Xbox Game Pass Ultimate](https://www.amazon.co.uk/s?k=Xbox+Game+Pass+Ultimate&tag=ctrlaltstock-21) subscribers are being treated to a massive freebie: *Prime Backgammon*, normally a £9.99 purchase, is completely free to download and play this month. This isn't just a discount; it's a 100% price drop, making it the perfect opportunity to add a strategic classic to your library without spending a penny. With the Xbox Game Pass Ultimate deal still active for many, this freebie slots perfectly into the current gaming landscape, offering instant value without any commitment. But don't wait too long – these free games often vanish faster than you can say "checkmate!"
 

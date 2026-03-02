@@ -12,6 +12,7 @@ Usage:
 """
 
 import json
+import re
 import sys
 import logging
 import logging.handlers
@@ -23,7 +24,7 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 
 import config
 from ai_writer import call_ai
-from utils import sanitize_article_content
+from utils import sanitize_article_content, detect_content_issues, fix_truncated_link_deterministic, META_SECTION_HEADINGS
 
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
@@ -68,6 +69,59 @@ Your job is to improve a draft article by editing it in place. Specifically:
 
 Return ONLY the improved article markdown. No commentary. No JSON metadata. Just the complete article text.
 """
+
+REPAIR_SYSTEM_PROMPT = """You are a copy editor. You will receive an article that has formatting or truncation problems.
+
+You must ONLY do these two things:
+1. **Paragraph breaks**: Insert double newlines between paragraphs so no paragraph exceeds 5 sentences. Break up walls of text.
+2. **Truncated link**: If the article ends with an incomplete markdown link (e.g. ](https://... with no closing parenthesis), remove that broken link or replace with plain text. Do not leave broken [text](url fragments.
+
+Do NOT add new sections, headings, summaries, SEO text, Key Takeaways, Internal Links for Further Reading, or change the meaning or language of any paragraph. Do NOT add meta-commentary. Preserve all existing headings, lists, links, and <!-- featured-product --> comments.
+
+Return ONLY the corrected article markdown. No explanation."""
+
+
+def _validate_repair_output(original: str, repaired: str) -> bool:
+    """
+    Validate that repaired content did not add meta sections or change length drastically.
+    Returns True if repair is acceptable, False to discard and use original.
+    """
+    orig_words = len(original.split())
+    rep_words = len(repaired.split())
+    if orig_words > 0 and rep_words > 0:
+        ratio = rep_words / orig_words
+        if ratio < 0.8 or ratio > 1.25:
+            return False
+    lower = repaired.lower()
+    for bad in META_SECTION_HEADINGS:
+        if f"# {bad}" in lower or f"## {bad}" in lower:
+            return False
+    if "key takeaways" in lower and "internal links" in lower:
+        return False
+    return True
+
+
+def run_content_repair(content: str, title: str = "") -> str:
+    """
+    Run AI repair pass on content that has formatting or truncation issues.
+    Call detect_content_issues first; if issues, use this to fix. Returns repaired content.
+    Validates output; if validation fails, returns original (or deterministic truncation fix only).
+    """
+    if not content or not content.strip():
+        return content
+    repair_prompt = f"""Fix the following article. Add proper paragraph breaks (no wall of text) and fix or remove any truncated link at the end.
+
+ARTICLE:
+---
+{content}
+---"""
+    repaired = call_ai(repair_prompt, system=REPAIR_SYSTEM_PROMPT)
+    repaired = strip_prompt_leakage(repaired)
+    repaired = sanitize_article_content(repaired, title)
+    if not _validate_repair_output(content, repaired):
+        log.warning("Repair validation failed (length or meta sections); keeping original, applying deterministic truncation fix only")
+        return fix_truncated_link_deterministic(content)
+    return repaired
 
 
 BLOG_CATEGORIES_PATH = Path(config.git.repo_path) / "public" / "blog-categories.json"
@@ -156,7 +210,8 @@ Remember: return ONLY the complete improved article markdown (full length). Use 
 def strip_prompt_leakage(text: str) -> str:
     """
     Remove lines that look like prompt instructions or metadata leaked by the model.
-    Only removes lines that start with known instruction prefixes (case-insensitive).
+    Removes lines starting with known instruction prefixes and meta section headings
+    (SEO Optimization, Key Takeaways, Internal Links for Further Reading, Summary).
     """
     if not text or not text.strip():
         return text
@@ -169,10 +224,19 @@ def strip_prompt_leakage(text: str) -> str:
     )
     lines = text.split("\n")
     cleaned = []
+    skip_next_para = False
     for line in lines:
         stripped = line.strip()
         lower = stripped.lower()
         if any(lower.startswith(p) for p in start_patterns):
+            continue
+        if re.match(r"^#+\s+", stripped):
+            heading_text = re.sub(r"^#+\s+", "", stripped).strip().lower()
+            if heading_text in META_SECTION_HEADINGS:
+                skip_next_para = True
+                continue
+            skip_next_para = False
+        if skip_next_para:
             continue
         cleaned.append(line)
     return "\n".join(cleaned).strip()
@@ -220,6 +284,19 @@ def run_editorial_pass(draft: Dict[str, Any]) -> Dict[str, Any]:
     # Strip ```markdown wrappers and redundant leading H1 — AI sometimes returns these
     title = draft.get("frontmatter", {}).get("title", "")
     improved_content = sanitize_article_content(improved_content, title)
+
+    # If content has formatting or truncation issues, run a focused AI repair pass
+    issues = detect_content_issues(improved_content)
+    if issues.get("wall_of_text") or issues.get("truncated_link"):
+        log.info(
+            "Content issues detected (wall_of_text=%s, truncated_link=%s), running repair pass",
+            issues.get("wall_of_text"),
+            issues.get("truncated_link"),
+        )
+        try:
+            improved_content = run_content_repair(improved_content, title)
+        except Exception as e:
+            log.warning("Repair pass failed, keeping editor output: %s", e)
 
     edited = dict(draft)
     edited["content"] = improved_content.strip()
