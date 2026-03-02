@@ -65,7 +65,6 @@ Initially, the Ryzen AI 400 APUs are slated for OEM (Original Equipment Manufact
 *   **Ryzen AI 5 PRO 435G/435GE:** Entry-level models, still packing a punch for general use and light gaming, possibly featuring 6 Zen 5 cores and 4 RDNA 3.5 CUs, offering excellent value.
 The "G" suffix typically denotes standard power consumption, usually around a 65W TDP for desktop parts, while "GE" signifies a lower TDP (Thermal Design Power) variant, often around 35W. These "GE" models are designed for more compact or energy-efficient systems where heat dissipation and power draw are critical considerations. This focus on mobile-level efficiency while delivering desktop-class performance is a key design philosophy here, allowing for cooler and quieter operation in a wider range of PC form factors. For our community, this could mean more powerful mini-ITX builds
 
-
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
 
