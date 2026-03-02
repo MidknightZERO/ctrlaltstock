@@ -34,7 +34,7 @@ coverImage: https://images.pexels.com/photos/39018/cards-jass-cards-card-game-st
 date: '2026-02-28'
 excerpt: The ASUS ProArt PX13 GoPro Edition has captured significant attention in
   the UK market. It positions itself as a standout option for professionals, students,
-  and small business owners. This
+  and small business owners. This review
 featuredProductId: ''
 images:
 - https://images.pexels.com/photos/7708407/pexels-photo-7708407.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200

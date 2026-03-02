@@ -49,7 +49,7 @@ tags:
 title: Net Income for Mega Cap AI Companies - Updated for Nvidia and with more metrics!
 ---
 
-[Nvidia](https://ctrlaltstock.com/blog/celebrating-the-geforce-3-its-revolutionary-programmable-shaders-25-years-later)'s Record Net Income and Market Dynamics: A 2026 Perspective
+[Nvidia](https://ctrlaltstock.com/blog/amd-ryzen-ai-400-desktop-apus-uk-builder-guide)'s Record Net Income and Market Dynamics: A 2026 Perspective
 
 
 <!-- featured-product: NVIDIA GeForce RTX 5090 | From £1,999 | https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21 -->
