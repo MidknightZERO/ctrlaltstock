@@ -60,9 +60,7 @@ It's not just the RTX 5070 making waves; its more affordable sibling, the GeForc
 The significance of the Steam Hardware Survey cannot be overstated. Unlike sales figures that only show what people *buy*, this survey shows what hardware people are *using* to game. It’s a powerful snapshot of real-world adoption and indicates which components are truly making their way into gaming PCs. The fact that the RTX 4060's share didn't necessarily decline, but was simply outpaced by the explosive growth of the 50-series, highlights a rapid transition in the market. Gamers aren't just upgrading; they're upgrading to the newest generation in droves, indicating strong confidence in NVIDIA's latest offerings. This rapid shift also implies that many gamers might have been holding out for the next generation, bypassing the RTX 40-series in anticipation of better value and performance.
 Beyond GPUs, the survey also highlighted another interesting trend: a sudden surge in the popularity of systems equipped with 32GB of RAM. While 16GB has been the standard for years, the increasing demands of modern games, multitasking, and other applications mean that 32GB is quickly becoming the new baseline for a smooth gaming experience. Many new AAA titles released in 2025 and early 2026, such as "The Elder Scrolls VI" (early access) and "Grand Theft Auto VI", listed 32GB as their recommended system memory, pushing gamers to upgrade. Even with older titles, running background applications like Discord, web browsers with multiple tabs, streaming software, or video editing tools simultaneously can quickly max out 16GB. This suggests a broader trend of gamers future-proofing their systems, ensuring they have enough memory to handle upcoming titles and more intensive workloads, particularly those utilising DDR5 memory platforms that offer higher speeds and capacities. A popular choice for 32GB kits includes 2x16GB modules of DDR4-3600MHz CL16 or DDR5-6000MHz CL30.
 
-
 [![NVIDIA GeForce RTX 5070 Ti](https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21)
-
 
 
 
@@ -70,10 +68,9 @@ Beyond GPUs, the survey also highlighted another interesting trend: a sudden sur
 
 
 ## What Does This Mean for Prices?
-This sudden shift in popularity for the RTX 5070 and RTX 5060 has several implications for the UK hardware market.
+This sudden shift in popularity for the RTX 5070 and RTX 5060 has several implications for the [UK hardware](https://ctrlaltstock.com/blog/rtx-5090-connector-melting-uk-gamers) market.
 **For the RTX 50-series:**
-*   **Increased Demand, Potential Price Stability/Fluctuation:** With the RTX 5070 now the most popular card, demand is likely to remain high. At launch, we saw the RTX 5070 typically retailing around £580-£650, while the RTX 5060 was usually available for £370-£420. If supply can keep up with this explosive demand, we might see prices remain relatively stable at their current levels, particularly for popular custom models from brands like Palit, Zotac, or Sapphire. However, if demand outstrips supply, especially for specific models or during flash sales, we could see temporary price hikes or stock shortages. Savvy shoppers should monitor major UK retailers like Overclockers UK, Scan Computers, and Ebuyer for competitive deals.
+*   **Increased Demand, Potential Price Stability/Fluctuation:** With the RTX 5070 now the most popular card, demand is likely to remain high. At launch, we saw the RTX 5070 typically retailing around £580-£650, while the RTX 5060 was usually available for £370-£420. If supply can keep up with this explosive demand, we might see prices remain relatively stable at their current levels, particularly for popular custom models from brands like Palit, Zotac, or Sapphire. However, if demand outstrips supply, especially for specific models or during [flash sales](https://ctrlaltstock.com/blog/avatar-last-airbender-game-9-99-amazon), we could see temporary price hikes or stock shortages. Savvy shoppers should monitor major UK retailers like Overclockers UK, Scan Computers, and Ebuyer for competitive deals.
 **For Older Generation Cards (RTX 40
-
 
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
