@@ -75,7 +75,6 @@ We're talking about cards featuring extended art, which pushes the artwork to th
 The appeal doesn't stop at art treatments. Collector Boosters are renowned for their variety of foil types, increasing the visual allure and scarcity of the cards. While traditional foils are standard, premium sets like this often feature etched foils, which have a subtle, textured sheen, or even unique "galaxy foils" or "rainbow foils" that provide a distinct sparkle. Furthermore, these boosters offer the highest chance of pulling highly sought-after serialised cards. While not confirmed for every Universes Beyond release, serialised cards, which are individually numbered out of a very limited print run (e.g., 1/500, 1/100), are incredibly rare and command significant value on the secondary market. Pulling a serialised card of a beloved TMNT character would be a monumental find for any collector.
 In contrast to Draft Boosters, which are primarily designed for the limited play format and focus on providing a balanced card pool for gameplay, or Set Boosters, which offer a more exciting opening experience with a few guaranteed foils and alternate art cards, Collector Boosters are explicitly tailored for the high-end collector. Their elevated price point directly reflects the significantly
 
-
 [![Avatar: The Last Airbender - The Quest for Balance (Nintendo Switch)](https://m.media-amazon.com/images/I/81GV77sd43L._AC_SX208_CB1169409_QL70_.jpg)](https://www.amazon.co.uk/dp/B0B9H3B5KN?tag=ctrlaltstock-21)
 
 
