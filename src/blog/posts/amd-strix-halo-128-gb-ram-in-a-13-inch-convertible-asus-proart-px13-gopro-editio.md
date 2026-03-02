@@ -53,7 +53,7 @@ title: AMD Strix Halo &amp; 128 GB RAM in a 13-inch convertible - Asus ProArt PX
   GoPro Edition Review
 ---
 
-The ASUS ProArt PX13 GoPro Edition has captured significant attention in the UK market. It positions itself as a standout option for professionals, students, and small business owners. This [review](https://ctrlaltstock.com/blog/radeon-rx-9070-xt-taichi-white-review-details-asrock-s-first-card-with-built-in-) highlights its robust performance and value for those seeking a portable workstation.
+The ASUS ProArt PX13 GoPro Edition has captured significant attention in the UK market. It positions itself as a standout option for professionals, students, and small business owners. This review highlights its robust performance and value for those seeking a portable [workstation](https://ctrlaltstock.com/blog/minisforum-ms-a2-mini-workstation-ryzen-9-9955hx).
 
 
 <!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->

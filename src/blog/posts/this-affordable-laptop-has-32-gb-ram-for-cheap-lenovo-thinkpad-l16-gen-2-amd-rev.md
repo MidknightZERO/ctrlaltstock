@@ -69,7 +69,7 @@ What makes this launch especially noteworthy is the timing. With the UK’s infl
 
 Beyond the raw specs, the laptop’s build quality remains true to the ThinkPad legacy. The chassis is constructed from a magnesium-aluminium alloy, meeting MIL‑STD‑810H durability standards, and the keyboard offers the tactile feedback that power users expect. Connectivity is also robust, featuring two Thunderbolt 4 ports, HDMI 2.1, and a 3.5 mm audio jack — features that are often omitted in thinner ultrabooks.  
 
-For those who have been following the CtrlAltStock Discord, the conversation has shifted from “when will the [RTX 4090](https://ctrlaltstock.com/blog/amd-ryzen-500-medusa-rdna-4m-igpu-shows-rdna-4-matrix-isa-support-fsr-4-support-) drop in price?” to “which budget-friendly workstation should I grab before the next price hike?” The consensus is that the Lenovo ThinkPad L16 Gen 2 AMD offers a rare blend of RAM, CPU, and GPU at a price that aligns with the current market dip.  
+For those who have been following the CtrlAltStock Discord, the conversation has shifted from “when will the RTX 4090 drop in price?” to “which budget-friendly [workstation](https://ctrlaltstock.com/blog/minisforum-ms-a2-mini-workstation-ryzen-9-9955hx) should I grab before the next price hike?” The consensus is that the Lenovo ThinkPad L16 Gen 2 AMD offers a rare blend of RAM, CPU, and GPU at a price that aligns with the current market dip.  
 
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
@@ -82,13 +82,13 @@ For those who have been following the CtrlAltStock Discord, the conversation has
 
 The **£1,199** price tag places the ThinkPad L16 Gen 2 [AMD](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) in a sweet spot between entry-level and high-end workstations. Here’s a quick breakdown of how this price compares with similar devices currently on the UK market:  
 
-- **Dell XPS 16 (i7-13620H, 16 GB [RAM](https://ctrlaltstock.com/blog/390tb-video-game-archive-being-taken-offline-due-to-skyrocketing-ram-ssd-and-har))** – starts at **£1,399**  
+- **Dell XPS 16 (i7-13620H, 16 GB RAM)** – starts at **£1,399**  
 - **HP ZBook Firefly 16 G9 (Ryzen 7 7840HS, 16 GB RAM)** – starts at **£1,299**  
-- **ASUS ROG Zephyrus G14 (Ryzen 9 7950HS, 16 GB RAM)** – starts at **£1,449**  
+- **ASUS ROG Zephyrus G14 ([Ryzen 9](https://ctrlaltstock.com/blog/minisforum-ms-a2-mini-workstation-ryzen-9-9955hx) 7950HS, 16 GB RAM)** – starts at **£1,449**  
 
-By offering **32 GB RAM** as standard, Lenovo undercuts these competitors by at least **£200**. This price advantage is likely to pressure other manufacturers to either lower their RAM configurations or risk losing market share in the budget-professional segment.  
+By offering **32 GB [RAM](https://ctrlaltstock.com/blog/390tb-video-game-archive-being-taken-offline-due-to-skyrocketing-ram-ssd-and-har)** as standard, Lenovo undercuts these competitors by at least **£200**. This price advantage is likely to pressure other manufacturers to either lower their RAM configurations or risk losing market share in the budget-professional segment.  
 
-Price trends over the past six months show a modest **3-5% dip** in mid-range workstation pricing, driven by a surplus of DDR5 [memory](https://ctrlaltstock.com/blog/rtx-50-micron-gddr7-memory-supplier-diversification) and a slowdown in new CPU releases. The ThinkPad L16 Gen 2 AMD leverages this environment, translating raw cost savings into a more attractive retail price.  
+Price trends over the past six months show a modest **3-5% dip** in mid-range workstation pricing, driven by a surplus of DDR5 memory and a slowdown in new CPU releases. The ThinkPad L16 Gen 2 AMD leverages this environment, translating raw cost savings into a more attractive retail price.  
 
 For price-sensitive buyers, the implication is clear: waiting for a “perfect” moment may no longer be necessary. The current discount is unlikely to be matched soon, especially as the **AMD Ryzen 7 7840HS** is expected to remain in production for at least another year. However, savvy shoppers should keep an eye on seasonal sales — **Black Friday** and **Boxing Day** often bring additional markdowns of **10-15%** on premium laptops.  
 
