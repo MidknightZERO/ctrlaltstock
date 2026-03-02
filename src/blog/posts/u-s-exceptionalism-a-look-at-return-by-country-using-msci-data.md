@@ -61,7 +61,6 @@ The findings highlight some standout performers across the globe. Among develope
 The analysis also shed light on the performance of the United States, a market often perceived as the global powerhouse, particularly given the dominance of its tech giants. While the specific CAGR for the US was not explicitly detailed in the initial snippet, the 'U.S. Exceptionalism' headline hints at its strong performance, likely placing it among the top tier of developed markets. The US market benefits from unparalleled innovation, a vast domestic consumer base, and the presence of global titans like Apple, Microsoft, NVIDIA, and Amazon, which consistently drive earnings growth and attract international investment. These companies, in particular, are the very bedrock of the tech hardware ecosystem, from operating systems and cloud services to the GPUs and CPUs that power our gaming PCs.
 Closer to home, the United Kingdom's performance, as measured by MSCI data over this period, would offer a more sobering picture. While the FTSE 100 index contains many global companies, the broader UK market has faced headwinds from factors such as Brexit uncertainties, lower investment in certain sectors compared to global peers, and a relatively less concentrated presence of high-growth technology companies. This can impact the
 
-
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
 
 
