@@ -51,10 +51,11 @@ tags:
 title: AMD introduces EPYC 8005 "Sorano" data-center CPU series, successor to "Sienna"
 ---
 
-The AMD EPYC 8005 "Sorano" series represents a significant leap forward in data-center CPU technology, marking AMD’s strategic pivot toward a more sustainable, high-performance architecture. Launched in 2026, this series builds upon the foundational strengths of the Zen 4 architecture but introduces refined design elements that address the evolving demands of enterprises, data centers, and AI-driven workloads. As organizations seek to balance computational power with energy efficiency, the Sorano lineup stands out as a critical investment for organizations aiming to future-proof their IT infrastructure. This article delves into the technical advancements, market positioning, and practical implications of the EPYC 8005, offering insights into why this series is reshaping the landscape of modern computing.
+The [AMD](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) EPYC 8005 "Sorano" series represents a significant leap forward in data-center CPU technology, marking AMD’s strategic pivot toward a more sustainable, high-performance architecture. Launched in 2026, this series builds upon the foundational strengths of the Zen 4 architecture but introduces refined design elements that address the evolving demands of enterprises, data centers, and [AI](https://ctrlaltstock.com/blog/rtx-news-2026)-driven workloads. As organizations seek to balance computational power with energy efficiency, the Sorano lineup stands out as a critical investment for organizations aiming to future-proof their IT infrastructure. This article delves into the technical advancements, market positioning, and practical implications of the EPYC 8005, offering insights into why this series is reshaping the landscape of modern computing.
 
 
 <!-- featured-product: AMD Ryzen 7 7800X3D | From £349 | https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+Ryzen+7+7800X3D&tag=ctrlaltstock-21 -->
+
 
 
 ### A New Era of Performance and Sustainability

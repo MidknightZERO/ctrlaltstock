@@ -86,7 +86,7 @@ The **£1,199** price tag places the ThinkPad L16 Gen 2 [AMD](https://ctrlaltsto
 - **HP ZBook Firefly 16 G9 (Ryzen 7 7840HS, 16 GB RAM)** – starts at **£1,299**  
 - **ASUS ROG Zephyrus G14 ([Ryzen 9](https://ctrlaltstock.com/blog/minisforum-ms-a2-mini-workstation-ryzen-9-9955hx) 7950HS, 16 GB RAM)** – starts at **£1,449**  
 
-By offering **32 GB [RAM](https://ctrlaltstock.com/blog/390tb-video-game-archive-being-taken-offline-due-to-skyrocketing-ram-ssd-and-har)** as standard, Lenovo undercuts these competitors by at least **£200**. This price advantage is likely to pressure other manufacturers to either lower their RAM configurations or risk losing market share in the budget-professional segment.  
+By offering **32 GB RAM** as standard, [Lenovo](https://ctrlaltstock.com/blog/lenovo-legion-7-15-inch-amd-strix-halo-gaming-laptop) undercuts these competitors by at least **£200**. This price advantage is likely to pressure other manufacturers to either lower their RAM configurations or risk losing market share in the budget-professional segment.  
 
 Price trends over the past six months show a modest **3-5% dip** in mid-range workstation pricing, driven by a surplus of DDR5 memory and a slowdown in new CPU releases. The ThinkPad L16 Gen 2 AMD leverages this environment, translating raw cost savings into a more attractive retail price.  
 
