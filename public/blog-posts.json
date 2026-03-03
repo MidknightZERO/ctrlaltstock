@@ -1,5 +1,80 @@
 [
   {
+    "id": "arc-raiders-patch-notes-1-18-0",
+    "slug": "arc-raiders-patch-notes-1-18-0",
+    "title": "Arc Raiders Patch Notes 1.18.0",
+    "publishedDate": "2026-03-03",
+    "content": "Game patches often fly under the radar for many, but for discerning PC enthusiasts and budget-conscious gamers, they can be game-changers. Beyond new content, these updates frequently bring crucial performance optimisations that directly impact how your current hardware performs. This is especially true for those looking to squeeze every last frame out of their beloved rig in 2026 without breaking the bank on an immediate upgrade. Historically, major patches for titles like *Cyberpunk 2077* or *Starfield* have demonstrated how post-launch optimisation can revitalise a game's performance profile, making previously demanding titles accessible to a wider range of hardware configurations. For instance, *Cyberpunk 2077*'s Patch 1.5, released in early 2022, brought significant CPU and GPU optimisations, particularly benefiting systems with older Intel Core i5 or AMD Ryzen 3 CPUs and mid-range GPUs like the Nvidia GeForce GTX 1060 or AMD Radeon RX 580, which are still common in many UK gaming PCs. Similarly, *Starfield*'s performance updates in late 2023 significantly improved CPU utilisation and introduced dynamic resolution scaling enhancements, allowing more players with hardware like the AMD Ryzen 5 3600 and an Nvidia RTX 2060 to achieve stable frame rates above 30 FPS, even in graphically intensive cities. These improvements aren't just about reaching higher frame rates; they often translate to a smoother, more consistent gaming experience, reducing stuttering and input lag, which can be the difference between an enjoyable session and a frustrating one. In an era where a new high-end graphics card like an Nvidia RTX 4080 Super can retail for around £950-£1,100, or an AMD RX 7900 XT for £700-£800, optimising existing hardware through software updates is a financially savvy approach that resonates deeply with our community.\r\n## What's the Story?\r\nEmbark Studios recently rolled out Patch 1.18.0 for their co-op PvE shooter, *Arc Raiders*, sparking discussions across the gaming community about its implications. Embark Studios, a Swedish developer founded by ex-DICE veterans, has quickly made a name for itself with its innovative approach to game development and titles like the hugely popular *The Finals*, known for its destructible environments and fast-paced gameplay. *Arc Raiders*, set in a desolate yet visually stunning sci-fi future, pits players against the ARC, a ruthless mechanised alien threat that has invaded Earth. The game is known for its dynamic sci-fi setting, intense combat encounters against these robotic threats, and emphasis on teamwork, requiring players to coordinate tactics and utilise a diverse arsenal of weapons and gadgets to survive and complete objectives. As a graphically rich game, boasting detailed environments, complex particle effects for explosions and weapon fire, and intricate enemy designs, its performance on various setups has always been a key discussion point. Achieving a stable frame rate is crucial in a fast-paced shooter, especially when facing hordes of robotic enemies and navigating expansive, open-world maps. While the official patch notes detail a range of bug fixes, quality-of-life improvements, and perhaps some subtle balancing tweaks, the underlying impact on system performance is what truly captures the attention of the CtrlAltStock community. Typical bug fixes often include resolving issues like persistent texture flickering on certain GPU architectures, such as older Nvidia Pascal (GTX 10-series) or AMD Polaris (RX 500-series) cards, which might manifest as visual glitches on environmental assets or character models. Other common fixes address correcting collision detection problems that cause unexpected frame drops when players or enemies interact with specific environmental objects, or that allow players to clip through terrain, leading to unfair advantages or frustrating deaths. Furthermore, memory leaks that lead to progressive performance degradation over extended play sessions – often manifesting as stuttering, reduced frame rates, and even eventual game crashes – are critical issues addressed in such patches. A significant memory leak can turn a smooth 60 FPS experience into a choppy 20-30 FPS mess after just an hour of gameplay, making the game almost unplayable for those with 16GB RAM or less. The subtle balancing tweaks often involve adjustments to weapon damage outputs, enemy health pools, or the cooldowns and effectiveness of player abilities, ensuring a fairer and more engaging challenge for all players. For example, a common tweak might reduce the damage of an overperforming assault rifle, or increase the health of a particular enemy type that was too easily dispatched, thereby encouraging more strategic combat. These changes, while not always directly visible in frame rate counters, significantly impact the overall playability and longevity of the game. For many players, especially those running hardware like an Intel Core i7-7700K with an RTX 2070 or an AMD Ryzen 5 5600X with an RX 6700 XT, every patch offers the hope of a smoother, more immersive experience without the immediate need to spend hundreds of pounds on a hardware upgrade. The anticipation around Patch 1.18.0 for *Arc Raiders* is therefore not just about new content, but about the tangible improvements to the game's underlying engine and overall stability.",
+    "excerpt": "Game patches often fly under the radar for many, but for discerning PC enthusiasts and budget-conscious gamers, they can be game-changers. Beyond new content, these updates frequently bring crucial",
+    "readingTime": "2 min read",
+    "coverImage": "https://images.unsplash.com/photo-1587134160474-cd3c9a60a34a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODUyMDR8MHwxfHNlYXJjaHwyfHxncmFwaGljcyUyMGNhcmR8ZW58MXwwfHx8MTc3MjQ0NjA5MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=ctrlaltstock&utm_medium=referral",
+    "tags": [
+      "GPU",
+      "RAM"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1615867636682-5a5c5f8f3a5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODUyMDR8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMG1lbW9yeSUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc3MjQ1Njk1Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=ctrlaltstock&utm_medium=referral",
+      "https://images.unsplash.com/photo-1671558753517-1772f525c877?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODUyMDR8MHwxfHNlYXJjaHwyfHxjb21wdXRlciUyMG1lbW9yeSUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc3MjQ1Njk1Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=ctrlaltstock&utm_medium=referral",
+      "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODUyMDR8MHwxfHNlYXJjaHwzfHxjb21wdXRlciUyMG1lbW9yeSUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc3MjQ1Njk1Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=ctrlaltstock&utm_medium=referral"
+    ],
+    "featuredProductId": "",
+    "recommendedProductIds": [],
+    "contentBlocks": [
+      {
+        "type": "text",
+        "id": "block-0",
+        "order": 0,
+        "content": "## What's the Story?\n\nGame patches often fly under the radar for many, but for discerning PC enthusiasts and budget-conscious gamers, they can be game-changers. Beyond new content, these updates frequently bring crucial performance optimisations that directly impact how your current hardware performs. This is especially true for those looking to squeeze every last frame out of their beloved rig in 2026 without breaking the bank on an immediate upgrade. Historically, major patches for titles like *Cyberpunk 2077* or *Starfield* have demonstrated how post-launch optimisation can revitalise a game's performance profile, making previously demanding titles accessible to a wider range of hardware configurations. For instance, *Cyberpunk 2077*'s Patch 1.5, released in early 2022, brought significant CPU and GPU optimisations, particularly benefiting systems with older Intel Core i5 or AMD Ryzen 3 CPUs and mid-range GPUs like the Nvidia GeForce GTX 1060 or AMD Radeon RX 580, which are still common in many UK gaming PCs. Similarly, *Starfield*'s performance updates in late 2023 significantly improved CPU utilisation and introduced dynamic resolution scaling enhancements, allowing more players with hardware like the AMD Ryzen 5 3600 and an Nvidia RTX 2060 to achieve stable frame rates above 30 FPS, even in graphically intensive cities. These improvements aren't just about reaching higher frame rates; they often translate to a smoother, more consistent gaming experience, reducing stuttering and input lag, which can be the difference between an enjoyable session and a frustrating one. In an era where a new high-end graphics card like an Nvidia RTX 4080 Super can retail for around £950-£1,100, or an AMD RX 7900 XT for £700-£800, optimising existing hardware through software updates is a financially savvy approach that resonates deeply with our community."
+      },
+      {
+        "type": "text",
+        "id": "block-1",
+        "order": 1,
+        "content": "Embark Studios recently rolled out Patch 1.18.0 for their co-op PvE shooter, *Arc Raiders*, sparking discussions across the gaming community about its implications. Embark Studios, a Swedish developer founded by ex-DICE veterans, has quickly made a name for itself with its innovative approach to game development and titles like the hugely popular *The Finals*, known for its destructible environments and fast-paced gameplay. *Arc Raiders*, set in a desolate yet visually stunning sci-fi future, pits players against the ARC, a ruthless mechanised alien threat that has invaded Earth. The game is known for its dynamic sci-fi setting, intense combat encounters against these robotic threats, and emphasis on teamwork, requiring players to coordinate tactics and utilise a diverse arsenal of weapons and gadgets to survive and complete objectives. As a graphically rich game, boasting detailed environments, complex particle effects for explosions and weapon fire, and intricate enemy designs, its performance on various setups has always been a key discussion point. Achieving a stable frame rate is crucial in a fast-paced shooter, especially when facing hordes of robotic enemies and navigating expansive, open-world maps. While the official patch notes detail a range of bug fixes, quality-of-life improvements, and perhaps some subtle balancing tweaks, the underlying impact on system performance is what truly captures the attention of the CtrlAltStock community. Typical bug fixes often include resolving issues like persistent texture flickering on certain GPU architectures, such as older Nvidia Pascal (GTX 10-series) or AMD Polaris (RX 500-series) cards, which might manifest as visual glitches on environmental assets or character models. Other common fixes address correcting collision detection problems that cause unexpected frame drops when players or enemies interact with specific environmental objects, or that allow players to clip through terrain, leading to unfair advantages or frustrating deaths. Furthermore, memory leaks that lead to progressive performance degradation over extended play sessions – often manifesting as stuttering, reduced frame rates, and even eventual game crashes – are critical issues addressed in such patches. A significant memory leak can turn a smooth 60 FPS experience into a choppy 20-30 FPS mess after just an hour of gameplay, making the game almost unplayable for those with 16GB RAM or less. The subtle balancing tweaks often involve adjustments to weapon damage outputs, enemy health pools, or the cooldowns and effectiveness of player abilities, ensuring a fairer and more engaging challenge for all players. For example, a common tweak might reduce the damage of an overperforming assault rifle, or increase the health of a particular enemy type that was too easily dispatched, thereby encouraging more strategic combat. These changes, while not always directly visible in frame rate counters, significantly impact the overall playability and longevity of the game. For many players, especially those running hardware like an Intel Core i7-7700K with an RTX 2070 or an AMD Ryzen 5 5600X with an RX 6700 XT, every patch offers the hope of a smoother, more immersive experience without the immediate need to spend hundreds of pounds on a hardware upgrade. The anticipation around Patch 1.18.0 for *Arc Raiders* is therefore not just about new content, but about the tangible improvements to the game's underlying engine and overall stability."
+      }
+    ],
+    "author": {
+      "name": "CtrlAltStock Team",
+      "avatar": "https://ctrlaltstock.com/logo.png",
+      "bio": "The CtrlAltStock team monitors tech hardware prices and stock levels 24/7 so you don't have to."
+    },
+    "amazonProducts": [
+      {
+        "affiliateUrl": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21",
+        "asin": "",
+        "category": "GPU",
+        "imageUrl": "https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg",
+        "price": "From £1,999",
+        "query": "NVIDIA GeForce RTX 5090",
+        "searchUrl": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21",
+        "title": "NVIDIA GeForce RTX 5090"
+      },
+      {
+        "affiliateUrl": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21",
+        "asin": "",
+        "category": "GPU",
+        "imageUrl": "https://m.media-amazon.com/images/I/81hMf6v5oSL._AC_UY218_.jpg",
+        "price": "From £1,199",
+        "query": "NVIDIA GeForce RTX 5080",
+        "searchUrl": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+5080+graphics+card&tag=ctrlaltstock-21",
+        "title": "NVIDIA GeForce RTX 5080"
+      },
+      {
+        "affiliateUrl": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21",
+        "asin": "",
+        "category": "GPU",
+        "imageUrl": "https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg",
+        "price": "From £699",
+        "query": "NVIDIA GeForce RTX 5070 Ti",
+        "searchUrl": "https://www.amazon.co.uk/s?k=NVIDIA+RTX+5070+Ti+graphics+card&tag=ctrlaltstock-21",
+        "title": "NVIDIA GeForce RTX 5070 Ti"
+      }
+    ],
+    "relatedPostSlugs": [],
+    "autoGenerated": true,
+    "sourceUrl": "https://arcraiders.com/news/patch-notes-1-18-0"
+  },
+  {
     "id": "first-build-ever-coming-from-console-5060ti-oc-score",
     "slug": "first-build-ever-coming-from-console-5060ti-oc-score",
     "title": "First build ever coming from console 5060ti OC score",
