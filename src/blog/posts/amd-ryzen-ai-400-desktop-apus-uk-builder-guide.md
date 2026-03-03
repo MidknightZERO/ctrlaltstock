@@ -70,7 +70,7 @@ Efficiency is another key selling point. The APUs are built with **energy-saving
 
 ## Compatibility with [UK Hardware](https://ctrlaltstock.com/blog/rtx-5090-connector-melting-uk-gamers) and Software
 For UK PC builders, compatibility is a major consideration. The Ryzen AI 400 is designed to work with existing motherboards and components, but there are some nuances to keep in mind.
-### [Motherboard](https://ctrlaltstock.com/blog/radeon-rx-9070-xt-taichi-white-review-details-asrock-s-first-card-with-built-in-) Support
+### [Motherboard](https://ctrlaltstock.com/blog/asrock-motherboard-reportedly-saved-ryzen-5-9600x-from-dying-thanks-to-the-agesa) Support
 The Ryzen AI 400 requires a **new motherboard** that supports the latest AM5 platform. While this may involve an upfront investment, many UK retailers already stock AM5-compatible boards. Builders should check for models that include **PCIe 5.0** and **DDR5 memory support**, as these features are essential for maximizing the APU’s potential.
 ### RAM and Storage
 The APUs are optimized for **high-speed RAM** and **NVMe SSDs**. In the UK market, DDR5 memory is becoming more common, but it’s still relatively expensive. Builders should consider balancing RAM capacity with cost, as the Ryzen AI 400 benefits from at least 32GB of DDR5. For storage, NVMe SSDs are recommended to handle the increased data throughput required for AI workloads.
