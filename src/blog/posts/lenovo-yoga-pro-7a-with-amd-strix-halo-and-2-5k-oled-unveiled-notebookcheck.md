@@ -62,9 +62,7 @@ But the real star of the show is undoubtedly the [AMD Strix Halo](https://ctrlal
 The "Ryzen AI Max" designation also highlights a vastly improved Neural Processing Unit (NPU), capable of delivering serious horsepower for AI-driven tasks. Speculation suggests Strix Halo's NPU could offer over 60-80+ Trillions of Operations Per Second (TOPS), a dramatic increase compared to the 10-16 TOPS found in current Ryzen 8040 series or Intel Core Ultra processors. This significant boost enables faster, more efficient on-device AI processing for features such as real-time language translation, advanced image and video processing (e.g., background blur, noise reduction, intelligent upscaling), and AI-powered productivity features, which are becoming increasingly common in software suites like Microsoft 365 Copilot and Adobe Creative Cloud. This focus on AI acceleration ensures the Yoga Pro 7a is future-proofed for the evolving landscape of computing, handling tasks locally rather than relying on cloud services, which enhances privacy and responsiveness.
 Lenovo's choice of the Yoga Pro 7a for this cutting-edge silicon also speaks volumes about its intended audience. The Yoga line typically targets professionals and prosumers who value portability, battery life, and a premium aesthetic alongside strong performance. The combination of Strix Halo's efficiency and power (with a rumoured TDP range of 20-55W for the chip) with an OLED display and Lenovo's renowned build quality suggests a laptop designed for those who demand the best without necessarily needing a bulky gaming rig. We anticipate a robust suite of connectivity options, likely including multiple USB4 ports (offering Thunderbolt-like capabilities), HDMI 2.1, and potentially an SD card reader, all crucial for creative workflows. Expect Wi-Fi 7 and Bluetooth 5.4 for cutting-edge wireless connectivity. The chassis is expected to be a premium all-aluminium construction, offering durability and a refined look, with an estimated weight of around 1.4kg to 1.6kg, making it highly portable. An excellent keyboard with comfortable key travel (e.g., 1.3mm-1.5mm) and backlighting, a responsive haptic touchpad, and a high-resolution FHD 1080p webcam with an IR sensor for Windows Hello facial recognition and a physical privacy shutter are also expected hallmarks of this premium device. Battery life should also be impressive, with a large capacity battery (e.g., 73-80Whr) likely offering 10-15 hours of real-world usage for productivity tasks.
 
-
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
-
 
 
 
@@ -72,7 +70,6 @@ Lenovo's choice of the Yoga Pro 7a for this cutting-edge silicon also speaks vol
 
 
 ## What does this mean for prices?
-The arrival of the Lenovo Yoga Pro 7a with AMD Strix Halo is a big deal for the UK laptop market, and it's going to have a ripple effect on pricing across the board
-
+The arrival of the [Lenovo](https://ctrlaltstock.com/blog/lenovo-legion-7-15-inch-amd-strix-halo-gaming-laptop) Yoga Pro 7a with AMD Strix Halo is a big deal for the UK laptop market, and it's going to have a ripple effect on pricing across the board
 
 [![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)
