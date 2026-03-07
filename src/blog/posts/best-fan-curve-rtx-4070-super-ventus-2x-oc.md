@@ -61,9 +61,7 @@ In recent discussions on r/nvidia and various hardware forums, users have shared
 The MSI RTX 4070 Super is a great value for 1440p gaming, offering strong performance from AMD's RDNA 2 architecture at the time of launch. However, its cooling requirements are a key consideration. The card features a dual-fan design in its Twin Frozr cooler, which provides a solid baseline for temperature management. However, as the GPU's thermal profile increases with higher resolutions and ray-tracing workloads, a custom fan curve becomes essential.
 When running at 1440p, the RTX 4070 Super typically achieves temperatures around 65-70°C under normal usage. This is within the safe operating range, but with aggressive gaming, edge-game play, or high refresh rates, temperatures can spike. Community users often recommend starting your fans at a lower speed and progressively increasing them based on real-time monitoring.
 
-
 [![NVIDIA GeForce RTX 4070 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4070+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 
 
@@ -71,7 +69,7 @@ When running at 1440p, the RTX 4070 Super typically achieves temperatures around
 
 
 ## Community Recommendations: Optimal Fan Curve Settings
-Based on extensive testing and feedback from experienced gamers, here’s a recommended fan curve tailored for 1440p gaming on the MSI RTX 4070 Super Ventus 2X OC:
+Based on extensive testing and feedback from experienced gamers, here’s a recommended fan curve tailored for 1440p [gaming](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming) on the MSI RTX 4070 Super Ventus 2X OC:
 - **45°C → 35% fan speed**
 - **50°C → 35% to 40% fan speed**
 - **55°C → 45% fan speed**
@@ -79,11 +77,9 @@ Based on extensive testing and feedback from experienced gamers, here’s a reco
 - **70°C → 80% fan speed**
 - **75°C → 100% fan speed**
 This progressive curve ensures that your card stays cool during demanding scenes while allowing for audible performance during lighter workloads. For most users, this setup keeps temperatures in the low 60s to mid-70s, which is perfect for maintaining a balanced balance between noise and efficiency.
-One common tweak among users is to start slightly lower, around 35% at 45°C, and ramp up after 65°C for better silkiness at 70°C. This approach not only reduces noise but also protects the GPU from potential long-term thermal stress.
-
+One common tweak among users is to start slightly lower, around 35% at 45°C, and ramp up after 65°C for better silkiness at 70°C. This approach not only reduces noise but also protects the [GPU](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) from potential long-term thermal stress.
 
 [![NVIDIA GeForce RTX 4080 Super](https://m.media-amazon.com/images/I/81qKy0QvLHL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+4080+Super+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Practical Tips for Implementing the Fan Curve
 Implementing these settings is straightforward using tools like MSI Afterburner or GPU-Z. Here’s a step-by-step guide to get you started:
@@ -93,9 +89,7 @@ Implementing these settings is straightforward using tools like MSI Afterburner 
 4. **Monitor Temperatures**: Use software like MSI Afterburner or HWMonitor to keep an eye on coolant temperatures and fan speeds in real time.
 It’s also important to clean your fans periodically to maintain optimal airflow. Dust accumulation can significantly increase noise and reduce cooling efficiency.
 
-
 [![NVIDIA GeForce RTX 5090](https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=NVIDIA+RTX+5090+graphics+card&tag=ctrlaltstock-21)
-
 
 ## Comparing Cooling Solutions
 While MSI’s Twin Frozr is a solid choice for its dual-fan design, some enthusiasts prefer triple-fan or liquid-cooled solutions for quieter operation. If you're in a tight budget or prefer a more compact build, the MSI Gaming X Cooler (supr) offers a good balance of performance and noise reduction.
