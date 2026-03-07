@@ -81,7 +81,6 @@ The Adrenalin Edition 26.2.2 update is a solid step forward for AMD users across
 If you liked this, check out our article on [AMD Unveils Ryzen AI 400 Desktop APUs: 8 CPU & GPU Cores, 50 TOPS, AM5 Socket Support](https://ctrlaltstock.com/blog/amd-unveils-ryzen-ai-400-desktop-apus-8-cpu-gpu-cores-50-tops-am5-socket-support).
 Don’t wait—explore the features, check prices, and get ready to enjoy your next gaming session like never before.
 
-
 [![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)
 
 
