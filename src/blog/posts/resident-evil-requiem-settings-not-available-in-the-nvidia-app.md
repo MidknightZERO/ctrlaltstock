@@ -58,7 +58,7 @@ title: Resident evil requiem Settings not available in the Nvidia app
 
 
 
-Are you struggling to find the settings menu for [Resident Evil](https://ctrlaltstock.com/blog/resident-evil-requiem-df-analysis-ps5-pro-performance) Requiem within your Nvidia GeForce Experience app? You're not alone. Many players encounter this frustrating issue where the game's configuration options seem mysteriously absent from the Nvidia control panel. This guide will help you diagnose why the settings aren't showing up and provide actionable steps to get them back.
+Are you struggling to find the settings menu for Resident Evil Requiem within your Nvidia GeForce Experience app? You're not alone. Many players encounter this frustrating issue where the game's configuration options seem mysteriously absent from the Nvidia control panel. This guide will help you diagnose why the settings aren't showing up and provide actionable steps to get them back.
 **Why Are the Settings Missing?**
 The absence of Resident Evil Requiem settings in the Nvidia app typically stems from one of a few common technical hurdles:
 1. **Driver Version Incompatibility:** Nvidia's GeForce Experience relies heavily on specific driver versions to recognize and interface with games correctly. If you're running an older driver that lacks the necessary game profile support, the app simply won't know where to look for the game's settings. Conversely, an extremely new driver might be in beta or unstable, causing temporary recognition issues. **Ensure you're running the latest stable driver version.** You can check your current driver version via GeForce Experience or by running `nvidia-smi` in Command Prompt (as Administrator) and looking for the "Driver Version" line. The latest stable drivers are usually listed on the official Nvidia website or within the GeForce Experience app's "Check for Updates" section.
@@ -98,7 +98,7 @@ Resolving the missing settings issue usually involves a methodical approach:
 * Follow the prompts to add the game. This forces the app to create a profile for it, which *should* include access to the settings menu. For example, if the game is installed in a custom location like `D:\Games\Resident Evil Requiem`, you would navigate to that folder instead.
 6. **Check for Conflicting Software:**
 * Temporarily disable any third-party overlay software (like Discord, OBS, or other game recording tools) that might interfere with the Nvidia app's ability to detect the game.
-* Ensure no other GPU management software (like MSI Afterburner or AMD's software) is running in the background, as they can sometimes conflict. For instance, if you have both Nvidia and AMD software installed (perhaps from a previous GPU), this could cause recognition issues.
+* Ensure no other GPU management software (like [MSI Afterburner](https://ctrlaltstock.com/blog/best-fan-curve-rtx-4070-super-ventus-2x-oc) or AMD's software) is running in the background, as they can sometimes conflict. For instance, if you have both Nvidia and AMD software installed (perhaps from a previous GPU), this could cause recognition issues.
 7. **Restart Your PC:**
 * After performing any of the above steps, **always restart your PC.** This clears any residual processes and ensures all changes take full effect. A clean restart is often overlooked but can resolve many software-related issues.
 **If All Else Fails**
