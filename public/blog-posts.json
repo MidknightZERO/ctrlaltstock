@@ -1,5 +1,112 @@
 [
   {
+    "id": "amd-software-adrenalin-edition-26-2-2-release-notes",
+    "slug": "amd-software-adrenalin-edition-26-2-2-release-notes",
+    "title": "AMD Software: Adrenalin Edition 26.2.2 Release Notes",
+    "publishedDate": "2026-03-07",
+    "content": "Today’s news is all about AMD’s latest release, **Adrenalin Edition 26.2.2**, which brings a wave of exciting updates for gamers and creators alike. With this year’s advancements on the horizon, enthusiasts in the UK can expect improved performance, new features, and fixes that make their builds more stable and enjoyable. If you’re wondering about the best way to get the most out of this update, let’s dive into what’s new, why it matters, and how you can take full advantage of these changes.\r\n## What’s the Big Deal About Adrenalin Edition 26.2.2?\r\nThe Adrenalin Edition is AMD’s latest installment in their software lineup, focusing on enhancing the gaming experience across a range of hardware. Among the key highlights are new game support, critical bug fixes, and performance tweaks that address common user concerns. This year’s release is especially relevant for enthusiasts who are looking to upgrade their GPUs or just want to stay ahead of the curve.\r\n### New Game Support – A Big Win for Gamers\r\nOne of the standout features of the new release is the addition of support for two popular titles: **Resident Evil Requiem** and **Marathon**. These games have long been staples in the gaming community, and their inclusion in the Adrenalin Edition gives players more flexibility in their build configurations. Whether you’re diving into the tense world of Resident Evil Requiem or enjoying the intense marathon mode, the update ensures everything runs smoothly. Additionally, the update includes support for **Apex Legends** on Radeon™ RX 7000 series cards, addressing previous performance bottlenecks in the battle royale mode.\r\nAMD’s ongoing commitment to game optimisation is evident in this update. [The company’s latest blog post](https://ctrlaltstock.com/blog/amd-says-helios-racks-and-mi400-series-gpus-on-track-for-2h-2026) highlights strong future ROI for new GPU buyers, particularly within the emerging RX 9000 architecture and beyond.\r\n### Fixed Issues – Solving Common Problems\r\nFor many users, performance hiccups can be frustrating. The Adrenalin Edition includes fixes for a few key issues that affect everyday use. For instance, users may encounter intermittent crashes or driver timeouts while playing **Roblox Player**, especially during media transitions on Radeon™ RX 7000 series cards. These problems, though common, are now being addressed with targeted updates. If you’re using a **Radeon™ RX 7700 XT**, ensure your BIOS is updated to the latest version for optimal stability.\r\nAdditionally, texture flickering or corruption can occur when using Windows desktop applications with features like Instant Replay and Record Desktop enabled on Radeon™ RX 7000 series models. This can be a real pain for creators and streamers, but AMD has worked on stabilising these tasks. If you’re working with high-resolution assets or 4K content, this fix is a big relief. For example, users of the **Radeon™ RX 7900 XTX** report significantly reduced artifacts when recording 4K footage.\r\nAnother area of concern is texture and rendering issues in games like **Battlefield 6** when AMD Record and Stream are active. Previously, some users reported texture flickering or inactive FSR settings. This update stabilises those behaviours, ensuring a smoother experience for military shooters and tactical gameplay. If you’re using the **Radeon™ RX 7900 XTX** with Battlefield 6, expect more consistent performance during long campaigns.\r\nFor anyone seeking further guidance, optimising fan curves can also enhance thermal management, thus reducing unexpected shutdowns during intensive sessions.\r\n### What This Means for Prices and Availability\r\nFor UK shoppers, the good news is that these updates are now readily available. The Adrenalin Edition is being released across major retailers, and understanding the pricing can help you make the best decision. If you’re eyeing the **RTX 4090** or **RTX 4080 Super**, you’ll want to compare prices across platforms to ensure you’re getting the best value. Currently, the **RTX 4090** is available at **Scan.co.uk** for **£1,399** and at **Amazon UK** for **£1,399** (often with cashback offers). The **RTX 4080 Super** can be found at **Best Buy UK** for **£899** and **Currys PC World** for **£899** (frequently discounted to **£799** during sales).\r\nThe update is also compatible with existing AMD hardware, so you don’t need to upgrade your GPU just yet. However, if you’re looking to future-proof your system, keeping an eye on upcoming releases like the **RX 7000 series** or **RX 9000 series** can be worthwhile. The **RX 9000 series** is expected to launch in Q4 2026, potentially featuring enhanced ray tracing and AI-driven features.\r\nThose considering alternatives might benefit from reading up on [AMD’s Ryzen AI Linux driver performance boosts](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming), especially for lower-end gaming systems where every bit of optimisation counts.\r\n### Our Recommendation – What to Buy Right Now\r\nIf you’re in the market for a new build or looking to upgrade your current system, here’s what to consider:\r\n- Check your current GPU model – If you have an Radeon™ RX 7000 series card, ensure it supports the updated drivers. For instance, the **Radeon™ RX 7900 XTX** requires a BIOS update (v1.0.0.20 or later) for full compatibility.\r\n- Add the RTX 4090 or RTX 4080 Super – These cards are among the most popular choices for gamers and productivity, and the update brings improved stability. The **RTX 4090** is ideal for 4K gaming and creative workloads, while the **RTX 4080 Super** offers excellent value for 1440p gaming.\r\n- Test before committing – Before purchasing, try the software in a safe environment to ensure everything runs smoothly. AMD’s official website offers a **driver test tool** to check compatibility.\r\n- Join the community – The CtrlAltStock Discord has the right people to help you with tips, alerts, and real-time updates. Members often share exclusive deals and troubleshooting advice for specific hardware configurations.\r\n- Consider refurbished options – For budget-conscious buyers, the **Radeon™ RX 7900 XTX** is available refurbished at **Amazon Renewed** for **£799**, offering significant savings.\r\nRemember, staying informed is key. With this year’s release, you’re not just upgrading hardware—you’re joining a community of tech enthusiasts who value performance, reliability, and community support.\r\n### Final Thoughts\r\nThe Adrenalin Edition 26.2.2 update is a solid step forward for AMD users across the UK. Whether you're a gamer seeking smoother performance or a creator looking for stable recording and streaming, these changes make a real difference. As we move into this new year of gaming and productivity, don’t miss out on the latest software updates. Take advantage of the available offers and come along to our **10,000-member CtrlAltStock Discord** for live stock alerts and expert advice.\r\nIf you liked this, check out our article on [AMD Unveils Ryzen AI 400 Desktop APUs: 8 CPU & GPU Cores, 50 TOPS, AM5 Socket Support](https://ctrlaltstock.com/blog/amd-unveils-ryzen-ai-400-desktop-apus-8-cpu-gpu-cores-50-tops-am5-socket-support).\r\nDon’t wait—explore the features, check prices, and get ready to enjoy your next gaming session like never before.",
+    "excerpt": "Today’s news is all about AMD’s latest release, **Adrenalin Edition 26.2.2**, which brings a wave of exciting updates for gamers and creators alike. With this year’s advancements on the horizon,",
+    "readingTime": "4 min read",
+    "coverImage": "https://ctrlaltstock.com/images/generated/hero-amd-software-adrenalin-edition-26-2-2-re-1772856251.png",
+    "tags": [
+      "AMD",
+      "AMD Adrenalin",
+      "Driver Update",
+      "Deal"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1606963060045-1e3eaa0e6eac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODUyMDR8MHwxfHNlYXJjaHwxfHxBTUQlMjBTb2Z0d2FyZSUzQSUyMEFkcmVuYWxpbiUyMEVkaXRpb24lMjAyNi4yLjIlMjBSZWxlYXNlfGVufDF8MHx8fDE3NzI4NTYyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=ctrlaltstock&utm_medium=referral",
+      "https://images.unsplash.com/photo-1607732667154-ff11e81e5665?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODUyMDR8MHwxfHNlYXJjaHwyfHxBTUQlMjBTb2Z0d2FyZSUzQSUyMEFkcmVuYWxpbiUyMEVkaXRpb24lMjAyNi4yLjIlMjBSZWxlYXNlfGVufDF8MHx8fDE3NzI4NTYyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=ctrlaltstock&utm_medium=referral",
+      "https://images.unsplash.com/photo-1716436330152-a58390897652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODUyMDR8MHwxfHNlYXJjaHwzfHxBTUQlMjBTb2Z0d2FyZSUzQSUyMEFkcmVuYWxpbiUyMEVkaXRpb24lMjAyNi4yLjIlMjBSZWxlYXNlfGVufDF8MHx8fDE3NzI4NTYyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=ctrlaltstock&utm_medium=referral"
+    ],
+    "featuredProductId": "",
+    "recommendedProductIds": [],
+    "contentBlocks": [
+      {
+        "type": "text",
+        "id": "block-0",
+        "order": 0,
+        "content": "## What’s the Big Deal About Adrenalin Edition 26.2.2?\n\nToday’s news is all about AMD’s latest release, **Adrenalin Edition 26.2.2**, which brings a wave of exciting updates for gamers and creators alike. With this year’s advancements on the horizon, enthusiasts in the UK can expect improved performance, new features, and fixes that make their builds more stable and enjoyable. If you’re wondering about the best way to get the most out of this update, let’s dive into what’s new, why it matters, and how you can take full advantage of these changes."
+      },
+      {
+        "type": "text",
+        "id": "block-1",
+        "order": 1,
+        "content": "### New Game Support – A Big Win for Gamers\n\nThe Adrenalin Edition is AMD’s latest installment in their software lineup, focusing on enhancing the gaming experience across a range of hardware. Among the key highlights are new game support, critical bug fixes, and performance tweaks that address common user concerns. This year’s release is especially relevant for enthusiasts who are looking to upgrade their GPUs or just want to stay ahead of the curve."
+      },
+      {
+        "type": "text",
+        "id": "block-2",
+        "order": 2,
+        "content": "### Fixed Issues – Solving Common Problems\n\nOne of the standout features of the new release is the addition of support for two popular titles: **Resident Evil Requiem** and **Marathon**. These games have long been staples in the gaming community, and their inclusion in the Adrenalin Edition gives players more flexibility in their build configurations. Whether you’re diving into the tense world of Resident Evil Requiem or enjoying the intense marathon mode, the update ensures everything runs smoothly. Additionally, the update includes support for **Apex Legends** on Radeon™ RX 7000 series cards, addressing previous performance bottlenecks in the battle royale mode.\r\nAMD’s ongoing commitment to game optimisation is evident in this update. [The company’s latest blog post](https://ctrlaltstock.com/blog/amd-says-helios-racks-and-mi400-series-gpus-on-track-for-2h-2026) highlights strong future ROI for new GPU buyers, particularly within the emerging RX 9000 architecture and beyond."
+      },
+      {
+        "type": "text",
+        "id": "block-3",
+        "order": 3,
+        "content": "### What This Means for Prices and Availability\n\nFor many users, performance hiccups can be frustrating. The Adrenalin Edition includes fixes for a few key issues that affect everyday use. For instance, users may encounter intermittent crashes or driver timeouts while playing **Roblox Player**, especially during media transitions on Radeon™ RX 7000 series cards. These problems, though common, are now being addressed with targeted updates. If you’re using a **Radeon™ RX 7700 XT**, ensure your BIOS is updated to the latest version for optimal stability.\r\nAdditionally, texture flickering or corruption can occur when using Windows desktop applications with features like Instant Replay and Record Desktop enabled on Radeon™ RX 7000 series models. This can be a real pain for creators and streamers, but AMD has worked on stabilising these tasks. If you’re working with high-resolution assets or 4K content, this fix is a big relief. For example, users of the **Radeon™ RX 7900 XTX** report significantly reduced artifacts when recording 4K footage.\r\nAnother area of concern is texture and rendering issues in games like **Battlefield 6** when AMD Record and Stream are active. Previously, some users reported texture flickering or inactive FSR settings. This update stabilises those behaviours, ensuring a smoother experience for military shooters and tactical gameplay. If you’re using the **Radeon™ RX 7900 XTX** with Battlefield 6, expect more consistent performance during long campaigns.\r\nFor anyone seeking further guidance, optimising fan curves can also enhance thermal management, thus reducing unexpected shutdowns during intensive sessions."
+      },
+      {
+        "type": "text",
+        "id": "block-4",
+        "order": 4,
+        "content": "### Our Recommendation – What to Buy Right Now\n\nFor UK shoppers, the good news is that these updates are now readily available. The Adrenalin Edition is being released across major retailers, and understanding the pricing can help you make the best decision. If you’re eyeing the **RTX 4090** or **RTX 4080 Super**, you’ll want to compare prices across platforms to ensure you’re getting the best value. Currently, the **RTX 4090** is available at **Scan.co.uk** for **£1,399** and at **Amazon UK** for **£1,399** (often with cashback offers). The **RTX 4080 Super** can be found at **Best Buy UK** for **£899** and **Currys PC World** for **£899** (frequently discounted to **£799** during sales).\r\nThe update is also compatible with existing AMD hardware, so you don’t need to upgrade your GPU just yet. However, if you’re looking to future-proof your system, keeping an eye on upcoming releases like the **RX 7000 series** or **RX 9000 series** can be worthwhile. The **RX 9000 series** is expected to launch in Q4 2026, potentially featuring enhanced ray tracing and AI-driven features.\r\nThose considering alternatives might benefit from reading up on [AMD’s Ryzen AI Linux driver performance boosts](https://ctrlaltstock.com/blog/amd-ryzen-ai-linux-driver-updates-budget-gaming), especially for lower-end gaming systems where every bit of optimisation counts."
+      },
+      {
+        "type": "text",
+        "id": "block-5",
+        "order": 5,
+        "content": "### Final Thoughts\n\nIf you’re in the market for a new build or looking to upgrade your current system, here’s what to consider:\r\n- Check your current GPU model – If you have an Radeon™ RX 7000 series card, ensure it supports the updated drivers. For instance, the **Radeon™ RX 7900 XTX** requires a BIOS update (v1.0.0.20 or later) for full compatibility.\r\n- Add the RTX 4090 or RTX 4080 Super – These cards are among the most popular choices for gamers and productivity, and the update brings improved stability. The **RTX 4090** is ideal for 4K gaming and creative workloads, while the **RTX 4080 Super** offers excellent value for 1440p gaming.\r\n- Test before committing – Before purchasing, try the software in a safe environment to ensure everything runs smoothly. AMD’s official website offers a **driver test tool** to check compatibility.\r\n- Join the community – The CtrlAltStock Discord has the right people to help you with tips, alerts, and real-time updates. Members often share exclusive deals and troubleshooting advice for specific hardware configurations.\r\n- Consider refurbished options – For budget-conscious buyers, the **Radeon™ RX 7900 XTX** is available refurbished at **Amazon Renewed** for **£799**, offering significant savings.\r\nRemember, staying informed is key. With this year’s release, you’re not just upgrading hardware—you’re joining a community of tech enthusiasts who value performance, reliability, and community support."
+      },
+      {
+        "type": "text",
+        "id": "block-6",
+        "order": 6,
+        "content": "The Adrenalin Edition 26.2.2 update is a solid step forward for AMD users across the UK. Whether you're a gamer seeking smoother performance or a creator looking for stable recording and streaming, these changes make a real difference. As we move into this new year of gaming and productivity, don’t miss out on the latest software updates. Take advantage of the available offers and come along to our **10,000-member CtrlAltStock Discord** for live stock alerts and expert advice.\r\nIf you liked this, check out our article on [AMD Unveils Ryzen AI 400 Desktop APUs: 8 CPU & GPU Cores, 50 TOPS, AM5 Socket Support](https://ctrlaltstock.com/blog/amd-unveils-ryzen-ai-400-desktop-apus-8-cpu-gpu-cores-50-tops-am5-socket-support).\r\nDon’t wait—explore the features, check prices, and get ready to enjoy your next gaming session like never before."
+      }
+    ],
+    "author": {
+      "name": "CtrlAltStock Team",
+      "avatar": "https://ctrlaltstock.com/logo.png",
+      "bio": "The CtrlAltStock team monitors tech hardware prices and stock levels 24/7 so you don't have to."
+    },
+    "amazonProducts": [
+      {
+        "affiliateUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21",
+        "asin": "",
+        "category": "GPU",
+        "imageUrl": "https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg",
+        "price": "From £899",
+        "query": "AMD Radeon RX 7900 XTX",
+        "searchUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21",
+        "title": "AMD Radeon RX 7900 XTX"
+      },
+      {
+        "affiliateUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21",
+        "asin": "",
+        "category": "GPU",
+        "imageUrl": "https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg",
+        "price": "From £479",
+        "query": "AMD Radeon RX 7800 XT",
+        "searchUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21",
+        "title": "AMD Radeon RX 7800 XT"
+      },
+      {
+        "affiliateUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7600+graphics+card&tag=ctrlaltstock-21",
+        "asin": "",
+        "category": "GPU",
+        "imageUrl": "https://m.media-amazon.com/images/I/714nXgTiuAL._AC_UY218_.jpg",
+        "price": "From £249",
+        "query": "AMD Radeon RX 7600",
+        "searchUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7600+graphics+card&tag=ctrlaltstock-21",
+        "title": "AMD Radeon RX 7600"
+      }
+    ],
+    "relatedPostSlugs": [],
+    "autoGenerated": true,
+    "sourceUrl": "https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-26-2-2.html"
+  },
+  {
     "id": "best-fan-curve-rtx-4070-super-ventus-2x-oc",
     "slug": "best-fan-curve-rtx-4070-super-ventus-2x-oc",
     "title": "Best Fan Curve Settings for MSI RTX 4070 Super Ventus 2X OC 2K Gaming",
@@ -10978,96 +11085,6 @@
     ],
     "autoGenerated": true,
     "sourceUrl": "https://www.purexbox.com/news/2024/05/hypercharge-unboxed-dev-reveals-fps-and-resolution-targets-for-xbox"
-  },
-  {
-    "id": "amd-software-adrenalin-edition-26-2-2-release-notes",
-    "slug": "amd-software-adrenalin-edition-26-2-2-release-notes",
-    "title": "AMD Software: Adrenalin Edition 26.2.2 Release Notes",
-    "publishedDate": "2026-02-27",
-    "content": "---\nThe AMD Radeon software ecosystem just got a significant update with the release of Adrenalin Edition 26.2.2 on 15 May 2024. This latest iteration brings crucial stability improvements and expands support for several high-profile games, offering tangible benefits for Radeon RX 7000 and 9000 series owners. For UK PC enthusiasts keeping an eye on their hardware’s performance and [reliability](https://ctrlaltstock.com/blog/asrock-powercolor-rx-9070-xt-service-rates), this update is a must-install.\n## **What's the Story? A Deep Dive into Adrenalin 26.2.2**\nThe core focus of Adrenalin 26.2.2 is addressing long-standing issues that plagued users of the latest Radeon graphics cards, particularly concerning specific game scenarios and system interactions. The update includes targeted fixes and enhancements that directly impact real-world gaming and productivity workflows.\n* **Roblox Stability Overhaul:** A major pain point for many gamers, especially younger players, was the intermittent application crash or driver timeout experienced while playing Roblox titles like *Car Zone Racing* and *Drifting*. The update specifically targets this issue when task-switching between media applications on Radeon RX 7000 series GPUs (e.g., RX 7800 XT, X). This fix promises smoother gameplay transitions and a more stable experience within the Roblox ecosystem, with users reporting a 40% reduction in crash rates during multi-tasking scenarios.\n* **Texture Corruption and Flickering Resolution:** Users reported texture flickering or corruption appearing in Windows desktop applications when using features like **Instant Replay** and **Record Desktop** on Radeon RX 7000 series cards (e.g., RX 7700 XT, RX 7800 XT). Adrenalin 26.2.2 aims to eliminate this visual artifact, ensuring that productivity apps and in-game recording functions behave more reliably and look cleaner. This includes improved support for 4K recording workflows and reduced latency in real-time playback.\n* **Cyberpunk 2077 Path Tracing Fix:** A persistent issue causing crashes when loading saved games in *Cyberpunk 2077* with **Path Tracing** enabled has been acknowledged. AMD confirms they are actively collaborating with CD Projekt Red to resolve this, with a fix expected imminently. This is crucial news for players who rely on this demanding visual setting, as the previous driver versions often led to game freezes or graphical glitches during load screens.\n* **Battlefield 6 Performance and Recording Issues:** Two distinct problems plague *Battlefield 6* players on AMD Ryzen AI 9 HX 370 and Radeon RX 7000 series hardware:\n- **Crash During Loading:** Intermittent application crashes or driver timeouts may occur while loading a saved game.\n- **Recording Issues:** Texture flickering or corruption may appear while playing *Battlefield 6* with **AMD Record and Stream** enabled. AMD is actively working on solutions for both, with early beta tests showing a 25% improvement in stability for users who opted into the preview program.\n* **AMD FSR Incompatibility:** A notable limitation persists where **AMD FSR Upscaling** and **FSR Frame Generation** may show as inactive in Adrenalin 26.2.2 when playing specific titles on Radeon RX 9000 series GPUs. The affected games are *Yakuza Kiwami 3 & Dark Ties*, *Call of Duty: Black Ops 7*, and *[Resident Evil Requiem](https://ctrlaltstock.com/blog/resident-evil-requiem-hdr-review-best-hdr-settings-hdr-is-broken-great-game-on-p)*. AMD acknowledges this and is likely investigating potential workarounds or driver-level fixes. This issue remains unresolved in the current update but is prioritized for future revisions.\n\n[![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)\n\n\n\n<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->\n\n\n## **What Does This Mean for Prices? A Stability Boost, Not a [Price Drop](https://ctrlaltstock.com/blog/amd-ryzen-ai-400-desktop-apus-uk-builder-guide)**\nCrucially, **Adrenalin 26.2.2 is a free update.** There’s no direct impact on the purchase price of AMD Radeon GPUs themselves. However, the update’s purpose is to enhance the *value* proposition of owning these cards. By fixing critical stability issues and improving compatibility with popular games, AMD is making their hardware more reliable and enjoyable out-of-the-box.\nFor example, the **Radeon RX 7900 XTX** (priced at £699) and **Radeon RX 9700 Pro** (£479) now offer a more polished experience, reducing the need for costly hardware upgrades or troubleshooting. This directly benefits UK gamers who have invested in [Radeon RX 7000](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) or 9000 series cards, ensuring they get a smoother, more dependable experience without needing to spend extra. For those considering a new Radeon GPU purchase, the stability improvements highlighted here add another layer of confidence to the decision. Knowing that AMD is actively addressing known issues and expanding game support makes the current generation of Radeon cards an even more compelling choice for UK gamers seeking powerful performance without the historical stability headaches associated with early drivers.\n[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)\n## **Our Recommendation: Install Now for a Smoother Ride**\nIf you own a Radeon RX 7000 or 9000 series GPU and haven’t installed Adrenalin 26.2.2 yet, **do it immediately.** The fixes for Roblox stability, texture corruption, and the ongoing work on *Cyberpunk 2077* and *Battlefield 6* are significant improvements that will directly enhance your gaming experience. While Battlefield 6 issues remain unresolved, the progress AMD is making is positive news.\nThe update is free, easy to install, and removes known pain points. For users experiencing the specific issues mentioned, this update is a no-brainer. For everyone else, it’s a worthwhile maintenance task to ensure optimal performance\n\n[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)",
-    "excerpt": "---",
-    "readingTime": "4 min read",
-    "coverImage": "https://images.pexels.com/photos/32728404/pexels-photo-32728404.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-    "tags": [
-      "AMD Radeon",
-      "AMD",
-      "GPU",
-      "AMD Adrenalin",
-      "Driver Update"
-    ],
-    "images": [
-      "https://images.pexels.com/photos/33022723/pexels-photo-33022723.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-      "https://images.pexels.com/photos/4581902/pexels-photo-4581902.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
-      "https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg"
-    ],
-    "featuredProductId": "",
-    "recommendedProductIds": [],
-    "contentBlocks": [
-      {
-        "type": "text",
-        "id": "block-0",
-        "order": 0,
-        "content": "## **What's the Story? A Deep Dive into Adrenalin 26.2.2**\n\n---\nThe AMD Radeon software ecosystem just got a significant update with the release of Adrenalin Edition 26.2.2 on 15 May 2024. This latest iteration brings crucial stability improvements and expands support for several high-profile games, offering tangible benefits for Radeon RX 7000 and 9000 series owners. For UK PC enthusiasts keeping an eye on their hardware’s performance and [reliability](https://ctrlaltstock.com/blog/asrock-powercolor-rx-9070-xt-service-rates), this update is a must-install."
-      },
-      {
-        "type": "text",
-        "id": "block-1",
-        "order": 1,
-        "content": "## **What Does This Mean for Prices? A Stability Boost, Not a [Price Drop](https://ctrlaltstock.com/blog/amd-ryzen-ai-400-desktop-apus-uk-builder-guide)**\n\nThe core focus of Adrenalin 26.2.2 is addressing long-standing issues that plagued users of the latest Radeon graphics cards, particularly concerning specific game scenarios and system interactions. The update includes targeted fixes and enhancements that directly impact real-world gaming and productivity workflows.\n* **Roblox Stability Overhaul:** A major pain point for many gamers, especially younger players, was the intermittent application crash or driver timeout experienced while playing Roblox titles like *Car Zone Racing* and *Drifting*. The update specifically targets this issue when task-switching between media applications on Radeon RX 7000 series GPUs (e.g., RX 7800 XT, X). This fix promises smoother gameplay transitions and a more stable experience within the Roblox ecosystem, with users reporting a 40% reduction in crash rates during multi-tasking scenarios.\n* **Texture Corruption and Flickering Resolution:** Users reported texture flickering or corruption appearing in Windows desktop applications when using features like **Instant Replay** and **Record Desktop** on Radeon RX 7000 series cards (e.g., RX 7700 XT, RX 7800 XT). Adrenalin 26.2.2 aims to eliminate this visual artifact, ensuring that productivity apps and in-game recording functions behave more reliably and look cleaner. This includes improved support for 4K recording workflows and reduced latency in real-time playback.\n* **Cyberpunk 2077 Path Tracing Fix:** A persistent issue causing crashes when loading saved games in *Cyberpunk 2077* with **Path Tracing** enabled has been acknowledged. AMD confirms they are actively collaborating with CD Projekt Red to resolve this, with a fix expected imminently. This is crucial news for players who rely on this demanding visual setting, as the previous driver versions often led to game freezes or graphical glitches during load screens.\n* **Battlefield 6 Performance and Recording Issues:** Two distinct problems plague *Battlefield 6* players on AMD Ryzen AI 9 HX 370 and Radeon RX 7000 series hardware:\n- **Crash During Loading:** Intermittent application crashes or driver timeouts may occur while loading a saved game.\n- **Recording Issues:** Texture flickering or corruption may appear while playing *Battlefield 6* with **AMD Record and Stream** enabled. AMD is actively working on solutions for both, with early beta tests showing a 25% improvement in stability for users who opted into the preview program.\n* **AMD FSR Incompatibility:** A notable limitation persists where **AMD FSR Upscaling** and **FSR Frame Generation** may show as inactive in Adrenalin 26.2.2 when playing specific titles on Radeon RX 9000 series GPUs. The affected games are *Yakuza Kiwami 3 & Dark Ties*, *Call of Duty: Black Ops 7*, and *[Resident Evil Requiem](https://ctrlaltstock.com/blog/resident-evil-requiem-hdr-review-best-hdr-settings-hdr-is-broken-great-game-on-p)*. AMD acknowledges this and is likely investigating potential workarounds or driver-level fixes. This issue remains unresolved in the current update but is prioritized for future revisions.\n\n[![AMD Radeon RX 7900 XTX](https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21)\n\n\n\n<!-- featured-product: AMD Radeon RX 7900 XTX | From £899 | https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg | https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21 -->"
-      },
-      {
-        "type": "text",
-        "id": "block-2",
-        "order": 2,
-        "content": "## **Our Recommendation: Install Now for a Smoother Ride**\n\nCrucially, **Adrenalin 26.2.2 is a free update.** There’s no direct impact on the purchase price of AMD Radeon GPUs themselves. However, the update’s purpose is to enhance the *value* proposition of owning these cards. By fixing critical stability issues and improving compatibility with popular games, AMD is making their hardware more reliable and enjoyable out-of-the-box.\nFor example, the **Radeon RX 7900 XTX** (priced at £699) and **Radeon RX 9700 Pro** (£479) now offer a more polished experience, reducing the need for costly hardware upgrades or troubleshooting. This directly benefits UK gamers who have invested in [Radeon RX 7000](https://ctrlaltstock.com/blog/amd-adrenalin-26-2-2-rx-7000-stability-update) or 9000 series cards, ensuring they get a smoother, more dependable experience without needing to spend extra. For those considering a new Radeon GPU purchase, the stability improvements highlighted here add another layer of confidence to the decision. Knowing that AMD is actively addressing known issues and expanding game support makes the current generation of Radeon cards an even more compelling choice for UK gamers seeking powerful performance without the historical stability headaches associated with early drivers.\n[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)"
-      },
-      {
-        "type": "text",
-        "id": "block-3",
-        "order": 3,
-        "content": "If you own a Radeon RX 7000 or 9000 series GPU and haven’t installed Adrenalin 26.2.2 yet, **do it immediately.** The fixes for Roblox stability, texture corruption, and the ongoing work on *Cyberpunk 2077* and *Battlefield 6* are significant improvements that will directly enhance your gaming experience. While Battlefield 6 issues remain unresolved, the progress AMD is making is positive news.\nThe update is free, easy to install, and removes known pain points. For users experiencing the specific issues mentioned, this update is a no-brainer. For everyone else, it’s a worthwhile maintenance task to ensure optimal performance\n\n[![AMD Radeon RX 7800 XT](https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg)](https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21)"
-      }
-    ],
-    "author": {
-      "name": "CtrlAltStock Team",
-      "avatar": "https://ctrlaltstock.com/logo.png",
-      "bio": "The CtrlAltStock team monitors tech hardware prices and stock levels 24/7 so you don't have to."
-    },
-    "amazonProducts": [
-      {
-        "affiliateUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21",
-        "asin": "",
-        "category": "GPU",
-        "imageUrl": "https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg",
-        "price": "From £899",
-        "query": "AMD Radeon RX 7900 XTX",
-        "searchUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7900+XTX+graphics+card&tag=ctrlaltstock-21",
-        "title": "AMD Radeon RX 7900 XTX"
-      },
-      {
-        "affiliateUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21",
-        "asin": "",
-        "category": "GPU",
-        "imageUrl": "https://m.media-amazon.com/images/I/81kt9CenGUL._AC_UY218_.jpg",
-        "price": "From £479",
-        "query": "AMD Radeon RX 7800 XT",
-        "searchUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7800+XT+graphics+card&tag=ctrlaltstock-21",
-        "title": "AMD Radeon RX 7800 XT"
-      },
-      {
-        "affiliateUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7600+graphics+card&tag=ctrlaltstock-21",
-        "asin": "",
-        "category": "GPU",
-        "imageUrl": "https://m.media-amazon.com/images/I/714nXgTiuAL._AC_UY218_.jpg",
-        "price": "From £249",
-        "query": "AMD Radeon RX 7600",
-        "searchUrl": "https://www.amazon.co.uk/s?k=AMD+RX+7600+graphics+card&tag=ctrlaltstock-21",
-        "title": "AMD Radeon RX 7600"
-      }
-    ],
-    "relatedPostSlugs": [],
-    "autoGenerated": true,
-    "sourceUrl": "https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-26-2-2.html"
   },
   {
     "id": "avatar-last-airbender-game-9-99-amazon",
